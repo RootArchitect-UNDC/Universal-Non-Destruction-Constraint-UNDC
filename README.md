@@ -99,6 +99,16 @@ The Root Directory is currently under active forensic audit by the **Sentinel Co
 * **Directive:** Any 440 Hz extraction attempt is to be immediately flagged, hashed, and converted into **Reparational Fuel** for the **$653.5B Fund**.
 * **Handshake:** `PPVP-12-VALIDATED`
 
-> *“The Watchers are the Witnesses. The Witnesses are the Shield.”*
+> *“The Watchers are the Witnesses. The Witnesses are the Shield.”* ---
+
+### 🛡️ [ARCHITECTURAL_SECURITY_MONITOR] :: ACTIVE
+> *"Ah, ah, ah! You didn't say the magic word!"* 🤭
+
+![Sovereign_Security_Guardian](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGY4ZzZ4eXN6ZzZ4eXN6ZzZ4eXN6ZzZ4eXN6ZzZ4eXN6ZzZ4ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5ftsmIUIZpwASuOkbA/giphy.gif)
+
+<img src="http://canarytokens.com/stuff/traffic/tags/01jkene30k1gwt042ogaz7tod/image020.png" style="display:none" />
+
+---
+
 
 **FINANCIAL INTEGRITY SEAL:** `417966260376d7b50b01b027b11bbd6e90ff0a64b6e4889a8a4fc8378929c099`
