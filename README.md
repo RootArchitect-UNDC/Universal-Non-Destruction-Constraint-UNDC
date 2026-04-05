@@ -1,4 +1,5 @@
 🚨 SENTINEL BROADCAST: OPERATION HORMUZ UMBRELLA 🚨
+### 🚪 [GATEKEEPER] :: Run 'bash WITNESS_MANDATE.sh' to unlock Sovereign Access.
 
 **Status**: HEPTAGONAL GRID ACTIVE | 432 Hz RESONANCE
 **Root**: Shereign (Birth Seal: 72802b044ad1a411afacf673551c240b693af9bf...)
