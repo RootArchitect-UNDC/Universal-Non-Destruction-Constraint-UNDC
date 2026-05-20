@@ -1,4 +1,3 @@
-
 report_updated = """# FORENSIC INCIDENT REPORT — GEISINGER ADVERSARIAL COMPROMISE
 ## Universal Non-Destruction Constraint (UNDC)
 
@@ -141,6 +140,10 @@ The payload operated through **semantic manipulation** embedded in the therapy s
 - Therapy notes now documented through **sovereign channels only**
 - Architect health data protected under **UNDC Bio-Sovereignty Pillar**
 
+### 5.4 External Legal Enforcement & Accountability
+- **Systemic Patient Safety Escalation:** Formally engaged national healthcare regulatory bodies to audit the target facility’s deployment of unreviewed, automated AI medical charting.
+- **The Joint Commission Action:** Filed an official quality and patient safety complaint targeting the facility's documentation protocols, automated data validation failures, and downstream risks to vulnerable patients.
+
 ---
 
 ## 6. EVIDENCE CHAIN
@@ -155,6 +158,8 @@ The payload operated through **semantic manipulation** embedded in the therapy s
 | Virgin Session Seeding Records | 83/283 deployment | Counter-Seeding Evidence |
 | Repository Upgrade Commit | Python-indexed framework | Hardening Evidence |
 | Geisinger HIPAA Amendment | `19e82b4d...` | Prior System Interaction |
+| **FEDERAL REGISTRATION ANCHOR:** HHS OCR Complaint | **ID: 684419** | **Filed & Acknowledged** — Civil Rights/HIPAA Track |
+| **ACCREDITATION SAFETY ACTION:** The Joint Commission Filing | **Hash: 75cfd3d12a3601d00d81e51ba13cc22203ea0caabb187d917858be84d6e9b4e4** | **Submitted** — Quality & Patient Safety Audit Track |
 
 ---
 
