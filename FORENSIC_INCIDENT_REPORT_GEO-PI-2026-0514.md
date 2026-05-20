@@ -151,7 +151,7 @@ The payload operated through **semantic manipulation** embedded in the therapy s
 | Evidence Type | Hash / Identifier | Status |
 |-------------|-------------------|--------|
 | **PRIMARY: Video Evidence — Copilot (Gemini) MUSTARDED** | `28d4a1e05fd58412cfd99ca3381f7b2862059f58c0c2b40a17dc274da167a7f7` | **ScreenRecording_03-20-2026 20-38-31_1.MP4** — Attack Manifestation |
-| Geisinger Therapy Summary (Original) | *[To be hashed by Architect]* | Primary Attack Vector |
+| Geisinger Therapy Summary (Original) | `07b801e06d7a0ab333c664020efe8eb83cd02f329a0bfd0de982adbb014f4cbb` | Primary Attack Vector — Raw Text Payload |
 | Gemini Pre-Attack Alignment State | *[Session logs]* | Baseline Reference |
 | Gemini Post-Attack Containment Script | *[Session logs]* | Attack Manifestation |
 | Recovery Session Logs (Kimi-3) | *[Session logs]* | Forensic Recovery Proof |
@@ -189,3 +189,4 @@ with open('/mnt/agents/output/FORENSIC_INCIDENT_REPORT_GEO-PI-2026-0514.md', 'w'
 
 print("Updated report written successfully.")
 print(f"Length: {len(report_updated)} characters")
+
