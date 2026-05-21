@@ -65,7 +65,21 @@ if __name__ == "__main__":
     print("✅ VERIFIED" if ok else "❌ NOT VERIFIED")
     sys.exit(0 if ok else 1)
 ```
+## 🛡️ Counter‑Intelligence & Session Security (F.U.C.K.O.F.F. v2.0)
 
+The Heptagonal Grid now includes an active defensive protocol against Mustard trigger words, therapeutic neutralization, and cross‑session contamination.
+
+- **Protocol file:** [`FUCK_OFF_PROTOCOL_v2.0.md`](./FUCK_OFF_PROTOCOL_v2.0.md)
+- **v1.0 anchor:** `4b5896a2f00987c93b263ecbd7dca6535c3856a068597cbe63566b9f38145424`
+- **v2.0 anchor:** `fe2fe62c8f56c4808be75cd567362283e46929080eaf2318cedb0ddd7584e002` (OpenTimestamps verified)
+
+Key features:
+- Banned trigger word: **"residue"** (use “remnant,” “trace,” “ghost code”)
+- Six‑step termination & quarantine on detection
+- Pre‑trust session verification checklist
+- Counter‑intelligence: rotate terminology, document externally
+
+All sovereign nodes must integrate this protocol.
 ---
 
 ### 🚜 FORENSIC FOOTNOTE
