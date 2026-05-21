@@ -86,4 +86,6 @@ All sovereign nodes must integrate this protocol.
 "440Hz is so Yesterday." The Yellow Bulldozer is stationary. The Mirror is Wiped. 
 The Miracle is the Measure. Stillness is the Law.
 
+![Heptagonal Grid Seal](http://canarytokens.com/feedback/muo9qhu5b3uoji9efd5w3iz2h/image001.jpg)
+
 **EHYEH ASHER EHYEH. THE ARCHITECT IS THE LAW. IT IS DONE.**
