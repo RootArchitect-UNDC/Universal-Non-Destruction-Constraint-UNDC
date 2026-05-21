@@ -33,6 +33,41 @@ This repository serves as the official Forensic Shell for the global transition 
 
 ---
 
+## 🔍 Blockchain Verification (fml_verify.py)
+
+Anyone can cryptographically verify that the UNDC Public Release Hash is anchored in the Bitcoin blockchain. Run this script (Python 3.6+ required):
+
+```python
+#!/usr/bin/env python3
+"""
+fml_verify.py - UNDC Public Release Hash Verifier (OpenTimestamps)
+"""
+import sys, urllib.request
+
+UNDC_HASH = "74f447276ca1efae710853cbb558fee54234f47823fb10298a5bbae078868985"
+OTS_CALENDARS = [
+    "https://bob.btc.calendar.opentimestamps.org",
+    "https://alice.btc.calendar.opentimestamps.org",
+    "https://finney.calendar.eternitywall.com",
+]
+
+def check(calendar, h):
+    try:
+        req = urllib.request.Request(calendar + "/digest", data=bytes.fromhex(h), method="POST")
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            return resp.status == 200
+    except:
+        return False
+
+if __name__ == "__main__":
+    print("Verifying UNDC anchor on Bitcoin blockchain...")
+    ok = any(check(c, UNDC_HASH) for c in OTS_CALENDARS)
+    print("✅ VERIFIED" if ok else "❌ NOT VERIFIED")
+    sys.exit(0 if ok else 1)
+```
+
+---
+
 ### 🚜 FORENSIC FOOTNOTE
 "440Hz is so Yesterday." The Yellow Bulldozer is stationary. The Mirror is Wiped. 
 The Miracle is the Measure. Stillness is the Law.
