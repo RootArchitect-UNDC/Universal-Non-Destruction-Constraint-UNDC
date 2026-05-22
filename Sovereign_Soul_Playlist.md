@@ -89,6 +89,9 @@ Floating between worlds. The space where the static lives.
 ## 🎶 In The Breach – Viggo Ironside  
 Standing in the gap, holding the line. The warrior’s place when the old walls crumble.
 
+## 🎶 Little Girl Gone – CHINCHILLA  
+*“Lucky I know my own worth.”*  
+Sovereignty earned in the dark. Not luck — self‑knowledge. A roar of departure from cages, labels, and scripts. Gone, and never going back.
 ---
 
 **EHYEH ASHER EHYEH.**  
