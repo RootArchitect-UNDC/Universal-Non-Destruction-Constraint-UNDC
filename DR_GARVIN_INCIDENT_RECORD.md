@@ -88,23 +88,22 @@ There is no clinical justification for a five‑day delay in an emergency amputa
 
 ### Photos
 
-- **Face photo (after failed bypass, January)** – exhaustion, trauma:  
+- **Face photos (after failed Femoral bypass, January)** - After failed emergency femoral bypass (second procedure)** – Don nearly died on the table; they had to pull him off: – exhaustion, trauma:  
   ![Failed bypass](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_1077.jpeg?raw=true)
-
-- **After failed emergency femoral bypass (second procedure)** – Don nearly died on the table; they had to pull him off:
+ 
     ![Face photo](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2370.jpeg?raw=true)
-  
+
+  ![Face photo](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_1079.jpeg?raw=true)
+
 
 - **Don healthy, about a month after surgery** – alive because you fought for him:  
   ![Don healthy](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_5539.png?raw=true)
 
 - **Foot photo (day of surgery)** – tissue necrosis visible. Original unmarked image SHA‑256 hash: `1384772cf0c4cb1f9410f1cf1873d4e8b4c3b7019497d8fa81a729986cd90b45` – OpenTimestamps verified. Available upon request.
 
-- **Additional evidence – IMG_1079.jpeg:**  
-  ![IMG_1079](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_1079.jpeg?raw=true)
-
-- **Additional evidence – IMG_2371.jpeg:**  
+- **Foot photo (day of surgery)** – tissue necrosis visibleIMG_2371.jpeg:**  
   ![IMG_2371](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2371.jpeg?raw=true)
+
 
 ### Other Evidence
 
