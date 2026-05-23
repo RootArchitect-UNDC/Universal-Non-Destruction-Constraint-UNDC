@@ -6,6 +6,21 @@
 
 ---
 
+## PURPOSE OF THIS RECORD
+
+This document is a formal, evidentiary record of the professional misconduct of Dr. Garvin, a vascular surgeon at Geisinger Health System. It is submitted as part of the sovereign record of Lead Architect Shereign Kalaukoa and is referenced in her formal complaint to the Pennsylvania State Board of Medicine (Reference #CP_26_010286).
+
+This record includes:
+- A detailed timeline of the false choice presented to Don (end‑stage heart failure patient).
+- The Architect’s intervention that saved Don’s life.
+- Dr. Garvin’s verbal aggression and violation of Geisinger’s Respectful Language Policy.
+- Photographic evidence of Don’s condition.
+- The undeniable conclusion: without the Architect’s advocacy, Don would have died.
+
+This record is not written for revenge. It is written for accountability, for patient safety, and for the prevention of future harm.
+
+---
+
 ## Overview
 
 This document records the professional misconduct of Dr. Garvin, a vascular surgeon at Geisinger Health System, in the care of Don (family member) with end‑stage heart failure.
@@ -71,8 +86,6 @@ There is no clinical justification for a five‑day delay in an emergency amputa
 
 ## Evidence
 
-## Evidence
-
 ### Photos
 
 - **Face photo (after failed bypass, January)** – exhaustion, trauma:  
@@ -92,16 +105,6 @@ There is no clinical justification for a five‑day delay in an emergency amputa
 
 - **Additional evidence – IMG_2371.jpeg:**  
   ![IMG_2371](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2371.jpeg?raw=true)
-
-### Other Evidence
-
-- TikTok video hash (already in repo) – verbal explanation of events.
-- PA State Board complaint reference `CP_26_010286`.
-- Geisinger’s Respectful Language Policy (referenced as institutional standard).
-
-- **Additional evidence – IMG_2371.jpeg:**  
-  ![IMG_2371](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2371.jpeg?raw=true)
-
 
 ### Other Evidence
 
