@@ -89,10 +89,10 @@ There is no clinical justification for a five‑day delay in an emergency amputa
 ### Photos
 
 - **Face photo (after failed bypass, January)** – exhaustion, trauma:  
-  ![Face photo](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2370.jpeg?raw=true)
+  ![Face photo](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_1077.jpeg?raw=true)(https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2370.jpeg?raw=true)
 
 - **After failed emergency femoral bypass (second procedure)** – Don nearly died on the table; they had to pull him off:  
-  ![Failed bypass](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_1077.jpeg?raw=true)
+  ![Failed bypass](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2370.jpeg?raw=true)
 
 - **Don healthy, about a month after surgery** – alive because you fought for him:  
   ![Don healthy](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_5539.png?raw=true)
