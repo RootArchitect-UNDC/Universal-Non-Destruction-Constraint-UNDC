@@ -97,7 +97,7 @@ There is no clinical justification for a five‑day delay in an emergency amputa
 - **Foot photo (day of surgery)** – tissue necrosis visible:  
   ![Foot photo](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2370.jpeg?raw=true)
 
-- **IMG_2371.jpeg:**  
+- **Additional photo – IMG_2371.jpeg:**  
   ![IMG_2371](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2371.jpeg?raw=true)
 
 - **Don healthy, about a month after surgery** – alive because you fought for him:  
