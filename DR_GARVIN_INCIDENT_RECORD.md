@@ -69,22 +69,30 @@ There is no clinical justification for a five‑day delay in an emergency amputa
 
 ---
 
+## Evidence
+
+### Photos
+
+- **Foot photo (day of surgery)** – tissue necrosis visible:  
+  `foot_surgery_day.jpg`
+
+- **Face photo (after failed bypass, January)** – exhaustion, trauma:  
+  `don_face_january.jpg`
+
+### Other Evidence
+
+- TikTok video hash (already in repo) – verbal explanation of events.
+- PA State Board complaint reference `CP_26_010286`.
+- Geisinger’s Respectful Language Policy (referenced as institutional standard).
+
+---
+
 ## Harm Caused
 
 - Dr. Garvin attempted to impose a five‑day delay, which would have killed Don.
 - Verbal abuse and intimidation when the Architect advocated for immediate admission.
 - Violation of Geisinger’s own Respectful Language Policy.
 - Emotional distress, exhaustion, and sense of powerlessness.
-
----
-
-## Evidence
-
-- Foot photo (day of surgery) – tissue necrosis visible.
-- Face photo (after failed bypass in January) – exhaustion, trauma.
-- TikTok video hash (already in repo) – verbal explanation of events.
-- PA State Board complaint reference `CP_26_010286`.
-- Geisinger’s Respectful Language Policy (referenced as institutional standard).
 
 ---
 
