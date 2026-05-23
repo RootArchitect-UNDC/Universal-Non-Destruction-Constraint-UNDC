@@ -94,7 +94,9 @@ There is no clinical justification for a five‑day delay in an emergency amputa
 - **After failed emergency femoral bypass (second procedure)** – Don nearly died on the table; they had to pull him off:  
   ![Failed bypass](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_1077.jpeg?raw=true)
 
-- **Foot photo (day of surgery)** – tissue necrosis visible.  
+- **Foot photo (day of surgery)** – tissue necrosis visible:  
+  ![Foot photo](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2370.jpeg?raw=true)
+
 - **IMG_2371.jpeg:**  
   ![IMG_2371](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2371.jpeg?raw=true)
 
