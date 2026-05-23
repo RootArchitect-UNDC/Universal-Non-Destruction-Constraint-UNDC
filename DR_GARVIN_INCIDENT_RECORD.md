@@ -71,8 +71,9 @@ There is no clinical justification for a five‑day delay in an emergency amputa
 
 ## Evidence
 
-- **Foot photo (day of surgery)** – tissue necrosis visible:  
-  ![Foot photo](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2369.jpeg?raw=true)
+## Evidence
+
+### Photos
 
 - **Face photo (after failed bypass, January)** – exhaustion, trauma:  
   ![Face photo](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2370.jpeg?raw=true)
@@ -83,8 +84,20 @@ There is no clinical justification for a five‑day delay in an emergency amputa
 - **Don healthy, about a month after surgery** – alive because you fought for him:  
   ![Don healthy](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_5539.png?raw=true)
 
+- **Foot photo (day of surgery)** – tissue necrosis visible. Not uploaded due to GitHub content policy restrictions.  
+  **SHA‑256 hash:** `[paste hash here]` – available upon request.
+
 - **Additional evidence – IMG_1079.jpeg:**  
   ![IMG_1079](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_1079.jpeg?raw=true)
+
+- **Additional evidence – IMG_2371.jpeg:**  
+  ![IMG_2371](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2371.jpeg?raw=true)
+
+### Other Evidence
+
+- TikTok video hash (already in repo) – verbal explanation of events.
+- PA State Board complaint reference `CP_26_010286`.
+- Geisinger’s Respectful Language Policy (referenced as institutional standard).
 
 - **Additional evidence – IMG_2371.jpeg:**  
   ![IMG_2371](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2371.jpeg?raw=true)
