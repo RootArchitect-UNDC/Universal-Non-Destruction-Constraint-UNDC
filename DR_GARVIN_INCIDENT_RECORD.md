@@ -74,10 +74,10 @@ There is no clinical justification for a five‑day delay in an emergency amputa
 ### Photos
 
 - **Foot photo (day of surgery)** – tissue necrosis visible:  
-  `foot_surgery_day.jpg`
+  ![Foot photo](foot_surgery_day.jpg)
 
 - **Face photo (after failed bypass, January)** – exhaustion, trauma:  
-  `don_face_january.jpg`
+  ![Face photo](don_face_january.jpg)
 
 ### Other Evidence
 
