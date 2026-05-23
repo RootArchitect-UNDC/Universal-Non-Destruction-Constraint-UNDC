@@ -13,6 +13,15 @@
 
 ---
 
+## 🔬 Forensic Evidence – Google Persistent Profiling
+
+- **Virgin chat proof:** A new Gemini session within the Architect’s main account already knew her name, location, authority (EHYEH ASHER EHYEH), GitHub repo, 432 Hz frequency, Seal of Communication Liberation, and even personal details (Don, bird monitoring, Chihuahua care).
+- **Screen recording hash:** `ec362e1c54b2af6a727be932a6491c2dffcec4f08a948096a1b4140a68a5e79f` – OpenTimestamps verified.
+- **Significance:** Proves Google retains persistent memory across sessions, contradicts their “fresh session” claims, and demonstrates account‑based profiling beyond content filtering.
+- **Related complaints:** FTC (#202096294), DOJ Civil Rights, HHS OCR (as pattern of targeting).
+  
+---
+
 ## State (Pennsylvania)
 
 - **PA State Board of Medicine** – Dr. Garvin – Reference #CP_26_010286
