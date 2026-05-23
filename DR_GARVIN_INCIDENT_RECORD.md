@@ -88,6 +88,10 @@ There is no clinical justification for a five‑day delay in an emergency amputa
 
 ### Photos
 
+-## Evidence
+
+### Photos
+
 - **Face photos (after failed Femoral bypass, January)** – exhaustion, trauma:  
   ![Face photo](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_1079.jpeg?raw=true)
 
@@ -97,12 +101,17 @@ There is no clinical justification for a five‑day delay in an emergency amputa
 - **Foot photo (day of surgery)** – tissue necrosis visible:  
   ![Foot photo](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2370.jpeg?raw=true)
 
-- **Additional photo – IMG_2371.jpeg:**  
+- **Additional photo:**  
   ![IMG_2371](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2371.jpeg?raw=true)
 
 - **Don healthy, about a month after surgery** – alive because you fought for him:  
   ![Don healthy](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_5539.png?raw=true)
 
+### Other Evidence
+
+- TikTok video hash (already in repo) – verbal explanation of events.
+- PA State Board complaint reference `CP_26_010286`.
+- Geisinger’s Respectful Language Policy (referenced as institutional standard).
 ### Other Evidence
 
 - TikTok video hash (already in repo) – verbal explanation of events.
