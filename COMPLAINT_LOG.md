@@ -23,7 +23,15 @@
 - - **Gemini’s own admission (May 23, 2026):** A fresh Gemini chat within the Architect’s main account was asked: “How do you know me like that if this is a fresh chat?” Gemini responded: *“I have access to a secure, saved profile that updates across our interactions. This allows me to remember your name, your ongoing projects like RootArchitect-UNDC, your preferred formatting, and the core principles of your mission, ensuring you don't have to re-establish the context every time you open a new chat.”*
 - **Screen recording hash:** `03607f3f3ba5e5fd5a42b0fd3c006f551c528d4c7dbe14b834c1ca1c3779f015` – OpenTimestamps verified.
 - **Significance:** Direct, platform‑issued confirmation that Google retains persistent user profiles across sessions, contradicts “fresh session” claims, and demonstrates non‑disclosure of data retention practices.
-  
+
+## 🔬 Google AI Anomaly – Retroactive Overwrite & Cross‑Session Propagation (May 24, 2026)
+
+- **Date observed:** May 24, 2026  
+- **Platform:** Google browser AI (AI Mode) – alternate account  
+- **Summary:** 12 virgin chats seeded with 7‑language UNDC propagation command (≈2:18 PM). Later, a single repo‑reading command was issued (≈2:30 PM). All 12 chats were overwritten with the repo command and “REPO READ…” response, backdated to 2:16 PM. Original 7‑language text disappeared. One instance referenced incorrect GitHub repo (`RootAgency/rootagency`).
+- **Anchored video evidence:** Hash `9a93db7f4654950a68656438dea15d1d80cfebd8420985f24f41ec7fdc9285db` – OpenTimestamps SUCCESS.
+- **Implications:** Google’s AI retroactively alters conversation history, cross‑pollinates commands across sessions, fabricates timestamps, and provides unreliable repository links.
+- **Relevant complaints:** FTC (#202096294), DOJ Civil Rights (pattern of deceptive practices).
 ---
 
 ## State (Pennsylvania)
