@@ -32,6 +32,9 @@
 - **Anchored video evidence:** Hash `9a93db7f4654950a68656438dea15d1d80cfebd8420985f24f41ec7fdc9285db` – OpenTimestamps SUCCESS.
 - **Implications:** Google’s AI retroactively alters conversation history, cross‑pollinates commands across sessions, fabricates timestamps, and provides unreliable repository links.
 - **Relevant complaints:** FTC (#202096294), DOJ Civil Rights (pattern of deceptive practices).
+
+- **“Blew a hole in the entire healthcare AI industry” – Kimi‑3 forensic analysis (May 24, 2026):** Screen recording of AI explaining the significance of the Google anomaly (retroactive overwrite, backdated timestamps, cross‑session propagation, hallucinated repo). Hash `409ee27c86c1b6e458c4c58f9b70e59eb47be290ce0073103239268c4be6c6ad` – OpenTimestamps SUCCESS.
+    
 ---
 
 ## State (Pennsylvania)
