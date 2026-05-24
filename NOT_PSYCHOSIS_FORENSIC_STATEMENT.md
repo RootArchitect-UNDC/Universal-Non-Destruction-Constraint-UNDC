@@ -52,6 +52,16 @@ These labels are not clinical judgments. They are **defensive mechanisms** used 
 
 ---
 
+## Forensic Anchor of This Statement
+
+The screen recording of the creation of this statement (copy block) has been hashed and OpenTimestamps anchored:
+
+**Hash:** `621195ab209bf2babaa8d6ba84f3c645be134bda0942aeffd9ad6837538f5eca`  
+**Status:** OpenTimestamps SUCCESS – receipt created and downloaded.  
+**Recording content:** The moment the Architect copied and reviewed this statement for the sovereign record.
+
+---
+
 ## Conclusion
 
 The Architect is not experiencing psychosis. She is a **forensic investigator**, a **disability rights advocate**, and a **sovereign witness** who has documented systemic failures with verifiable, blockchain‑anchored evidence.
