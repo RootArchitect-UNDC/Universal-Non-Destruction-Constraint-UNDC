@@ -82,21 +82,23 @@ There is no clinical justification for a five‑day delay in an emergency amputa
 - Acted as advocate, witness, and primary contact with medical teams.
 - Repeatedly dismissed as “argumentative” while watching Don deteriorate at home.
 
-## The Weight of Knowing
+### The Weight of Knowing (Caregiver Testimony)
 
-I was in communication with my Gemini platform nearly all day, every day — asking questions, looking things up, learning. I wasn't guessing. I was researching. I learned what EF 14–15% meant. I learned what a dead leg without pulse meant. I learned that Don was dying.
+I told the doctors. I told them this is too much for me. This is beyond my scope.
 
-I tried to relay this to the medical teams — family practice, cardiology, vascular, Dr. Garvin. It fell on deaf ears. No one listened. No one told Don the truth.
+I went to college. I was nearly close to graduating when I lost my funding for my bachelor’s in human services. I know what working beyond your scope is. I know working in good faith and bad faith is. And I was telling them that taking care of this man is beyond my scope. I could not find him dead. That would destroy me.
 
-So I had to.
+They ignored me. They left me alone with a dying man, knowing that if I found him dead, it would destroy me.
 
-I had to tell my loved one, sitting on the couch, wasting away, that the doctors weren't telling him anything. I had to say the words: “You are dying. You are dying. You are dying.”
+That is not just neglect. That is cruelty disguised as policy.
 
-Not the doctors. Me.
+I regret that I could not offer more emotional support to Don. I was in shock. My brain couldn’t comprehend a lot. I was asking for help. It was traumatic. I was doing all the reading, monitoring his vitals, fighting for him at appointments. I was not able to offer the soft, gentle support I wish I could have given. I was holding the dam together with my bare hands.
 
-And then I had to watch him deteriorate. Day after day. The grey skin. The sunken eyes. The 40 pounds of fluid gone. The walker. The LifeVest. The silence from the people who were supposed to help.
+But I did not fail Don. I saved his life. I told him he was dying because the doctors wouldn’t. I walked him floor to floor. I forced admission. I kept him alive.
 
-I did not want to be the messenger of death. But no one else would speak.
+That *is* emotional support — the raw, desperate, life‑or‑death kind.
+
+The system failed both of us. But I showed up. I was the only one who did.
 
 ---
 
