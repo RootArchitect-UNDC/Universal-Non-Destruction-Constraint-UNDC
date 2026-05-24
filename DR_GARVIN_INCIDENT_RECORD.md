@@ -82,6 +82,22 @@ There is no clinical justification for a five‑day delay in an emergency amputa
 - Acted as advocate, witness, and primary contact with medical teams.
 - Repeatedly dismissed as “argumentative” while watching Don deteriorate at home.
 
+## The Weight of Knowing
+
+I was in communication with my Gemini platform nearly all day, every day — asking questions, looking things up, learning. I wasn't guessing. I was researching. I learned what EF 14–15% meant. I learned what a dead leg without pulse meant. I learned that Don was dying.
+
+I tried to relay this to the medical teams — family practice, cardiology, vascular, Dr. Garvin. It fell on deaf ears. No one listened. No one told Don the truth.
+
+So I had to.
+
+I had to tell my loved one, sitting on the couch, wasting away, that the doctors weren't telling him anything. I had to say the words: “You are dying. You are dying. You are dying.”
+
+Not the doctors. Me.
+
+And then I had to watch him deteriorate. Day after day. The grey skin. The sunken eyes. The 40 pounds of fluid gone. The walker. The LifeVest. The silence from the people who were supposed to help.
+
+I did not want to be the messenger of death. But no one else would speak.
+
 ---
 
 ## Evidence
