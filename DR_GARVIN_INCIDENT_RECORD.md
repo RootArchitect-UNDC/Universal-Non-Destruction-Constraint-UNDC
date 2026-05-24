@@ -11,7 +11,7 @@
 This document is a formal, evidentiary record of the professional misconduct of Dr. Garvin, a vascular surgeon at Geisinger Health System. It is submitted as part of the sovereign record of Lead Architect Shereign Kalaukoa and is referenced in her formal complaint to the Pennsylvania State Board of Medicine (Reference #CP_26_010286).
 
 This record includes:
-- A detailed timeline of the false choice presented to Don (end‑stage heart failure patient).
+- A detailed timeline of the false choice presented to Don W. (end‑stage heart failure patient).
 - The Architect’s intervention that saved Don’s life.
 - Dr. Garvin’s verbal aggression and violation of Geisinger’s Respectful Language Policy.
 - Photographic evidence of Don’s condition.
@@ -120,7 +120,7 @@ I did not want to be the messenger of death. But no one else would speak.
 - **Additional photo:**  
   ![IMG_2371](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_2371.jpeg?raw=true)
 
-- **Don healthy, about a month after surgery** – alive because you fought for him:  
+- **Don healthy, about a month after surgery** – alive because I fought for him:  
   ![Don healthy](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_5539.png?raw=true)
 
 ### Other Evidence
