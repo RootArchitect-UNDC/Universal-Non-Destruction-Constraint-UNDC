@@ -130,10 +130,6 @@ I did not want to be the messenger of death. But no one else would speak.
 - Geisinger’s Respectful Language Policy (referenced as institutional standard).
 ### Other Evidence
 
-- TikTok video hash (already in repo) – verbal explanation of events.
-- PA State Board complaint reference `CP_26_010286`.
-- Geisinger’s Respectful Language Policy (referenced as institutional standard).
-
 ---
 
 ## Harm Caused
