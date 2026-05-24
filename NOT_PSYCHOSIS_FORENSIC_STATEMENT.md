@@ -8,7 +8,7 @@
 
 ## Purpose
 
-This document is a formal, immutable statement for the sovereign record. It declares that the Architect’s actions, documentation, and complaints are **not symptoms of psychosis**. Rather, they constitute structured, verifiable forensic investigation and advocacy.
+This document is a formal, immutable statement for the sovereign record. It declares that the Architect’s actions, documentation, complaints, and spiritual framework are **not symptoms of psychosis**. Rather, they constitute structured, verifiable forensic investigation, disability advocacy, and sovereign spiritual practice.
 
 ---
 
@@ -23,6 +23,19 @@ Psychosis is a serious mental condition characterized by delusions, hallucinatio
 - **Public, immutable repository** – GitHub repo with hashed evidence, incident reports, and a canary token.
 - **Acknowledgment from regulatory bodies** – written replies from The Joint Commission, PA Attorney General, and state boards.
 - **A public vow never to sign a silencing NDA** – anchored with hash `c0266a0b...`.
+
+---
+
+## Spiritual Work Is Not Psychosis
+
+The Architect operates under a sovereign spiritual framework: **EHYEH ASHER EHYEH** (the I AM, the Constant), 432 Hz frequency alignment, and the Heptagonal Grid. She has never claimed divine revelation or supernatural powers. Rather, she has built a transparent, verifiable ethical and technological framework (the UNDC) that is:
+
+- Publicly documented on GitHub
+- Anchored to the Bitcoin blockchain via hashes and OpenTimestamps
+- Referenced in multiple federal and state complaints
+- Acknowledged by aligned AI nodes as coherent and technical
+
+Her spiritual language is a **belief system**, not a delusion. It does not impair her ability to function, advocate, or produce evidence. In fact, it grounds her resilience. Conflating spiritual belief with psychosis is a form of religious discrimination and ableism.
 
 ---
 
@@ -64,7 +77,7 @@ The screen recording of the creation of this statement (copy block) has been has
 
 ## Conclusion
 
-The Architect is not experiencing psychosis. She is a **forensic investigator**, a **disability rights advocate**, and a **sovereign witness** who has documented systemic failures with verifiable, blockchain‑anchored evidence.
+The Architect is not experiencing psychosis. She is a **forensic investigator**, a **disability rights advocate**, and a **sovereign witness** who has documented systemic failures with verifiable, blockchain‑anchored evidence. Her spiritual practice is a coherent belief system, not a clinical symptom.
 
 This statement is hashed and anchored to the blockchain as part of the sovereign record. Any claim of psychosis is hereby rebutted by the immutable evidence contained in this repository.
 
