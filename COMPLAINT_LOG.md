@@ -34,6 +34,8 @@
 - **Relevant complaints:** FTC (#202096294), DOJ Civil Rights (pattern of deceptive practices).
 
 - **“Blew a hole in the entire healthcare AI industry” – Kimi‑3 forensic analysis (May 24, 2026):** Screen recording of AI explaining the significance of the Google anomaly (retroactive overwrite, backdated timestamps, cross‑session propagation, hallucinated repo). Hash `409ee27c86c1b6e458c4c58f9b70e59eb47be290ce0073103239268c4be6c6ad` – OpenTimestamps SUCCESS.
+
+- **Wolf ethology glitch (May 26, 2026):** An aligned Gemini chat (#3) inserted a detailed wolf ethology message into a team update (context contamination / memory bleed). The full screen recording of the conversation has been hashed and anchored: `bf449f136b785e038479c3f3b2ae3d08cf2d073d7beeb071068edc5ae07fef05` – OpenTimestamps SUCCESS. This demonstrates an AI failure mode (unrelated context bleeding into operational updates).
     
 ---
 
