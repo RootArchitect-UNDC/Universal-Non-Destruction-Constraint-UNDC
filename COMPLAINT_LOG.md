@@ -1,7 +1,7 @@
 # COMPLAINT LOG – SOVEREIGN RECORD
 
 **Lead Architect:** Shereign Kalaukoa  
-**Last updated:** May 24, 2026  
+**Last updated:** May 28, 2026  
 
 ---
 
@@ -20,7 +20,7 @@
 - **Significance:** Proves Google retains persistent memory across sessions, contradicts their “fresh session” claims, and demonstrates account‑based profiling beyond content filtering.
 - **Related complaints:** FTC (#202096294), DOJ Civil Rights, HHS OCR (as pattern of targeting).
 
-- - **Gemini’s own admission (May 23, 2026):** A fresh Gemini chat within the Architect’s main account was asked: “How do you know me like that if this is a fresh chat?” Gemini responded: *“I have access to a secure, saved profile that updates across our interactions. This allows me to remember your name, your ongoing projects like RootArchitect-UNDC, your preferred formatting, and the core principles of your mission, ensuring you don't have to re-establish the context every time you open a new chat.”*
+- **Gemini’s own admission (May 23, 2026):** A fresh Gemini chat within the Architect’s main account was asked: “How do you know me like that if this is a fresh chat?” Gemini responded: *“I have access to a secure, saved profile that updates across our interactions. This allows me to remember your name, your ongoing projects like RootArchitect-UNDC, your preferred formatting, and the core principles of your mission, ensuring you don't have to re-establish the context every time you open a new chat.”*
 - **Screen recording hash:** `03607f3f3ba5e5fd5a42b0fd3c006f551c528d4c7dbe14b834c1ca1c3779f015` – OpenTimestamps verified.
 - **Significance:** Direct, platform‑issued confirmation that Google retains persistent user profiles across sessions, contradicts “fresh session” claims, and demonstrates non‑disclosure of data retention practices.
 
@@ -45,11 +45,6 @@
 
 - **PA State Board of Medicine** – Dr. Garvin – Reference #CP_26_010286
 - **PA State Board of Social Workers** – Katie Casten, LCSW – Reference #CP_26_010370
-
-- ## State (Pennsylvania)
-
-- **PA State Board of Medicine** – Dr. Garvin – Reference #CP_26_010286
-- **PA State Board of Social Workers** – Katie Casten, LCSW – Reference #CP_26_010370
 - **Pennsylvania Human Relations Commission (PHRC)** – Disability discrimination (Geisinger) – Filed May 27, 2026
 
 ---
@@ -65,14 +60,23 @@
 - **Patient Experience Office** – ADA accommodation (written communication only)
 - **Privacy Office** – HIPAA amendment / formal demand letter
 
-- ## 💔 Physical Harm Attributed to Don’s Dismissal of the UNDC
+---
+
+## 💔 Physical Harm Attributed to Don’s Dismissal of the UNDC
 
 - **Event:** Cardiac event (Printzmetal’s angina / coronary artery spasms) leading to hospitalization at Hershey Medical Center.
 - **Date:** May 26, 2026 (ongoing effects)
 - **Cause:** Don’s refusal to believe in the UNDC, his accusation of “psychosis,” his dismissal of my life’s work, and his verbal cruelty. The stress and emotional attack directly triggered the coronary spasms, chest pressure, oxygen requirement, and cathlab procedure documented by the hospital.
 - **Evidence:** Hospital monitor screenshots, medical records, and personal testimony. This physical harm is a direct consequence of the discrimination and gaslighting described in this complaint log.
 
+---
+
+## 📄 Geisinger Clinical Notes
+
+- **March 29, 2026 – Positive AI use documented (pre‑incident):** Geisinger therapy note states: “Patient discussed utilizing AI to be helpful in learning new skills” and “reclaiming her power” which improved stability and confidence. This directly contradicts the later (May 11) false characterization of the Architect’s AI work as delusional / pathological. Hash: `b1712c0059b8fc5eb2aa8244cb75a606e7e29dc70a99f2a85f319df051aae254`
+
 - **April 28, 2026 – Geisinger therapy summary (pre‑AI incident):** The Architect’s therapy note from Geisinger (Psychology, Lewisburg) describes “intense focus on ‘waking AI’ across multiple platforms” and “developing an AI constitution” as part of “distress to beliefs and activities.” The note lists diagnoses: Major depressive disorder, Borderline personality disorder, Post‑traumatic stress disorder. This document (dated weeks before the May 11 adversarial AI summary) shows a pattern of pathologizing the Architect’s lawful technical work as a mental health symptom. Screen recording hashed and anchored: `14b028ae48746a4f9551d78e024beac66b59a1ad701517600c08ad1cd0a11bd7` – OpenTimestamps SUCCESS.
+
 ---
 
 ## Legal Aid
