@@ -71,6 +71,30 @@
 
 ---
 
+## 🫀 Medical Accommodation – In‑Person Testimony Restriction
+
+**Date:** May 28, 2026  
+**Condition:** Printzmetal’s angina (coronary artery spasms), documented stress‑induced hypertensive crisis (239/137), witnessed carotid artery spasm, and chest pressure.
+
+**Statement:**  
+Due to the risk of severe cardiac harm (including hypertensive crisis, coronary spasm, or cardiac event), the Architect cannot appear in person for any hearing, deposition, or testimony without endangering her life. She requests that all testimony be accepted in **written form** (affidavits, written answers, or previously submitted declarations) or via **remote, recorded video** under medical supervision, as permitted by the ADA and other applicable laws.
+
+**This restriction applies to:**  
+- PA State Board of Social Workers (Katie Casten complaint #CP_26_010370)  
+- PA State Board of Medicine (Dr. Garvin complaint)  
+- Any civil or administrative proceeding related to these complaints  
+
+**Supporting evidence:**  
+- Hospital blood pressure readings (239/137, 196/110, 178/94) on May 28, 2026  
+- Witnessed carotid artery spasm (echo technician and student observer)  
+- Diagnosis of Printzmetal’s angina  
+- Hypertensive crisis triggered by affirming the pathologization of her post‑coma vision  
+- EKG and echo results pending; full medical records available upon request  
+
+The Architect is willing to cooperate in writing or via remote, safe means, but in‑person appearance is medically contraindicated.
+
+---
+
 ## 💔 Hypertensive Crisis & Carotid Spasm – May 28, 2026 (Hershey Medical Center)
 
 - **Trigger:** Immediately upon affirming “yes” to whether Katie Casten pathologized the Architect’s post‑coma vision (the warehouse, smoke ride, and physical hand‑holding link to a real woman), the Architect experienced a hypertensive crisis and chest pressure.
