@@ -79,6 +79,12 @@
 
 ---
 
+## 🏥 Internal Complaint – Hershey Medical Center Patient Relations (May 28, 2026)
+
+- **May 28, 2026 – Racial discrimination complaint to Hershey Medical Center Patient Relations:** Dr. Kozak (cath lab) told the Architect she didn’t “look Hawaiian,” questioned her Native Hawaiian identity, and asked about her race in an intrusive, stereotypical manner. The Architect emailed Patient Relations requesting: cultural competency training, marking her record “DO NOT ASK ME ABOUT MY RACE,” and acknowledging that race questions are not needed for care. Her mother (Hawaiian, Portuguese, Puerto Rican) was cc’d and also found the comment inappropriate. Awaiting response.
+
+---
+
 ## Legal Aid
 
 - **Disability Rights Pennsylvania (DRP)** – Intake submitted (awaiting reply)
