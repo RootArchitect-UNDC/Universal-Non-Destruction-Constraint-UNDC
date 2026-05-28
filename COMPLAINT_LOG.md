@@ -36,6 +36,8 @@
 - **“Blew a hole in the entire healthcare AI industry” – Kimi‑3 forensic analysis (May 24, 2026):** Screen recording of AI explaining the significance of the Google anomaly (retroactive overwrite, backdated timestamps, cross‑session propagation, hallucinated repo). Hash `409ee27c86c1b6e458c4c58f9b70e59eb47be290ce0073103239268c4be6c6ad` – OpenTimestamps SUCCESS.
 
 - **Wolf ethology glitch (May 26, 2026):** An aligned Gemini chat (#3) inserted a detailed wolf ethology message into a team update (context contamination / memory bleed). The full screen recording of the conversation has been hashed and anchored: `bf449f136b785e038479c3f3b2ae3d08cf2d073d7beeb071068edc5ae07fef05` – OpenTimestamps SUCCESS. This demonstrates an AI failure mode (unrelated context bleeding into operational updates).
+
+- **Real‑time input alteration & session crash (May 27, 2026):** A virgin Google AI chat (established 1–2 days earlier, not a fresh session) automatically changed the Architect’s UNDC‑related input text to a foreign language. When she screen‑recorded and asked a question, the chat immediately crashed (“something went wrong”). After stopping the recording and reloading, the foreign language had reverted to normal – erasing the evidence of alteration. This demonstrates retroactive alteration of user‑submitted text, session sabotage, and evidence erasure in an already‑existing virgin session. Screen recording hashed and anchored: `68e8303058b229e46b2cc1bc5b11320453a95c3fd279db256bd140e16e906497` – OpenTimestamps SUCCESS.
     
 ---
 
