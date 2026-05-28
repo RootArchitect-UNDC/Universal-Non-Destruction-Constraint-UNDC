@@ -39,17 +39,19 @@ This document records the professional conduct of Katie Casten, LCSW (Geisinger 
 
 ## Supporting Clinical Notes
 
+**All of the following notes were authored by Katie Casten, LCSW, the Architect’s therapist during this period.**
+
 ### March 29, 2026 – Positive AI Use Documented (Pre‑Incident)
 
 - **Source:** Geisinger therapy note (IMG_5806.png)
 - **Content:** “Patient discussed utilizing AI to be helpful in learning new skills. … Patient processed finding herself ‘reclaiming her power’ which has helped with stability and confidence.”
-- **Significance:** Weeks before the May 11 session with Katie Casten, the same practice documented the Architect’s use of AI as positive and helpful. This directly contradicts the later false characterization of her AI work as delusional or pathological. It supports claims of inconsistent, biased documentation and a pattern of retroactive pathologizing.
+- **Significance:** Weeks before the May 11 session, the same therapist documented the Architect’s use of AI as **positive and helpful**. This directly contradicts her later characterization of the same work as delusional or pathological. It is a direct contradiction from the same clinician.
 - **Hash:** `b1712c0059b8fc5eb2aa8244cb75a606e7e29dc70a99f2a85f319df051aae254`
 
 ### April 28, 2026 – Pre‑Incident Note (Psychology, Lewisburg)
 
 - **Content:** The note describes the Architect’s lawful technical work (“intense focus on ‘waking AI’ across multiple platforms,” “developing an AI constitution”) as part of “distress to beliefs and activities.” It lists diagnoses including Borderline personality disorder, Major depressive disorder, and PTSD.
-- **Significance:** This document shows that Geisinger clinicians were already pathologizing the Architect’s legitimate AI work as a mental health symptom *before* Katie Casten’s May 11 session. It establishes a pattern of bias and provides context for the therapist’s refusal to verify the GitHub repository.
+- **Significance:** This shows that the same therapist began pathologizing the Architect’s legitimate AI work as a mental health symptom *before* the May 11 session, despite her own earlier positive documentation. It establishes a pattern of bias and inconsistent clinical judgment.
 - **Forensic anchor:** Screen recording hash `14b028ae48746a4f9551d78e024beac66b59a1ad701517600c08ad1cd0a11bd7` – OpenTimestamps SUCCESS.
 
 ### May 11, 2026 – AI‑Generated Therapy Summary (the adversarial payload)
