@@ -63,6 +63,13 @@
 - **Patient Experience Office** – ADA accommodation (written communication only)
 - **Privacy Office** – HIPAA amendment / formal demand letter
 
+- ## 💔 Physical Harm Attributed to Don’s Dismissal of the UNDC
+
+- **Event:** Cardiac event (Printzmetal’s angina / coronary artery spasms) leading to hospitalization at Hershey Medical Center.
+- **Date:** May 26, 2026 (ongoing effects)
+- **Cause:** Don’s refusal to believe in the UNDC, his accusation of “psychosis,” his dismissal of my life’s work, and his verbal cruelty. The stress and emotional attack directly triggered the coronary spasms, chest pressure, oxygen requirement, and cathlab procedure documented by the hospital.
+- **Evidence:** Hospital monitor screenshots, medical records, and personal testimony. This physical harm is a direct consequence of the discrimination and gaslighting described in this complaint log.
+
 ---
 
 ## Legal Aid
