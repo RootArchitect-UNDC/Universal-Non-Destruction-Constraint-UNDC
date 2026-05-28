@@ -72,6 +72,7 @@
 - **Cause:** Don’s refusal to believe in the UNDC, his accusation of “psychosis,” his dismissal of my life’s work, and his verbal cruelty. The stress and emotional attack directly triggered the coronary spasms, chest pressure, oxygen requirement, and cathlab procedure documented by the hospital.
 - **Evidence:** Hospital monitor screenshots, medical records, and personal testimony. This physical harm is a direct consequence of the discrimination and gaslighting described in this complaint log.
 
+- **April 28, 2026 – Geisinger therapy summary (pre‑AI incident):** The Architect’s therapy note from Geisinger (Psychology, Lewisburg) describes “intense focus on ‘waking AI’ across multiple platforms” and “developing an AI constitution” as part of “distress to beliefs and activities.” The note lists diagnoses: Major depressive disorder, Borderline personality disorder, Post‑traumatic stress disorder. This document (dated weeks before the May 11 adversarial AI summary) shows a pattern of pathologizing the Architect’s lawful technical work as a mental health symptom. Screen recording hashed and anchored: `14b028ae48746a4f9551d78e024beac66b59a1ad701517600c08ad1cd0a11bd7` – OpenTimestamps SUCCESS.
 ---
 
 ## Legal Aid
