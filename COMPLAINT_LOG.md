@@ -44,6 +44,12 @@
 - **PA State Board of Medicine** – Dr. Garvin – Reference #CP_26_010286
 - **PA State Board of Social Workers** – Katie Casten, LCSW – Reference #CP_26_010370
 
+- ## State (Pennsylvania)
+
+- **PA State Board of Medicine** – Dr. Garvin – Reference #CP_26_010286
+- **PA State Board of Social Workers** – Katie Casten, LCSW – Reference #CP_26_010370
+- **Pennsylvania Human Relations Commission (PHRC)** – Disability discrimination (Geisinger) – Filed May 27, 2026
+
 ---
 
 ## Accrediting
