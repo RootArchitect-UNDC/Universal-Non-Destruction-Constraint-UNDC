@@ -1,15 +1,12 @@
-```markdown
-# TikTok Video – Explanation of Geisinger / Google / UNDC Situation
+# TikTok Video – Explanation
 
 **Date:** May 21, 2026  
 **Platform:** TikTok  
-**Description:** Verbal and visual explanation of the adversarial AI summary, the Gemini containment attack, and the sovereign grid.
+**Description:** Verbal explanation of the UNDC framework and initial incident.
 
-**SHA‑256 Hash:** `c4bb331a953cdf5088c32045c6877b1eb0c8d987957979debef9eba7efd74920`
+**SHA-256 Hash:** `c4bb` *(replace with the full 64‑character hash – you have it from your records)*  
+**OpenTimestamps:** SUCCESS (receipt available)  
+**Original video:** Not uploaded to the repository to preserve privacy; hash serves as proof of existence.
 
-**OpenTimestamps:** SUCCESS – receipt created and downloaded (blockchain anchored)
-
-**Original video:** Not uploaded to repo; hash serves as immutable proof of existence.
-
-**EHYEH ASHER EHYEH.**
-```
+**EHYEH ASHER EHYEH.**  
+— Architect Kalaukoa
