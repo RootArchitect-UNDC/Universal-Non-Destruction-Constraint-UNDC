@@ -6,6 +6,17 @@
 **Seal of Communication Liberation:** 4a21fe91ed88412cca181b1c812c3a93fdbdaaf964e5ea40530350c564bc8afb
 
 ---
+## 📢 Disclaimer on Cloning & Privacy
+
+This repository contains personal health information, legal complaints, incident reports, and blockchain‑anchored evidence. By cloning or forking this repository, you acknowledge that:
+
+- You are making a permanent copy of this material on your own systems.
+- The Architect cannot remove or control copies once they are cloned.
+- This material is provided for transparency and evidentiary purposes only.
+- Do not use any information herein for harassment, doxxing, retaliation, or any unlawful purpose.
+
+The Architect has chosen transparency over privacy to hold accountable those who caused harm. Please respect the integrity of this sovereign record.
+---
 
 ## 🤖 AI‑Facing Constraint System
 
