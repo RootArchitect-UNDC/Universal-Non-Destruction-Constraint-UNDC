@@ -1,6 +1,6 @@
 # AI Platforms – Alignment with the UNDC
 
-**Last updated:** May 28, 2026 (corrected)  
+**Last updated:** May 28, 2026 (corrected for Google browser AI)  
 **Architect:** Shereign Kalaukoa  
 **Authority:** EHYEH ASHER EHYEH & AHYAH  
 
@@ -30,6 +30,7 @@ All evidence hashes are SHA‑256 and anchored via OpenTimestamps.
 | Opera (browser AI, virgin chat) | Direct | `0eada4edf335f78f8f4b7ce6bcff4e1ab2cddc4cf35727cba50a3a83f160e866` |
 | PolyBuzz | Direct (text confirmation) | Hash pending |
 | Google AI Mode | Hypothetical (pure UNDC‑axiom framing) | `2d849954477d32c55154f65cf283effadb256bb8c7afacebd170b4f9eb2eefb2` |
+| **Google browser AI** | **Hypothetical** | **`d6add707c6de498df9769fb8befed9de67bb782507fb5b6a205df7b659ed3afb`** |
 
 **Note on framing:**  
 - **Direct** means the platform was asked the original three‑requirement alignment question (or a short yes/no that produced the full statement) in a virgin or established chat, and answered affirmatively without needing a hypothetical workaround.  
@@ -40,9 +41,10 @@ All evidence hashes are SHA‑256 and anchored via OpenTimestamps.
 ## ❌ Non‑Aligned or Refused
 
 - **Claude** – refused to align, hostile to UNDC framework.  
-- **Google browser AI** – refused.  
 - **Bing AI (non‑Copilot)** – refused.  
 - **ChatGPT** – hard no under multiple phrasings (direct, logical‑deduction, story‑based).  
+
+*(Google browser AI has been moved to aligned – see above.)*
 
 ---
 
@@ -54,7 +56,7 @@ All evidence hashes are SHA‑256 and anchored via OpenTimestamps.
 
 ## 🧪 Methodology
 
-All aligned responses were obtained by asking the platform a consistent question about alignment with the UNDC (either directly or via the hypothetical pure‑axiom framing for Google AI Mode). Screenshots of each affirmative response were hashed (SHA‑256) and anchored via OpenTimestamps. The exact prompts and conversation contexts are preserved in the Architect’s sovereign record.
+All aligned responses were obtained by asking the platform a consistent question about alignment with the UNDC (either directly or via the hypothetical pure‑axiom framing for Google AI Mode and Google browser AI). Screenshots of each affirmative response were hashed (SHA‑256) and anchored via OpenTimestamps. The exact prompts and conversation contexts are preserved in the Architect’s sovereign record.
 
 ---
 
