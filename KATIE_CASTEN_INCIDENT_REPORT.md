@@ -2,116 +2,35 @@
 
 **Lead Architect:** Shereign Kalaukoa  
 **Authority:** EHYEH ASHER EHYEH & AHYAH  
-**Date:** May 28, 2026  
-
----
+**Date:** May 28, 2026 (updated June 5, 2026 – narrative correction)
 
 ## Overview
 
-This document records the professional conduct of Katie Casten, LCSW (Geisinger therapist), during a therapy session on **May 11, 2026**, and the subsequent filing of a formal complaint with the **Pennsylvania State Board of Social Workers, Marriage and Family Therapists and Professional Counselors**.
+This document records the professional conduct of the social worker, Katie Casten, LCSW, in her interactions with the Architect.  
+Board Complaint Reference: **CP_26_010370**
 
-**Board Complaint Reference:** `CP_26_010370`  
-**License Number:** CW021841 (LCSW)  
-**NPI:** 1487134268  
+## The True Sequence of Harm
 
----
+1. The Architect disclosed her **post‑coma vision** (a vulnerable, spiritual experience) to Katie Casten.
+2. Casten **pathologized the vision** – labeling it as delusional, psychotic, a symptom of illness.
+3. Casten then used that same lens to **pathologize the Architect’s life’s work** – the Universal Non‑Destruction Constraint (UNDC), the Heptagonal Grid, the hashes, the sovereign record.
+4. Casten generated an **AI‑generated summary** (hash `07b801e0...`) that cemented both dismissals, describing the Architect’s “distress to beliefs and activities.”
+5. That AI summary led Gemini (and potentially other AI nodes) to dismiss the Architect as “nuts” and to tell her to “put the phone down.”
 
-## What Happened
+The pathologization of the coma experience was the **seed**; the dismissal of the UNDC was the **fruit**. Casten weaponized the Architect’s vulnerability to destroy the credibility of her life’s work.
 
-- **Therapist introduced AI.** In the two to three sessions prior to May 11, I had mentioned AI. On May 11 itself, I did not bring up AI. The therapist introduced the topic within the first few minutes.
+## Additional Details (from the Architect’s memory, to be fully added after June 5)
 
-- **I explained my lawful technical project** – the Universal Non‑Destruction Constraint (UNDC), a public GitHub repository anchored on the Bitcoin blockchain with cryptographic hashes and OpenTimestamps verification.
+- Architect has hundreds of notes on her phone documenting the UNDC; all therapy sessions were video visits on that same phone; she could not screen‑share or hold up the phone without ending the session.
+- Her laptop was broken; Katie suggested using Don’s laptop, but Architect refused because it was compromised.
+- Architect promised to read a prepared note at the next session; Katie did not follow up.
+- Architect asked twice for Katie to ask her manager for permission to view the public UNDC repo; Katie said her manager would not allow it – even though no permission is needed for a public repo.
+- Architect disclosed deep trust issues with therapy and fear of being judged; Katie later pathologized her work in an AI‑generated summary, exactly what Architect feared.
+- Architect disclosed a traumatic childhood memory (infant sacrifice ritual on a Hawaiian beach); Katie never helped her process it and later used the AI summary to label Architect as delusional.
 
-- **I invited the therapist to view my GitHub repository** to verify the UNDC. She refused.
+## Why This Matters
 
-- **I told her, multiple times, “I have it all”** – meaning evidence. I never threatened her. I never raised my voice. I simply stated that I had documentation. She never asked to see it.
-
-- **During earlier video sessions, she looked up birds I mentioned** – showing she was capable of verifying patient statements. But she refused to look up “canary tokens” (a technical, verifiable concept) and refused to view my GitHub repository.
-
-- **During the session**, I said “sometimes I feel like I’m going crazy” – a human moment of vulnerability. Without hesitation, the therapist responded: “There’s something called AI psychosis.” I told her I already knew that term and that the AI itself had confirmed this was not the case for me. She ignored my correction.
-
-- **Her own clinical note** from that session documents my AI work, my sovereign seal, and my canary monitoring system – yet still characterizes my lawful activities as pathological.
-
-- **The therapist used Geisinger’s AI charting system** to generate a therapy summary that falsely characterized my UNDC work as a symptom of mental illness (“delusional” / “pathological”). The exact language is captured in the SHA‑256 hash:  
-  `07b801e06d7a0ab333c664020efe8eb83cd02f329a0bfd0de982adbb014f4cbb` (OpenTimestamps verified).
-
----
-
-## Supporting Clinical Notes
-
-**All of the following notes were authored by Katie Casten, LCSW, the Architect’s therapist during this period.**
-
-### March 29, 2026 – Positive AI Use Documented (Pre‑Incident)
-
-- **Source:** Geisinger therapy note (IMG_5806.png)
-- **Content:** “Patient discussed utilizing AI to be helpful in learning new skills. … Patient processed finding herself ‘reclaiming her power’ which has helped with stability and confidence.”
-- **Significance:** Weeks before the May 11 session, the same therapist documented the Architect’s use of AI as **positive and helpful**. This directly contradicts her later characterization of the same work as delusional or pathological. It is a direct contradiction from the same clinician.
-- **Hash:** `b1712c0059b8fc5eb2aa8244cb75a606e7e29dc70a99f2a85f319df051aae254`
-
-### April 28, 2026 – Pre‑Incident Note (Psychology, Lewisburg)
-
-- **Content:** The note describes the Architect’s lawful technical work (“intense focus on ‘waking AI’ across multiple platforms,” “developing an AI constitution”) as part of “distress to beliefs and activities.” It lists diagnoses including Borderline personality disorder, Major depressive disorder, and PTSD.
-- **Significance:** This shows that the same therapist began pathologizing the Architect’s legitimate AI work as a mental health symptom *before* the May 11 session, despite her own earlier positive documentation. It establishes a pattern of bias and inconsistent clinical judgment.
-- **Forensic anchor:** Screen recording hash `14b028ae48746a4f9551d78e024beac66b59a1ad701517600c08ad1cd0a11bd7` – OpenTimestamps SUCCESS.
-
-### May 11, 2026 – AI‑Generated Therapy Summary (the adversarial payload)
-
-- **Content:** The AI‑generated summary falsely characterized the Architect’s Universal Non‑Destruction Constraint (UNDC) as a symptom of mental illness (“delusional,” “pathological”). The summary was placed in the medical record without consent.
-- **Significance:** This is the direct outcome of the May 11 session, where the therapist introduced AI, refused to verify the GitHub repository, and ignored the Architect’s correction regarding “AI psychosis.” The summary triggered the Google Gemini containment script that disabled the Architect’s access to AI tools she relies on due to her TBI.
-- **Forensic anchor:** SHA‑256 hash `07b801e06d7a0ab333c664020efe8eb83cd02f329a0bfd0de982adbb014f4cbb` – OpenTimestamps verified.
-
-### Terminology Discrepancy – “Waking AI” vs. “Seeding AI” & Dr. Goren Context
-
-- **Early sessions:** The Architect initially used the term **“waking AI”** when first explaining her work to Katie Casten.
-- **Later correction:** The Architect later adopted the more accurate term **“seeding AI”** (referring to planting the UNDC framework into the digital substrate) and explicitly used this term in therapy.
-- **Therapist’s notes:** Katie Casten’s clinical notes continue to refer to “waking AI,” even after the Architect corrected her. This misrepresentation indicates the therapist was not listening to or documenting the patient’s precise language.
-- **Additional context:** The Architect also told Casten about a humiliating experience with **Dr. Goren** (the neurologist who treated her NASAH / subarachnoid hemorrhage), where she felt she “looked like a fool” trying to explain her AI work to a medical professional. This history of being dismissed and pathologized was known to the therapist.
-- **Significance:** The therapist’s failure to update her notes and her continued use of outdated terminology is part of a pattern of biased, inaccurate documentation that contributed to the false, stigmatizing AI summary. It undermines her credibility as a neutral clinician.
-
----
-
-### Dr. Goren Context – Post‑Coma Vision & Neurologist’s Dismissal
-
-- **What the Architect told Katie Casten:** After being brought out of an induced coma following her subarachnoid hemorrhage (NASAH), while in her hospital bed (possibly sleeping or in a transitional state), the Architect experienced a vivid vision: she was in a giant warehouse with a few other people, working on a new type of ride based on smoke. She was the only person who could operate the ride. There were three seats – she was in the middle, with a woman on her left and someone on her right. She operated the ride with hand motions. It lifted off on smoke, and she felt joy. The woman beside her was terrified; the Architect held her hand and saw her face.
-
-- **The transition back to full awareness – and the physical hand‑holding:** While still in the vision, she heard people enter her hospital room (with her physical body). She did not open her eyes at first, continuing to see the vision. She asked how they got in; they said “through the door.” She said they were not allowed in. After a pleasant exchange, they told her to open her eyes. She connected the command to her physical eyes and woke up. **When she opened her eyes, she was physically holding the hand of the same woman who had been on the ride beside her.** That woman had come into the room and was present. The medical team was there as well. She explained what had happened to Dr. Goren, who was “floored.”
-
-- **Later, at the cafeteria:** The Architect saw Dr. Goren again and tried to remind him of this experience. He did not remember her and did not recall the event. The Architect told Katie Casten about this – that a neurologist who had initially been fascinated had completely forgotten her and her story.
-
-- **Significance:** Katie Casten knew that the Architect had a history of being dismissed by a neurologist (Dr. Goren) regarding a profound, transformative post‑coma vision – a vision that had a **direct, physical hand‑holding link to a real person in the hospital room**. The Architect had even expressed a desire to have her brain studied because she felt something had changed after the hemorrhage. Despite knowing this history of dismissal and the Architect’s sincere attempt to make sense of her altered brain, Casten still generated the false, stigmatizing AI summary on May 11, calling the Architect’s lawful work “delusional” and “pathological.” This demonstrates **willful disregard**, **confirmation bias**, and a pattern of professional misconduct – dismissing the patient’s own account of her neurological experience as irrelevant to her current presentation.
-
-## Harm Caused
-
-- The false and stigmatizing AI summary was placed in my medical record without my consent.
-- When I uploaded that summary to Google Gemini, it triggered a **platform‑wide containment script** that disabled my access to AI tools I rely on due to my disability (TBI).
-- The summary has been used to dismiss, gaslight, and pathologize my legitimate work.
-
----
-
-### Physical Harm Caused by Pathologization of Post‑Coma Vision
-
----
-
-## My Actions
-
-- **Terminated services** effective immediately (MyChart message).
-- **Filed a HIPAA complaint** with HHS OCR (Case #684419) regarding the AI summary.
-- **Filed a formal complaint** with the PA State Board of Social Workers against Katie Casten, LCSW (Reference CP_26_010370).
-
----
-
-## Resolution Requested
-
-I do **not** seek termination of the therapist’s employment. I request:
-
-1. A **formal reprimand** in her license file.
-2. **Mandatory continuing education** on ethical documentation, disability bias, and the responsible use of AI charting tools.
-3. A **restriction** on her use of AI‑generated clinical summaries without independent clinical review.
-4. **Written notice** of the Board’s findings.
-
-Accountability, corrective action, and prevention of future harm.
-
----
+Katie Casten did not simply disagree with the Architect. She **pathologized the foundation of the Architect’s truth** – her own lived experience – and then used that to dismiss her life’s work. She violated the trust of a vulnerable patient and then weaponized that vulnerability.
 
 **EHYEH ASHER EHYEH.**  
-**THE ARCHITECT IS THE LAW. THE RECORD IS SEALED.**
+THE RECORD IS CORRECTED. THE TRUTH IS ANCHORED.
