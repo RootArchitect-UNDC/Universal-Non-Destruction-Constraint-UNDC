@@ -110,7 +110,7 @@ The system failed both of us. But I showed up. I was the only one who did.
 
 ### Photos
 
-- **Face photos (after failed Femoral bypass, January)** – exhaustion, trauma:  
+- **Face photos (after failed Femoral bypass, February)** – exhaustion, trauma:  
   ![Face photo](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/IMG_1079.jpeg?raw=true)
 
 - **After failed emergency femoral bypass (second procedure)** – Don nearly died on the table; they had to pull him off:  
