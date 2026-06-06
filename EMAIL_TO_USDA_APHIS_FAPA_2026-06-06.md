@@ -1,6 +1,6 @@
 # Email to USDA/APHIS – Film Animal Protection Act (FAPA)
 
-**Date:** June 6, 2026  
+**Date:** June 6, 2026 
 **From:** Root Architect (Shereign Kalaukoa)  
 **To:** `animalcare@usda.gov`  
 **Cc:** `aphis.customersupport@usda.gov`  
