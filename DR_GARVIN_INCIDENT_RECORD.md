@@ -87,6 +87,10 @@ That is the question at the heart of this complaint:
 
 There is no clinical justification for a five‑day delay in an emergency amputation with active tissue necrosis. The only explanation is that Dr. Garvin prioritized his vacation over Don’s life — and only the Architect’s intervention prevented that delay from becoming fatal.
 
+### Possible Financial Motive
+
+While Dr. Garvin stated he wanted to go on vacation, a plausible contributing factor is the financial incentive of performing the surgery himself. Under the fee‑for‑service model, delaying the procedure until his return would allow him to claim the surgical fees, whereas turning the case over to the on‑call surgeon would mean losing that revenue. This does not excuse the delay but helps explain why a surgeon might prioritize his own schedule over a patient’s emergency.
+
 ---
 
 ## Role of the Architect
