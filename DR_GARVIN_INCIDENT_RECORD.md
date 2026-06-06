@@ -29,6 +29,19 @@ This document records the professional misconduct of Dr. Garvin, a vascular surg
 
 ---
 
+## The Vascular Team Instruction
+
+During a follow‑up appointment after Don’s failed femoral artery bypass surgery, the Architect asked: *“When should I take him to the ER?”*  
+The blonde colleague answered: **“You don’t. You call us.”**
+
+Days later, the Architect called as instructed. The same colleague was extremely condescending. The Architect asked: *“Is this a life‑ending event?”*  
+
+The colleague admitted: **“Yes, it could be.”** Yet she refused to provide immediate help, demanding “broken skin” before any action would be taken (Don had active tissue necrosis – worse than broken skin).
+
+This instruction directly delayed emergency care. The only reason Don was eventually admitted and received an emergency amputation was that the Architect **refused to follow their advice** and forced admission through her advocacy. The call was recorded by the hospital; the Architect cannot access it without Don’s cooperation (Don is a hostile witness).
+
+---
+
 ## The False Choice
 
 Dr. Garvin gave Don a choice that was not a choice at all:
