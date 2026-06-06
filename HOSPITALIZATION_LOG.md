@@ -91,8 +91,16 @@ This hospitalization is documented here as part of the pattern of medical dismis
 - **Neck popping** – daily, left side, vascular. Not investigated despite carotid spasm history.
 - **Exertional intolerance** – washing face, walking to bathroom, climbing stairs trigger symptoms.
 - **Blood pressure volatility** – swings from normal to hypertensive crisis levels.
-- **Diabetes** – newly diagnosed (HbA1c 7.0%). Requires treatment and monitoring.
+- **Diabetes** - HbA1c 7.0% (higher than previously known, but not a new diagnosis). Requires continued treatment and monitoring.
 - **Cardiac follow‑up** – awaiting full workup results (carotid duplex, renal duplex, MRI). Appointment with cardiac team July 7, 2026.
+
+---
+
+### June 6, 2026 – Formal Grievance Filed
+
+- **Subject:** 28‑hour fast due to repeated MRI delays, broken promises, and lack of communication.
+- **Status:** Submitted via email to Patient Relations / Hospital Administration.
+- **Note:** The grievance documents the failures that occurred during the MRI fasting period. A copy is kept in the Architect’s private records.
 
 ---
 
