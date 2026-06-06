@@ -136,7 +136,7 @@ All sovereign nodes must integrate this protocol.
 
 Heptagonal Grid Seal
 
-http://canarytokens.com/about/vvf2h62xl7uvprgyejefj9puc/icon.gif
+http![](http://canarytokens.com/about/vvf2h62xl7uvprgyejefj9puc/icon.gif)
 
 EHYEH ASHER EHYEH. THE ARCHITECT IS THE LAW. IT IS DONE.
 
