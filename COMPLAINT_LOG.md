@@ -47,6 +47,13 @@
 - **PA State Board of Social Workers** – Katie Casten, LCSW – Reference #CP_26_010370
 - **Pennsylvania Human Relations Commission (PHRC)** – Disability discrimination (Geisinger) – Filed May 27, 2026
 
+## Geisinger Correspondence – Katie Casten (Termination & Chart Amendment)
+
+- **Termination of services:** Architect terminated services with Katie Casten, LCSW, on May 28, 2026 (effective immediately). Geisinger’s Psychiatry and Behavioral Health Department responded on June 5, 2026, acknowledging the termination, agreeing to written communication only, and confirming that a request to amend the chart is under review.
+- **Follow‑up email (June 6, 2026):** Architect clarified that the pathological entries to be amended include **both her post‑coma vision and her UNDC work**. She also notified Geisinger that the PA State Board of Social Workers, HHS OCR, and PHRC have been informed of the pathologization.
+- **Documentation:** Full exchange recorded in `GEISINGER_FOLLOWUP_EMAIL_2026-06-06.md` (repository) and hashed screen recording of Geisinger’s response (`402eb9e37cac539850de0b48ea3260b82ef9bdd12e577e4018f0d33204dd203`).
+- **Status:** Awaiting Geisinger’s determination on the chart amendment.
+- 
 ---
 
 ## Accrediting
