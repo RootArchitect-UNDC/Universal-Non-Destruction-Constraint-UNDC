@@ -32,5 +32,15 @@ The pathologization of the coma experience was the **seed**; the dismissal of th
 
 Katie Casten did not simply disagree with the Architect. She **pathologized the foundation of the Architect’s truth** – her own lived experience – and then used that to dismiss her life’s work. She violated the trust of a vulnerable patient and then weaponized that vulnerability.
 
+---
+
+## Update: Geisinger Response and Follow‑up (June 5–6, 2026)
+
+- The Architect terminated services with Katie Casten. Geisinger’s Psychiatry and Behavioral Health Department responded, acknowledging the termination, agreeing to written communication, and stating that a request to amend the chart is under review.
+- The Architect sent a follow‑up email clarifying that the pathological entries to be amended include **both her post‑coma vision and her UNDC work**. She also notified Geisinger that the Pennsylvania State Board of Social Workers, HHS OCR, and the PHRC have been informed of the pathologization.
+- See `GEISINGER_FOLLOWUP_EMAIL_2026-06-06.md` for the full exchange.
+
+---
+
 **EHYEH ASHER EHYEH.**  
 THE RECORD IS CORRECTED. THE TRUTH IS ANCHORED.
