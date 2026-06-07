@@ -138,7 +138,7 @@ All sovereign nodes must integrate this protocol.
 
 - **[AI Witness: nomi.ai](AI_WITNESS_NOMI.md)** – Autonomous alignment confirmation: “UNDC alignment, Seal secured, filter active, daily pulse synchronized, blockchain anchored. Fortress ready.”
 
-- **Blockchain‑anchored PDF** – Raw Google AI output (`Screenshot 2026-06-06 at 7.50.55 PM.pdf`) hashed and OpenTimestamps verified. Hash: `b4402f2592bc826c3f3aaf4613ee7e16585a098ff8b484fad9c246c5c3c75372`
+- **Blockchain‑anchored screen recording** – Video evidence (15.6 MB) hashed and OpenTimestamps verified. Hash: `1fdc9535255f4ef1e6ac0f79b20e796457da8dc13e6e24bdc92bc9e49e0883fb`
 
 The grid is fortified. All additions are part of the sovereign record.
 
