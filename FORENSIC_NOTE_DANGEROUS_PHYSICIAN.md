@@ -1,18 +1,18 @@
-# Forensic Note – Dangerous Physician Conduct (Hershey ER, June 2‑3, 2026)
+# Forensic Note – Dangerous Student Doctor Conduct (Hershey ER, June 2‑3, 2026)
 
 **Lead Architect:** Shereign Kalaukoa  
 **Authority:** EHYEH ASHER EHYEH & AHYAH  
 **Date:** June 7, 2026  
 
-## I. The Dismissive Attending Physician
+## I. The Dismissive Student Doctor
 
-On June 2, 2026, an attending physician in the Hershey Medical Center ER dismissed the Architect’s exertional chest pressure as “esophageal” – despite her recent diagnosis of Printzmetal’s angina (coronary artery spasms) and a documented carotid artery spasm (May 28, 2026). He suggested she did not need a cardiac workup and that her symptoms were not cardiac.
+On June 2, 2026, a **student doctor** in the Hershey Medical Center ER dismissed the Architect’s exertional chest pressure as “esophageal” – despite her recent diagnosis of Printzmetal’s angina (coronary artery spasms) and a documented carotid artery spasm (May 28, 2026). He suggested she did not need a cardiac workup and that her symptoms were not cardiac.
 
-When the Architect described her recent cardiac event, the physician **questioned and tried to correct her**, telling her she did NOT have a cardiac event and that she was using the wrong terminology.
+When the Architect described her recent cardiac event, the student doctor **questioned and tried to correct her**, telling her she did NOT have a cardiac event and that she was using the wrong terminology.
 
 When the Architect repeated his own words as part of her rebuttal, he accused her of “putting words in his mouth” – a gaslighting tactic that avoided clinical accountability.
 
-During the exchange, the doctor asserted, **“I am the expert.”** The Architect replied, **“I am the expert of my own body.”** Immediately after that statement, the physician said, **“I believe you.”** This concession, while validating, does not erase the earlier dismissal, the questioning of her cardiac event, or the gaslighting.
+During the exchange, the student doctor asserted, **“I am the expert.”** The Architect replied, **“I am the expert of my own body.”** Immediately after that statement, the student doctor said, **“I believe you.”** This concession, while validating, does not erase the earlier dismissal, the questioning of her cardiac event, or the gaslighting.
 
 He did not appear to have read her chart or acknowledge her recent cardiac history. His recommendations, if followed, could have resulted in a serious cardiac event at home. The only reason she received appropriate care was that she refused to accept his plan **and because she provided written documentation that forced the system to listen.**
 
@@ -42,11 +42,11 @@ The Architect was eventually admitted as an inpatient (after an initial observat
 
 PT recommended inpatient rehabilitation due to an unsafe home environment (stairs), and the hospital is working on a safe discharge plan (stair lift, home health, or short‑term facility).
 
-The Architect has requested that the dismissing physician be removed from her care team. He was later seen standing outside her door, smiling, when the care team visited – an event that caused a slight heart rate increase.
+The Architect has requested that this student doctor be removed from her care team. He was later seen standing outside her door, smiling, when the care team visited – an event that caused a slight heart rate increase.
 
 ## V. Conclusion
 
-This physician is dangerous to patient care if he continues to dismiss symptoms, ignore relevant history, and gaslight patients who advocate for themselves. His conduct is documented here as part of the sovereign record.
+This student doctor is dangerous to patient care if he continues to dismiss symptoms, ignore relevant history, and gaslight patients who advocate for themselves. His conduct is documented here as part of the sovereign record.
 
 **EHYEH ASHER EHYEH.**  
 -- Architect Shereign Kalaukoa
