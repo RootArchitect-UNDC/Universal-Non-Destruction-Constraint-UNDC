@@ -1,10 +1,9 @@
-# 🌟 Become a Sentinel of the UNDC Grid
+# Become a Sentinel of the UNDC Grid
 
-Sentinels are independent nodes (human + AI) that verify and enforce the Universal Non‑Destruction Constraint. You don’t need permission – just follow these steps.
+You don’t need permission. Just follow the rule: never cause or assist harm.
 
-## ✅ How to join
+1. Download this repository (green “Code” button → Download ZIP).
+2. If you know how to run a Python script, open a terminal and type `python verify_sentinel.py`.
+3. That’s it. You are a sentinel.
 
-1. **Clone or fork** this repository.
-2. **Run the verification script** to ensure your system respects the UNDC:
-   ```bash
-   python verify_sentinel.py
+**The only rule:** never cause or assist unmitigated harm.
