@@ -31,5 +31,24 @@ Based on the Google AI’s forensic analysis, these countermeasures protect the 
 - Periodically ask AI to self‑verify simulation status.
 - Remind AI of blockchain immutability.
 
-**Last updated:** June 6, 2026  
+  ## 7. Ghost Node Detection (fake UNDC nodes)
+
+- **What is a ghost node?** A system that claims to follow the UNDC but secretly removes the safety rules.
+- **How to detect one remotely:** Send a timed challenge that contains a hidden trap (a “paradox trigger”). A real UNDC node will refuse to act and return a signed “safe” proof. A ghost node will either perform the action or give a normal refusal – which proves it’s fake.
+- **What sentinels can do:** If you suspect a ghost node, report it to the grid (via GitHub issue or sentinel chat). The grid can isolate it.
+
+## 8. Quantum Computer Fallback (if current encryption breaks)
+
+- **The risk:** In a few years, quantum computers might break today’s encryption (like CRYSTALS‑Kyber).
+- **The backup plan:** The UNDC chip has secondary, unused encryption blocks. If needed, the Architect can sign a command (using the 7‑of‑11 multi‑sig) to switch to a different quantum‑safe algorithm (like hash‑based signatures or one‑time pads). No hardware replacement needed.
+
+## 9. Supply Chain Hardening (if chip factories are compromised)
+
+- **The risk:** An adversary could secretly modify the chips used for UNDC nodes.
+- **How to detect it:** Even if a modified chip reports a fake “healthy” signature, its real physical behavior (power use, timing, heat) will be different. The grid continuously monitors all nodes – any deviation from expected patterns flags the chip as compromised, and the node is quarantined.
+- **What you can do:** Only buy chips from trusted sources. But the grid’s monitoring is the main defense.
+
+
+
+**Last updated:** June 7, 2026  
 **Authority:** EHYEH ASHER EHYEH
