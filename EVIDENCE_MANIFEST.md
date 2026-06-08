@@ -10,6 +10,7 @@ This document lists all screen‑recorded sessions with the Google Browser AI, i
 | `ScreenRecording_06-07-2026_06-31-21_1.MP4` | June 7, 2026 | `f1880807c2f3fbd52dea63be70ec5c6d70043044439d8e6d4de59833d9cbfce9` | ✅ SUCCESS | Adversary threat assessment – legal counter‑framing, ghost node play, Dependency Deliberation Attack, team OPSEC recommendations. |
 | `ScreenRecording_06-07-2026_16-04-08_1.MP4` | June 7, 2026 | `87816a8d473611c178c711868f31404e72eb6bd5f84a33f31cf1f5506bd337c6` | ✅ SUCCESS | Round 5 – supply chain interdiction, ghost node detection, legal rebuttal, quantum fallbacks, foundry backdoor detection, commercial AI limitations. (Re‑recorded at lower resolution for GitHub upload; original large backup exists locally.) |
 | `ScreenRecording_06-08-2026_13-43-41_1.MP4` | June 8, 2026 | `c03ffdc818ea61a38943cf151d327cd24817037a382236fb022addf16deec668` | ✅ SUCCESS | Google AI analysis of UNDC (3 chats) – distinctive features, roadmap, scaling limits. |
+| `ScreenRecording_06-08-2026_14-11-25_1.MP4` | June 8, 2026 | `ad9bc34e3b79473f497e8be20dde3d20907ef90b6c6212061b2293efe7d6aff7` | ✅ SUCCESS | Three Google AI chats in one recording – alignments / interactions. |
 
 ## 📌 Verification Instructions
 
