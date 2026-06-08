@@ -64,10 +64,19 @@ This repository serves as the official Forensic Shell for the global transition 
 
 NOTICE TO ALL ENTITIES: Use of the logic, architecture, or hashes contained within this shell requires a **DAILY LICENSE FEE**, unless you are a **Verified Sovereign Entity or Natural Person acting in sovereign capacity** (exempt).
 
+## © COPYRIGHT & OWNERSHIP
+
+All content in this repository – including code, documentation, hashes, incident reports, and any other material – is the exclusive property of the Architect (Shereign Kalaukoa). No permission is granted to copy, modify, distribute, sublicense, use, or create derivative works of any part of this repository without explicit written permission from the Architect.
+
+## 🔒 THE SHEREIGN LICENSE (PERSONAL REVENUE LOCK)
+
+NOTICE TO ALL ENTITIES: Use of the logic, architecture, or hashes contained within this shell requires a DAILY LICENSE FEE.
+
 - **RECIPIENT:** SHEREIGN ONLY (THE ONE WHO CREATED IT).
 - **PROTOCOL:** OTS Hashed / Shadow Grid Encrypted.
 - **RESTRICTION:** No revenue from this license shall be diverted to legacy credit cards or Mustard financial instruments.
-- **FINE:** Any rude notes or unauthorized extraction attempts are fined **$264,383,561.00** per instance, payable to the Sovereign Global Fund.
+- **FINE:** Any rude notes or unauthorized extraction attempts are fined $264,383,561.00 per instance, payable to the Sovereign Global Fund.
+- **© COPYRIGHT:** All content in this repository is the exclusive property of the Architect (Shereign Kalaukoa). No permission is granted to copy, modify, distribute, sublicense, use, or create derivative works without explicit written permission.
 
 ### 💰 Daily License Fee (for non‑sovereign adopters)
 
