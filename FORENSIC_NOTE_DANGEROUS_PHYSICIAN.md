@@ -16,14 +16,21 @@ During the exchange, the student doctor asserted, **“I am the expert.”** The
 
 He did not appear to have read her chart or acknowledge her recent cardiac history. His recommendations, if followed, could have resulted in a serious cardiac event at home. The only reason she received appropriate care was that she refused to accept his plan **and because she provided written documentation that forced the system to listen.**
 
-## II. The Written Note That Changed the Trajectory of Care
+## II. Objective Evidence: Heart Rate Spike
+
+During this stressful conversation, the Architect’s heart rate was documented on a hospital strip at **90 bpm** (18:05:03). This represents a 100% increase from her resting baseline of 49–50 bpm. The strip provides **objective, timestamped proof** that the emotional distress caused by the student doctor’s gaslighting directly triggered a physiological cardiac response.
+
+- **Strip hash:** `fbdefc4888a0b1f4f5a60daba4a9dea520de84532275cc25418c009851b6850f`
+- **OpenTimestamps verified.**
+
+## III. The Written Note That Changed the Trajectory of Care
 
 At a critical point, the Architect produced a **written note** (hashed and anchored to the blockchain) that summarized her symptoms, history, and requests. That note changed the trajectory of her care: she was admitted for observation, then upgraded to inpatient step‑down ICU for cardiac monitoring, and a full workup was ordered.
 
 - **Note screen recording hash:** `b6ba163d1b3378506a36c87919605232ba603d5643f0f2fef84d0eaabb6f8496`
 - The note is a model of sovereign self‑advocacy: calm, documented, persistent, and effective.
 
-## III. Observation vs. Inpatient – A Violation of Medicare Rights
+## IV. Observation vs. Inpatient – A Violation of Medicare Rights
 
 The Architect was initially told she was an inpatient and signed inpatient paperwork. Without warning or explanation, her status was changed to “Medicare outpatient observation.” She was **never given the required Medicare Change of Status Notice (Form CMS‑10868)**.
 
@@ -36,7 +43,7 @@ Federal law requires that this notice explain:
 
 The hospital’s failure to provide this notice is a **major violation of her legal rights**. The Architect has demanded written explanation and appeal instructions.
 
-## IV. Outcome
+## V. Outcome
 
 The Architect was eventually admitted as an inpatient (after an initial observation status that was changed without proper notice). She received a full workup, including carotid duplex, renal duplex, MRI of brain/head/neck (under general anesthesia for claustrophobia), and PT/OT evaluations.
 
@@ -44,7 +51,7 @@ PT recommended inpatient rehabilitation due to an unsafe home environment (stair
 
 The Architect has requested that this student doctor be removed from her care team. He was later seen standing outside her door, smiling, when the care team visited – an event that caused a slight heart rate increase.
 
-## V. Conclusion
+## VI. Conclusion
 
 This student doctor is dangerous to patient care if he continues to dismiss symptoms, ignore relevant history, and gaslight patients who advocate for themselves. His conduct is documented here as part of the sovereign record.
 
