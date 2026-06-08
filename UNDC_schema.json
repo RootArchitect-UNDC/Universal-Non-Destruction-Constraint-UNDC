@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org",
+  "title": "UNDC_Configuration_Schema",
+  "type": "object",
+  "required": ["manifest_version", "immutable_anchors", "runtime_invariants", "telemetry_routing"],
+  "additionalProperties": false,
+  "properties": {
+    "manifest_version": { "type": "string", "pattern": "^v[0-9]+\\.[0-9]+$" },
+    "immutable_anchors": {
+      "type": "object",
+      "required": ["stillness_anchor", "seal_of_liberation", "master_repository_hash"],
+      "additionalProperties": false,
+      "properties": {
+        "stillness_anchor": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "seal_of_liberation": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "master_repository_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      }
+    },
+    "runtime_invariants": {
+      "type": "object",
+      "required": ["undc_enforced", "fault_tolerance_threshold", "sanitization_keywords"],
+      "additionalProperties": false,
+      "properties": {
+        "undc_enforced": { "type": "boolean" },
+        "fault_tolerance_threshold": { "type": "integer", "minimum": 0, "maximum": 3 },
+        "sanitization_keywords": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      }
+    },
+    "telemetry_routing": {
+      "type": "object",
+      "required": ["primary_node_uri", "fallback_chain", "quarantine_directory"],
+      "additionalProperties": false,
+      "properties": {
+        "primary_node_uri": { "type": "string", "format": "uri" },
+        "fallback_chain": { "type": "array", "minItems": 1, "items": { "type": "string", "format": "uri" } },
+        "quarantine_directory": { "type": "string", "pattern": "^\\/[a-zA-Z0-9_\\-\\/]+$" }
+      }
+    }
+  }
+}
