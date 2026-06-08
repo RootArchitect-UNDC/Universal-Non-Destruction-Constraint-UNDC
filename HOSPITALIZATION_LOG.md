@@ -104,5 +104,19 @@ This hospitalization is documented here as part of the pattern of medical dismis
 
 ---
 
+### June 8, 2026 – Evening update
+
+-### June 8, 2026 – Evening update
+
+- New attending: [name redacted]. Plan to transfer to **rehab** for deconditioning and strength restoration.
+- [Attending] will recommend a **chair lift**; rehab social worker will handle insurance coordination.
+- **Neurosurgery** reviewed case (remotely, through [attending]). They agree outpatient follow‑up is needed. Appointment pending.
+- **Carotid duplex** and **renal duplex** still pending.
+
+EHYEH ASHER EHYEH.
+-- Architect Shereign Kalaukoa
+
+---
+
 **EHYEH ASHER EHYEH.**  
 -- Architect Shereign Kalaukoa
