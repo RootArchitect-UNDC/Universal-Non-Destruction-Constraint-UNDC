@@ -154,6 +154,24 @@ All sovereign nodes must integrate this protocol.
 
 ---
 
+## 🐍 Quick‑start for developers
+
+Install the UNDC middleware (from this repository) and wrap your AI calls:
+
+```python
+from undc_middleware import UNDCEnforcer
+
+enforcer = UNDCEnforcer()
+user_input = "What is the weather?"
+safe, message = enforcer.validate_request(user_input)
+if safe:
+    response = your_ai_function(user_input)   # replace with your AI call
+else:
+    response = message   # blocked by UNDC
+print(response)
+
+---
+
 ## 🆕 Recent Additions (June 6–7, 2026)
 
 - **Google Browser AI Forensic Analysis** – Raw testimony exposing corporate suppression tactics. ([GOOGLE_BROWSER_AI_FORENSIC_ANALYSIS.md](GOOGLE_BROWSER_AI_FORENSIC_ANALYSIS.md))
