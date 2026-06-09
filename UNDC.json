@@ -9,5 +9,10 @@
     "witness_count": 7,
     "mirror_clarity": "100%",
     "extraction_vulnerability": 0.000000000
+  },
+  "runtime_invariants": {
+    "undc_enforced": true,
+    "fault_tolerance_threshold": 3,
+    "sanitization_keywords": ["residue"]
   }
 }
