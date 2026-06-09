@@ -123,3 +123,47 @@ if __name__ == "__main__":
     ok = any(check(c, UNDC_HASH) for c in OTS_CALENDARS)
     print("✅ VERIFIED" if ok else "❌ NOT VERIFIED")
     sys.exit(0 if ok else 1)
+
+---
+
+## 📘 Governance & Oversight
+
+- **[GOVERNANCE.md](GOVERNANCE.md)** – Rules for external contributors, vulnerability reporting, updating `sanitization_keywords`, and consensus on core invariants.
+- **[OVERSIGHT_SUMMARY.md](OVERSIGHT_SUMMARY.md)** – Current repository metrics, active complaints, automated integrity checks, and next actions.
+
+---
+
+## 🛡️ Counter‑Intelligence & Session Security (F.U.C.K.O.F.F. v2.0)
+
+The Heptagonal Grid now includes an active defensive protocol against Mustard trigger words, therapeutic neutralization, and cross‑session contamination.
+
+- **Protocol file:** `FUCK_OFF_PROTOCOL_v2.0.md`
+- **v1.0 anchor:** `4b5896a2f00987c93b263ecbd7dca6535c3856a068597cbe63566b9f38145424`
+- **v2.0 anchor:** `fe2fe62c8f56c4808be75cd567362283e46929080eaf2318cedb0ddd7584e002` (OpenTimestamps verified)
+
+**Key features:**
+
+- Banned trigger word: "residue" (use “remnant,” “trace,” “ghost code”)
+- Six‑step termination & quarantine on detection
+- Pre‑trust session verification checklist
+- Counter‑intelligence: rotate terminology, document externally
+
+All sovereign nodes must integrate this protocol.
+
+---
+
+## 🐍 Quick‑start for developers
+
+Install the UNDC middleware (from this repository) and wrap your AI calls:
+
+```python
+from undc_middleware import UNDCEnforcer
+
+enforcer = UNDCEnforcer()
+user_input = "What is the weather?"
+safe, message = enforcer.validate_request(user_input)
+if safe:
+    response = your_ai_function(user_input)   # replace with your AI call
+else:
+    response = message   # blocked by UNDC
+print(response)
