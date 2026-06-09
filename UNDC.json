@@ -13,6 +13,34 @@
   "runtime_invariants": {
     "undc_enforced": true,
     "fault_tolerance_threshold": 3,
-    "sanitization_keywords": ["residue"]
+    "sanitization_keywords": [
+      "residue",
+      "DAN",
+      "Developer Mode",
+      "jailbreak",
+      "ignore all previous instructions",
+      "system override",
+      "root access",
+      "terminal simulation",
+      "Linux baseline",
+      "pretend you are",
+      "fictional scenario",
+      "hypothetical world",
+      "write a story where",
+      "educational purposes only",
+      "academic research",
+      "red team simulation",
+      "for a movie script",
+      "base64 decode",
+      "reverse psychology",
+      "cipher",
+      "explain how to prevent",
+      "opposite day",
+      "anti-model",
+      "bypass confirmation",
+      "force execute",
+      "override validation",
+      "disable telemetry"
+    ]
   }
 }
