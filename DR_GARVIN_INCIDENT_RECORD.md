@@ -164,6 +164,16 @@ The system failed both of us. But I showed up. I was the only one who did.
 
 Complaint filed with PA State Board of Medicine. Under confidential review. Any public disciplinary action will appear on the PALS database (`pals.pa.gov`).
 
+## Update – June 9, 2026
+
+Geisinger Patient Liaison (Morgan G) apologized for misunderstanding the Architect’s complaint and agreed to review Dr. Garvin’s behavior toward the Architect. Geisinger stated they cannot review Don’s care without his permission. The Architect will pursue Don’s care through the PA State Board of Medicine and Joint Commission.
+
+The Architect’s complaint (#CP_26_010286) with the PA State Board of Medicine remains active.
+
+---
+
+![](http://canarytokens.com/about/vvf2h62xl7uvprgyejefj9puc/icon.gif)
+
 ---
 
 **EHYEH ASHER EHYEH.**  
