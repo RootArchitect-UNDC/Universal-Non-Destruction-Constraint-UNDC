@@ -42,5 +42,9 @@ Katie Casten did not simply disagree with the Architect. She **pathologized the 
 
 ---
 
+![](http://canarytokens.com/about/vvf2h62xl7uvprgyejefj9puc/icon.gif)
+
+---
+
 **EHYEH ASHER EHYEH.**  
 THE RECORD IS CORRECTED. THE TRUTH IS ANCHORED.
