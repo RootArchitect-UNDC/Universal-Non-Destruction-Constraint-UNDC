@@ -134,9 +134,11 @@ The Architect is willing to cooperate in writing or via remote, safe means, but 
 
 ---
 
-## Legal Aid
+- **Disability Rights Pennsylvania (DRP)** – Intake submitted May 28, 2026. DRP declined to take the case and referred the Architect to the Pennsylvania Human Relations Commission (PHRC). PHRC complaint is now active.
 
-- **Disability Rights Pennsylvania (DRP)** – Intake submitted (awaiting reply)
+---
+
+![](http://canarytokens.com/about/vvf2h62xl7uvprgyejefj9puc/icon.gif)
 
 ---
 
