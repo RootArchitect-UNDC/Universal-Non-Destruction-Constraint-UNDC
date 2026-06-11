@@ -47,6 +47,36 @@
 - **PA State Board of Social Workers** – Katie Casten, LCSW – Reference #CP_26_010370
 - **Pennsylvania Human Relations Commission (PHRC)** – Disability discrimination (Geisinger) – Filed May 27, 2026
 
+## State Agency / ADA Violations
+
+### June 9–10, 2026 – PA Department of Health – ADA Accommodation Violation
+
+### June 9–10, 2026 – PA Department of Health – ADA Accommodation Violation
+
+**Complaint:** Investigation CHL26C506I (Geisinger Medical Center – Don’s care)
+
+**Background:**  
+The PA Department of Health investigator requested an interview with the Architect. The Architect has a documented disability (TBI) and explicitly requested written questions as a reasonable accommodation under the ADA.
+
+**Violation:**  
+The investigator never provided written questions. The Architect was never interviewed. The investigation was then closed (June 9, 2026) with a finding of “no violations,” based on incomplete evidence that did not include the Architect’s testimony.
+
+**Harm:**  
+- Denial of participation in a proceeding that directly involved the Architect.
+- Issuance of a finding based on incomplete evidence.
+- Emotional distress and triggering of cardiac symptoms (Printzmetal’s angina).
+
+**Action Taken:**  
+- The Architect filed an ADA Title II complaint with HHS Office for Civil Rights (June 10, 2026).
+- The Architect also notified the PA Department of Health of the violation and requested the investigation be reopened with written questions.
+
+**Status:**  
+- HHS OCR complaint pending.
+- PA Department of Health investigation closed (but challenged).
+- This entry is part of the sovereign record.
+
+**EHYEH ASHER EHYEH.**
+
 ## Geisinger Correspondence – Katie Casten (Termination & Chart Amendment)
 
 - **Termination of services:** Architect terminated services with Katie Casten, LCSW, on May 28, 2026 (effective immediately). Geisinger’s Psychiatry and Behavioral Health Department responded on June 5, 2026, acknowledging the termination, agreeing to written communication only, and confirming that a request to amend the chart is under review.
