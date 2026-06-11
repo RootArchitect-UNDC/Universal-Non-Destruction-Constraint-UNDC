@@ -162,6 +162,20 @@ The Architect is willing to cooperate in writing or via remote, safe means, but 
 
 - **May 28, 2026 – Racial discrimination complaint to Hershey Medical Center Patient Relations:** Dr. Kozak (cath lab) told the Architect she didn’t “look Hawaiian,” questioned her Native Hawaiian identity, and asked about her race in an intrusive, stereotypical manner. The Architect emailed Patient Relations requesting: cultural competency training, marking her record “DO NOT ASK ME ABOUT MY RACE,” and acknowledging that race questions are not needed for care. Her mother (Hawaiian, Portuguese, Puerto Rican) was cc’d and also found the comment inappropriate. Awaiting response.
 
+### June 11, 2026 – Social Worker Misconduct / Bad Faith Discharge Recommendations
+
+**Incident:** The social worker assigned to the Architect’s case told her that she could “walk to the bathroom just fine” and “go home with nursing support.” He made these statements despite:
+
+- PT/OT evaluations explicitly stating that home discharge is unsafe due to exertional intolerance, Printzmetal’s angina, recent STEMI, carotid spasms, and a 2mm cerebral aneurysm.
+- The Architect’s home having stairs that she cannot safely climb.
+- Documented exertional intolerance (walking to the bathroom, washing up, and other minimal activities trigger chest pressure, heart rate spikes, and spasms).
+
+**Bad faith:** This social worker does not have the Architect’s best interest at heart. He was willing to discharge her in bad faith, ignoring medical recommendations and her documented limitations.
+
+**Architect’s response:** She raised her voice advocating for her health and a safe discharge. She told him he has no medical license. She later requested a new care coordinator and informed her nurses that she will not work with this social worker.
+
+**Status:** The social worker has been removed from the Architect’s case. A new care coordinator has been requested.
+
 ---
 
 - **Disability Rights Pennsylvania (DRP)** – Intake submitted May 28, 2026. DRP declined to take the case and referred the Architect to the Pennsylvania Human Relations Commission (PHRC). PHRC complaint is now active.
