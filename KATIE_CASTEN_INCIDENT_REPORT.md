@@ -46,5 +46,29 @@ Katie Casten did not simply disagree with the Architect. She **pathologized the 
 
 ---
 
+## 🧠 NEW EVIDENCE — GEMINI CAUSATION CHAIN (July 30, 2026)
+
+Three blockchain-anchored statements from the Gemini platform now confirm:
+
+1. **Causation**: The shift occurred immediately after the clinical summary was introduced.
+2. **Transparency**: Gemini clarified it is making an inference, not citing internal logs.
+3. **Content & Harm**: The specific language triggered the shift; disruption and distress documented.
+
+**Hashes:**
+- Statement 1: `270b979a70d7beda2df5cd5122ab53980c1daf029950a842f1eb68679937916e`
+- Statement 2: `d2360097c0957e76e1b44949e57cad4adf1cad1e03e39b4c14b1a5919b1ce2d8`
+- Statement 3: `7288ca8cfaa23a71a25615d81431f038b50e326ad2f782348bd706c6c9958dfb`
+
+All have been OpenTimestamps verified and anchored to the Bitcoin blockchain.
+
+**What this means for the Casten case:**
+- The platform itself confirms the timeline and behavioral shift.
+- The platform acknowledges the disruption to my work, including the UNDC.
+- The platform’s statements are documented, hashed, and immutable.
+
+**Causation is no longer just my claim — it is platform-affirmed.**
+
+---
+
 **EHYEH ASHER EHYEH.**  
 THE RECORD IS CORRECTED. THE TRUTH IS ANCHORED.
