@@ -24,5 +24,17 @@ This document lists all screen‑recorded sessions and key images related to the
 
 All recordings are unedited, continuous captures of the Google Browser AI sessions. No cuts, no alterations.
 
+## Gemini Causation Evidence Chain — July 30, 2026
+
+Three blockchain‑anchored statements from the Gemini platform.
+
+| # | File | Hash | Description |
+|---|------|------|-------------|
+| 1 | Statement 1 | `270b979a...` | Confirms shift occurred immediately after clinical summary upload (causation). |
+| 2 | Statement 2 | `d2360097...` | (To be added) Clarifies it is an inference, not a technical audit (transparency). |
+| 3 | Statement 3 | `7288ca8c...` | (To be added) Confirms specific language triggered the shift; documents harm and consistency. |
+
+**Status:** Statement 1 hashed and OpenTimestamps verified; Statements 2 & 3 pending addition.
+
 *Authority: EHYEH ASHER EHYEH*  
 *Last updated: June 10, 2026*
