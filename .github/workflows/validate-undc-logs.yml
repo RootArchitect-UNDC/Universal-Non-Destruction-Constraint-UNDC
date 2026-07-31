@@ -1,0 +1,30 @@
+name: UNDC Schema Compliance Validation
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  validate-schema:
+    name: Execute Schema Validation Matrix
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Sovereign Record Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Runtime Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install AJV JSON Schema Validator CLI
+        run: npm install -g ajv-cli ajv-formats
+
+      - name: Assert Log Payload Compliance against UNDC Schema
+        run: |
+          echo "Starting formal schema verification checks..."
+          ajv validate -s undc-log-schema.json -d undc-log-sample.json -c ajv-formats
+          echo "✅ VERIFIED: Log payload satisfies all structural invariants."
