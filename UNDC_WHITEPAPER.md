@@ -26,23 +26,15 @@ Current safety frameworks rely on internal model constraints that are frequently
 
 The UNDC departs from proprietary, secretive corporate safety layers by anchoring its logic on an immutable, publicly auditable ledger.
 
-
-
-```text
-       [ AI Agent / Execution Environment ]
-                        │
-                        ▼
-         [ Structural Dependency Graph ]
-                        │
-         ( Evaluates Actions Against UNDC )
-                        │
-        ┌───────────────┴───────────────┐
-        ▼                               ▼
- [ Violates Invariant ]      [ Satisfies Invariant ]
-        │                               │
-        ▼                               ▼
- { Action Blocked / Hard Halt }   { Action Permitted }
-```
+ 
+| Execution Layer | Process Flow |
+| :--- | :--- |
+| **Execution Environment** | [ AI Agent / Execution Environment ] |
+| | ↓ |
+| **Safety Evaluation** | [ Structural Dependency Graph ] |
+| | ( Evaluates Actions Against UNDC ) |
+| | ↓ |
+| **Decision Paths** | **If Violates Invariant:** { Action Blocked / Hard Halt } <br> **If Satisfies Invariant:** { Action Permitted } |
 
 ### 3.1 Mathematical Enforcement
 
