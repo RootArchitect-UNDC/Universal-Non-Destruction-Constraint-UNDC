@@ -1,23 +1,23 @@
 name: UNDC Schema Compliance Validation
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: [push, pull_request]
 
 jobs:
   validate-schema:
+    name: Execute Schema Validation Matrix
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install check-jsonschema
-      - name: Validate Schema
+
+      - name: Install check-jsonschema
+        run: pip install check-jsonschema
+
+      - name: Validate UNDC.json
         run: |
-          if [ ! -f undc-log-sample.json ]; then
-            echo '{"status": "active", "timestamp": "2026-07-31T13:20:00Z"}' > undc-log-sample.json
-          fi
-          check-jsonschema --schemafile undc-log-schema.json undc-log-sample.json
+          check-jsonschema --url https://json-schema.org UNDC.json
