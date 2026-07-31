@@ -1,0 +1,43 @@
+# Intellectual Property & Licensing Standard for the UNDC Repository
+
+This repository hosts the Universal Non-Destruction Constraint (UNDC) framework, encompassing core technical specifications, theoretical architecture, and prototype implementation code. To ensure universal auditability while strictly protecting the proprietary concepts of the Architect, this project is distributed under a dual-licensing architecture.
+
+---
+
+## 1. Architectural & Documentation License
+### Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+
+All conceptual designs, structural dependency-graph architectures, whitepapers, forensic documentation, and descriptive text within this repository are licensed under the CC BY-NC-ND 4.0 International License.
+
+Under the terms of this license, external entities are granted the following rights:
+*   **Share:** You may copy, distribute, and transmit the text and architectural diagrams in any medium or format for non-commercial purposes.
+
+This grant is strictly subject to the following contractually binding conditions:
+*   **Attribution:** You must give appropriate credit to the author (Shereign Kalaukoa), provide a link to this repository, and indicate if changes were made.
+*   **Non-Commercial:** You may NOT use this material, its logic, or its structural framework for commercial purposes, corporate deployment, or proprietary profit-generation without an explicitly negotiated commercial agreement with the author.
+*   **No Derivatives:** If you remix, transform, or build upon the material, you may not distribute the modified material as the official UNDC standard.
+
+To view a full copy of this universally recognized license, visit: https://creativecommons.org
+
+---
+
+## 2. Software & Implementation License
+### Apache License, Version 2.0
+
+Any companion reference implementation software, utility scripts (e.g., `fml_verify.py`), middleware packages, or code schemas contained within this repository are licensed under the Apache License, Version 2.0 (the "License").
+
+You may not use these software assets except in compliance with the License. You may obtain a copy of the License at: http://apache.org
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+---
+
+## 3. Institutional Review & Enterprise Inquiries
+
+*   **Public Safety & Regulatory Review:** Government standards agencies, public safety institutes (including NIST, UK AISI, and Singapore AISI), and academic researchers are explicitly permitted to review, reference, audit, and evaluate this framework for public standard-setting purposes.
+*   **Commercial Licensing:** Corporate entities seeking to embed the UNDC framework or its cryptographic logic into proprietary production models or commercial cloud infrastructure must contact the Architect directly to secure an enterprise commercial variance.
+
+**Contact for Inquiries:**  
+Shereign Kalaukoa  
+shereignkalaukoa@protonmail.com  
+*Due to documented disability, all communication must be in writing.*
