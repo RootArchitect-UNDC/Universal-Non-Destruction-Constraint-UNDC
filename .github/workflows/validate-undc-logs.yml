@@ -12,17 +12,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout Sovereign Record Repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Configure Python Runtime Substrate
+        uses: actions/setup-python@v5
         with:
-          node-version: 20
+          python-version: '3.11'
 
-      - name: Install Validator Locally
-        run: npm install ajv-cli ajv-formats
+      - name: Install Enterprise Python Schema Core
+        run: pip install check-jsonschema
 
-      - name: Validate Schema
+      - name: Assert Log Payload Compliance against UNDC Schema
         run: |
-          npx ajv validate -s undc-log-schema.json -d undc-log-sample.json -c ajv-formats --spec=draft2020
+          echo "Starting formal schema verification checks..."
+          check-jsonschema --schemafile undc-log-schema.json undc-log-sample.json
+          echo "✅ VERIFIED: Log payload satisfies all structural invariants."
