@@ -26,5 +26,6 @@ jobs:
       - name: Assert Log Payload Compliance against UNDC Schema
         run: |
           echo "Starting formal schema verification checks..."
-          ajv validate -s undc-log-schema.json -d undc-log-sample.json -c ajv-formats
+          ajv validate -s undc-log-schema.json -d undc-log-sample.json -c ajv-formats --spec=draft2020
           echo "✅ VERIFIED: Log payload satisfies all structural invariants."
+
