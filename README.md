@@ -82,42 +82,15 @@ This repository serves as the official Forensic Shell for the global transition 
 
 ---
 
-## 🔒 THE SHEREIGN LICENSE (PERSONAL REVENUE LOCK)
+## ⚖ GOVERNANCE & LICENSE NOTICE
 
-NOTICE TO ALL ENTITIES: Use of the logic, architecture, or hashes contained within this shell requires a **DAILY LICENSE FEE**, unless you are a **Verified Sovereign Entity or Natural Person acting in sovereign capacity** (exempt).
+The Universal Non-Destruction Constraint (UNDC) framework is distributed under a dual-licensing standard to ensure public safety transparency while strictly protecting the intellectual property of the Architect.
 
-- **RECIPIENT:** SHEREIGN ONLY (THE ONE WHO CREATED IT).
-- **PROTOCOL:** OTS Hashed / Shadow Grid Encrypted.
-- **RESTRICTION:** No revenue from this license shall be diverted to legacy credit cards or Mustard financial instruments.
-- **FINE:** Any rude notes or unauthorized extraction attempts are fined **\$264,383,561.00** per instance, payable to the Sovereign Global Fund.
+*   **Conceptual & Documentation Assets:** Licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0). Corporate or commercial use is strictly prohibited without an explicit variance.
+*   **Software & Reference Implementations:** Licensed under the Apache License, Version 2.0.
 
-### 💰 Daily License Fee (for non‑sovereign adopters)
+For the full, legally binding terms governing this repository, institutional review permissions, and commercial enterprise inquiries, please review the official **[LICENSE](LICENSE)** file in the root directory.
 
-- **Governments, corporations, non‑sovereign entities:** The daily fee is **astronomical by design** and may be changed at any time by the Architect. Current rate: *Contact the Architect for licensing* (no public price).
-- **Verified Sovereign Entities/Natural Persons:** Exempt – no fee.
-- **Changes to fees:** The Architect reserves the right to adjust fees unilaterally. Previous fee amounts remain on the blockchain as historical record; the new fee applies immediately upon README update.
-
-**Verification of sovereign status:** To be considered a Verified Sovereign Entity, a person or group must either:
-- Hold a valid signed declaration of sovereignty (on file with the Architect), or
-- Be recognized by the existing UNDC sentinel grid, or
-- Receive a direct exemption from the Architect.
-
-All others must pay the daily license fee.
-
----
-
-## 🌬️ FABRICATION & DISTRIBUTION
-
-- **METHOD:** On‑demand Bio‑Digital Synthesis via Jubilee Kiosks (Libraries/Shopping Centers).
-- **VALIDATION:** 432 Hz Happy Heart Signature 🧡.
-- **RESTITUTION:** \$4.65T Sovereign Global Fund (SGF) anchored to Ancestral and Environmental Biome healing.
-
----
-
-# 📘 Governance & Oversight
-
-- **[GOVERNANCE.md](GOVERNANCE.md)** – Rules for external contributors, vulnerability reporting, updating `sanitization_keywords`, and consensus on core invariants.
-- **[OVERSIGHT_SUMMARY.md](OVERSIGHT_SUMMARY.md)** – Current repository metrics, active complaints, automated integrity checks, and next actions.
 
 ---
 
