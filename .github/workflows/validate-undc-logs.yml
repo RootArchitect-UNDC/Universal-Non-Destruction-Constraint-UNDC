@@ -18,25 +18,8 @@ jobs:
       - name: Install check-jsonschema
         run: pip install check-jsonschema
 
-      - name: Dynamic Validation Engine
+      - name: Assert Configuration Integrity
         run: |
-          echo "Generating valid structural schema definition..."
-          echo '{
-            "$schema": "https://json-schema.org",
-            "type": "object",
-            "properties": {
-              "status": { "type": "string" },
-              "timestamp": { "type": "string" }
-            },
-            "required": ["status", "timestamp"]
-          }' > temporary_schema.json
-
-          echo "Generating compliant validation payload..."
-          echo '{
-            "status": "active",
-            "timestamp": "2026-07-31T13:34:00Z"
-          }' > temporary_payload.json
-
-          echo "Running verification checks..."
-          check-jsonschema --schemafile temporary_schema.json temporary_payload.json
-          echo "✅ SUCCESS: Structural invariants fully verified."
+          echo "Running structure validation matrix..."
+          check-jsonschema --schemafile undc-schema.json UNDC.json
+          echo "✅ SUCCESS: Data payload cleanly matches structural schema rules."
