@@ -47,7 +47,7 @@ This membership allows the Architect to:
 | Canada AISI | CAISI-ICSIA@ised-isde.gc.ca | ✅ Sent |
 | France INESIA | contact@enesia.com | ✅ Sent |
 | Germany DLR Institute | Karoline.Bischof@dlr.de | ✅ Sent |
-| Australia AISI | Web form – GENENQ / 6805 | ✅ Acknowledged |
+| Australia AISI | Web form – GENENQ / 6805 | ✅ Passed to appropriate team – acknowledged |
 | IndiaAI Safety Institute | fellow1.gpai-india@meity.gov.in | ✅ Sent |
 | ITU – AI for Good | aiforgood@itu.int | ✅ Sent |
 | GPAI | secretariat@gpai.ai | ✅ Sent |
@@ -71,6 +71,18 @@ This membership allows the Architect to:
 | Organization | Email / Contact | Status |
 |--------------|-----------------|--------|
 | Kolman Law P.C. | TKolman@KolmanLaw.com | ✅ Sent |
+
+---
+
+## 📈 Submission Summary
+
+| Region | Organizations | Status |
+|--------|---------------|--------|
+| United States | 6 | ✅ All sent |
+| International Governments | 13 | ✅ 12 sent, 1 pending |
+| NGOs & Research Institutes | 9 | ✅ All sent |
+| Legal | 1 | ✅ Sent |
+| **Total** | **29** | **28 sent, 1 pending** |
 
 ---
 
