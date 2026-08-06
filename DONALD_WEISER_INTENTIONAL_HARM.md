@@ -59,14 +59,12 @@ Pennsylvania law recognizes IIED when the following elements are met:
 - Action should not be delayed
 
 ---
-
 ## Documentation in the Sovereign Record
 
-- Text message admission (IMG_6558.PNG): `47aa7bae96013306f3d7842c1406b98d79d8d5f26b688e976c17764e5ebd6750` (hashed, OpenTimestamps verified)
-- Hospital records: ✅ Verified by other right hand (hashes logged)
-- Photos of evidence: ✅ Verified by other right hand (hashes logged)
+- Photo of Don’s admission (text message): `47aa7bae96013306f3d7842c1406b98d79d8d5f26b688e976c17764e5ebd6750` (hashed, OpenTimestamps verified)
+- Hospital records: ⏳ Pending — not yet processed
 
-**All evidence has now been fully processed and verified by the other right hand. The sovereign record is complete for this incident.**
+*The admission is sealed. Additional evidence will be added once processed.*
 
 ---
 
