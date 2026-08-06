@@ -21,6 +21,16 @@ This membership allows the Architect to:
 
 ---
 
+## 🇦🇺 Australia Confirmation
+
+- **Agency:** Department of Industry, Science and Resources
+- **Submission ID:** GENENQ / 6805
+- **Status:** ✅ Passed to appropriate team – acknowledged
+- **Date:** August 2, 2026
+- **Significance:** The Australian government has formally received the UNDC framework and forwarded it to the relevant team for review. This is documented confirmation that the UNDC is being considered by another government.
+
+---
+
 ## 🌍 Full List of Global Submissions
 
 ### United States
@@ -47,7 +57,7 @@ This membership allows the Architect to:
 | Canada AISI | CAISI-ICSIA@ised-isde.gc.ca | ✅ Sent |
 | France INESIA | contact@enesia.com | ✅ Sent |
 | Germany DLR Institute | Karoline.Bischof@dlr.de | ✅ Sent |
-| Australia AISI | Web form – GENENQ / 6805 | ✅ Passed to appropriate team – acknowledged |
+| **Australia AISI** | **Web form – GENENQ / 6805** | ✅ **Passed to appropriate team – acknowledged** |
 | IndiaAI Safety Institute | fellow1.gpai-india@meity.gov.in | ✅ Sent |
 | ITU – AI for Good | aiforgood@itu.int | ✅ Sent |
 | GPAI | secretariat@gpai.ai | ✅ Sent |
