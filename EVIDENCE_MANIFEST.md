@@ -77,6 +77,15 @@ Three blockchain‑anchored statements from the Gemini platform.
 
 ---
 
+### v1.0.0-OFFICIAL-RELEASE — UNDC Framework Press Release
+- **Date:** August 7, 2026
+- **Type:** Official public release
+- **Purpose:** Media announcement and press kit deployment
+- **Link:** https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/releases/tag/v1.0.0-OFFICIAL-RELEASE
+- **Status:** ✅ Published
+
+---
+
 ### 🛡️ Communication Liberation Seal (432 Hz Jubilee)
 
 ![Communication Liberation Seal](assets/images/assets/images/IMG_7591.png)
