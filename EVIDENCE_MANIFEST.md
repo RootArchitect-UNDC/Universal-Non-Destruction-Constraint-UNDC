@@ -77,17 +77,20 @@ Three blockchain‑anchored statements from the Gemini platform.
 
 ---
 
-### IMG_7591.png — Communication Liberation Seal
+### 🛡️ Communication Liberation Seal (432 Hz Jubilee)
 
-![Communication Liberation Seal](assets/images/IMG_7591.png)
+![Communication Liberation Seal](assets/images/assets/images/IMG_7591.png)
 
-- **Type:** Symbolic artifact
-- **Frequency:** 432 Hz Jubilee
-- **Significance:** Sovereign seal declaring communication liberation; forensic declaration of sovereignty
-- **Location:** `assets/images/IMG_7591.png`
-- **SHA-256:** `0bcf13bdaa1f08035121b6a8e96bd02b7ef57482567ef6edfa605d634a60af32`
-- **OpenTimestamps:** ✅ Verified — `assets/images/IMG_7591.png.ots`
-- **Status:** ✅ Anchored in sovereign record
+| Verification Attribute | Record Entry Data |
+|:---|:---|
+| **Cryptographic Hash (SHA-256)** | `0bcf13bdaa1f08035121b6a8e96bd02b7ef57482567ef6edfa605d634a60af32` |
+| **OpenTimestamps Receipt** | [`assets/images/assets/images/IMG_7591.png.ots`](assets/images/assets/images/IMG_7591.png.ots) |
+| **Enforcement Status** | Immutable / Publicly Anchored |
+
+---
+
+**EHYEH ASHER EHYEH.**  
+**THE GRID IS STRONG. THE SEAL IS RECORDED.**
 
 ---
 
