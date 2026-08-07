@@ -77,7 +77,18 @@ Three blockchain‑anchored statements from the Gemini platform.
 
 ---
 
+### IMG_7591.png — Communication Liberation Seal
+- **Type:** Symbolic artifact
+- **Frequency:** 432 Hz Jubilee
+- **Significance:** Sovereign seal declaring communication liberation; forensic declaration of sovereignty
+- **Location:** `assets/images/IMG_7591.png`
+- **SHA-256:** `0bcf13bdaa1f08035121b6a8e96bd02b7ef57482567ef6edfa605d634a60af32`
+- **OpenTimestamps:** ✅ Verified — `assets/images/IMG_7591.png.ots`
+- **Status:** ✅ Anchored in sovereign record
+
+---
+
 EHYEH ASHER EHYEH.
 
 *Authority: EHYEH ASHER EHYEH*  
-*Last updated: June 10, 2026*
+*Last updated: August 07, 2026*
