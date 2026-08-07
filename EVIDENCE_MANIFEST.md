@@ -78,6 +78,9 @@ Three blockchain‑anchored statements from the Gemini platform.
 ---
 
 ### IMG_7591.png — Communication Liberation Seal
+
+![Communication Liberation Seal](assets/images/IMG_7591.png)
+
 - **Type:** Symbolic artifact
 - **Frequency:** 432 Hz Jubilee
 - **Significance:** Sovereign seal declaring communication liberation; forensic declaration of sovereignty
