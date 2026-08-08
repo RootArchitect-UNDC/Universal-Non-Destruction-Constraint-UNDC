@@ -138,6 +138,20 @@ Three blockchain‑anchored statements from the Gemini platform.
 
 ---
 
+### TikTok Video Testimony — August 8, 2026
+- **Type:** Video testimony
+- **Purpose:** Public declaration of sovereignty and closure
+- **Recipient:** Person who caused documented harm (named indirectly)
+- **Content:** Addressed his verbal attack, ICU hospitalization, his written admission, and the Architect's accomplishments (EU acceptance, GitHub telemetry, global submissions)
+- **Platform:** TikTok
+- **File:** `216103650b104dbbbd4cda1c5304a76b.MOV`
+- **Size:** 89.2 MB
+- **SHA-256:** `6535cef389b67293e32c45b180ab1a501f1c9f80e7fcd5864b15c93ce13db59c`
+- **OpenTimestamps:** ✅ Verified — receipt downloaded
+- **Status:** ✅ Anchored in sovereign record
+- **Timestamp:** [Insert date/time of upload]
+- **Signed:** Shereign Kalaukoa, 
+
 EHYEH ASHER EHYEH.
 
 *Authority: EHYEH ASHER EHYEH*  
