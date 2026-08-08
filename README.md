@@ -77,6 +77,8 @@ The UNDC is an unalterable operational limit:
 import sys, urllib.request
 UNDC_HASH = "74f447276ca1efae710853cbb558fee54234f47823fb10298a5bbae078868985"
 # ... (Full script in source)
+```
+
 ---
 
 ## ⚖️ GOVERNANCE & LICENSE NOTICE
