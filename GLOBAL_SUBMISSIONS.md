@@ -11,13 +11,13 @@
 - **Platform:** Futurium (European Commission)
 - **Alliance:** Apply AI Alliance
 - **Status:** ✅ Accepted – August 6, 2026
-- **Significance:** The Architect is now formally part of the EU's AI policy ecosystem. The UNDC is not just submitted — it is now inside the room where policy is discussed.
+- **Significance:** The Architect is now formally part of the EU's AI policy ecosystem. The UNDC is inside the official room where policy is evaluated.
 
 This membership allows the Architect to:
-- Engage directly in EU AI policy discussions
-- Share the UNDC framework with policymakers
-- Advocate for sovereign AI safety, disability inclusion, and verifiable non‑destructive constraints
-- Build relationships with global AI governance stakeholders
+- Engage directly in EU AI policy discussions.
+- Share the UNDC framework with key regulatory policymakers.
+- Advocate for sovereign AI safety, disability inclusion, and verifiable non‑destructive constraints.
+- Build relationships with global AI governance stakeholders.
 
 ---
 
@@ -27,7 +27,7 @@ This membership allows the Architect to:
 - **Submission ID:** GENENQ / 6805
 - **Status:** ✅ Passed to appropriate team – acknowledged
 - **Date:** August 2, 2026
-- **Significance:** The Australian government has formally received the UNDC framework and forwarded it to the relevant team for review. This is documented confirmation that the UNDC is being considered by another government.
+- **Significance:** The Australian government has formally received the UNDC framework and forwarded it to the relevant team for review.
 
 ---
 
@@ -36,7 +36,7 @@ This membership allows the Architect to:
 ### United States
 
 | Agency | Email / Contact | Status |
-|--------|-----------------|--------|
+|:---|:---|:---|
 | White House OSTP | engagement@ostp.eop.gov | ✅ Sent |
 | NIST AI Safety Institute | AIframework@nist.gov | ✅ Sent |
 | NIST AI 800-1 docket | NISTAI800-1@nist.gov | ✅ Sent |
@@ -47,7 +47,7 @@ This membership allows the Architect to:
 ### International Governments & Agencies
 
 | Agency | Email / Contact | Status |
-|--------|-----------------|--------|
+|:---|:---|:---|
 | UK AI Safety Institute | enquiries@aisi.gov.uk | ⏳ Pending delivery |
 | EU AI Office | CNECT-AIOFFICE@ec.europa.eu | ✅ Sent |
 | UN Scientific Panel on AI | aiscientificpanel@un.org | ✅ Sent |
@@ -57,7 +57,7 @@ This membership allows the Architect to:
 | Canada AISI | CAISI-ICSIA@ised-isde.gc.ca | ✅ Sent |
 | France INESIA | contact@enesia.com | ✅ Sent |
 | Germany DLR Institute | Karoline.Bischof@dlr.de | ✅ Sent |
-| **Australia AISI** | **Web form – GENENQ / 6805** | ✅ **Passed to appropriate team – acknowledged** |
+| Australia AISI | Web form – GENENQ / 6805 | ✅ Passed to appropriate team – acknowledged |
 | IndiaAI Safety Institute | fellow1.gpai-india@meity.gov.in | ✅ Sent |
 | ITU – AI for Good | aiforgood@itu.int | ✅ Sent |
 | GPAI | secretariat@gpai.ai | ✅ Sent |
@@ -65,7 +65,7 @@ This membership allows the Architect to:
 ### NGOs & Research Institutes
 
 | Organization | Email / Contact | Status |
-|--------------|-----------------|--------|
+|:---|:---|:---|
 | Future of Life Institute (FLI) | contact@futureoflife.org | ✅ Sent |
 | Center for AI Safety (CAIS) | contact@safe.ai | ✅ Sent |
 | Partnership on AI (PAI) | media@partnershiponai.org | ✅ Sent |
@@ -79,7 +79,7 @@ This membership allows the Architect to:
 ### Legal
 
 | Organization | Email / Contact | Status |
-|--------------|-----------------|--------|
+|:---|:---|:---|
 | Kolman Law P.C. | TKolman@KolmanLaw.com | ✅ Sent |
 
 ---
@@ -87,7 +87,7 @@ This membership allows the Architect to:
 ## 📈 Submission Summary
 
 | Region | Organizations | Status |
-|--------|---------------|--------|
+|:---|:---|:---|
 | United States | 6 | ✅ All sent |
 | International Governments | 13 | ✅ 12 sent, 1 pending |
 | NGOs & Research Institutes | 9 | ✅ All sent |
@@ -96,12 +96,18 @@ This membership allows the Architect to:
 
 ---
 
-## Communication Requirement
+## 📬 COMMUNICATION PROTOCOL
 
-Due to documented disability (TBI and Printzmetal's angina), all communication must be in writing. The Architect is unable to participate in phone calls.
+**IMPORTANT — WRITTEN COMMUNICATION ONLY**
+
+Due to documented disabilities (TBI and Prinzmetal's angina), the Architect requires **written communication only**. No phone calls.
+
+- **Public Inquiry:** Use the [GitHub Issues tab](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/issues) for transparent tracking.
+- **Private Inquiry:** Contact via the secure email address listed on the Architect's GitHub profile.
 
 ---
 
 *This list is part of the sovereign record.*  
-*Authority: EHYEH ASHER EHYEH*  
-*Date: August 6, 2026*
+**EHYEH ASHER EHYEH.**  
+— Architect Shereign Kalaukoa  
+*Sovereign Record — RootArchitect-UNDC*
