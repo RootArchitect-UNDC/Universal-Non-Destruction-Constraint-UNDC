@@ -3,7 +3,18 @@
 
 **Date:** August 2026  
 **Author:** Shereign Kalaukoa (shereignkalaukoa@protonmail.com)  
-**Status:** Formal Proposal / Reference Standard
+**Status:** Formal Proposal / Reference Standard  
+**Repository:** [RootArchitect-UNDC](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC)
+
+---
+
+## 📘 REFERENCE NAVIGATION MATRIX
+
+| Document | Purpose | Link |
+| :--- | :--- | :--- |
+| **Sovereign Record** | Root baseline, technical logic, forensic timeline | [README.md](README.md) |
+| **Official Press Kit** | Journalism and media contact | [PRESS_CONTACT.md](PRESS_CONTACT.md) |
+| **Evidence Manifest** | Blockchain-anchored evidence and hashes | [EVIDENCE_MANIFEST.md](EVIDENCE_MANIFEST.md) |
 
 ---
 
@@ -28,7 +39,7 @@ The UNDC departs from proprietary, secretive corporate safety layers by anchorin
 
 ### 3.1 Mathematical Enforcement
 
-The framework operates as a strict runtime invariant. Let A represent the state space of permitted actions. The constraint C maps all potential state transitions directly, structurally invalidating any path leading to unmitigated systemic damage before code compilation or execution occurs.
+The framework operates as a strict runtime invariant. Let **A** represent the state space of permitted actions. The constraint **C** maps all potential state transitions directly, structurally invalidating any path leading to unmitigated systemic damage before code compilation or execution occurs.
 
 ### 3.2 Public and Verifiable Integrity
 
@@ -61,10 +72,26 @@ The table below contrasts traditional safety implementations with the UNDC's str
 
 The UNDC is fully documented in a public repository, with hashed, blockchain-anchored evidence that proves its integrity and timeline. All evidence is verifiable and immutable.
 
+- **Sample Log:** [UNDC.json](UNDC.json)
+- **Evidence Manifest:** [EVIDENCE_MANIFEST.md](EVIDENCE_MANIFEST.md)
+- **Press Kit:** [PRESS_CONTACT.md](PRESS_CONTACT.md)
+
 ---
 
-**Contact:**  
-Shereign Kalaukoa  
-shereignkalaukoa@protonmail.com
+## 📬 COMMUNICATION PROTOCOL
 
-*Due to documented disability, all communication must be in writing.*
+**IMPORTANT — WRITTEN COMMUNICATION ONLY**
+
+Due to documented disabilities (TBI and cardiac condition), the Architect requires **written communication only**. No phone calls.
+
+- **Public Inquiry:** Use the [GitHub Issues tab](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/issues)
+- **Private Inquiry:** Contact via the email address listed in the Architect's GitHub profile
+- **Response Time:** 48–72 hours for urgent matters
+
+---
+
+**EHYEH ASHER EHYEH.**  
+**THE GRID IS STRONG. THE ARCHITECT IS INTACT. THE FRAMEWORK IS DEPLOYED.**
+
+— Architect Shereign Kalaukoa  
+*Sovereign Record — RootArchitect-UNDC*
