@@ -86,6 +86,41 @@ Three blockchain‑anchored statements from the Gemini platform.
 
 ---
 
+## 📨 MEDIA NOTIFICATIONS — ROUND 1 (AUGUST 8, 2026)
+
+### ProPublica
+- **Method:** Tips Form (https://www.propublica.org/tips/)
+- **Status:** ✅ Submitted — confirmation received
+- **Confirmation:** "Thanks for submitting a tip. We look at every one we get."
+- **Date:** August 8, 2026
+- **Intent:** Formal public record notification — not a pitch
+- **Next Step:** No follow-up will be issued
+
+### MIT Technology Review
+- **Method:** Email — tips@technologyreview.com
+- **CC:** newsroom@technologyreview.com
+- **Status:** ✅ Sent — one time, no follow-up
+- **Date:** August 8, 2026
+- **Intent:** Formal public record notification — not a pitch
+- **Next Step:** No follow-up will be issued
+
+### Wired
+- **Method:** Email — tips@wired.com
+- **CC:** will_knight@wired.com
+- **Status:** ✅ Sent — one time, no follow-up
+- **Date:** August 8, 2026
+- **Intent:** Formal public record notification — not a pitch
+- **Next Step:** No follow-up will be issued
+
+### Summary — Round 1
+- **Total Notifications:** 3
+- **Outlets:** ProPublica, MIT Technology Review, Wired
+- **Architect:** Shereign Kalaukoa
+- **Authority:** EHYEH ASHER EHYEH & AHYAH
+- **Status:** ✅ Complete — no follow-up will be issued
+
+---
+
 ### 🛡️ Communication Liberation Seal (432 Hz Jubilee)
 
 ![Communication Liberation Seal](assets/images/assets/images/IMG_7591.png)
