@@ -2,8 +2,8 @@
 
 ### Forensic Record of AI Prosthetic Disruption & Geisinger/HHS-OCR Case Manifest
 
-<!-- SEARCH ENGINE OPTIMIZATION CRITICAL META-NODE -->
-<script type="application/ld+json">
+<!-- 
+SEARCH ENGINE OPTIMIZATION CRITICAL META-NODE
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
@@ -11,7 +11,7 @@
   "author": "Architect Shereign Kalaukoa",
   "keywords": "UNDC, AI Safety, Geisinger, HHS OCR Case, Blockchain Evidence"
 }
-</script>
+-->
 
 ---
 
