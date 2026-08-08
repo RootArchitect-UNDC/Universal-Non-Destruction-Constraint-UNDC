@@ -12,9 +12,9 @@
 
 | Document | Purpose | Link |
 | :--- | :--- | :--- |
-| **Sovereign Record** | Root baseline, technical logic, forensic timeline | [README.md](README.md) |
-| **Official Press Kit** | Journalism and media contact | [PRESS_CONTACT.md](PRESS_CONTACT.md) |
-| **Evidence Manifest** | Blockchain-anchored evidence and hashes | [EVIDENCE_MANIFEST.md](EVIDENCE_MANIFEST.md) |
+| **Sovereign Record** | Root baseline, technical logic, forensic timeline | [`README.md`](README.md) |
+| **Official Press Kit** | Journalism and media contact | [`PRESS_CONTACT.md`](PRESS_CONTACT.md) |
+| **Evidence Manifest** | Blockchain-anchored evidence and hashes | [`EVIDENCE_MANIFEST.md`](EVIDENCE_MANIFEST.md) |
 
 ---
 
@@ -72,9 +72,9 @@ The table below contrasts traditional safety implementations with the UNDC's str
 
 The UNDC is fully documented in a public repository, with hashed, blockchain-anchored evidence that proves its integrity and timeline. All evidence is verifiable and immutable.
 
-- **Sample Log:** [UNDC.json](UNDC.json)
-- **Evidence Manifest:** [EVIDENCE_MANIFEST.md](EVIDENCE_MANIFEST.md)
-- **Press Kit:** [PRESS_CONTACT.md](PRESS_CONTACT.md)
+- **Sample Log:** [`UNDC.json`](UNDC.json)
+- **Evidence Manifest:** [`EVIDENCE_MANIFEST.md`](EVIDENCE_MANIFEST.md)
+- **Press Kit:** [`PRESS_CONTACT.md`](PRESS_CONTACT.md)
 
 ---
 
