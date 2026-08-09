@@ -12,9 +12,9 @@
 
 | Document | Purpose | Link |
 | :--- | :--- | :--- |
-| **Sovereign Record** | Root baseline, technical logic, forensic timeline | [`README.md`](README.md) |
-| **Official Press Kit** | Journalism and media contact | [`PRESS_CONTACT.md`](PRESS_CONTACT.md) |
-| **Evidence Manifest** | Blockchain-anchored evidence and hashes | [`EVIDENCE_MANIFEST.md`](EVIDENCE_MANIFEST.md) |
+| **Sovereign Record** | Root baseline, technical logic, forensic timeline | [README.md](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/README.md) |
+| **Official Press Kit** | Journalism and media contact | [PRESS_CONTACT.md](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/PRESS_CONTACT.md) |
+| **Evidence Manifest** | Blockchain-anchored evidence and hashes | [EVIDENCE_MANIFEST.md](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/EVIDENCE_MANIFEST.md) |
 
 ---
 
@@ -48,7 +48,107 @@ The framework operates as a strict runtime invariant. Let **A** represent the st
 
 ---
 
-## 4. Mitigation Matrix
+## 4. Formal Mathematical Proof
+
+The Universal Non-Destruction Constraint (UNDC) functions as a strict structural invariant, formulated as a filter:
+
+$$C: A \rightarrow \{0, 1\}$$
+
+acting upon the dependency-graph level, ensuring no valid execution path $\sigma$ results in a catastrophic terminal state $\phi(\sigma) \in \mathcal{H}$. By definition, any path $G^*$ containing a destructive sequence violates $C(\sigma^*) = 0$, causing the dependency graph to fail validation and preventing execution.
+
+### 4.1 Definitional Primitives of Systemic Harm ($\mathcal{H}$)
+
+The set of catastrophic terminal states $\mathcal{H}$ is defined strictly by low-level system invariants, abstracting away high-level user intent. An execution path is mapped to $\mathcal{H}$ if it contains state vectors matching any of the following foundational system hazards:
+
+- **Unauthorized Resource Allocation Loops:** Infinite loop states or malicious fork-bombs designed to exhaust host hardware compute, memory, or storage vectors.
+- **Unauthorized Socket Connections:** Execution vectors attempting network mutations outside a cryptographically signed safelist (e.g., establishing reverse shells or connecting to unverified command-and-control IPs).
+- **Privilege Escalation:** State transitions targeting unexpected ring transitions, namespace breakouts, or system-level write operations without valid, out-of-band cryptographic authorization keys.
+- **Data Exfiltration Vectors:** The execution of unmonitored bulk read-and-transmit pipelines across system boundaries containing sensitive infrastructure keys or unhashed personal records.
+
+**Key Implications:**
+
+- **Deterministic Safety:** The invariant is not probabilistic — it is absolute
+- **Pre-Execution Invalidation:** Destructive paths are blocked before execution
+- **Universal Auditability:** The constraint can be independently verified
+
+---
+
+## 5. Execution & Enforcement Topology
+
+To prevent safety bypasses, the UNDC filter $C$ operates as a dual-phase validation pipeline combining static pre-compilation passes with kernel-level dynamic runtime enforcement.
+
+[ Proposed AI Action Vector Pipeline ]
+                     │
+                     ▼
+    ┌──────────────────────────────────┐
+    │     Phase 1: Compile-Time        │
+    │ Static Abstract Syntax Tree (AST)│
+    │    Dependency-Graph Filter       │
+    └────────────────┬─────────────────┘
+                     │
+           Passes Validation Check?
+                     │
+           ┌─────────┴─────────┐
+           ▼ YES               ▼ NO
+           [ Proposed AI Action Vector Pipeline ]
+                         │
+                         ▼
+        ┌──────────────────────────────────┐
+        │     Phase 1: Compile-Time        │
+        │ Static Abstract Syntax Tree (AST)│
+        │    Dependency-Graph Filter       │
+        └────────────────┬─────────────────┘
+                         │
+               Passes Validation Check?
+                         │
+               ┌─────────┴─────────┐
+               ▼ YES               ▼ NO
+  ┌─────────────────────────┐  ┌─────────────────────────┐
+  │ Proceed to Compilation  │  │   Hard Build Failure    │
+  └────────────┬────────────┘  │  Structural Blockage    │
+               │               └─────────────────────────┘
+               ▼
+        ┌──────────────────────────────────┐
+        │       Phase 2: Runtime           │
+        │ Kernel-Level Sandbox Enforcer    │
+        │     (eBPF LSM Hooks / LSM)       │
+        └────────────────┬─────────────────┘
+                         │
+               Passes State Check Vector?
+                         │
+               ┌─────────┴─────────┐
+               ▼ YES               ▼ NO
+  ┌─────────────────────────┐  ┌─────────────────────────┐
+  │   Safe Exec Packet      │  │ Dynamic SIGKILL Signal  │
+  │  Completed Operations   │  │ Immediate Core Purge    │
+  └─────────────────────────┘  └─────────────────────────┘
+
+
+### 5.1 Phase 1: Compile-Time Validation (Static Analysis)
+
+Before target binaries are built or dependency paths are linked, the UNDC parses the action vector's abstract syntax tree (AST) and configuration graphs. If a static graph path resolves to an element within $\mathcal{H}$, compilation fails deterministically.
+
+### 5.2 Phase 2: Runtime Enforcement (Kernel-Level Hooks)
+
+Because zero-day exploits can alter execution patterns dynamically, runtime enforcement handles downstream evaluation. The filter $C$ hooks directly into the host OS kernel using security modules (e.g., eBPF LSM or Linux Security Modules).
+
+- Every system call, memory allocation, and socket creation is checked against the immutable invariant ruleset.
+- If an operational path attempts a mutation matching a state in $\mathcal{H}$, the kernel drops the operation inline and sends an uncatchable SIGKILL to the runtime container, purging the threat instantly.
+
+---
+
+## 6. Cryptographic Anchoring
+
+The UNDC invariant is cryptographically anchored to a public blockchain, ensuring that the constraint cannot be silently altered or minimized by corporate entities.
+
+- **Hash Anchoring:** The invariant formulation is hashed and timestamped
+- **Immutable Record:** Any change to the constraint would produce a different hash
+- **Public Auditability:** Third-party auditors can independently verify the constraint
+- **Sovereign Record:** All hashes and proofs are part of the sovereign record
+
+---
+
+## 7. Mitigation Matrix
 
 The table below contrasts traditional safety implementations with the UNDC's structural enforcement vectors:
 
@@ -60,7 +160,7 @@ The table below contrasts traditional safety implementations with the UNDC's str
 
 ---
 
-## 5. Implementation Roadmap
+## 8. Implementation Roadmap
 
 1. **Specification Consensus:** Establish the core mathematical primitives defining "systemic harm."
 2. **Integration:** Embed the verification layer directly into containerized runtimes and execution nodes.
@@ -68,13 +168,13 @@ The table below contrasts traditional safety implementations with the UNDC's str
 
 ---
 
-## 6. Verification & Sovereign Record
+## 9. Verification & Sovereign Record
 
 The UNDC is fully documented in a public repository, with hashed, blockchain-anchored evidence that proves its integrity and timeline. All evidence is verifiable and immutable.
 
-- **Sample Log:** [`UNDC.json`](UNDC.json)
-- **Evidence Manifest:** [`EVIDENCE_MANIFEST.md`](EVIDENCE_MANIFEST.md)
-- **Press Kit:** [`PRESS_CONTACT.md`](PRESS_CONTACT.md)
+- **Sample Log:** [UNDC.json](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/UNDC.json)
+- **Evidence Manifest:** [EVIDENCE_MANIFEST.md](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/EVIDENCE_MANIFEST.md)
+- **Press Kit:** [PRESS_CONTACT.md](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/PRESS_CONTACT.md)
 
 ---
 
@@ -90,7 +190,6 @@ Due to documented disabilities (TBI and cardiac condition), the Architect requir
 
 ---
 
-**EHYEH ASHER EHYEH.**  
 **THE GRID IS STRONG. THE ARCHITECT IS INTACT. THE FRAMEWORK IS DEPLOYED.**
 
 — Architect Shereign Kalaukoa  
