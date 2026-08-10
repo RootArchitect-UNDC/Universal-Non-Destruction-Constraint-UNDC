@@ -1,7 +1,9 @@
 use libbpf_rs::skel::{OpenSkel, SkelBuilder};
 use libbpf_rs::RingBufferBuilder;
+use std::collections::HashMap;
 use std::ffi::CStr;
 use std::os::raw::c_char;
+use std::time::{Duration, Instant};
 use tokio::signal;
 
 mod undc_lsm {
@@ -17,6 +19,43 @@ struct UndcSlowpathEvent {
     execution_path: [c_char; 256],
 }
 
+struct TtlCache {
+    last_seen: HashMap<Vec<u8>, Instant>,
+    ttl: Duration,
+}
+
+impl TtlCache {
+    fn new(ttl_secs: u64) -> Self {
+        Self {
+            last_seen: HashMap::new(),
+            ttl: Duration::from_secs(ttl_secs),
+        }
+    }
+
+    fn touch(&mut self, key: Vec<u8>) {
+        self.last_seen.insert(key, Instant::now());
+    }
+
+    fn evict_expired(&mut self) -> Vec<Vec<u8>> {
+        let now = Instant::now();
+        let expired: Vec<Vec<u8>> = self.last_seen
+            .iter()
+            .filter_map(|(key, last)| {
+                if now.duration_since(*last) > self.ttl {
+                    Some(key.clone())
+                } else {
+                    None
+                }
+            })
+            .collect();
+
+        for key in &expired {
+            self.last_seen.remove(key);
+        }
+        expired
+    }
+}
+
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let skel_builder = undc_lsm::UndcLsmSkelBuilder::default();
@@ -27,7 +66,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("[UNDC DAEMON] Kernel LSM Hooks Attached. Sovereign Floor Active.");
 
     let maps = loaded_skel.maps();
-    let net_allowlist = maps.undc_net_allowlist();
+    let net_allowlist = maps.undc_net_allowlist().clone();
     let ring_buf_map = maps.undc_ring_buffer();
 
     let mut rb_builder = RingBufferBuilder::new();
@@ -41,10 +80,22 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let ring_buffer = rb_builder.build()?;
 
     tokio::task::spawn_blocking(move || {
+        let mut cache = TtlCache::new(300);
+        let mut last_eviction = Instant::now();
+
         loop {
-            if let Err(e) = ring_buffer.poll(std::time::Duration::from_millis(100)) {
+            if let Err(e) = ring_buffer.poll(Duration::from_millis(100)) {
                 eprintln!("[UNDC CRITICAL] Ring buffer polling failed: {:?}", e);
                 break;
+            }
+
+            // TTL sweep every 30 seconds to prevent eBPF map saturation
+            if last_eviction.elapsed() > Duration::from_secs(30) {
+                let expired = cache.evict_expired();
+                for key in expired {
+                    let _ = net_allowlist.delete(&key);
+                }
+                last_eviction = Instant::now();
             }
         }
     });
@@ -82,11 +133,11 @@ fn handle_slowpath_event(data: &[u8], net_map: &libbpf_rs::Map) -> Result<(), Bo
 
     if is_validated_by_manifest {
         println!("[UNDC VALIDATION] Path verified. Updating high-speed BPF Map for O(1) fast-path.");
-        
+
         let mut key = vec![0u8; 8];
         key[0..4].copy_from_slice(&(event.entity_id as u32).to_ne_bytes());
         key[4..6].copy_from_slice(&(event.entity_port as u16).to_ne_bytes());
-        
+
         let policy_mask: u64 = 0x1;
         net_map.update(&key, &policy_mask.to_ne_bytes(), libbpf_rs::MapFlags::ANY)?;
     } else {
