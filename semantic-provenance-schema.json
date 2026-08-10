@@ -82,12 +82,6 @@
                 }
               }
             }
-          },
-          "if": {
-            "properties": { "contains_economic_state_change": { "const": true } }
-          },
-          "then": {
-            "required": ["hitl_authorization"]
           }
         }
       }
