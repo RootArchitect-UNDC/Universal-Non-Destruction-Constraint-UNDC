@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org",
+  "$id": "https://githubusercontent.com",
+  "title": "UNDCSemanticProvenanceContract",
+  "description": "Enforces immutable data serialization provenance and out-of-band Human-In-The-Loop authorization tracking headers under the UNDC framework.",
+  "type": "object",
+  "required": [
+    "provenance_header",
+    "payload_metadata",
+    "security_signatures"
+  ],
+  "properties": {
+    "provenance_header": {
+      "type": "object",
+      "required": [
+        "model_sovereign_id",
+        "blockchain_anchor_hash",
+        "serialization_timestamp"
+      ],
+      "properties": {
+        "model_sovereign_id": {
+          "type": "string",
+          "pattern": "^undc:model:[a-f0-9]{64}$",
+          "description": "Unique cryptographic identifier of the generating model instance."
+        },
+        "blockchain_anchor_hash": {
+          "type": "string",
+          "pattern": "^0x[a-f0-9]{64}$",
+          "description": "The block hash or transaction root where the model state is cryptographically anchored."
+        },
+        "serialization_timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "RFC 3339 compliant UTC timestamp of payload generation."
+        }
+      }
+    },
+    "payload_metadata": {
+      "type": "object",
+      "required": [
+        "asset_type",
+        "payload_hash",
+        "financial_mutation_vector"
+      ],
+      "properties": {
+        "asset_type": {
+          "type": "string",
+          "enum": ["text/serialization", "application/json", "financial/transaction", "code/executable"],
+          "description": "The abstract structural category of the outbound generative payload."
+        },
+        "payload_hash": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$",
+          "description": "Cryptographic checksum of the serialized payload body to prevent middleman stripping or manipulation."
+        },
+        "financial_mutation_vector": {
+          "type": "object",
+          "required": [
+            "contains_economic_state_change"
+          ],
+          "properties": {
+            "contains_economic_state_change": {
+              "type": "boolean",
+              "description": "Must be set to true if the payload attempts API banking calls, smart contract executions, or cryptographic wallet mutations."
+            },
+            "hitl_authorization": {
+              "type": "object",
+              "required": [
+                "proof_of_authority_token",
+                "validator_public_key"
+              ],
+              "properties": {
+                "proof_of_authority_token": {
+                  "type": "string",
+                  "pattern": "^0x[a-f0-9]{130}$",
+                  "description": "Out-of-band cryptographic signature confirming Human-In-The-Loop explicit approval."
+                },
+                "validator_public_key": {
+                  "type": "string",
+                  "pattern": "^0x[a-f0-9]{66}$",
+                  "description": "The compressed public key of the authoritative human or designated proxy multi-sig."
+                }
+              }
+            }
+          },
+          "if": {
+            "properties": { "contains_economic_state_change": { "const": true } }
+          },
+          "then": {
+            "required": ["hitl_authorization"]
+          }
+        }
+      }
+    },
+    "security_signatures": {
+      "type": "object",
+      "required": [
+        "runtime_enclave_signature",
+        "signature_algorithm"
+      ],
+      "properties": {
+        "runtime_enclave_signature": {
+          "type": "string",
+          "description": "The base64 encoded signature of the payload and provenance header, generated inside the isolated hardware enclave runtime."
+        },
+        "signature_algorithm": {
+          "type": "string",
+          "enum": ["Ed25519", "ECDSA_P256_SHA256"],
+          "description": "The physical cryptographic implementation cipher used to sign the operational envelope."
+        }
+      }
+    }
+  }
+}
