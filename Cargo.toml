@@ -1,0 +1,10 @@
+[package]
+name = "undc-ring-buffer-daemon"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libbpf-rs = "0.23.0"
+tokio = { version = "1.35", features = ["full"] }
+nix = { version = "0.27", features = ["signal", "process"] }
+bytemuck = { version = "1.14", features = ["derive"] }
