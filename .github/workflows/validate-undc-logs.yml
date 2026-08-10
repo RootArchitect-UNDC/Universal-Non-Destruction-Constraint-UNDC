@@ -1,25 +1,26 @@
 name: UNDC Schema Compliance Validation
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  validate-schema:
-    name: Execute Schema Validation Matrix
+  validate:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.11'
+          node-version: '22'
 
       - name: Install check-jsonschema
-        run: pip install check-jsonschema
+        run: npm install -g check-jsonschema
 
-      - name: Assert Configuration Integrity
-        run: |
-          echo "Running structure validation matrix..."
-          check-jsonschema --schemafile undc-schema.json UNDC.json
-          echo "✅ SUCCESS: Data payload cleanly matches structural schema rules."
+      - name: Validate UNDC log sample
+        run: check-jsonschema --schemafile undc-schema.json undc-log-sample.json
