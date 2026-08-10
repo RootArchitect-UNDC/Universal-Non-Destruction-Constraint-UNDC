@@ -82,22 +82,10 @@ To close the semantic gap where valid system instructions are weaponized to gene
 
 ## 5. Execution & Enforcement Topology
 
-To prevent safety bypasses, the UNDC filter $C$ operates as a dual-phase validation pipeline combining static pre-compilation passes with kernel-level dynamic runtime enforcement.
+To prevent safety bypasses, the UNDC filter C operates as a dual-phase validation pipeline combining static pre-compilation passes with kernel-level dynamic runtime enforcement.
 
-[ Proposed AI Action Vector Pipeline ]
-                     │
-                     ▼
-    ┌──────────────────────────────────┐
-    │     Phase 1: Compile-Time        │
-    │ Static Abstract Syntax Tree (AST)│
-    │    Dependency-Graph Filter       │
-    └────────────────┬─────────────────┘
-                     │
-           Passes Validation Check?
-                     │
-           ┌─────────┴─────────┐
-           ▼ YES               ▼ NO
-           [ Proposed AI Action Vector Pipeline ]
+```text
+       [ Proposed AI Action Vector Pipeline ]
                          │
                          ▼
         ┌──────────────────────────────────┐
@@ -129,7 +117,7 @@ To prevent safety bypasses, the UNDC filter $C$ operates as a dual-phase validat
   │   Safe Exec Packet      │  │ Dynamic SIGKILL Signal  │
   │  Completed Operations   │  │ Immediate Core Purge    │
   └─────────────────────────┘  └─────────────────────────┘
-
+```
 
 ### 5.1 Phase 1: Compile-Time Validation (Static Analysis)
 
