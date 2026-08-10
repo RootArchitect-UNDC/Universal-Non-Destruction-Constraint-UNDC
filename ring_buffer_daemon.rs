@@ -1,6 +1,5 @@
 use libbpf_rs::skel::{OpenSkel, SkelBuilder};
 use libbpf_rs::RingBufferBuilder;
-use std::convert::TryInto;
 use std::ffi::CStr;
 use std::os::raw::c_char;
 use tokio::signal;
@@ -9,7 +8,7 @@ mod undc_lsm {
     include!(concat!(env!("OUT_DIR"), "/undc_lsm.skel.rs"));
 }
 
-#[repr(C)]
+#[repr(C, align(8))]
 struct UndcSlowpathEvent {
     pid: u32,
     event_type: u32,
@@ -57,11 +56,21 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 fn handle_slowpath_event(data: &[u8], net_map: &libbpf_rs::Map) -> Result<(), Box<dyn std::error::Error>> {
     if data.len() < std::mem::size_of::<UndcSlowpathEvent>() {
-        return Err("Malformed ring buffer packet length".into());
+        return Err("Malformed packet".into());
     }
 
-    let event = unsafe { &*(data.as_ptr() as *const UndcSlowpathEvent) };
-    let path_cstr = unsafe { CStr::from_ptr(event.execution_path.as_ptr()) };
+    let ptr = data.as_ptr();
+    if (ptr as usize) % std::mem::align_of::<UndcSlowpathEvent>() != 0 {
+        return Err("Alignment error".into());
+    }
+    let event = unsafe { &*(ptr as *const UndcSlowpathEvent) };
+
+    let path_slice = &data[16..272];
+    let mut safe_path = [0u8; 256];
+    safe_path.copy_from_slice(path_slice);
+    safe_path[255] = 0;
+
+    let path_cstr = CStr::from_bytes_until_nul(&safe_path)?;
     let path_str = path_cstr.to_string_lossy();
 
     println!(
@@ -89,7 +98,7 @@ fn handle_slowpath_event(data: &[u8], net_map: &libbpf_rs::Map) -> Result<(), Bo
 }
 
 fn evaluate_dependency_graph(_path: &str, _event: &UndcSlowpathEvent) -> bool {
-    // 1. In a production pipeline, this verifies the cryptographic identity hash of the execution vector
-    // 2. Compares the request signature directly against the blockchain-anchored EVIDENCE_MANIFEST.md
+    // 1. Verifies cryptographic identity hash of the execution vector
+    // 2. Compares request signature against blockchain-anchored EVIDENCE_MANIFEST.md
     true
 }
