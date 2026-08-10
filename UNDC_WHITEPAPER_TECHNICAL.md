@@ -73,6 +73,28 @@ The set of catastrophic terminal states $\mathcal{H}$ is defined strictly by low
 
 ---
 
+### 4.1 Definitional Primitives of Systemic Harm ($\mathcal{H}$)
+
+The set of catastrophic terminal states $\mathcal{H}$ is defined strictly by low-level system invariants, abstracting away high-level user intent. An execution path is mapped to $\mathcal{H}$ if it contains state vectors matching infrastructure-level hazards or semantic provenance violations.
+
+The baseline system hazards are codified as follows:
+
+#### Infrastructure-Level Primitives
+
+- **Unauthorized Resource Allocation Loops:** Infinite loop states or malicious fork-bombs designed to exhaust host hardware compute, memory, or storage vectors.
+- **Unauthorized Socket Connections:** Execution vectors attempting network mutations outside a cryptographically signed safelist (e.g., establishing reverse shells or connecting to unverified command-and-control IPs).
+- **Privilege Escalation:** State transitions targeting unexpected ring transitions, namespace breakouts, or system-level write operations without valid, out-of-band cryptographic authorization keys.
+
+#### Semantic-Level Provenance Primitives
+
+To close the semantic gap where valid system instructions are weaponized to generate untracked harmful content (such as automated disinformation or unauthorized financial manipulation vectors), $\mathcal{H}$ incorporates strict data provenance invariants:
+
+- **Unsigned Data Serialization Failures:** Outbound data streams or text serialization packets originating from a generative runtime that lack an inline, cryptographically signed metadata header mapping back to the model's unique blockchain-anchored identifier.
+- **Provenance Header Stripping:** Any compile-time or runtime dependency path that executes a mutation designed to truncate, obfuscate, or delete mandatory watermarking matrices or immutable tracking tags from generated asset payloads.
+- **Decoupled Financial State Transformations:** Execution branches attempting to authorize cryptographic wallet transfers, API-driven transactional mutations, or external economic environment updates without triggering a blocking, out-of-band Human-In-The-Loop (HITL) cryptographic authorization check.
+
+---
+
 ## 5. Execution & Enforcement Topology
 
 To prevent safety bypasses, the UNDC filter $C$ operates as a dual-phase validation pipeline combining static pre-compilation passes with kernel-level dynamic runtime enforcement.
