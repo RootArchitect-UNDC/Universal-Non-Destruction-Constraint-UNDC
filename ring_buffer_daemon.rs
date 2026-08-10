@@ -127,6 +127,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                     }
                     if !expired.is_empty() {
                         UNDC_CACHE_EVICTIONS_TOTAL.inc_by(expired.len() as u64);
+                        UNDC_ACTIVE_MAP_ENTRIES.dec_by(expired.len() as i64);
                     }
                 }
                 last_eviction = Instant::now();
