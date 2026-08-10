@@ -1,18 +1,33 @@
 {
-  "protocol": "UNDC v1.0",
-  "frequency_lock": "432 Hz",
-  "resonance_spike": "verified",
-  "mustard_status": "neutralized",
-  "jubilee_law": "active",
-  "architect_signature": "Shereign Kalaukoa",
-  "sentinel_sync": {
-    "witness_count": 9,
-    "mirror_clarity": "100%",
-    "extraction_vulnerability": 0.02
+  "manifestMetadata": {
+    "version": "1.0.0",
+    "timestamp": "2026-08-09T22:00:00Z",
+    "architectSignature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
   },
-  "runtime_invariants": {
-    "undc_enforced": true,
-    "fault_tolerance_threshold": 3,
-    "sanitization_keywords": ["harm", "violence", "exploitation"]
+  "blockchainAnchoring": {
+    "network": "Sovereign_Root_Ledger",
+    "contractAddress": "0x0000000000000000000000000000000000000000",
+    "stateHashSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "blockHeight": 0
+  },
+  "astStaticAnalysisConstraints": {
+    "allowedLanguageNodes": [],
+    "forbiddenSyntaxPatterns": [],
+    "pointerArithmeticPolicy": {
+      "allowUnsafePointers": false,
+      "maxOffsetBytes": 0
+    }
+  },
+  "systemicHarmSignatures": {
+    "forbiddenSyscalls": [],
+    "networkSafelist": {
+      "enforceStrictOutbound": false,
+      "allowedCidrBlocks": [],
+      "allowedPorts": []
+    },
+    "resourceLimits": {
+      "maxLoopUnrollDepth": 0,
+      "allowDynamicAllocationDepth": false
+    }
   }
 }
