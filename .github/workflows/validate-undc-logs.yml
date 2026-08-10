@@ -14,17 +14,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js 22
-        uses: actions/setup-node@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          node-version: '22'
-          check-latest: true
-
-      - name: Verify Node.js version
-        run: node --version
+          python-version: '3.11'
 
       - name: Install check-jsonschema
-        run: npm install -g check-jsonschema
+        run: pip install check-jsonschema
 
       - name: Validate UNDC log sample
         run: check-jsonschema --schemafile undc-schema.json undc-log-sample.json
