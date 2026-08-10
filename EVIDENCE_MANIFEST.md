@@ -243,5 +243,15 @@ Three blockchain‑anchored statements from the Gemini platform.
 
 ---
 
+### HHS OCR Complaint Filed — August 10, 2026
+- **Agency:** U.S. Department of Health and Human Services, Office for Civil Rights (OCR)
+- **Receipt Number:** 698334
+- **Type:** Civil Rights and Conscience Complaint — Disability Discrimination and Retaliation
+- **Original Case Number:** 684419
+- **Status:** ✅ Submitted — under initial review
+- **Signed:** Shereign Kalaukoa
+
+---
+
 *Authority: EHYEH ASHER EHYEH*  
 *Last updated: August 09, 2026*
