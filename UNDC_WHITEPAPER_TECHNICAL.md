@@ -56,21 +56,6 @@ $$C: A \rightarrow \{0, 1\}$$
 
 acting upon the dependency-graph level, ensuring no valid execution path $\sigma$ results in a catastrophic terminal state $\phi(\sigma) \in \mathcal{H}$. By definition, any path $G^*$ containing a destructive sequence violates $C(\sigma^*) = 0$, causing the dependency graph to fail validation and preventing execution.
 
-### 4.1 Definitional Primitives of Systemic Harm ($\mathcal{H}$)
-
-The set of catastrophic terminal states $\mathcal{H}$ is defined strictly by low-level system invariants, abstracting away high-level user intent. An execution path is mapped to $\mathcal{H}$ if it contains state vectors matching any of the following foundational system hazards:
-
-- **Unauthorized Resource Allocation Loops:** Infinite loop states or malicious fork-bombs designed to exhaust host hardware compute, memory, or storage vectors.
-- **Unauthorized Socket Connections:** Execution vectors attempting network mutations outside a cryptographically signed safelist (e.g., establishing reverse shells or connecting to unverified command-and-control IPs).
-- **Privilege Escalation:** State transitions targeting unexpected ring transitions, namespace breakouts, or system-level write operations without valid, out-of-band cryptographic authorization keys.
-- **Data Exfiltration Vectors:** The execution of unmonitored bulk read-and-transmit pipelines across system boundaries containing sensitive infrastructure keys or unhashed personal records.
-
-**Key Implications:**
-
-- **Deterministic Safety:** The invariant is not probabilistic — it is absolute
-- **Pre-Execution Invalidation:** Destructive paths are blocked before execution
-- **Universal Auditability:** The constraint can be independently verified
-
 ---
 
 ### 4.1 Definitional Primitives of Systemic Harm ($\mathcal{H}$)
