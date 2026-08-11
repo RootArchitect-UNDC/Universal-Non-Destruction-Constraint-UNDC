@@ -1,33 +1,18 @@
 {
-  "manifestMetadata": {
-    "version": "1.0.0",
-    "timestamp": "2026-08-09T22:00:00Z",
-    "architectSignature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  "provenance_header": {
+    "model_sovereign_id": "undc:model:1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+    "blockchain_anchor_hash": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+    "serialization_timestamp": "2026-08-10T12:00:00Z"
   },
-  "blockchainAnchoring": {
-    "network": "Sovereign_Root_Ledger",
-    "contractAddress": "0x0000000000000000000000000000000000000000",
-    "stateHashSha256": "0000000000000000000000000000000000000000000000000000000000000000",
-    "blockHeight": 0
-  },
-  "astStaticAnalysisConstraints": {
-    "allowedLanguageNodes": [],
-    "forbiddenSyntaxPatterns": [],
-    "pointerArithmeticPolicy": {
-      "allowUnsafePointers": false,
-      "maxOffsetBytes": 0
+  "payload_metadata": {
+    "asset_type": "text/serialization",
+    "payload_hash": "sha256:1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+    "financial_mutation_vector": {
+      "contains_economic_state_change": false
     }
   },
-  "systemicHarmSignatures": {
-    "forbiddenSyscalls": [],
-    "networkSafelist": {
-      "enforceStrictOutbound": false,
-      "allowedCidrBlocks": [],
-      "allowedPorts": []
-    },
-    "resourceLimits": {
-      "maxLoopUnrollDepth": 0,
-      "allowDynamicAllocationDepth": false
-    }
+  "security_signatures": {
+    "runtime_enclave_signature": "dGVzdCBzaWduYXR1cmU=",
+    "signature_algorithm": "Ed25519"
   }
 }
