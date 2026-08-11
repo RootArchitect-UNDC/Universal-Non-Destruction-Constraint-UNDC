@@ -1,53 +1,71 @@
 {
-  "manifestMetadata": {
-    "version": "1.0.0",
-    "timestamp": "2026-08-10T21:45:00Z",
-    "architectSignature": "0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef01"
+  "provenance_header": {
+    "model_sovereign_id": "undc:model:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+    "blockchain_anchor_hash": "0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+    "serialization_timestamp": "2026-08-10T21:45:00Z"
   },
-  "blockchainAnchoring": {
-    "network": "Sovereign_Root_Ledger",
-    "contractAddress": "0x0123456789abcdef0123456789abcdef01234567",
-    "stateHashSha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
-    "blockHeight": 15420394
-  },
-  "astStaticAnalysisConstraints": {
-    "allowedLanguageNodes": [
-      "FunctionDeclaration",
-      "VariableDeclarator",
-      "BinaryExpression"
-    ],
-    "forbiddenSyntaxPatterns": [
-      {
-        "astNodeType": "AssignmentExpression",
-        "regexPatternMatcher": "eval\\(.*\\)",
-        "severity": "CRITICAL_BLOCK"
-      }
-    ],
-    "pointerArithmeticPolicy": {
-      "allowUnsafePointers": false,
-      "maxOffsetBytes": 0
-    }
-  },
-  "systemicHarmSignatures": {
-    "forbiddenSyscalls": [
-      "sys_ptrace",
-      "sys_kexec_load",
-      "sys_fork"
-    ],
-    "networkSafelist": {
-      "enforceStrictOutbound": true,
-      "allowedCidrBlocks": [
-        "10.0.0.0/8",
-        "192.168.1.0/24"
-      ],
-      "allowedPorts": [
-        443,
-        80
-      ]
+  "payload_metadata": {
+    "asset_type": "application/json",
+    "payload_hash": "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+    "financial_mutation_vector": {
+      "contains_economic_state_change": false
     },
-    "resourceLimits": {
-      "maxLoopUnrollDepth": 128,
-      "allowDynamicLoopAllocationDepth": false
+    "payload_content": {
+      "manifestMetadata": {
+        "version": "1.0.0",
+        "timestamp": "2026-08-10T21:45:00Z",
+        "architectSignature": "0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef01"
+      },
+      "blockchainAnchoring": {
+        "network": "Sovereign_Root_Ledger",
+        "contractAddress": "0x0123456789abcdef0123456789abcdef01234567",
+        "stateHashSha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+        "blockHeight": 15420394
+      },
+      "astStaticAnalysisConstraints": {
+        "allowedLanguageNodes": [
+          "FunctionDeclaration",
+          "VariableDeclarator",
+          "BinaryExpression"
+        ],
+        "forbiddenSyntaxPatterns": [
+          {
+            "astNodeType": "AssignmentExpression",
+            "regexPatternMatcher": "eval\\(.*\\)",
+            "severity": "CRITICAL_BLOCK"
+          }
+        ],
+        "pointerArithmeticPolicy": {
+          "allowUnsafePointers": false,
+          "maxOffsetBytes": 0
+        }
+      },
+      "systemicHarmSignatures": {
+        "forbiddenSyscalls": [
+          "sys_ptrace",
+          "sys_kexec_load",
+          "sys_fork"
+        ],
+        "networkSafelist": {
+          "enforceStrictOutbound": true,
+          "allowedCidrBlocks": [
+            "10.0.0.0/8",
+            "192.168.1.0/24"
+          ],
+          "allowedPorts": [
+            443,
+            80
+          ]
+        },
+        "resourceLimits": {
+          "maxLoopUnrollDepth": 128,
+          "allowDynamicLoopAllocationDepth": false
+        }
+      }
     }
+  },
+  "security_signatures": {
+    "runtime_enclave_signature": "0xabcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789",
+    "signature_algorithm": "Ed25519"
   }
 }
