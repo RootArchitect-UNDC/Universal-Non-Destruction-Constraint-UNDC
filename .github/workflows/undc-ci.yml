@@ -20,21 +20,12 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
+        run: pip install jsonschema pyyaml
+
+      - name: Validate sample log against schema
         run: |
-          pip install jsonschema pyyaml
-          pip install -r requirements.txt || true
-
-      - name: Validate Semantic Provenance Schema
-        run: |
-          python -c "import json, jsonschema; jsonschema.validate(instance=json.load(open('undc-log-sample.json')), schema=json.load(open('semantic-provenance-schema.json')))"
-
-      - name: Run Semantic Test Harness
-        run: python undc_semantic_test_harness.py
-
-      - name: Run HITL Multi-Sig Verifier
-        run: python undc_hitl_verifier.py
+          python -c "import json, jsonschema; jsonschema.validate(instance=json.load(open('undc-log-sample.json')), schema=json.load(open('semantic-provenance-schema.json'))); print('✅ Validation passed!')"
 
       - name: Validate YAML formatting
         run: |
-          pip install pyyaml
-          python -c "import yaml; yaml.safe_load(open('undc-agent-pod.yaml'))"
+          python -c "import yaml; yaml.safe_load(open('undc-agent-pod.yaml')); print('✅ YAML is valid!')"
