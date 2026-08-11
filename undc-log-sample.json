@@ -47,7 +47,7 @@
     },
     "resourceLimits": {
       "maxLoopUnrollDepth": 128,
-      "allowDynamicAllocationDepth": false
+      "allowDynamicLoopAllocationDepth": false
     }
   }
 }
