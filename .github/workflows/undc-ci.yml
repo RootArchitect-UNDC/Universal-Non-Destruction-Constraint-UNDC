@@ -26,7 +26,7 @@ jobs:
 
       - name: Validate Semantic Provenance Schema
         run: |
-          python -c "import json, jsonschema; jsonschema.validate(instance=json.load(open('semantic-provenance-schema.json')), schema=json.load(open('semantic-provenance-schema.json')))"
+          python -c "import json, jsonschema; jsonschema.validate(instance=json.load(open('undc-log-sample.json')), schema=json.load(open('semantic-provenance-schema.json')))"
 
       - name: Run Semantic Test Harness
         run: python undc_semantic_test_harness.py
