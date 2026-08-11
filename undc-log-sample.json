@@ -8,7 +8,11 @@
     "asset_type": "text/serialization",
     "payload_hash": "sha256:1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
     "financial_mutation_vector": {
-      "contains_economic_state_change": false
+      "contains_economic_state_change": true,
+      "hitl_authorization": {
+        "proof_of_authority_token": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+        "validator_public_key": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef"
+      }
     }
   },
   "security_signatures": {
