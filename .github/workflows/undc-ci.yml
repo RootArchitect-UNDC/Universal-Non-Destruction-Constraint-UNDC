@@ -24,7 +24,7 @@ jobs:
 
       - name: Validate sample log against schema
         run: |
-          python -c "import json, jsonschema; jsonschema.validate(instance=json.load(open('undc-log-sample.json')), schema=json.load(open('semantic-provenance-schema.json'))); print('✅ Validation passed!')"
+          python -c "import json, jsonschema; jsonschema.validate(instance=json.load(open('undc-log-sample-v2.json')), schema=json.load(open('semantic-provenance-schema.json'))); print('✅ Validation passed!')"
 
       - name: Validate YAML formatting
         run: |
