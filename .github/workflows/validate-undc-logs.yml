@@ -23,4 +23,4 @@ jobs:
         run: pip install check-jsonschema
 
       - name: Validate UNDC log sample
-        run: check-jsonschema --schemafile undc-schema.json undc-log-sample.json
+        run: check-jsonschema --schemafile undc-schema.json undc-log-sample-v2.json
