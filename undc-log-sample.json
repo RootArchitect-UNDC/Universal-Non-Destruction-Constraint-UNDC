@@ -1,32 +1,52 @@
 {
   "manifestMetadata": {
     "version": "1.0.0",
-    "timestamp": "2026-08-10T12:00:00Z",
-    "architectSignature": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    "timestamp": "2026-08-10T21:45:00Z",
+    "architectSignature": "0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef01"
   },
   "blockchainAnchoring": {
     "network": "Sovereign_Root_Ledger",
-    "contractAddress": "0x0000000000000000000000000000000000000000",
-    "stateHashSha256": "0000000000000000000000000000000000000000000000000000000000000000",
-    "blockHeight": 0
+    "contractAddress": "0x0123456789abcdef0123456789abcdef01234567",
+    "stateHashSha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+    "blockHeight": 15420394
   },
   "astStaticAnalysisConstraints": {
-    "allowedLanguageNodes": [],
-    "forbiddenSyntaxPatterns": [],
+    "allowedLanguageNodes": [
+      "FunctionDeclaration",
+      "VariableDeclarator",
+      "BinaryExpression"
+    ],
+    "forbiddenSyntaxPatterns": [
+      {
+        "astNodeType": "AssignmentExpression",
+        "regexPatternMatcher": "eval\\(.*\\)",
+        "severity": "CRITICAL_BLOCK"
+      }
+    ],
     "pointerArithmeticPolicy": {
       "allowUnsafePointers": false,
       "maxOffsetBytes": 0
     }
   },
   "systemicHarmSignatures": {
-    "forbiddenSyscalls": [],
+    "forbiddenSyscalls": [
+      "sys_ptrace",
+      "sys_kexec_load",
+      "sys_fork"
+    ],
     "networkSafelist": {
-      "enforceStrictOutbound": false,
-      "allowedCidrBlocks": [],
-      "allowedPorts": []
+      "enforceStrictOutbound": true,
+      "allowedCidrBlocks": [
+        "10.0.0.0/8",
+        "192.168.1.0/24"
+      ],
+      "allowedPorts": [
+        443,
+        80
+      ]
     },
     "resourceLimits": {
-      "maxLoopUnrollDepth": 0,
+      "maxLoopUnrollDepth": 128,
       "allowDynamicAllocationDepth": false
     }
   }
