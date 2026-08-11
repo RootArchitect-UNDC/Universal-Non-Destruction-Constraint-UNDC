@@ -1,6 +1,6 @@
 {
-  "$schema": "https://json-schema.org",
-  "$id": "https://githubusercontent.com",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/semantic-provenance-schema.json",
   "title": "UNDCSemanticProvenanceContract",
   "type": "object",
   "required": ["provenance_header", "payload_metadata", "security_signatures"],
@@ -16,7 +16,7 @@
     },
     "payload_metadata": {
       "type": "object",
-      "required": ["asset_type", "payload_hash", "financial_mutation_vector"],
+      "required": ["asset_type", "payload_hash"],
       "properties": {
         "asset_type": { "type": "string", "enum": ["text/serialization", "application/json", "financial/transaction", "code/executable"] },
         "payload_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
@@ -33,17 +33,13 @@
               }
             }
           },
-          "allOf": [
-            {
-              "if": {
-                "properties": { "contains_economic_state_change": { "const": true } },
-                "required": ["contains_economic_state_change"]
-              },
-              "then": {
-                "required": ["hitl_authorization"]
-              }
-            }
-          ]
+          "if": {
+            "properties": { "contains_economic_state_change": { "const": true } },
+            "required": ["contains_economic_state_change"]
+          },
+          "then": {
+            "required": ["hitl_authorization"]
+          }
         }
       }
     },
