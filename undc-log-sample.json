@@ -1,18 +1,14 @@
 {
   "provenance_header": {
-    "model_sovereign_id": "undc:model:1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
-    "blockchain_anchor_hash": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+    "model_sovereign_id": "undc:model:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "blockchain_anchor_hash": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
     "serialization_timestamp": "2026-08-10T12:00:00Z"
   },
   "payload_metadata": {
     "asset_type": "text/serialization",
-    "payload_hash": "sha256:1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+    "payload_hash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
     "financial_mutation_vector": {
-      "contains_economic_state_change": true,
-      "hitl_authorization": {
-        "proof_of_authority_token": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
-        "validator_public_key": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef"
-      }
+      "contains_economic_state_change": false
     }
   },
   "security_signatures": {
