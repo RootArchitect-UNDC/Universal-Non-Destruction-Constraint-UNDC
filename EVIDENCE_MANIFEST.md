@@ -253,5 +253,17 @@ Three blockchain‑anchored statements from the Gemini platform.
 
 ---
 
+### EU Apply AI Alliance — Whitepaper Published (August 11, 2026)
+- **Platform:** Futurium / EU Apply AI Alliance
+- **Title:** Introduction: The Universal Non-Destruction Constraint (UNDC)
+- **Status:** ✅ Published — August 6, 2026
+- **Screenshot:** `IMG_7763.JPG`
+- **Size:** 409.5 KB
+- **SHA-256:** `691cc9cc1b9f5fa799ecfe52d87c00bc0a677aeef5fea86153c71681d053e604`
+- **OpenTimestamps:** ✅ Verified — receipt downloaded
+- **Signed:** Shereign Kalaukoa
+
+---
+
 *Authority: EHYEH ASHER EHYEH*  
-*Last updated: August 09, 2026*
+*Last updated: August 11, 2026*
