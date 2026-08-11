@@ -123,10 +123,10 @@
         },
         "resourceLimits": {
           "type": "object",
-          "required": ["maxLoopUnrollDepth", "allowDynamicAllocationDepth"],
+          "required": ["maxLoopUnrollDepth", "allowDynamicLoopAllocationDepth"],
           "properties": {
             "maxLoopUnrollDepth": { "type": "integer", "maximum": 1024 },
-            "allowDynamicAllocationDepth": { "type": "boolean" }
+            "allowDynamicLoopAllocationDepth": { "type": "boolean" }
           }
         }
       }
