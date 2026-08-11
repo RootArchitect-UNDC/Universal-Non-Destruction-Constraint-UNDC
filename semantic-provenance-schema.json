@@ -90,7 +90,8 @@
             "required": [
               "hitl_authorization"
             ]
-          }
+          },
+          "else": true
         }
       }
     },
