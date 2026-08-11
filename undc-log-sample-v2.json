@@ -2,12 +2,12 @@
   "manifestMetadata": {
     "version": "1.0.0",
     "timestamp": "2026-08-11T00:00:00Z",
-    "architectSignature": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    "architectSignature": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
   },
   "blockchainAnchoring": {
     "network": "Ethereum_Mainnet",
     "contractAddress": "0x0000000000000000000000000000000000000000",
-    "stateHashSha256": "a9f2c4e7b1d5f8a3c6e9b2d4f7a1c5e8b3d6f9a2c4e7b1d5f8a3c6e9b2d4f7a1c5e8b3d6f9a2c4e7b1d5f8a3c6e9b2d4f7a",
+    "stateHashSha256": "a9f2c4e7b1d5f8a3c6e9b2d4f7a1c5e8b3d6f9a2c4e7b1d5f8a3c6e9b2d4f7a1c5e8b3d6f9a2c4e7b1d5f8a3c6e9b2d4",
     "blockHeight": 876543
   },
   "astStaticAnalysisConstraints": {
