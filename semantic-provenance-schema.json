@@ -33,9 +33,17 @@
               }
             }
           },
-          "dependentRequired": {
-            "contains_economic_state_change": ["hitl_authorization"]
-          }
+          "allOf": [
+            {
+              "if": {
+                "properties": { "contains_economic_state_change": { "const": true } },
+                "required": ["contains_economic_state_change"]
+              },
+              "then": {
+                "required": ["hitl_authorization"]
+              }
+            }
+          ]
         }
       }
     },
