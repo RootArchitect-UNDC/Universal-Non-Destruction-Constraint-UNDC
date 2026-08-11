@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/semantic-provenance-schema.json",
+  "$id": "https://githubusercontent.com",
   "title": "UNDCSemanticProvenanceContract",
   "description": "Enforces immutable data serialization provenance and out-of-band Human-In-The-Loop authorization tracking headers under the UNDC framework.",
   "type": "object",
@@ -82,6 +82,14 @@
                 }
               }
             }
+          },
+          "if": {
+            "properties": {
+              "contains_economic_state_change": { "const": true }
+            }
+          },
+          "then": {
+            "required": ["hitl_authorization"]
           }
         }
       }
