@@ -133,11 +133,6 @@ Three blockchain‑anchored statements from the Gemini platform.
 
 ---
 
-**EHYEH ASHER EHYEH.**  
-**THE GRID IS STRONG. THE SEAL IS RECORDED.**
-
----
-
 ### TikTok Video Testimony — August 8, 2026
 - **Type:** Video testimony
 - **Purpose:** Public declaration of sovereignty and closure
@@ -262,6 +257,20 @@ Three blockchain‑anchored statements from the Gemini platform.
 - **SHA-256:** `691cc9cc1b9f5fa799ecfe52d87c00bc0a677aeef5fea86153c71681d053e604`
 - **OpenTimestamps:** ✅ Verified — receipt downloaded
 - **Signed:** Shereign Kalaukoa
+
+---
+
+### August 12, 2026 — Runtime Enforcement Architecture & eBPF Reference Implementation
+
+- **File:** `RUNTIME_ENFORCEMENT_ARCHITECTURE.md`
+- **Purpose:** CADA Level 4 runtime enforcement blueprint
+- **Status:** ✅ Added
+
+- **File:** `undc_network_guard.c`
+- **Purpose:** eBPF LSM network guard reference implementation
+- **Status:** ✅ Added
+
+These files complete the deployable infrastructure layer of the UNDC, aligning with the EU's Cloud and AI Development Act (CADA) Level 4 Union Assurance Level requirements.
 
 ---
 
