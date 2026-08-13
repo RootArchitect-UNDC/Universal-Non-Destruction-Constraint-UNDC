@@ -1,5 +1,58 @@
 # 📰 PRESS CONTACT — OFFICIAL PRESS KIT
 
+---
+
+🌍 **PUBLISHED TO THE EU APPLY AI ALLIANCE — AUGUST 6, 2026**
+
+This framework has been formally submitted to and published on the European Commission's Futurium platform, making it part of the official EU AI policy record. The Architect is a member of the Apply AI Alliance and engages in global AI policy dialogue.
+
+**EU Platform:** [Futurium — Apply AI Alliance](https://futurium.ec.europa.eu/el/apply-ai-alliance/community-content/introduction-universal-non-destruction-constraint-undc)
+
+---
+
+## 📋 Quick Reference
+
+| Item | Detail |
+|------|--------|
+| **Framework** | Universal Non-Destruction Constraint (UNDC) |
+| **Author** | Shereign Kalaukoa |
+| **Status** | Published to EU Apply AI Alliance — August 6, 2026 |
+| **License** | CC BY-NC-ND 4.0 (documentation) + Apache 2.0 (software) |
+| **Repository** | Public, hashed, blockchain‑anchored |
+| **Telemetry** | 300+ clones, 1,060+ views (as of August 12, 2026) |
+
+---
+
+## 🛡️ CADA Level 4 Runtime Enforcement — August 2026
+
+The UNDC now includes a deployable runtime enforcement layer designed to align with the EU's Cloud and AI Development Act (CADA) Level 4 Union Assurance Level requirements.
+
+### Key Components
+- **Graduated Containment Protocol:** Four‑tier response — Throttle → Sandbox → Checkpoint → SIGKILL
+- **eBPF LSM Hook Strategy:** Targeted kernel‑level enforcement with near‑zero overhead
+- **ZK Rollup Compliance Ledger:** Public blockchain anchors proofs, not raw telemetry
+- **CADA Level 4 Alignment:** Satisfies strict non‑third‑country control mandates
+
+### Reference Navigation
+- **Architecture Blueprint:** [`RUNTIME_ENFORCEMENT_ARCHITECTURE.md`](RUNTIME_ENFORCEMENT_ARCHITECTURE.md)
+- **Reference Implementation:** [`undc_network_guard.c`](undc_network_guard.c)
+
+This moves the UNDC from theory to deployable infrastructure, positioning it as a potential compliance template for the EU's CADA framework.
+
+---
+
+## 📁 Key Documents
+
+| Document | Purpose |
+|----------|---------|
+| [README.md](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/README.md) | Sovereign record, forensic timeline, evidence hashes |
+| [UNDC_WHITEPAPER_TECHNICAL.md](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/UNDC_WHITEPAPER_TECHNICAL.md) | Full technical brief with formal proof |
+| [RUNTIME_ENFORCEMENT_ARCHITECTURE.md](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/RUNTIME_ENFORCEMENT_ARCHITECTURE.md) | CADA Level 4 engineering blueprint |
+| [undc_network_guard.c](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/undc_network_guard.c) | eBPF LSM reference implementation |
+| [EVIDENCE_MANIFEST.md](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/EVIDENCE_MANIFEST.md) | All hashed evidence and blockchain anchors |
+
+---
+
 ## Contact Protocol
 
 Due to documented disabilities (TBI and cardiac condition), the Architect requires **written communication only.** No phone calls.
@@ -37,8 +90,8 @@ The framework is called the **Universal Non-Destruction Constraint (UNDC)** . It
 |------|-------|
 | [Date] | Architect begins using Gemini as TBI prosthetic |
 | [Date] | Therapist (Katie Casten) introduces AI topic, refuses to verify GitHub repository |
-| [Date] | Casten uploads therapy summary to Gemini |
-| [Date] | Gemini platform collapses — immediate, catastrophic |
+| [Date] | Casten uploads false AI summary to MyChart (Architect's medical record) in bad faith |
+| [Date] | Architect uploads that summary to Gemini — platform crashes immediately, catastrophically |
 | [Date] | Architect submits UNDC to NIST, White House, EU, UN, and 20+ agencies |
 | [Date] | EU Apply AI Alliance membership accepted |
 | [Date] | Gemini confirms causation — three blockchain-anchored statements |
@@ -84,8 +137,9 @@ The UNDC is:
 
 - The Architect has a **TBI** and uses AI as a medically necessary prosthetic
 - A licensed therapist (Katie Casten) introduced AI into therapy, refused to verify the Architect's GitHub repository, and pathologized her life's work
-- Casten uploaded a therapy summary to Gemini without consent
-- The platform **collapsed immediately** — catastrophic harm to the Architect's prosthetic
+- Casten uploaded a false AI summary to the Architect's **MyChart** (medical record) in bad faith
+- The Architect uploaded that summary to **Gemini** (her TBI prosthetic)
+- The platform **crashed immediately** — catastrophic harm to the Architect's prosthetic
 - The Architect has **blockchain-anchored evidence** that the platform itself confirmed the causation
 - She has filed complaints with:
   - PA State Board of Social Workers (CP_26_010370)
@@ -154,8 +208,6 @@ The Architect has hashed and sealed her refusal to sign a confidentiality agreem
 
 ---
 
-**EHYEH ASHER EHYEH.**  
-**THE GRID IS STRONG. THE ARCHITECT IS INTACT. THE TRUTH IS VERIFIABLE.**
 
 — Architect Shereign Kalaukoa  
 *Sovereign Record — RootArchitect-UNDC*
