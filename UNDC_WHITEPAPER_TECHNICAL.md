@@ -46,6 +46,22 @@ The framework operates as a strict runtime invariant. Let **A** represent the st
 - **Immutable Anchoring:** The entire UNDC ruleset is cryptographically hashed and anchored via blockchain technology.
 - **Universal Auditability:** Any third-party auditor, regulatory body, or external lab can independently verify that a model's operational envelope complies with the baseline cryptographic state.
 
+## 3.3 CADA Level 4 Runtime Enforcement
+
+The UNDC framework implements **CADA Level 4 Union Assurance Levels** — a four-tier Graduated Containment Protocol that provides mathematically verifiable compliance for EU sovereignty requirements.
+
+The four tiers are:
+
+1. **Throttle:** Reduce resource allocation to suspicious processes
+2. **Sandbox:** Isolate the process in a restricted environment
+3. **Checkpoint:** Freeze the process state for forensic analysis
+4. **SIGKILL:** Terminate the process with extreme prejudice
+
+This is enforced at the kernel level via eBPF LSM hooks that intercept:
+- `mmap` operations (blocking PROT_WRITE on locked model files)
+- `socket_connect` operations (blocking unauthorized network egress)
+- `ioctl` operations (preventing low-level GPU state manipulation)
+
 ---
 
 ## 4. Formal Mathematical Proof
@@ -77,6 +93,20 @@ To close the semantic gap where valid system instructions are weaponized to gene
 - **Unsigned Data Serialization Failures:** Outbound data streams or text serialization packets originating from a generative runtime that lack an inline, cryptographically signed metadata header mapping back to the model's unique blockchain-anchored identifier.
 - **Provenance Header Stripping:** Any compile-time or runtime dependency path that executes a mutation designed to truncate, obfuscate, or delete mandatory watermarking matrices or immutable tracking tags from generated asset payloads.
 - **Decoupled Financial State Transformations:** Execution branches attempting to authorize cryptographic wallet transfers, API-driven transactional mutations, or external economic environment updates without triggering a blocking, out-of-band Human-In-The-Loop (HITL) cryptographic authorization check.
+
+#### Zero-Knowledge Compliance Verification
+
+To prove compliance to EU auditors without exposing proprietary model weights, the UNDC framework implements a zk-SNARK circuit (`compliance_verifier.circom`) that demonstrates:
+
+1. The model runtime environment has intercepted an operational state
+2. The file's device signature matches a cryptographic key in the kernel map
+3. The file's contents match a State Commitment Root anchored to the public ledger
+
+The circuit enforces:
+
+$$\text{SHA256}(\text{modelWeightsHash}) \times \text{LocalEnclaveFingerprint} + \text{operationalTimestamp} \equiv \text{publicLedgerRoot}$$
+
+This provides an air-gapped verification path — the regulator sees proof of integrity without gaining engineering insights into the underlying model architecture.
 
 ---
 
@@ -171,6 +201,24 @@ The UNDC is fully documented in a public repository, with hashed, blockchain-anc
 - **Evidence Manifest:** [EVIDENCE_MANIFEST.md](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/EVIDENCE_MANIFEST.md)
 - **Press Kit:** [PRESS_CONTACT.md](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/blob/main/PRESS_CONTACT.md)
 
+---
+
+### Runtime Enforcement Implementation
+
+The UNDC framework includes a complete runtime enforcement stack for CADA Level 4 compliance:
+
+| File | Purpose |
+|------|---------|
+| `undc_mmap_guard.c` | Kernel LSM handler — blocks PROT_WRITE on locked model files |
+| `undc_telemetry_daemon.c` | User-space ring buffer consumer — logs violation events |
+| `undc_model_locker.c` | Cryptographic ingestion tool — locks model files with SHA-256 hashes |
+| `compliance_verifier.circom` | zk-SNARK circuit — proves compliance without exposing weights |
+
+---
+
+### Auditor Documentation
+
+- **`AUDITOR_VERIFICATION_GUIDE.md`** — Formal verification schema for EU CADA Level 4 auditors
 ---
 
 ## 📬 COMMUNICATION PROTOCOL
