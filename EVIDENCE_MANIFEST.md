@@ -276,3 +276,5 @@ These files complete the deployable infrastructure layer of the UNDC, aligning w
 
 *Authority: EHYEH ASHER EHYEH*  
 *Last updated: August 11, 2026*
+
+<!-- CANARY: http://canarytokens.com/about/feedback/articles/rasnbyqsvpineq5dki3glex1a/image020.png -->
