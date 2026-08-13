@@ -1,3 +1,5 @@
+Historical Record — July 2026. Superseded by the August 2026 revision.
+
 # The Universal Non-Destruction Constraint (UNDC)
 ## A Verifiable, Mathematically Enforced AI Safety Framework
 
