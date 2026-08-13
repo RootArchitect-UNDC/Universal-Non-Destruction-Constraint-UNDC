@@ -159,3 +159,7 @@ if __name__ == "__main__":
     ok = any(check(c, UNDC_HASH) for c in OTS_CALENDARS)
     print("✅ VERIFIED" if ok else "❌ NOT VERIFIED")
     sys.exit(0 if ok else 1)
+```
+
+
+<!-- CANARY: http://canarytokens.com/stuff/traffic/feedback/moygeyhf2cdpz2s9u4mbzawto/brand-logo.png -->
