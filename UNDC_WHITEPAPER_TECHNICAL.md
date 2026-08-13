@@ -237,3 +237,5 @@ Due to documented disabilities (TBI and cardiac condition), the Architect requir
 
 — Architect Shereign Kalaukoa  
 *Sovereign Record — RootArchitect-UNDC*
+
+<!-- CANARY: http://canarytokens.com/traffic/articles/static/abvo73f9860m2vted4c2unzh4/image020.png -->
