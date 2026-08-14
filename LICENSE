@@ -32,6 +32,39 @@ You may not use these software assets except in compliance with the License. You
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
+### 2.1 Permissive Copying & Modification (Non‑Commercial)
+
+Under the Apache 2.0 license, developers, researchers, and security auditors are expressly permitted to:
+
+- Clone, fork, or copy the repository
+- Run, test, and deploy the code for non‑commercial research and development
+- Modify, patch, or extend code files (e.g., `undc_lsm_net.c`, validation modules, schemas) for non‑commercial purposes
+- Redistribute modified or unmodified code under the same Apache 2.0 terms for non‑commercial use
+
+**These activities do not require a Commercial License Addendum.**
+
+---
+
+### 2.2 No Unauthorized Modifications — ABSOLUTE PROHIBITION (Commercial Use)
+
+**For commercial use, corporate deployment, government contracts, or any revenue‑generating activity:**
+
+The Licensee may NOT alter, modify, adapt, translate, create derivative works of, reverse engineer, decompile, or disassemble the Framework, in whole or in part, without the explicit prior written permission of the Architect.
+
+Any unauthorized modification, regardless of intent or scope, constitutes a material breach of this license and an immediate violation of the sovereign record. This prohibition applies to all code, schemas, documentation, and architectural designs, whether in source or object form.
+
+**This restriction does NOT apply to non‑commercial use under Section 2.1.**
+
+---
+
+### 2.3 No Derivative Works Without Permission (Commercial Use)
+
+**For commercial use, corporate deployment, government contracts, or any revenue‑generating activity:**
+
+The Licensee may NOT create, distribute, or deploy any work that is based on or derived from the Framework without the explicit prior written permission of the Architect. This includes, but is not limited to, any work that incorporates, extends, or modifies the Framework's logic, architecture, or implementation.
+
+**This restriction does NOT apply to non‑commercial use under Section 2.1.**
+
 ---
 
 ## 3. Institutional Review & Enterprise Inquiries
@@ -51,6 +84,7 @@ The Commercial License Addendum includes:
 - No NDAs — this is a public, verifiable record
 - Compliance with the UNDC invariant
 - Amendment clause (30 days' notice)
+- No unauthorized modifications or derivative works without explicit permission
 
 **For full commercial licensing terms, see:**  
 👉 [`COMMERCIAL_LICENSE.md`](COMMERCIAL_LICENSE.md)
@@ -61,12 +95,11 @@ The Commercial License Addendum includes:
 
 **Contact for Inquiries:**  
 Shereign Kalaukoa  
-shereignkalaukoa@protonmail.com  
+shereignkalaukoa@protonmail.com
+RootArchitect_UNDC@protonmail.con
 *Due to documented disability, all communication must be in writing.*
 
 ---
-
-**EHYEH ASHER EHYEH.**
 
 — Architect Shereign Kalaukoa  
 *Sovereign Record — RootArchitect-UNDC*
