@@ -2,8 +2,25 @@
 
 **Version 1.0 – August 2026**  
 **Licensor:** Shereign Kalaukoa (the "Architect")  
-**Sovereign Record:** https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC
+**Sovereign Record:** [GitHub Repository URL]  
 **Master Genesis Hash:** `666dfc4ca6e93d508218e87317e145e7f1d43f07a229a4c8f5332f144415518b`
+
+---
+
+## 0. Important Clarification
+
+**This Commercial License Addendum applies ONLY to commercial use, corporate deployment, government contracts, or any revenue‑generating activity.**
+
+Non‑commercial use — including research, education, open‑source development, personal projects, and security auditing — is **already covered** by the Apache 2.0 license for code and CC BY‑NC‑ND 4.0 for documentation.
+
+Under the Apache 2.0 license, developers are expressly permitted to:
+
+- Clone, fork, or copy the repository
+- Run, test, and deploy the code for non‑commercial research and development
+- Modify, patch, or extend code files (e.g., `undc_lsm_net.c`, validation modules, schemas)
+- Redistribute modified or unmodified code under the same Apache 2.0 terms
+
+**You do not need a Commercial License Addendum for non‑commercial use.**
 
 ---
 
@@ -70,14 +87,17 @@ The Addendum is not a replacement for the open-source licenses. It is an **addit
 
 6. **No NDA:** The Architect does not sign Non-Disclosure Agreements. This is a public, verifiable record. The Licensee acknowledges that this Addendum and the License Fee are matters of public record.
 
-7. **Termination:** The Architect may terminate this license upon written notice if the Licensee:
+7. **No Unauthorized Modifications:** The Licensee may not alter, modify, or create derivative works of the Framework without the explicit written permission of the Architect. Any unauthorized modification terminates this license immediately and constitutes a violation of the sovereign record.
+
+8. **Termination:** The Architect may terminate this license upon written notice if the Licensee:
    - Violates the UNDC invariant
    - Fails to pay the License Fee
    - Misrepresents the Framework or its origins
+   - Modifies the Framework without authorization
 
-8. **Deployment Registration:** The Licensee must register their deployment with the Architect, including the hash of their deployed instance, to maintain the sovereign record.
+9. **Deployment Registration:** The Licensee must register their deployment with the Architect, including the hash of their deployed instance, to maintain the sovereign record.
 
-9. **Amendment:** The Architect reserves the right to update this Addendum with 30 days' written notice to all active licensees.
+10. **Amendment:** The Architect reserves the right to update this Addendum with 30 days' written notice to all active licensees.
 
 ---
 
@@ -100,13 +120,16 @@ By deploying, integrating, or using the Framework for Commercial Use, the Licens
 All inquiries regarding Commercial Licensing should be directed to:
 
 **Architect Shereign Kalaukoa**  
-Email:Shereignkalaukoa@protonmail.com, RootArchitect_UNDC@protonmail.com  
-GitHub: [GitHub Profile to be Added]  
-Repository:(https://GitHub.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC)
+Email: shereignkalaukoa@protonmail.com
+RootArchitect_UNDC@protonmail.com
+
+GitHub: https://github.com/RootArchitect-UNDC
+
+Repository: https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC
 
 ---
 
 **THE GRID IS STRONG. THE FRAMEWORK IS COMPLETE. THE LICENSE IS CLEAR.**
 
 — Architect Shereign Kalaukoa  
-Sovereign Record — RootArchitect-UNDC
+*Sovereign Record — RootArchitect-UNDC*
