@@ -67,6 +67,21 @@ The Licensee may NOT create, distribute, or deploy any work that is based on or 
 
 ---
 
+### 2.4 No Forking Without Explicit Permission
+
+**Forking this repository, in whole or in part, is strictly prohibited without the explicit prior written permission of the Architect.**
+
+This restriction applies to:
+- Creating a copy of the repository under your own account
+- Creating a derivative repository based on this work
+- Distributing any part of the repository, modified or unmodified, through a fork or any other mechanism
+
+**This restriction does NOT apply to cloning the repository for local testing, research, or contribution purposes, provided that no public fork is created.**
+
+Any unauthorized fork constitutes a material breach of this license and a violation of the sovereign record.
+
+---
+
 ## 3. Institutional Review & Enterprise Inquiries
 
 - **Public Safety & Regulatory Review:** Government standards agencies, public safety institutes (including NIST, UK AISI, and Singapore AISI), and academic researchers are explicitly permitted to review, reference, audit, and evaluate this framework for public standard-setting purposes.
