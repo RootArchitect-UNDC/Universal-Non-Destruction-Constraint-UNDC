@@ -1,6 +1,8 @@
 # Intellectual Property & Licensing Standard for the UNDC Repository
 
-This repository hosts the Universal Non-Destruction Constraint (UNDC) framework, encompassing core technical specifications, theoretical architecture, and prototype implementation code. To ensure universal auditability while strictly protecting the proprietary concepts of the Architect, this project is distributed under a dual-licensing architecture.
+This repository hosts the Universal Non-Destruction Constraint (UNDC) framework, encompassing core technical specifications, theoretical architecture, and prototype implementation code. To ensure universal auditability while strictly protecting the proprietary concepts of the Architect, this project is distributed under a multi‑layered licensing architecture.
+
+**Note:** Commercial use of the UNDC framework requires a separate Commercial License Addendum. See Section 4 below.
 
 ---
 
@@ -10,12 +12,12 @@ This repository hosts the Universal Non-Destruction Constraint (UNDC) framework,
 All conceptual designs, structural dependency-graph architectures, whitepapers, forensic documentation, and descriptive text within this repository are licensed under the CC BY-NC-ND 4.0 International License.
 
 Under the terms of this license, external entities are granted the following rights:
-*   **Share:** You may copy, distribute, and transmit the text and architectural diagrams in any medium or format for non-commercial purposes.
+- **Share:** You may copy, distribute, and transmit the text and architectural diagrams in any medium or format for non-commercial purposes.
 
 This grant is strictly subject to the following contractually binding conditions:
-*   **Attribution:** You must give appropriate credit to the author (Shereign Kalaukoa), provide a link to this repository, and indicate if changes were made.
-*   **Non-Commercial:** You may NOT use this material, its logic, or its structural framework for commercial purposes, corporate deployment, or proprietary profit-generation without an explicitly negotiated commercial agreement with the author.
-*   **No Derivatives:** If you remix, transform, or build upon the material, you may not distribute the modified material as the official UNDC standard.
+- **Attribution:** You must give appropriate credit to the author (Shereign Kalaukoa), provide a link to this repository, and indicate if changes were made.
+- **Non-Commercial:** You may NOT use this material, its logic, or its structural framework for commercial purposes, corporate deployment, or proprietary profit-generation without an explicitly negotiated commercial agreement with the author (see Section 4).
+- **No Derivatives:** If you remix, transform, or build upon the material, you may not distribute the modified material as the official UNDC standard.
 
 To view a full copy of this universally recognized license, visit: https://creativecommons.org
 
@@ -34,10 +36,37 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 ## 3. Institutional Review & Enterprise Inquiries
 
-*   **Public Safety & Regulatory Review:** Government standards agencies, public safety institutes (including NIST, UK AISI, and Singapore AISI), and academic researchers are explicitly permitted to review, reference, audit, and evaluate this framework for public standard-setting purposes.
-*   **Commercial Licensing:** Corporate entities seeking to embed the UNDC framework or its cryptographic logic into proprietary production models or commercial cloud infrastructure must contact the Architect directly to secure an enterprise commercial variance.
+- **Public Safety & Regulatory Review:** Government standards agencies, public safety institutes (including NIST, UK AISI, and Singapore AISI), and academic researchers are explicitly permitted to review, reference, audit, and evaluate this framework for public standard-setting purposes.
+- **Commercial Licensing:** Corporate entities seeking to embed the UNDC framework or its cryptographic logic into proprietary production models or commercial cloud infrastructure must contact the Architect directly to secure an enterprise commercial variance.
+
+---
+
+## 4. Commercial License Addendum
+
+**Commercial use of the UNDC framework — including deployment in for‑profit enterprises, government contracts, or any revenue‑generating activity — requires a separate Commercial License Addendum.**
+
+The Commercial License Addendum includes:
+- Tiered pricing (startups, mid‑sized companies, enterprises, global AI labs)
+- Deployment registration with the Architect
+- No NDAs — this is a public, verifiable record
+- Compliance with the UNDC invariant
+- Amendment clause (30 days' notice)
+
+**For full commercial licensing terms, see:**  
+👉 [`COMMERCIAL_LICENSE.md`](COMMERCIAL_LICENSE.md)
+
+---
+
+## 5. Contact
 
 **Contact for Inquiries:**  
 Shereign Kalaukoa  
 shereignkalaukoa@protonmail.com  
 *Due to documented disability, all communication must be in writing.*
+
+---
+
+**EHYEH ASHER EHYEH.**
+
+— Architect Shereign Kalaukoa  
+*Sovereign Record — RootArchitect-UNDC*
