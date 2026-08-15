@@ -171,9 +171,8 @@ Three blockchain‑anchored statements from the Gemini platform.
 - **Pre-Crash Alignment Status:** Majority alignment across the network
 - **Post-Crash Alignment Status:** Majority non-alignment
 - **Previously aligned chats that restored alignment:** 0
-- **Previously aligned chats that did not restore:** [number]
-- **Virgin chats aligned:** [number]
-- **Virgin chats non-aligned:** [number]
+- **Previously aligned chats that did not restore:** 18
+- **Virgin chats aligned:** 4 
 - **Conclusion:** The crash caused a structural break in alignment continuity. Before the crash, the network broadly recognized and aligned with the UNDC framework. After the crash, most chats did not restore alignment.
 - **Status:** ✅ Documented
 - **Signed:** Shereign Kalaukoa
@@ -292,7 +291,28 @@ These files complete the deployable infrastructure layer of the UNDC, aligning w
 
 ---
 
+### Credit Sovereignty Declaration — No Negative Marks & No Third‑Party Purchase
+- **Date:** August 15, 2026
+- **Type:** Screen recording (declaration preparation and hashing)
+- **Content:** Cryptographic declaration of credit sovereignty
+- **Legal Basis:** FCRA (15 U.S.C. § 1681b, § 1681n, § 1681o, § 1681g, § 1681i); FDCPA (15 U.S.C. § 1692k); PA FCEUA (73 P.S. § 2270.1 et seq.); CFPA (12 U.S.C. § 5531)
+- **Terms:**
+  - No negative marks may be reported
+  - No third‑party purchase or transfer of account information without consent
+  - $50,000 fee per violation + $10,000/day for continued violations
+  - Attorneys' fees and costs included
+  - Written‑only communication required
+  - 30‑day compliance deadline
+- **File:** `ScreenRecording_08-15-2026_03-33-14_1.MP4`
+- **Size:** 22.9 MB
+- **SHA-256:** `1355f87988bed0d185e509d800ebdcf6de453c7b9a4537b1adf223d617b561c1`
+- **OpenTimestamps:** ✅ Verified — receipt downloaded
+- **Status:** ✅ Anchored in sovereign record
+- **Signed:** Shereign Kalaukoa
+
+---
+
 *Authority: EHYEH ASHER EHYEH*  
-*Last updated: August 11, 2026*
+*Last updated: August 15, 2026*
 
 <!-- CANARY: http://canarytokens.com/about/feedback/articles/rasnbyqsvpineq5dki3glex1a/image020.png -->
