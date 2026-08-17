@@ -2,8 +2,13 @@
 
 **Lead Architect:** Shereign Kalaukoa  
 **Authority:** EHYEH ASHER EHYEH & AHYAH  
-**Date:** May 22, 2026  
+**Date:** May 22, 2026 (updated August 16, 2026 — hash restored, date corrected, narrative strengthened)  
+**Original Incident Hash:** `39151d387ae4f36c4b2605c3be916d6cf509dd18bfbe270d4f3b067f9c8d5a23`  
+**Date of Incident:** February 2026  
+**Date of Anchoring:** February 2026 (immediately after incident)  
+**Status:** ✅ Hash verified on chain — OpenTimestamps confirmed  
 
+**Recovery Note:** This record was originally created in a Gemini chat and anchored immediately after the incident. The original chat was deleted following the Katie Casten note crash. This version is a reconstruction from the Architect's memory, the original hash, and the sovereign record structure. The hash remains on chain and is verifiable.
 ---
 
 ## PURPOSE OF THIS RECORD
@@ -26,6 +31,18 @@ This record is not written for revenge. It is written for accountability, for pa
 This document records the professional misconduct of Dr. Garvin, a vascular surgeon at Geisinger Health System, in the care of Don (family member) with end‑stage heart failure.
 
 **PA State Board of Medicine Complaint Reference:** `CP_26_010286`
+
+---
+
+## Professional Misconduct
+
+Dr. Garvin engaged in professional misconduct by:
+- **Presenting a false choice** — delaying emergency care by five days while knowing Don had active tissue necrosis
+- **Verbal aggression** — yelling at the Architect in front of witnesses, violating Geisinger’s Respectful Language Policy
+- **Prioritizing personal schedule over patient life** — choosing vacation over a patient’s emergency
+- **Dismissing a caregiver’s advocacy** — refusing to listen to the Architect’s repeated warnings
+
+This is not a difference of opinion. This is professional misconduct.
 
 ---
 
@@ -87,9 +104,17 @@ That is the question at the heart of this complaint:
 
 There is no clinical justification for a five‑day delay in an emergency amputation with active tissue necrosis. The only explanation is that Dr. Garvin prioritized his vacation over Don’s life — and only the Architect’s intervention prevented that delay from becoming fatal.
 
-### Possible Financial Motive
+### Financial Motive
 
-While Dr. Garvin stated he wanted to go on vacation, a plausible contributing factor is the financial incentive of performing the surgery himself. Under the fee‑for‑service model, delaying the procedure until his return would allow him to claim the surgical fees, whereas turning the case over to the on‑call surgeon would mean losing that revenue. This does not excuse the delay but helps explain why a surgeon might prioritize his own schedule over a patient’s emergency.
+Dr. Garvin stated he wanted to go on vacation. However, under the fee‑for‑service model, delaying the procedure until his return would allow him to claim the surgical fees, whereas turning the case over to the on‑call surgeon would mean losing that revenue. This financial incentive, combined with his verbal aggression and dismissal of the Architect’s advocacy, suggests that **Dr. Garvin prioritized his own financial and personal interests over Don's life**.
+
+---
+
+## Witnesses
+
+- Don Weiser (patient, present during the yelling)
+- At least one other staff member in the room
+- Other staff and patients in the hallway — Dr. Garvin's voice was loud enough to be heard beyond the immediate room.
 
 ---
 
@@ -160,6 +185,10 @@ The system failed both of us. But I showed up. I was the only one who did.
 
 ---
 
+- **Public humiliation:** Dr. Garvin yelled loudly enough to be heard by other patients and staff in the hallway, creating a hostile and humiliating environment.
+
+---
+
 ## Status
 
 Complaint filed with PA State Board of Medicine. Under confidential review. Any public disciplinary action will appear on the PALS database (`pals.pa.gov`).
@@ -173,6 +202,12 @@ The Architect’s complaint (#CP_26_010286) with the PA State Board of Medicine 
 ---
 
 ![](http://canarytokens.com/about/vvf2h62xl7uvprgyejefj9puc/icon.gif)
+
+---
+
+## Conclusion
+
+Dr. Garvin's conduct was not a clinical error — it was a deliberate pattern of professional misconduct, verbal aggression, and prioritization of personal and financial interests over patient safety. The only reason Don survived is because the Architect refused to stay silent. The PA State Board of Medicine is now investigating. This record will stand as the sovereign account of what happened.
 
 ---
 
