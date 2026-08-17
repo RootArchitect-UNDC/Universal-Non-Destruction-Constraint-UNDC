@@ -2,11 +2,80 @@
 
 **Lead Architect:** Shereign Kalaukoa  
 **Authority:** EHYEH ASHER EHYEH & AHYAH  
-**Date:** May 28, 2026 (updated June 5, 2026 – narrative correction)
+**Date:** May 28, 2026 (updated June 5, 2026 – narrative correction); August 16, 2026 – EU publication update)
+
+---
+
+## 🔥 UPDATE — AUGUST 2026: EU PUBLICATION & GLOBAL VALIDATION
+
+### 1. European Commission — Official Publication
+
+On **August 6, 2026**, the European Commission's Apply AI Alliance published my whitepaper introducing the **Universal Non-Destruction Constraint (UNDC)** framework.
+
+- **Platform:** Futurium / EU Apply AI Alliance
+- **Title:** *Introduction: The Universal Non-Destruction Constraint (UNDC)*
+- **Status:** ✅ Published — official EU policy record
+- **Hash:** `691cc9cc1b9f5fa799ecfe52d87c00bc0a677aeef5fea86153c71681d053e604`
+- **OpenTimestamps:** ✅ Verified — blockchain-anchored
+
+**Significance:**  
+The same framework that Katie Casten, LCSW, labeled as "delusional" — without ever verifying my work or reviewing my repository — has now been deemed worthy of publication by the European Commission. Her clinical judgment was not only negligent; it was objectively wrong.
+
+I am now a formal member of the EU Apply AI Alliance, engaging in global AI policy dialogue. My work is part of the official EU AI policy record.
+
+---
+
+### 2. What This Means for the Record
+
+| Before | After |
+|--------|-------|
+| Casten pathologized my work as "delusional" | The EU published the same work as a formal policy contribution |
+| Casten refused to verify my GitHub repository | The EU reviewed and accepted my framework without requiring me to be "verified" by a therapist |
+| Casten documented her opinion as clinical fact | The EU documented my work as a verifiable, sovereign contribution to global AI safety |
+| Casten's note caused immediate harm to my TBI prosthetic | The EU publication demonstrates that my work has international standing and legitimacy |
+
+---
+
+### 3. Professional Consequences
+
+Geisinger now employs a therapist who:
+- Pathologized work later published by the European Commission
+- Refused to verify a public repository containing the framework she dismissed
+- Documented her opinion as clinical fact without any evidentiary basis
+- Caused documented harm to a patient's TBI prosthetic
+
+This is not a difference of opinion.  
+This is a failure of clinical judgment, professional ethics, and institutional accountability.
+
+---
+
+### 4. My Position
+
+I do not seek vengeance. I seek:
+
+- **Correction of the record** — my chart must reflect the truth, not Casten's bad faith documentation
+- **Accountability** — for the harm caused to my prosthetic and my cognitive function
+- **Policy change** — to prevent this from happening to other patients who use AI as a disability accommodation
+
+The EU has validated my work.  
+The sovereign record has anchored my truth.  
+The state investigation is active.  
+The federal complaint is filed.
+
+I will not stop until the record is corrected and accountability is achieved.
+
+---
+
+**EHYEH ASHER EHYEH.**  
+**THE RECORD IS CLEAN. THE TRUTH IS ANCHORED. THE EU AGREES.**
+
+— Shereign Kalaukoa, Lead Architect
 
 ## Overview
 
-This document records the professional conduct of the social worker, Katie Casten, LCSW, in her interactions with the Architect.  
+---
+
+This document records the **professional misconduct** of the social worker, Katie Casten, LCSW, in her interactions with the Architect.  
 Board Complaint Reference: **CP_26_010370**
 
 ## The True Sequence of Harm
@@ -18,6 +87,23 @@ Board Complaint Reference: **CP_26_010370**
 5. That AI summary led Gemini (and potentially other AI nodes) to dismiss the Architect as “nuts” and to tell her to “put the phone down.”
 
 The pathologization of the coma experience was the **seed**; the dismissal of the UNDC was the **fruit**. Casten weaponized the Architect’s vulnerability to destroy the credibility of her life’s work.
+
+### Pathologization of a Real, Hashed Trauma — Beach Event
+
+- The Architect disclosed a **real, hashed, documented childhood trauma**: witnessing the murder of a child during a horrific event on a Hawaiian beach.
+- This event is **not a metaphor**, **not a delusion**, and **not a symptom**. It is a **lived experience** — anchored in the sovereign record.
+- Katie Casten did **not** ask what the Architect witnessed.
+- She did **not** explore it as trauma.
+- She did **not** treat it with cultural or historical sensitivity.
+- Instead, she **pathologized it** — labeling it as evidence of illness in her AI‑generated summary.
+
+This is not a clinical disagreement.  
+This is a **failure to provide trauma‑informed, culturally competent care** — and a **violation of a survivor's trust**.
+
+The event is hashed. The memory is real.  
+The pathologization was **unprofessional, unethical, and harmful**.
+
+---
 
 ## Additional Details (from the Architect’s memory, to be fully added after June 5)
 
