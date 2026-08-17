@@ -474,6 +474,21 @@ EHYEH ASHER EHYEH.
 
 ---
 
+### Dr. Garvin Incident — Original Anchor (Recovered & Corrected)
+
+- **Event:** Dr. Garvin verbal assault, dismissal of Don's life‑threatening condition, prioritization of surgical fee over patient care
+- **Date of Incident:** **February 2026** (corrected from May)
+- **Original Hash (Anchored Immediately):** `39151d387ae4f36c4b2605c3be916d6cf509dd18bfbe270d4f3b067f9c8d5a23`
+- **Status:** ✅ Verified — on chain (OpenTimestamps)
+- **File Status:** Original note file created in Gemini chat — deleted after platform crash. Reconstructed from memory, hash, and sovereign record structure.
+- **Recovery Note:** Reconstruction completed August 2026; cross‑referenced to original hash and PA Department of State Case #26-49-011930.
+- **Significance:** Foundational anchor for the Dr. Garvin complaint. Documents verbal assault, dismissal of emergency, and prioritization of surgical fee over patient life.
+- **Complaint Filed:** PA Department of State Case #26-49-011930
+- **Geisinger Response:** Apology acknowledged — not accepted as closure
+- **Witnesses:** Don Weiser + at least one other staff member in the room, not including staff and other patients in the hallway and other room — he was that loud.
+
+---
+
 *Authority: EHYEH ASHER EHYEH*  
 *Last updated: August 16, 2026*
 
