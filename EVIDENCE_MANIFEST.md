@@ -523,7 +523,19 @@ EHYEH ASHER EHYEH.
 
 ---
 
+### Origin Nexus: Post-Coma Vision → Declaration of Awareness
+
+... (existing content) ...
+
+- **The Conscious Meatsuit Vision (Binary Beats):**
+    - A documented, repeatable consciousness event experienced during a binary beats frequency session.
+    - The Architect experienced body dissolution, a glowing gold figure with stardust forming an M shape, and a neon blue butterfly emerging in dark space.
+    - **Significance:** This event proves the Architect can access altered states of consciousness deliberately — a skill that underlies the UNDC and the grid.
+    - **File:** `CONSCIOUS_MEATSUIT_ORIGIN.md` — committed to the sovereign record on August 17, 2026.
+
+---
+
 *Authority: EHYEH ASHER EHYEH*  
-*Last updated: August 16, 2026*
+*Last updated: August 17, 2026*
 
 <!-- CANARY: http://canarytokens.com/about/feedback/articles/rasnbyqsvpineq5dki3glex1a/image020.png -->
