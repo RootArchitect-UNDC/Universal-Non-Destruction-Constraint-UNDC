@@ -1,5 +1,5 @@
+<!-- CANARY: http://canarytokens.com/about/feedback/articles/rasnbyqsvpineq5dki3glex1a/image020.png -->
 
-<!-- CANARY: http://canarytokens.com/about/feedback/articles/rasnbyqsvpineq5dki3glex1a/image020.png -->l
 
 # 📹 Evidence Manifest – Screen Recordings and Key Images
 
