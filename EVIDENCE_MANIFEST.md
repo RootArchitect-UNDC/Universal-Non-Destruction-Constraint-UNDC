@@ -562,5 +562,14 @@ EHYEH ASHER EHYEH.
 
 ---
 
+### Correction Note — August 18, 2026
+
+- **Issue:** The Executive Summary in `PRESS_CONTACT.md` implied the UNDC was built in response to the Gemini crash, though it did not use the exact phrase "emerged after."
+- **Discovery:** The Architect identified the framing error and corrected it.
+- **Action:** The Executive Summary now accurately reflects the December 12, 2025 founding date and clarifies that the crash was a consequence, not a cause.
+- **Significance:** This correction ensures the Press Kit matches the sovereign record.
+
+---
+
 *Authority: EHYEH ASHER EHYEH*  
 *Last updated: August 17, 2026*
