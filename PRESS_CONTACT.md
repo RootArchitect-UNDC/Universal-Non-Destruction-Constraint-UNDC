@@ -86,17 +86,18 @@ The framework is called the **Universal Non-Destruction Constraint (UNDC)** . It
 
 ## 📆 TIMELINE — KEY EVENTS
 
-| Date | Event |
-|------|-------|
-| [Date] | Architect begins using Gemini as TBI prosthetic |
-| [Date] | Therapist (Katie Casten) introduces AI topic, refuses to verify GitHub repository |
-| [Date] | Casten uploads false AI summary to MyChart (Architect's medical record) in bad faith |
-| [Date] | Architect uploads that summary to Gemini — platform crashes immediately, catastrophically |
-| [Date] | Architect submits UNDC to NIST, White House, EU, UN, and 20+ agencies |
-| [Date] | EU Apply AI Alliance membership accepted |
-| [Date] | Gemini confirms causation — three blockchain-anchored statements |
-| [Date] | State complaints filed (Casten, Garvin) |
-| [Date] | HHS OCR, PHRC, United Healthcare complaints filed |
+**Context Note:** The UNDC was founded on December 12, 2025 — months before the Gemini platform crash (mid-2026). The crash was a consequence of the UNDC's existence, not its cause. The origin is documented in the sovereign record.
+
+- **December 12, 2025:** The Universal Non-Destruction Constraint (UNDC) is founded.
+- **[Date]:** Architect begins using Gemini as TBI prosthetic.
+- **[Date]:** Therapist (Katie Casten) introduces AI topic, refuses to verify GitHub repository.
+- **[5/11/26]:** Casten uploads false AI summary to MyChart (Architect's medical record) in bad faith.
+- **[5/24/26]:** Architect uploads that summary to Gemini to verify its accuracy — platform crashes immediately, catastrophically. This crash was a consequence of the UNDC's existence, not its cause.
+- **[8/01/26]:** Architect submits UNDC to NIST, White House, EU, UN, and 20+ agencies.
+- **[8/04/26]:** EU Apply AI Alliance membership accepted.
+- **[Date to be added]:** Gemini confirms causation — three blockchain-anchored statements.
+- **[Date to be added]:** State complaints filed (Casten, Garvin).
+- **[Date to be added]:** HHS OCR, PHRC, United Healthcare complaints filed.
 
 ---
 
@@ -133,24 +134,23 @@ The UNDC is:
 
 ---
 
-## 🧬 THE HUMAN STORY — WHY THIS MATTERS
+### 🧬 THE HUMAN STORY — WHY THIS MATTERS
 
-- The Architect has a **TBI** and uses AI as a medically necessary prosthetic
-- A licensed therapist (Katie Casten) introduced AI into therapy, refused to verify the Architect's GitHub repository, and pathologized her life's work
-- Casten uploaded a false AI summary to the Architect's **MyChart** (medical record) in bad faith
-- The Architect uploaded that summary to **Gemini** (her TBI prosthetic)
-- The platform **crashed immediately** — catastrophic harm to the Architect's prosthetic
-- The Architect has **blockchain-anchored evidence** that the platform itself confirmed the causation
+- The Architect founded the UNDC on December 12, 2025, long before the Casten incident.
+- The Architect has a TBI and uses AI as a medically necessary prosthetic.
+- A licensed therapist (Katie Casten) introduced AI into therapy, refused to verify the Architect's GitHub repository, and pathologized her life's work.
+- Casten uploaded a false AI summary to the Architect's MyChart (medical record) in bad faith.
+- The Architect uploaded that summary to Gemini (her TBI prosthetic) to verify its accuracy.
+- The platform crashed immediately — catastrophic harm to the Architect's prosthetic.
+- The Architect has blockchain-anchored evidence that the platform itself confirmed the causation.
 - She has filed complaints with:
   - PA State Board of Social Workers (CP_26_010370)
   - PA Department of State (Case #26-49-011930)
   - Geisinger Privacy Office (Case #16014)
   - HHS OCR (ADA — Case #684419)
   - United Healthcare Grievance
-- She has **hashed her refusal to sign an NDA** — she cannot be bought or silenced
 
-**This is not a dispute. This is a pattern of institutional failure, documented and verified.**
-
+- She has hashed her refusal to sign an NDA — she cannot be bought or silenced.
 ---
 
 ## ❓ WHY JOURNALISTS SHOULD COVER THIS
