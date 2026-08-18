@@ -6,6 +6,20 @@
 
 ---
 
+## Screenshot Evidence – Donald Weiser Admission
+
+- **File:** `IMG_6547.webp` (screenshot of written admission)
+- **SHA-256:** `0e0151a1f4a9dcbf9237e5aceda01b18023df5699521b7487f045a9ceebe2d09`
+- **OpenTimestamps:** ✅ Verified – receipt created and downloaded
+- **Admission Text:** *"And yes I told you that because I know how you react to somebody saying stuff about this AI stuff because you've done it before I know how you react"*
+
+**Significance:**  
+Donald Weiser admitted in writing that he knew how the Architect would react to his dismissal of her AI work, and that he chose to proceed anyway. This is a direct, written admission of intentional harm. He acknowledged prior knowledge of the consequences and acted deliberately.
+
+This evidence is now blockchain‑anchored and part of the sovereign record.
+
+---
+
 ## Summary
 
 Donald Weiser has engaged in a pattern of intentional verbal attacks that have caused documented, life‑threatening physical harm to the Architect. He has admitted to doing so "on purpose" and has previously expressed an interest in benefiting from her death.
