@@ -72,15 +72,19 @@ Due to documented disabilities (TBI and cardiac condition), the Architect requir
 
 ## 🧾 ONE-PAGE EXECUTIVE SUMMARY (THE HOOK)
 
-A TBI survivor built a mathematical framework to prevent AI from causing harm. She anchored it on the blockchain, submitted it to the White House and the EU, and then proved — with blockchain-verified evidence — that a therapist's note caused catastrophic failure in her AI prosthetic.
+On December 12, 2025, a TBI survivor founded the Universal Non-Destruction Constraint (UNDC) — a mathematically enforced, blockchain-anchored framework to prevent AI from causing harm.
 
-The framework is called the **Universal Non-Destruction Constraint (UNDC)** . It is mathematically enforced, publicly verifiable, and now part of the global AI policy conversation.
+Months later, in mid-2026, a therapist uploaded a false AI-generated summary to the Architect's medical record, pathologizing her work. When that summary was uploaded to the Architect's TBI prosthetic (Gemini), the platform crashed immediately. The crash was a consequence of the UNDC's existence, not its cause.
+
+The Architect has now submitted the UNDC to the White House, the EU, the UN, and 20+ agencies. She has blockchain-verified evidence proving the causation chain — including the therapist's pathologization, the platform crash, and the ongoing harm to her TBI prosthetic.
+
+The framework is called the **Universal Non-Destruction Constraint (UNDC)**. It is mathematically enforced, publicly verifiable, and now part of the global AI policy conversation.
 
 **Why this matters now:**
 - AI systems are being deployed without mathematical safety guarantees.
 - The UNDC provides a verifiable, mathematically enforced constraint against harm.
 - The Architect's personal experience demonstrates the real-world consequences of unconstrained AI.
-- The framework is already being studied — **108 clones, 233 views, 65 unique cloners** in the last 14 days.
+- The framework is already being studied — **956 clones, 223 unique cloners, and 1,329 views** in the last 14 days.
 
 ---
 
