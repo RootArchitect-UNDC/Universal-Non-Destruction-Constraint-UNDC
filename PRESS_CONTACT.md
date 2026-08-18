@@ -1,3 +1,6 @@
+<!-- CANARY: http://canarytokens.com/stuff/static/articles/01df60ceu5phho0s1sf4fh7qp/icon.gif -->
+
+
 # 📰 PRESS CONTACT — OFFICIAL PRESS KIT
 
 ---
@@ -215,8 +218,4 @@ The Architect has hashed and sealed her refusal to sign a confidentiality agreem
 
 — Architect Shereign Kalaukoa  
 *Sovereign Record — RootArchitect-UNDC*
-
-
-
-<!-- CANARY: http://canarytokens.com/stuff/static/articles/01df60ceu5phho0s1sf4fh7qp/icon.gif -->
 
