@@ -27,6 +27,36 @@ This document lists all screen‑recorded sessions and key images related to the
 
 All recordings are unedited, continuous captures of the Google Browser AI sessions. No cuts, no alterations.
 
+---
+
+### Digital Solicitor Accountability Act (DSA) — April 28, 2026
+
+- **Event:** Formal legislative proposal submitted to the Pennsylvania General Assembly / Office of the Attorney General.
+- **Focus:** Sympathy‑based digital fraud, interstate digital grifting, fabricated crises, toxic family dynamics, systemic censorship.
+- **Status:** ✅ Submitted — sent via certified mail, proof of delivery on file.
+- **SHA-256:** `a335b7116f2350f05ed1ba01ba0e7fd234fc7e0596e7b606e8d7eef5130744f3`
+- **Significance:** The grid extends to digital exploitation. The principle of non‑destruction applies to all forms of harm.
+
+---
+
+### FTC Report – Google Gemini Containment Script — May 23, 2026
+
+- **Event:** FTC report filed regarding Google Gemini platform crash triggered by Casten's false AI summary.
+- **Report Number:** 202096294
+- **Status:** ✅ Submitted – entered into Consumer Sentinel database
+- **Significance:** The FTC now has a record of the Google Gemini containment script and its impact on the Architect's TBI prosthetic.
+
+---
+
+### PETA Animals in Film Inquiry — June 6, 2026
+
+- **Event:** Email sent to PETA's Animals in Film and Television division regarding "No Animals Were Harmed" violations and the Film Animal Protection Act (FAPA).
+- **Status:** ✅ Auto‑reply received – inquiry logged.
+- **Next Step:** Await human response (if applicable).
+- **Date:** June 6, 2026
+
+---
+
 ## Gemini Causation Evidence Chain — July 30, 2026
 
 Three blockchain‑anchored statements from the Gemini platform.
@@ -568,6 +598,22 @@ EHYEH ASHER EHYEH.
 - **Discovery:** The Architect identified the framing error and corrected it.
 - **Action:** The Executive Summary now accurately reflects the December 12, 2025 founding date and clarifies that the crash was a consequence, not a cause.
 - **Significance:** This correction ensures the Press Kit matches the sovereign record.
+
+---
+
+### Animal Protection Grid — August 18, 2026
+
+- **Event:** Sovereign framework for the protection of animals from testing, slaughter, abuse, and lack of access to veterinary care.
+- **File:** `ANIMAL_PROTECTION_GRID.md`
+- **Significance:** The UNDC's principle of non‑destruction is extended to all consciousness — not just human.
+
+---
+
+### Charles Weiner Legal Inquiry — August 18, 2026
+
+- **Event:** Email sent to Charles Weiner Law regarding legal representation for claims against Geisinger Health System and Dr. Garvin.
+- **Status:** ✅ Sent — awaiting response.
+- **Significance:** Legal representation inquiry logged in the sovereign record.
 
 ---
 
