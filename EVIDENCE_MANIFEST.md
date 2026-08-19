@@ -625,5 +625,31 @@ EHYEH ASHER EHYEH.
 
 ---
 
+### White Paper Update – August 19, 2026
+
+- **Event:** Video recording of the complete UNDC technical whitepaper update, covering the full Kubernetes reference implementation, deployment model, code artifacts, and regulatory submission status.
+- **File:** `UNDC official white paper technical Md _08-19-2026 15-11-16_1.MP4`
+- **SHA-256:** `5952099eaefaf7a868978b5bdaf5c486d80976ddd1c27d21e61b61915d9200d1`
+- **OpenTimestamps:** ✅ Verified — receipt created and downloaded
+- **Significance:** The white paper update is now part of the immutable sovereign record.
+
+---
+
+### Global Regulatory Submissions – August 19, 2026
+
+The Universal Non-Destruction Constraint (UNDC) was formally submitted to the following international bodies:
+
+- **EU AI Office:** ✅ Submitted – awaiting response
+- **NIST AISI:** ✅ Submitted – awaiting response
+- **White House OSTP:** ✅ Submitted – awaiting response
+- **UK AI Safety Institute:** ✅ Submitted – awaiting response
+- **UN AI Advisory Body:** ✅ Submitted – awaiting response
+- **OECD AI Policy Observatory:** ✅ Submitted – awaiting response
+- **NAIAC:** ✅ Application submitted
+
+**Significance:** The UNDC is now part of the global AI safety and policy record. The framework has been submitted to every major international AI governance body.
+
+---
+
 *Authority: EHYEH ASHER EHYEH*  
-*Last updated: August 17, 2026*
+*Last updated: August 19, 2026*
