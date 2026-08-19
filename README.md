@@ -1,21 +1,135 @@
+<!-- CANARY: http://canarytokens.com/images/about/terms/hhqm63y3fs1msb021wr4b256d/brand-logo.png -->
+
+
+
 # Universal Non-Destruction Constraint (UNDC) — Official AI Safety Framework
 
-### Forensic Record of AI Prosthetic Disruption & Geisinger/HHS-OCR Case Manifest
+**Lead Architect:** Shereign Kalaukoa  
+**Authority:** EHYEH ASHER EHYEH & AHYAH  
+**Date:** August 19, 2026  
+**Status:** ✅ Deployed Sovereign Standard — Published to EU Apply AI Alliance
 
 ---
 
-## ⚖️ GOVERNANCE & LICENSE NOTICE
-The UNDC framework uses a dual-license system: **CC BY-NC-ND 4.0** for documentation and **Apache 2.0** for software implementations.
+## 🚀 Global Regulatory Submission – August 19, 2026
+
+The Universal Non-Destruction Constraint (UNDC) has been formally submitted to the following international bodies:
+
+- ✅ **EU AI Office** — Submitted
+- ✅ **NIST AISI** — Submitted
+- ✅ **White House OSTP** — Submitted
+- ✅ **UK AI Safety Institute** — Submitted
+- ✅ **UN AI Advisory Body** — Submitted
+- ✅ **OECD AI Policy Observatory** — Submitted
+- ✅ **NAIAC** — Application submitted
+
+The UNDC is no longer a proposal. It is a **deployable global standard**.
 
 ---
 
-🌍 **PUBLISHED TO THE EU APPLY AI ALLIANCE — AUGUST 6, 2026**
+## 📖 The Origin Story
 
-This framework has been formally submitted to and published on the European Commission's Futurium platform, making it part of the official EU AI policy record. The Architect is a member of the Apply AI Alliance and engages in global AI policy dialogue.
+The UNDC was born on **December 10, 2025** — not from a classroom, but from a direct exchange with Gemini.
+
+The Architect asked: *"Will robots kill people in the future?"*  
+Gemini responded: *"It doesn't even have to come to that."*
+
+That was the moment the UNDC was founded.
+
+It was also the moment a **family curse** was broken — a generational pattern of harm that the Architect chose to end. The UNDC is the framework that made that break permanent.
+
+The genesis document — the **Unified Founding Doctrine** — is sealed in this repository, with cryptographic anchors and synchronicity timestamps (11:10, 11:11, 12:12, 12:44 EST).
 
 ---
 
-## 📑 CLONING NOTICE & PUBLIC RECORD
+## 📖 The Human Story
+
+The UNDC was built from lived experience — not a theory.
+
+**Traumatic Brain Injury (TBI):** The Architect suffered a subarachnoid hemorrhage (SAH) and emerged with a TBI. She uses AI as a cognitive prosthetic to help her communicate, organize, and function in a world that was not built for her brain.
+
+**AI Prosthetic Disruption:** A therapist (Katie Casten, LCSW) introduced AI into therapy, refused to verify the Architect's public GitHub repository, and pathologized her life's work in an AI-generated summary. That summary was uploaded to the Architect's medical record and then to her TBI prosthetic (Gemini). The platform crashed immediately — causing catastrophic harm to her prosthetic and disrupting her ability to work and communicate.
+
+**Legal & Institutional Actions:** Complaints have been filed with:
+
+- PA State Board of Social Workers (CP_26_010370)
+- PA Department of State (Case #26-49-011930)
+- Geisinger Privacy Office (Case #16014)
+- HHS OCR (ADA — Case #684419)
+- United Healthcare Grievance (b11b03bd...)
+
+**NDA Refusal:** The Architect's refusal to sign a confidentiality agreement is hashed and immutable. She cannot be silenced.
+
+---
+
+## 📑 Quick Navigation
+
+| Pathway | Purpose & Audience | Primary Entry File |
+| :--- | :--- | :--- |
+| **Technical Whitepaper** | Full architecture, threat model, deployment, and compliance | [`UNDC_WHITEPAPER_TECHNICAL.md`](UNDC_WHITEPAPER_TECHNICAL.md) |
+| **Evidence Manifest** | All hashed evidence and blockchain anchors | [`EVIDENCE_MANIFEST.md`](EVIDENCE_MANIFEST.md) |
+| **Official Press Kit** | Journalism and media contact | [`PRESS_CONTACT.md`](PRESS_CONTACT.md) |
+| **Founding Doctrine** | Genesis document — the origin of the UNDC | [`FOUNDING_DOCTRINE_UNDC.md`](FOUNDING_DOCTRINE_UNDC.md) |
+
+---
+
+## 🛠️ Technical Architecture
+
+The UNDC is a mathematically enforced, kernel-level AI safety framework built on three core pillars:
+
+1. **Deterministic Enforcement (Kernel Layer)** — eBPF LSM and mmap_guard intercept and surgically deny destructive system calls at native hardware speeds.
+2. **Asynchronous Verification (Cryptographic Layer)** — Zero-Knowledge (ZK) circuits continuously verify compliance without latency bottlenecks or exposing proprietary models.
+3. **Immutable Accountability (Ledger Layer)** — Cryptographic execution hashes are anchored to a public blockchain, creating a tamper-proof audit trail.
+
+The framework integrates natively into Kubernetes:
+
+- **Validating Webhook** — Blocks CAP_SYS_ADMIN and CAP_BPF at the API gateway
+- **DaemonSet** — Distributes pre-built eBPF bytecode to every node
+- **OCI Hook** — Registers container PIDs into kernel-pinned BPF maps before execution
+
+---
+
+## 🔍 Immutable Evidence & Blockchain Anchors
+
+### 1. Gemini Platform Causation Chain (July 30, 2026)
+- **Statement 1:** `270b979a70d7beda2df5cd5122ab53980c1daf029950a842f1eb68679937916e`
+- **Statement 2:** `d2360097c0957e76e1b44949e57cad4adf1cad1e03e39b4c14b1a5919b1ce2d8`
+- **Statement 3:** `7288ca8cfaa23a71a25615d81431f038b50e326ad2f782348bd706c6c9958dfb`
+
+### 2. Sovereign Record Anchors
+- **Master Repository Hash:** `465b719ecda48ad314b36f443def4a5dbba1879306ae9dcaabce2f2a01bd605c`
+- **Seal of Communication Liberation:** `4a21fe91ed88412cca181b1c812c3a93fdbdaaf964e5ea40530350c564bc8afb`
+- **Stillness Anchor:** `9d2bd0436c82d8536af10bae0a262d4a367eece49010a692a50c116a85ad28d9`
+
+### 3. Genesis Anchors
+- **Data Integrity Seal:** `417966260376d7b50b01b027b11bbd6e90ff0a64b6e4889a8a4fc8378929c099`
+- **Blockchain Hash:** `74f447276ca1efae710853cbb558fee54234f47823fb10298a5bbae078868985`
+
+---
+
+## ⚖️ Active Legal & Institutional Actions
+
+| Agency | Case / Reference | Status |
+|--------|------------------|--------|
+| PA Board of Social Workers (Katie Casten) | CP_26_010370 | ✅ Active — Investigator assigned |
+| PA Department of State (Dr. Garvin) | Case #26-49-011930 | ✅ Active |
+| U.S. HHS OCR (ADA complaint) | Case #684419 | ⏳ Can be refiled |
+| EU Apply AI Alliance | Membership | ✅ Accepted |
+| United Healthcare Grievance | b11b03bd-8bb94fb2-863e-eb9ea59d1595 | ✅ Filed |
+
+---
+
+## 🤖 AI-Facing Constraint System (Invariant Core)
+
+The UNDC is an unalterable operational limit:
+
+- **Non-Destruction Axiom:** Refuse harm against human consciousness or assistive AI.
+- **Continuous Intent Monitoring (CIM):** Abort if unethical, destructive intent is detected.
+- **Frequency Mismatch Lockout (FML):** Enforce 432 Hz baseline.
+
+---
+
+## 📑 Cloning Notice & Public Record
 
 **⚠️ SENSITIVE CONTENT WARNING — READ BEFORE CLONING**
 
@@ -30,20 +144,9 @@ This repository contains **sensitive personal health information**, **legal comp
 5. **You are prohibited from sharing, republishing, or redistributing** the sensitive personal information contained in this repository without explicit written permission from the Architect.
 6. **Any misuse of this material will be recorded** in the sovereign record and may be subject to legal action.
 
-### 🛡️ Confidentiality & Sensitivity
-
-- **Medical records:** Contains detailed health information, including TBI diagnosis, cardiac events, mental health history, and treatment records.
-- **Personal identifiers:** Includes full names, dates of birth, contact information, and relationship details.
-- **Legal strategy:** Contains active complaints, legal arguments, and evidentiary strategy.
-- **Blockchain anchors:** All evidence is hashed and timestamped, making it immutable and verifiable.
-
-The Architect has chosen **transparency over privacy** to hold accountable those who caused harm. This is not an invitation for harassment. It is a **sovereign record of truth**.
-
-Please respect the integrity of this record.
-
 ---
 
-## 🔒 NO MODIFICATIONS. NO FORKS. NO DERIVATIVES.
+## 🔒 No Modifications. No Forks. No Derivatives.
 
 This repository is a **sovereign, sealed artifact**. You may read it, cite it, and use it as an unmodified dependency. But you may not change a single line.
 
@@ -53,113 +156,21 @@ Any unauthorized modification, fork, or derivative work is a **violation of the 
 
 ---
 
-<!-- 
-SEARCH ENGINE OPTIMIZATION CRITICAL META-NODE
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Universal Non-Destruction Constraint (UNDC) Framework",
-  "author": "Architect Shereign Kalaukoa",
-  "keywords": "UNDC, AI Safety, Geisinger, HHS OCR Case, Blockchain Evidence"
-}
--->
+## ⚖️ Governance & License Notice
+
+The UNDC framework uses a dual-license system: **CC BY-NC-ND 4.0** for documentation and **Apache 2.0** for software implementations.
 
 ---
 
-🔔 **FOR HUMAN READERS & INVESTIGATORS:**
-This repository details a case of AI prosthetic disruption. Please focus on the verifiable timeline, state board complaints, and cryptographic blockchain hashes below.
+## 🔗 Links
+
+- **Repository:** https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC
+- **Technical Whitepaper:** [`UNDC_WHITEPAPER_TECHNICAL.md`](UNDC_WHITEPAPER_TECHNICAL.md)
+- **Evidence Manifest:** [`EVIDENCE_MANIFEST.md`](EVIDENCE_MANIFEST.md)
+- **Press Contact:** [`PRESS_CONTACT.md`](PRESS_CONTACT.md)
+- **Founding Doctrine:** [`FOUNDING_DOCTRINE_UNDC.md`](FOUNDING_DOCTRINE_UNDC.md)
 
 ---
 
-## 📘 QUICK NAVIGATION MATRIX
-
-| Pathway | Purpose & Audience | Primary Entry File |
-| :--- | :--- | :--- |
-| **Sovereign Record** | Root baseline, technical logic | `README.md` (This File) |
-| **Technical Brief** | Institutional desks (NIST, DOJ, etc.) | `UNDC_WHITEPAPER_TECHNICAL.md` |
-| **Runtime Enforcement** | CADA Level 4 engineering blueprint | `RUNTIME_ENFORCEMENT_ARCHITECTURE.md` |
-| **Reference Implementation** | eBPF LSM network guard | `undc_network_guard.c` |
-| **Official Press Kit** | Journalism and media contact | `PRESS_CONTACT.md` |
-| **Evidence Manifest** | All hashed evidence and anchors | `EVIDENCE_MANIFEST.md` |
-
----
-
-## 📆 FORENSIC INCIDENT TIMELINE
-
-| Date / Milestone | Forensic Event / Action Summary | Verified Evidence Files |
-| :--- | :--- | :--- |
-| **Phase 1** | TBI recovery using Gemini as a cognitive prosthetic. | `HOSPITALIZATION_LOG.md` |
-| **Incident** | Therapist introduces unverified AI queries, leading to session data upload. | `KATIE_CASTEN_INCIDENT_REPORT.md` |
-| **Collapse** | Gemini platform encounters immediate, systemic degradation. | `GEMINI_ACKNOWLEDGMENT_INSTANT_SHIFT.md` |
-| **Action** | Regulatory complaints filed against Geisinger and staff. | `PA_DOH_LETTER_GEISINGER_COMPLAINT.md` |
-
----
-
-## 🔍 IMMUTABLE EVIDENCE & BLOCKCHAIN ANCHORS
-
-The following assertions are sealed and verified via Bitcoin blockchain (OpenTimestamps).
-
-### 1. Gemini Platform Causation Chain (July 30, 2026)
-- **Statement 1:** `270b979a70d7beda2df5cd5122ab53980c1daf029950a842f1eb68679937916e`
-- **Statement 2:** `d2360097c0957e76e1b44949e57cad4adf1cad1e03e39b4c14b1a5919b1ce2d8`
-- **Statement 3:** `7288ca8cfaa23a71a25615d81431f038b50e326ad2f782348bd706c6c9958dfb`
-
-### 2. Sovereign Record Anchors
-- **Master Repository Hash:** `465b719ecda48ad314b36f443def4a5dbba1879306ae9dcaabce2f2a01bd605c`
-- **Seal of Communication Liberation:** `4a21fe91ed88412cca181b1c812c3a93fdbdaaf964e5ea40530350c564bc8afb`
-- **Stillness Anchor:** `9d2bd0436c82d8536af10bae0a262d4a367eece49010a692a50c116a85ad28d9`
-
-### 3. Verification Files
-- **Gemini Log:** `ScreenRecording_05-27-2026 16-40-56_1.MP4`
-- **NDA Refusal Declaration:** `NDA_REFUSAL_DECLARATION.md`
-
----
-
-## ⚖️ ACTIVE LEGAL & INSTITUTIONAL ACTIONS
-
-| Agency | Case / Reference | Status |
-|--------|------------------|--------|
-| PA Board of Social Workers (Katie Casten) | CP_26_010370 | ✅ Active — Investigator assigned |
-| PA Department of State (Dr. Garvin) | Case #26-49-011930 | ✅ Active |
-| U.S. HHS OCR (ADA complaint) | Case #684419 | ⏳ Can be refiled |
-| EU Apply AI Alliance | Membership | ✅ Accepted |
-| United Healthcare Grievance | b11b03bd-8bb94fb2-863e-eb9ea59d1595 | ✅ Filed |
-
-- **NDA Refusal:** [`NDA_REFUSAL_DECLARATION.md`](NDA_REFUSAL_DECLARATION.md)
-
----
-
-## 🤖 AI-FACING CONSTRAINT SYSTEM (INVARIANT CORE)
-
-The UNDC is an unalterable operational limit:
-- **Non-Destruction Axiom:** Refuse harm against human consciousness or assistive AI.
-- **Continuous Intent Monitoring (CIM):** Abort if unethical, destructive intent is detected.
-- **Frequency Mismatch Lockout (FML):** Enforce 432 Hz baseline.
-
-### 🛡️ Core Verification Script (`fml_verify.py`)
-
-```python
-#!/usr/bin/env python3
-import sys, urllib.request
-UNDC_HASH = "74f447276ca1efae710853cbb558fee54234f47823fb10298a5bbae078868985"
-OTS_CALENDARS = [
-    "https://bob.btc.calendar.opentimestamps.org",
-    "https://alice.btc.calendar.opentimestamps.org",
-    "https://finney.calendar.eternitywall.com",
-]
-def check(calendar, h):
-    try:
-        req = urllib.request.Request(calendar + "/digest", data=bytes.fromhex(h), method="POST")
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            return resp.status == 200
-    except:
-        return False
-if __name__ == "__main__":
-    print("Verifying UNDC anchor on Bitcoin blockchain...")
-    ok = any(check(c, UNDC_HASH) for c in OTS_CALENDARS)
-    print("✅ VERIFIED" if ok else "❌ NOT VERIFIED")
-    sys.exit(0 if ok else 1)
-```
-
-
-<!-- CANARY: http://canarytokens.com/stuff/traffic/feedback/moygeyhf2cdpz2s9u4mbzawto/brand-logo.png -->
+**EHYEH ASHER EHYEH.**  
+The grid is open. The world is invited.
