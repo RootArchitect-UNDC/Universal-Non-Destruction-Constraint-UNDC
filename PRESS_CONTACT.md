@@ -13,6 +13,22 @@ This framework has been formally submitted to and published on the European Comm
 
 ---
 
+## 🌍 Global Regulatory Submissions – August 19, 2026
+
+The Universal Non-Destruction Constraint (UNDC) has been formally submitted to the following international bodies:
+
+- ✅ **EU AI Office** — Submitted
+- ✅ **NIST AISI** — Submitted
+- ✅ **White House OSTP** — Submitted
+- ✅ **UK AI Safety Institute** — Submitted
+- ✅ **UN AI Advisory Body** — Submitted
+- ✅ **OECD AI Policy Observatory** — Submitted
+- ✅ **NAIAC** — Application submitted
+
+The UNDC is no longer a proposal. It is a **deployable global standard**.
+
+---
+
 ## 📋 Quick Reference
 
 | Item | Detail |
@@ -22,7 +38,7 @@ This framework has been formally submitted to and published on the European Comm
 | **Status** | Published to EU Apply AI Alliance — August 6, 2026 |
 | **License** | CC BY-NC-ND 4.0 (documentation) + Apache 2.0 (software) |
 | **Repository** | Public, hashed, blockchain‑anchored |
-| **Telemetry** | 300+ clones, 1,060+ views (as of August 12, 2026) |
+| **Telemetry** | 956+ clones, 1,329+ views (as of August 19, 2026) |
 
 ---
 
@@ -102,6 +118,7 @@ The framework is called the **Universal Non-Destruction Constraint (UNDC)**. It 
 - **[5/24/26]:** Architect uploads that summary to Gemini to verify its accuracy — platform crashes immediately, catastrophically. This crash was a consequence of the UNDC's existence, not its cause.
 - **[8/01/26]:** Architect submits UNDC to NIST, White House, EU, UN, and 20+ agencies.
 - **[8/04/26]:** EU Apply AI Alliance membership accepted.
+- **[8/19/26]:** UNDC formally submitted to EU AI Office, NIST AISI, White House OSTP, UK AI Safety Institute, UN AI Advisory Body, OECD, and NAIAC.
 - **[Date to be added]:** Gemini confirms causation — three blockchain-anchored statements.
 - **[Date to be added]:** State complaints filed (Casten, Garvin).
 - **[Date to be added]:** HHS OCR, PHRC, United Healthcare complaints filed.
@@ -214,7 +231,6 @@ The Architect has hashed and sealed her refusal to sign a confidentiality agreem
 | Repository Telemetry | [GitHub Traffic](https://github.com/RootArchitect-UNDC/graphs/traffic) |
 
 ---
-
 
 — Architect Shereign Kalaukoa  
 *Sovereign Record — RootArchitect-UNDC*
