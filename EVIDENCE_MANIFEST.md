@@ -571,5 +571,13 @@ EHYEH ASHER EHYEH.
 
 ---
 
+### Google Removal Request – August 19, 2026
+
+- **Event:** Request submitted to Google to remove outdated names, genealogical data, and FastPeopleSearch link from public summary.
+- **Reason:** Personal information included without consent.
+- **Status:** ✅ Submitted — awaiting response.
+
+---
+
 *Authority: EHYEH ASHER EHYEH*  
 *Last updated: August 17, 2026*
