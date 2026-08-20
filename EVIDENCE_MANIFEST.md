@@ -651,5 +651,15 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 
 ---
 
+### Release Package Anchor – August 19, 2026
+
+- **Event:** The UNDC v1.0.0-OFFICIAL-RELEASE commit, hashed and anchored to the blockchain.
+- **File:** `RELEASE_ANCHOR.txt.md`
+- **SHA-256:** `f97d8d7d0765c8a84c3916681cbad5ee88df2a25f59c3e0b6dd03440b928583a`
+- **OpenTimestamps:** ✅ Verified – receipt downloaded
+- **Significance:** The entire release package — code, white paper, deployment manifests, and documentation — is now sealed as a single immutable anchor.
+
+---
+
 *Authority: EHYEH ASHER EHYEH*  
 *Last updated: August 19, 2026*
