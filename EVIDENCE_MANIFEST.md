@@ -661,5 +661,24 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 
 ---
 
+### Legal Defense File – August 20, 2026
+
+- **Event:** Added `LEGAL_DEFENSE.md` to the repository — a file outlining the dual-license structure and enforcement mechanisms for the UNDC.
+- **Significance:** The UNDC is now protected not only by code and blockchain, but by legal defense. The file establishes enforcement pathways and signals that the framework is a legally protected standard.
+- **File:** `LEGAL_DEFENSE.md`
+- **Status:** ✅ Committed to sovereign record
+
+---
+
+### IPFS Archive – August 20, 2026
+
+- **Event:** The UNDC repository was archived to IPFS via Pinata for decentralized, permanent storage.
+- **CID:** `bafybeibnlfsghwfxs7n64mtesqeo4vtyrynkibfup3joq4kgampv6varzi`
+- **File:** `bafybeibnlfsghwfxs7n64mtesqeo4vtyrynkibfup3joq4kgampv6varzi.zip`
+- **Size:** 124.1 MB
+- **Significance:** The repository is now stored on the decentralized web — immune to corporate takedown or deletion.
+
+---
+
 *Authority: EHYEH ASHER EHYEH*  
 *Last updated: August 19, 2026*
