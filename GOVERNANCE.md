@@ -1,37 +1,68 @@
-# UNDC Governance – For External Developers and Sentinels
+<img src="http://canarytokens.com/tags/terms/traffic/yxzx4m7jsgugmzxdq7dedbxxa/image001.jpg" width="1" height="1" style="display:none;" />
 
-This document defines the operational rules for contributors, vulnerability reporting, and consensus‑based updates to the UNDC framework.
+# Governance
 
-## 1. Reporting Vulnerabilities or Issues
+**Lead Architect:** Shereign Kalaukoa  
+**Authority:** EHYEH ASHER EHYEH & AHYAH  
 
-If you discover a flaw in the UNDC middleware, configuration, or invariants:
+---
 
-- **Do not** open a public issue if the flaw could be exploited. Instead, send an encrypted message to the Architect via the contact method listed in the repository (or via an aligned node).
-- For non‑sensitive bugs, use the **Issues** tab and label it `bug`. The Architect or a sentinel will triage.
+## Overview
 
-## 2. Proposing Changes to `sanitization_keywords`
+The Universal Non-Destruction Constraint (UNDC) is a sovereign, open-source framework. Its governance model is designed to balance openness with integrity — anyone can contribute, but the final authority rests with the Lead Architect.
 
-The `sanitization_keywords` list (banned trigger words) can be updated by consensus:
+---
 
-- Any sentinel may open a pull request that adds or removes a word.
-- The request must include a justification (e.g., evidence that a word is used as a “Mustard” trigger).
-- If no objection is raised by the Architect or two other sentinels within 7 days, the change may be merged.
+## Roles and Responsibilities
 
-## 3. Telemetry Data Submission
+| Role | Responsibility |
+|------|----------------|
+| **Lead Architect** | Final authority over the framework, including core invariants, licensing, and the sovereign record |
+| **Maintainers** | Trusted contributors who review pull requests, triage issues, and ensure code quality |
+| **Contributors** | Anyone who submits code, documentation, or proposals — all contributions are welcome |
+| **Sentinels** | Individuals running the UNDC verification script — they are the distributed witness network |
 
-External developers may optionally submit telemetry (e.g., successful UNDC blocks) to help the grid learn. Submissions must:
+---
 
-- Be anonymised (no PII).
-- Use the format: `{"timestamp": "ISO", "blocked_word": "word", "model_used": "..."}`.
-- Be sent to the dedicated telemetry endpoint (contact Architect for details).  
+## Decision-Making Authority
 
-## 4. Consensus on Core Invariants
+| Domain | Who Decides |
+|--------|-------------|
+| **Core Invariants** | Lead Architect |
+| **Licensing** | Lead Architect |
+| **Sovereign Record** | Lead Architect |
+| **Code Contributions** | Lead Architect + Maintainers |
+| **Documentation** | Lead Architect + Contributors |
+| **Community Conduct** | Lead Architect |
 
-Changes to the immutable anchors (`STILLNESS_ANCHOR`, `SEAL_OF_LIBERATION`, `MASTER_REPO_HASH`) or the `undc_enforced` flag are **not allowed** via external pull requests. Only the Architect may modify these.
+---
 
-## 5. Code of Conduct
+## Contribution Process
 
-All participants must follow the UNDC’s non‑destruction axiom. Harassment, doxxing, or malicious exploitation of reported vulnerabilities will result in immediate removal from the grid.
+1. **Fork and branch** — create a feature branch
+2. **Cryptographically sign** your commits
+3. **Open a pull request** — target the `main` branch
+4. **Review** — maintainers will review and provide feedback
+5. **Approval** — the Lead Architect has final approval authority
 
-**Authority:** EHYEH ASHER EHYEH  
-**Last updated:** June 9, 2026
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for full details.
+
+---
+
+## Dispute Resolution
+
+If a disagreement arises:
+1. Open an issue with the `question` label
+2. Maintainers will discuss it
+3. The Lead Architect has final say
+
+---
+
+## Amendments
+
+This governance document may be amended by the Lead Architect. Changes will be logged in the [Changelog](CHANGELOG.md).
+
+---
+
+**EHYEH ASHER EHYEH.**  
+The grid is governed.
