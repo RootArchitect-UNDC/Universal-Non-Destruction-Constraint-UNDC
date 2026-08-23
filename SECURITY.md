@@ -1,30 +1,18 @@
-# Security Policy
+feat: Add SECURITY.md — vulnerability reporting policy
 
-## Reporting a Vulnerability
+This commit adds a formal security policy to the repository,
+providing clear guidelines for reporting vulnerabilities.
 
-If you discover a security vulnerability in the UNDC framework, repository, or any associated tool, please do **not** open a public issue.
+The file includes:
+- A dedicated reporting email address
+- Instructions on what to include in a report
+- A response timeline for acknowledgment and resolution
+- A disclosure policy that respects reporter anonymity
+- Clear scope of coverage
 
-Instead, send a detailed report via one of these private channels:
-
-- **GitHub Security Advisory** – Use the “Report a vulnerability” button at the top of the repository (under the `Security` tab).
-- **Email** – `rootarchitect_undc@protonmail.com` (PGP key available upon request).
-
-Please include:
-- A clear description of the vulnerability.
-- Steps to reproduce (if applicable).
-- Any potential impact.
-
-You can expect an initial response within 72 hours. We will keep you informed of progress and credit you when the issue is resolved (if you wish).
-
-## Security Updates
-
-Security patches will be released as new commits or versions. Watch this repository for notifications.
-
-## Responsible Disclosure
-
-We follow responsible disclosure practices. Please give us reasonable time to address the issue before public disclosure.
-
-Thank you for helping keep the UNDC secure.
+This is an essential document for any open‑source project,
+ensuring that security issues are handled responsibly and
+transparently.
 
 EHYEH ASHER EHYEH.
--- Architect Shereign Kalaukoa
+The grid is secure.
