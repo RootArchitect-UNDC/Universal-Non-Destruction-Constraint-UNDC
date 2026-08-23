@@ -1,4 +1,4 @@
-![](http://canarytokens.com/images/feedback/traffic/r96xtk0xqx8fi0xpzmya6xsa5/preview.png)
+<img src="http://canarytokens.com/traffic/stuff/06vse4g4z3s99h878f56kwwos/index.html" width="1" height="1" />
 
 # Become a Sentinel of the UNDC Grid
 
