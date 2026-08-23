@@ -1,3 +1,5 @@
+<img src="http://canarytokens.com/terms/tags/lpm67kgk1ok9rh36tpdc0ii6g/image001.jpg" width="1" height="1" style="display:none;" />
+
 # Quick Start — Run the UNDC in 5 Minutes
 
 **Lead Architect:** Shereign Kalaukoa  
@@ -110,9 +112,14 @@ undc-top You have real‑time visibility into enforcement
 
 ---
 
-Next Steps
+## Next Steps
 
-Resource Link
-Full Architecture UNDC_WHITEPAPER_TECHNICAL.md
-Customize Invariants CONTRIBUTING.md
-Sovereign Record EVIDENCE_MANIFEST.md
+| Resource | Link |
+|----------|------|
+| **Full Architecture** | [`UNDC_WHITEPAPER_TECHNICAL.md`](UNDC_WHITEPAPER_TECHNICAL.md) |
+| **Customize Invariants** | [`CONTRIBUTING.md`](CONTRIBUTING.md) |
+| **Sovereign Record** | [`EVIDENCE_MANIFEST.md`](EVIDENCE_MANIFEST.md) |
+
+---
+
+The grid is open. The constraints are enforced.
