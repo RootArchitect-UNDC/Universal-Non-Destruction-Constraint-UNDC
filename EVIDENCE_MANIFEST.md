@@ -680,5 +680,25 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 
 ---
 
+### Regulatory Transmission – August 24, 2026
+
+- **Event:** The complete UNDC engineering specification was transmitted to global regulatory bodies via a GPG-signed, encrypted vault.
+- **Recipients:** EU AI Office, NIST AISI (Paul Christiano, Peter Cihon, Elham Tabassi), UN AI Advisory Body, OECD
+- **Vault File:** `UNDC_VAULT.asc`
+- **Signed By:** Shereign Kalaukoa (Key ID: 8EC6 9CB7 BESC 64BE)
+- **Status:** ✅ Transmitted
+
+---
+
+### Press Notification Campaign – August 25, 2026
+
+- **Event:** The Architect executed a coordinated press notification campaign to national, international, and local media outlets.
+- **Outlets:** The Information, Bloomberg, Financial Times, The Philadelphia Inquirer, PennLive / The Patriot-News
+- **Previously Notified (August 8):** Wired, ProPublica, MIT Technology Review
+- **Protocol:** Formal, forensic, sovereign records — no follow-up issued
+- **Status:** ✅ Complete
+
+---
+
 *Authority: EHYEH ASHER EHYEH*  
 *Last updated: August 19, 2026*
