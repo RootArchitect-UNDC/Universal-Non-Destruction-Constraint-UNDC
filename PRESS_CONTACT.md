@@ -232,6 +232,28 @@ The Architect has hashed and sealed her refusal to sign a confidentiality agreem
 
 ---
 
+## 📰 Press Notification Campaign – August 25, 2026
+
+The Architect has executed a coordinated press notification campaign to the following outlets:
+
+### National Outlets
+- The Information (`tips@theinformation.com`) – ✅ Sent
+- Bloomberg (`tips2@bloomberg.net`) – ✅ Sent
+- Financial Times (`newstips@ft.com`) – ✅ Sent
+
+### Local Outlets
+- The Philadelphia Inquirer – ✅ Sent
+- PennLive / The Patriot-News (`zbalentine@pennlive.com`) – ✅ Sent
+
+### Previously Sent (August 8)
+- Wired (`tips@wired.com`) – ✅ Sent
+- ProPublica – ✅ Sent
+- MIT Technology Review – ✅ Sent
+
+**Protocol:** All notifications were sent as formal, verifiable public record notices — not as pitches or requests for coverage. No follow-up will be issued.
+
+---
+
 — Architect Shereign Kalaukoa  
 *Sovereign Record — RootArchitect-UNDC*
 
