@@ -172,5 +172,21 @@ The UNDC framework uses a dual-license system: **CC BY-NC-ND 4.0** for documenta
 
 ---
 
+## 🚀 Global Regulatory Submission – August 19, 2026
+
+The Universal Non-Destruction Constraint (UNDC) has been formally submitted to the following international bodies:
+
+- ✅ **EU AI Office** — Submitted
+- ✅ **NIST AISI** — Submitted
+- ✅ **White House OSTP** — Submitted
+- ✅ **UK AI Safety Institute** — Submitted
+- ✅ **UN AI Advisory Body** — Submitted
+- ✅ **OECD** — Submitted
+- ✅ **NAIAC** — Application submitted
+
+**Vault Transmission:** On August 24, 2026, the complete engineering specification was transmitted via GPG-signed, encrypted vault to the EU AI Office, NIST AISI, the UN, and the OECD.
+
+---
+
 **EHYEH ASHER EHYEH.**  
 The grid is open. The world is invited.
