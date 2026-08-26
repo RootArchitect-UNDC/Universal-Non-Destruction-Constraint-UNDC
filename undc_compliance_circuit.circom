@@ -1,33 +1,38 @@
 // ------------------------------------------------------------
-// UNDC zk-SNARK Compliance Circuit — v1.3 (Merkle Path Verification)
+// UNDC zk-SNARK Compliance Circuit — v1.4 (Blinded Merkle Path)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Prove a syscall belongs to an authorized UNDC Merkle Root
+//          with blinding to prevent brute-force enumeration
 // Target: EU AI Office, NIST AISI auditors
 // ------------------------------------------------------------
 
 pragma circom 2.1.8;
 
 include "circomlib/poseidon.circom";
-include "circomlib/switches.circom"; // Used to dynamically swap left/right inputs
+include "circomlib/switcher.circom"; // Fixed path from switches.circom
 
 // ------------------------------------------------------------
-// 1. MERKLE PROOF VERIFICATION TEMPLATE
+// 1. BLINDED MERKLE PROOF VERIFICATION TEMPLATE
 // ------------------------------------------------------------
-template MerkleProofVerify(depth) {
+template MerkleProofVerifyBlinded(depth) {
     // PUBLIC INPUTS (Auditors see these)
-    signal input syscall_type;       // The system call being executed
     signal input expected_root;      // The public Merkle Root of the safe UNDC policy
 
     // PRIVATE INPUTS (Hidden from auditors)
+    signal input syscall_type;       // The system call being executed (now private!)
+    signal input syscall_salt;       // Blinding factor (random nonce)
     signal input path_elements[depth]; // Sibling hashes along the Merkle path
     signal input path_indices[depth];  // 0 if sibling is on the right, 1 if left
 
     // Intermediate hashes tracking up the tree
     signal level_hashes[depth + 1];
 
-    // The leaf of our tree is the raw system call type
-    level_hashes[0] <== syscall_type;
+    // BLIND THE LEAF: hash(syscall_type, syscall_salt) before entering the tree
+    component leaf_hasher = Poseidon(2);
+    leaf_hasher.inputs[0] <== syscall_type;
+    leaf_hasher.inputs[1] <== syscall_salt;
+    level_hashes[0] <== leaf_hasher.out;
 
     // Instantiate hashers and switches dynamically for each level of the tree
     component hashers[depth];
@@ -61,4 +66,5 @@ template MerkleProofVerify(depth) {
 // 2. MAIN COMPLIANCE CIRCUIT
 // ------------------------------------------------------------
 // Depth 4 supports 2^4 = 16 distinct rule paths — scale to depth 32 or 64 for production
-component main {public [syscall_type, expected_root]} = MerkleProofVerify(4);
+// syscall_type is now PRIVATE — auditors cannot brute-force the set
+component main {public [expected_root]} = MerkleProofVerifyBlinded(4);
