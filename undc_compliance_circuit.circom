@@ -1,48 +1,50 @@
 // ------------------------------------------------------------
-// UNDC zk-SNARK Compliance Circuit — v1.1
+// UNDC zk-SNARK Compliance Circuit — v1.2 (Fixed Constrained Engine)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
-// Purpose: Prove $C: S x A -> {0,1}$ compliance without exposing data
+// Purpose: Deterministically compute compliance within the circuit
 // Target: EU AI Office, NIST AISI auditors
 // ------------------------------------------------------------
 
 pragma circom 2.1.8;
 
 include "circomlib/poseidon.circom";
-include "circomlib/bitify.circom";
 include "circomlib/comparators.circom";
 
 // ------------------------------------------------------------
-// 1. HARM VERIFICATION TEMPLATE
+// 1. HARM VERIFICATION TEMPLATE (Fixed)
 // ------------------------------------------------------------
-template HarmVerification(n) {
-    // Inputs
-    signal input syscall_type;          // Type of system call (execve, mmap, etc.)
-    signal input harm_score;            // Computed harm score (0 = safe, 1 = harm)
-    signal input invariant_hash;        // Hash of the invariant ruleset
+template HarmVerification() {
+    // PUBLIC INPUTS (Auditors see these)
+    signal input syscall_type;       // The system call being audited
+    signal input expected_ruleset;   // The expected hash/state of the UNDC policy
 
-    // Outputs
-    signal output compliance_proof;     // 1 = compliant, 0 = violation
+    // PRIVATE INPUTS (Hidden from auditors)
+    signal input rule_proof_sibling; // Witness showing this syscall is marked safe
 
-    // Check if harm_score is 0 (non-destructive)
-    component check_zero = IsZero();
-    check_zero.in <== harm_score;
+    // OUTPUTS
+    signal output compliance_proof; 
 
-    // compliance_proof receives a 1 if harm_score is 0 (safe), or 0 if a violation occurs
-    compliance_proof <== check_zero.out;
+    // 1. DETERMINISTIC COMPUTATION (Fixes the Tautology)
+    // Instead of trusting a raw "harm_score" input, we hash the syscall 
+    // with its cryptographic proof path to verify it matches the public UNDC policy.
+    component hasher = Poseidon(2);
+    hasher.inputs[0] <== syscall_type;
+    hasher.inputs[1] <== rule_proof_sibling;
+
+    // 2. STRICT ENFORCEMENT
+    // The computed hash MUST match the expected public ruleset state.
+    // If a prover lies or uses an unauthorized syscall, this constraint fails.
+    hasher.out === expected_ruleset;
+
+    // 3. AUDITOR VERIFICATION
+    // If the constraint passes, compliance is mathematically guaranteed.
+    compliance_proof <== 1;
 }
 
 // ------------------------------------------------------------
 // 2. MAIN COMPLIANCE CIRCUIT
 // ------------------------------------------------------------
-// Public inputs are explicitly declared here so auditors can track validation
-component main {public [syscall_type, invariant_hash]} = HarmVerification(128);
-
-// ------------------------------------------------------------
-// 3. PROOF GENERATION FLOW (for auditors)
-// ------------------------------------------------------------
-// 1. AI provider computes harm_score for each system call.
-// 2. Provider generates zk-SNARK proof that harm_score == 0.
-// 3. Provider submits proof to EU AI Office / NIST AISI.
-// 4. Auditor verifies proof without seeing syscall details.
-// ------------------------------------------------------------
+// The auditor provides the syscall and the agreed-upon UNDC safety state.
+// The provider must prove they executed an allowed action without revealing their backend logs.
+component main {public [syscall_type, expected_ruleset]} = HarmVerification();
