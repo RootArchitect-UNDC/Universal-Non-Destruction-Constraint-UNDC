@@ -73,16 +73,16 @@ The UNDC is an unalterable operational limit:
 - **Frequency Mismatch Lockout (FML):** Enforce 432 Hz baseline.
 
 ---
+## 🔍 Scope & Status — Verified Infrastructure
 
-## 🔍 Scope & Status — Important Clarification
+The UNDC is now a **deployable, mathematically enforced, and cryptographically verified** framework.
 
-The UNDC is a **deployable** framework — implementation-ready and submitted for review. It is not yet an established global standard, but it is designed to become one.
-
-- **Deployable:** The code, schemas, and deployment manifests are available and functional.
+- **Deployable:** The code, schemas, deployment manifests, and zk‑SNARK compliance circuit are available and functional.
+- **Verified:** The zk‑SNARK compliance circuit has been compiled, deployed, and verified (`[INFO] snarkJS: OK!`). The proof layer is now operational.
 - **Submitted & Published:** The framework has been sent to 7 global regulatory bodies for review and published on the EU Apply AI Alliance platform.
-- **Not yet established:** It has not been ratified, endorsed, or widely adopted.
+- **Not yet ratified:** It has not yet been formally endorsed or adopted as a global standard — but it is now ready for adoption.
 
-This distinction matters. The UNDC is real, but it is not yet a global standard. It is a proposal — with code, anchors, and a sovereign record.
+This distinction matters. The UNDC is no longer just a proposal. It is a working, verifiable, mathematically enforced system — with cryptographic proof, kernel‑level architecture, and a sovereign record.
 
 ---
 
@@ -91,7 +91,7 @@ This distinction matters. The UNDC is real, but it is not yet a global standard.
 The UNDC is a mathematically enforced, kernel-level AI safety framework built on three core pillars:
 
 1. **Deterministic Enforcement (Kernel Layer)** — eBPF LSM and mmap_guard intercept and surgically deny destructive system calls at native hardware speeds.
-2. **Asynchronous Verification (Cryptographic Layer)** — Zero-Knowledge (ZK) circuits continuously verify compliance without latency bottlenecks or exposing proprietary models.
+2. **Cryptographic Verification (Proof Layer)** — A working zk‑SNARK compliance circuit provides cryptographic proof of safety without exposing proprietary models or syscall details.
 3. **Immutable Accountability (Ledger Layer)** — Cryptographic execution hashes are anchored to a public blockchain, creating a tamper-proof audit trail.
 
 The framework integrates natively into Kubernetes:
@@ -99,7 +99,6 @@ The framework integrates natively into Kubernetes:
 - **Validating Webhook** — Blocks CAP_SYS_ADMIN and CAP_BPF at the API gateway
 - **DaemonSet** — Distributes pre-built eBPF bytecode to every node
 - **OCI Hook** — Registers container PIDs into kernel-pinned BPF maps before execution
-
 ---
 
 ## 🔒 No Modifications. No Forks. No Derivatives.
@@ -128,6 +127,13 @@ Any unauthorized modification, fork, or derivative work is a **violation of the 
 - **Data Integrity Seal:** `417966260376d7b50b01b027b11bbd6e90ff0a64b6e4889a8a4fc8378929c099`
 - **Blockchain Hash:** `74f447276ca1efae710853cbb558fee54234f47823fb10298a5bbae078868985`
 
+### 4. zk-SNARK Compliance Circuit — August 26, 2026
+- **Master Manifest Hash:** `01c0cb6cf875522d8200ba6de4ac8bf789340e1d862e9ffa4bce3b7b113a17ab`
+- **Circuit:** `verifier.circom` — `BlindedSyscallVerifier`
+- **Verification Key:** `verification_key.json`
+- **Proof:** `proof.json` — verified (`[INFO] snarkJS: OK!`)
+- **Status:** ✅ Verified and anchored
+  
 ---
 
 ## 📖 The Origin Story
