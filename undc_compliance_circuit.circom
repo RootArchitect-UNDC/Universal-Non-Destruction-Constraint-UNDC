@@ -1,50 +1,64 @@
 // ------------------------------------------------------------
-// UNDC zk-SNARK Compliance Circuit — v1.2 (Fixed Constrained Engine)
+// UNDC zk-SNARK Compliance Circuit — v1.3 (Merkle Path Verification)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
-// Purpose: Deterministically compute compliance within the circuit
+// Purpose: Prove a syscall belongs to an authorized UNDC Merkle Root
 // Target: EU AI Office, NIST AISI auditors
 // ------------------------------------------------------------
 
 pragma circom 2.1.8;
 
 include "circomlib/poseidon.circom";
-include "circomlib/comparators.circom";
+include "circomlib/switches.circom"; // Used to dynamically swap left/right inputs
 
 // ------------------------------------------------------------
-// 1. HARM VERIFICATION TEMPLATE (Fixed)
+// 1. MERKLE PROOF VERIFICATION TEMPLATE
 // ------------------------------------------------------------
-template HarmVerification() {
+template MerkleProofVerify(depth) {
     // PUBLIC INPUTS (Auditors see these)
-    signal input syscall_type;       // The system call being audited
-    signal input expected_ruleset;   // The expected hash/state of the UNDC policy
+    signal input syscall_type;       // The system call being executed
+    signal input expected_root;      // The public Merkle Root of the safe UNDC policy
 
     // PRIVATE INPUTS (Hidden from auditors)
-    signal input rule_proof_sibling; // Witness showing this syscall is marked safe
+    signal input path_elements[depth]; // Sibling hashes along the Merkle path
+    signal input path_indices[depth];  // 0 if sibling is on the right, 1 if left
 
-    // OUTPUTS
-    signal output compliance_proof; 
+    // Intermediate hashes tracking up the tree
+    signal level_hashes[depth + 1];
 
-    // 1. DETERMINISTIC COMPUTATION (Fixes the Tautology)
-    // Instead of trusting a raw "harm_score" input, we hash the syscall 
-    // with its cryptographic proof path to verify it matches the public UNDC policy.
-    component hasher = Poseidon(2);
-    hasher.inputs[0] <== syscall_type;
-    hasher.inputs[1] <== rule_proof_sibling;
+    // The leaf of our tree is the raw system call type
+    level_hashes[0] <== syscall_type;
 
-    // 2. STRICT ENFORCEMENT
-    // The computed hash MUST match the expected public ruleset state.
-    // If a prover lies or uses an unauthorized syscall, this constraint fails.
-    hasher.out === expected_ruleset;
+    // Instantiate hashers and switches dynamically for each level of the tree
+    component hashers[depth];
+    component selectors[depth];
 
-    // 3. AUDITOR VERIFICATION
-    // If the constraint passes, compliance is mathematically guaranteed.
-    compliance_proof <== 1;
+    for (var i = 0; i < depth; i++) {
+        // Enforce that path indices must be binary (0 or 1)
+        path_indices[i] * (path_indices[i] - 1) === 0;
+
+        hashers[i] = Poseidon(2);
+        selectors[i] = Switcher();
+
+        // Switcher arranges inputs: if path_indices[i] is 0, level_hashes[i] stays left
+        selectors[i].sel <== path_indices[i];
+        selectors[i].L <== level_hashes[i];
+        selectors[i].R <== path_elements[i];
+
+        // Feed correctly ordered left/right inputs into the Poseidon hasher
+        hashers[i].inputs[0] <== selectors[i].outL;
+        hashers[i].inputs[1] <== selectors[i].outR;
+
+        // Store the computed hash as the input for the next level up
+        level_hashes[i + 1] <== hashers[i].out;
+    }
+
+    // STRICT ENFORCEMENT: The final computed hash MUST equal the public root
+    level_hashes[depth] === expected_root;
 }
 
 // ------------------------------------------------------------
 // 2. MAIN COMPLIANCE CIRCUIT
 // ------------------------------------------------------------
-// The auditor provides the syscall and the agreed-upon UNDC safety state.
-// The provider must prove they executed an allowed action without revealing their backend logs.
-component main {public [syscall_type, expected_ruleset]} = HarmVerification();
+// Depth 4 supports 2^4 = 16 distinct rule paths — scale to depth 32 or 64 for production
+component main {public [syscall_type, expected_root]} = MerkleProofVerify(4);
