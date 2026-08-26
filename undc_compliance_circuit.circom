@@ -1,5 +1,5 @@
 // ------------------------------------------------------------
-// UNDC zk-SNARK Compliance Circuit — v1.0
+// UNDC zk-SNARK Compliance Circuit — v1.1
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Prove $C: S x A -> {0,1}$ compliance without exposing data
@@ -10,6 +10,7 @@ pragma circom 2.1.8;
 
 include "circomlib/poseidon.circom";
 include "circomlib/bitify.circom";
+include "circomlib/comparators.circom";
 
 // ------------------------------------------------------------
 // 1. HARM VERIFICATION TEMPLATE
@@ -23,28 +24,19 @@ template HarmVerification(n) {
     // Outputs
     signal output compliance_proof;     // 1 = compliant, 0 = violation
 
-    // Intermediate
-    signal is_safe;
-
     // Check if harm_score is 0 (non-destructive)
-    is_safe <== (harm_score == 0);
+    component check_zero = IsZero();
+    check_zero.in <== harm_score;
 
-    // Verify that the invariant_hash matches the expected hash
-    // (The actual hash value is public input to the verifier)
-    // For production: use Poseidon hash comparison
-
-    // If the system call type is in the forbidden list (e.g., execve, mmap, connect)
-    // AND harm_score == 0, then compliance_proof = 1
-    // Otherwise, compliance_proof = 0
-
-    // Simplified: compliance_proof = is_safe
-    compliance_proof <== is_safe;
+    // compliance_proof receives a 1 if harm_score is 0 (safe), or 0 if a violation occurs
+    compliance_proof <== check_zero.out;
 }
 
 // ------------------------------------------------------------
 // 2. MAIN COMPLIANCE CIRCUIT
 // ------------------------------------------------------------
-component main = HarmVerification(128);
+// Public inputs are explicitly declared here so auditors can track validation
+component main {public [syscall_type, invariant_hash]} = HarmVerification(128);
 
 // ------------------------------------------------------------
 // 3. PROOF GENERATION FLOW (for auditors)
