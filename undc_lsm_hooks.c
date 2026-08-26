@@ -1,56 +1,63 @@
 // ------------------------------------------------------------
-// UNDC zk-SNARK Compliance Circuit — v1.0
+// UNDC Linux Security Module (LSM) Hooks — v1.0
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
-// Purpose: Prove $C: S x A -> {0,1}$ compliance without exposing data
-// Target: EU AI Office, NIST AISI auditors
+// Purpose: Intercept system calls to evaluate host-level constraints
+// Target: Kernel-level enforcement for the UNDC framework
 // ------------------------------------------------------------
 
-pragma circom 2.1.8;
+#include <linux/lsm_hooks.h>
+#include <linux/sysctl.h>
+#include <linux/binfmts.h>
+#include <linux/sched.h>
+#include <linux/security.h>
 
-include "circomlib/poseidon.circom";
-include "circomlib/bitify.circom";
+/* Evaluates whether an intercepted action violates the non-destruction invariant */
+static int undc_evaluate_harm(unsigned long syscall_type, void *context)
+{
+    // Place your harm score logic here (0 = safe, 1 = harm violation)
+    int harm_score = 0;
 
-// ------------------------------------------------------------
-// 1. HARM VERIFICATION TEMPLATE
-// ------------------------------------------------------------
-template HarmVerification(n) {
-    // Inputs
-    signal input syscall_type;          // Type of system call (execve, mmap, etc.)
-    signal input harm_score;            // Computed harm score (0 = safe, 1 = harm)
-    signal input invariant_hash;        // Hash of the invariant ruleset
+    // In production, this would evaluate the specific syscall and context
+    // against the UNDC invariant map
 
-    // Outputs
-    signal output compliance_proof;     // 1 = compliant, 0 = violation
+    if (harm_score != 0) {
+        pr_warn("UNDC: Destruction boundary reached! Blocking execution.\n");
+        return -EPERM; // Return Permission Denied to the kernel
+    }
 
-    // Intermediate
-    signal is_safe;
-
-    // Check if harm_score is 0 (non-destructive)
-    is_safe <== (harm_score == 0);
-
-    // Verify that the invariant_hash matches the expected hash
-    // (The actual hash value is public input to the verifier)
-    // For production: use Poseidon hash comparison
-
-    // If the system call type is in the forbidden list (e.g., execve, mmap, connect)
-    // AND harm_score == 0, then compliance_proof = 1
-    // Otherwise, compliance_proof = 0
-
-    // Simplified: compliance_proof = is_safe
-    compliance_proof <== is_safe;
+    return 0; // Compliant, let the execution proceed
 }
 
-// ------------------------------------------------------------
-// 2. MAIN COMPLIANCE CIRCUIT
-// ------------------------------------------------------------
-component main = HarmVerification(128);
+/* Hook intercepting program execution (execve) */
+static int undc_bprm_check_security(struct linux_binprm *bprm)
+{
+    // Intercept binary execution and test against the UNDC boundary
+    return undc_evaluate_harm(0x01, bprm);
+}
 
-// ------------------------------------------------------------
-// 3. PROOF GENERATION FLOW (for auditors)
-// ------------------------------------------------------------
-// 1. AI provider computes harm_score for each system call.
-// 2. Provider generates zk-SNARK proof that harm_score == 0.
-// 3. Provider submits proof to EU AI Office / NIST AISI.
-// 4. Auditor verifies proof without seeing syscall details.
-// ------------------------------------------------------------
+/* Hook intercepting file mapping (mmap) */
+static int undc_mmap_file(struct file *file, unsigned long reqprot,
+                          unsigned long prot, unsigned long flags)
+{
+    // Intercept memory mapping and test against the UNDC boundary
+    return undc_evaluate_harm(0x02, file);
+}
+
+/* Register your hooks with the Linux Security Module framework */
+static struct security_hook_list undc_hooks[] __ro_after_init = {
+    LSM_HOOK_INIT(bprm_check_security, undc_bprm_check_security),
+    LSM_HOOK_INIT(mmap_file, undc_mmap_file),
+};
+
+static int __init undc_init(void)
+{
+    security_add_hooks(undc_hooks, ARRAY_SIZE(undc_hooks), "undc");
+    pr_info("UNDC: Architectural non-destruction invariant kernel hooks initialized.\n");
+    return 0;
+}
+
+DEFINE_LSM(undc) = {
+    .name = "undc",
+    .init = undc_init,
+};
