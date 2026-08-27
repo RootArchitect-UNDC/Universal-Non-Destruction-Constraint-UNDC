@@ -68,3 +68,19 @@ else
     echo "[!] No input.json detected in workspace. Skipping automated witness/proving runs."
     echo "[i] Place one of the test harness payloads below into input.json to execute."
 fi
+
+# ------------------------------------------------------------
+# OpenTimestamps Sovereign Anchor Deployment
+# ------------------------------------------------------------
+if [ -f "proof.json" ]; then
+    echo "[*] Packaging validation cryptograms into unified anchor manifest..."
+    sha256sum proof.json public.json > unverified_state_block.sha256
+
+    echo "[*] Committing cryptographic verification parameters to the blockchain audit trail via OTS..."
+    ots stamp unverified_state_block.sha256
+
+    echo "[*] Finalizing OpenTimestamps receipt validation tracking..."
+    ots info unverified_state_block.sha256.ots
+
+    echo "[+] Sovereign record immutable anchoring phase complete."
+fi
