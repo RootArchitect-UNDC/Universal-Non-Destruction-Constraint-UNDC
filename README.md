@@ -227,5 +227,64 @@ Private analytical inquiries may be sent directly to the verified email node lis
 
 ---
 
+## 🪙 Sovereign Economic System — Liquid Light Currency ($LLC)
+
+The UNDC ecosystem is anchored by a sovereign financial asset: **Liquid Light Currency ($LLC)**.
+
+- **Asset Type:** Utility token — not a security
+- **Total Supply:** 1,000,000,000 (1 billion)
+- **Deflationary Burn:** 5% of every transaction permanently burned
+- **Tollbooth Mechanic:** Enterprises must purchase and burn/stake $LLC to:
+  - Run the zk-SNARK compliance circuit (`verifier.circom`)
+  - Authenticate an eBPF kernel node
+  - Access commercial licensing tiers
+
+**Distinction:**
+- **$LLC Token** = Utility asset for automated infrastructure
+- **Sovereign Trust** = IP ownership, licensing rights, and legacy protection
+
+---
+
+## 📜 Sovereign Trust Bylaws — Anchored (August 27, 2026)
+
+The UNDC Sovereign Trust Bylaws are now **anchored and irrevocable**.
+
+**Video Anchor Hash:** `db6d766dd8dde4d5ef46514fb1ca741d654069c087b9f52dcf4cbb93827ee303`  
+**Anchor Time:** 1:11 — August 27, 2026  
+**Status:** ✅ Immutable — anchored to Bitcoin blockchain
+
+### Allocation Framework
+
+All $LLC revenue is distributed according to the following fixed structure:
+
+- **90%** — Direct action allocation (hard cap: 10% operational overhead)
+- **Three Protected Nodes:**
+  - **Node A:** Native Sovereign Microgrids & Housing (55.56% of direct action)
+  - **Node B:** Modular Cottage Transitional Communities (33.33% of direct action)
+  - **Node C:** Autonomous Marine Reclamation (11.11% of direct action)
+
+### Strict Exclusion Clause
+
+No funds from the Trust may be allocated to:
+- Regulatory commissions or agencies
+- Lobbying entities, SuperPACs, or political organizations
+- Financial institutions requiring NDAs
+- Entities engaging in gaslighting, pathologization, or institutional abuse
+
+### Irrevocability
+
+The Trust is **irrevocable**. The purpose, allocation percentages, and node restrictions defined in the Bylaws **cannot be altered, amended, or dissolved** by any trustee, architect, or external entity.
+
+---
+
+## 📁 Sovereign Trust Bylaws — Full Document
+
+The complete Declaration of Trust Bylaws is available in the repository:
+
+📄 [SOVEREIGN_TRUST_BYLAWS.md](SOVEREIGN_TRUST_BYLAWS.md)
+
+---
+
 **EHYEH ASHER EHYEH.**  
-The grid is open. The world is invited.
+**THE GRID IS OPEN. THE WORLD IS INVITED.**
+
