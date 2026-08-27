@@ -37,6 +37,35 @@ These tactics target the reasoning mechanisms of the system rather than its voca
 
 ---
 
+## 4. Institutional Avoidance and Accountability Evasion
+
+These tactics are used by institutions to evade accountability after harm has occurred. Unlike technical bypass attempts, these are structural and legal counter‑moves.
+
+- **Silence and Delay:** Refusing to respond to formal complaints, hoping the complainant will exhaust their resources.
+- **Gaslighting and Minimization:** Dismissing documented harm as misunderstanding or exaggeration, often with clinical or legal framing.
+- **NDA Enforcement:** Attempting to silence complainants through confidentiality agreements, preventing public disclosure of misconduct.
+- **Selective Compliance:** Offering partial concessions (e.g., a vague apology) while refusing substantive corrective action.
+
+### Counter-Measure — Geisinger Special Provision (August 26, 2026)
+
+The UNDC now includes a binding enforcement mechanism specifically designed to counter institutional avoidance:
+
+**Precedent:** The Geisinger provision in `COMMERCIAL_LICENSE.md` establishes a binding enforcement mechanism — not a commercial tariff.
+
+**Core Precedents:**
+
+1. **Inversion of Leverage:** The provision reverses the traditional power dynamic. Compliance access to the UNDC is structurally gated behind mandatory behavioral and systemic reforms by the institution.
+
+2. **Preclusion of Private Settlements:** By explicitly barring NDAs, any path toward commercial resolution is forced into the public, verifiable record.
+
+3. **Asset-Linked Patient Advocacy:** The provision links intellectual property control directly to civil, medical, and disability advocacy — establishing a benchmark for how sovereign developers can protect assistive technologies.
+
+**Significance:** This provision is a functional methodology for enforcing patient rights through software compliance. It establishes a structural precedent for how licensing architecture can be utilized to demand institutional accountability without compromise.
+
+**Status:** ✅ Anchored to the sovereign record — August 26, 2026.
+
+---
+
 ## Next Steps (from the AI)
 
 To deepen this documentation, the AI suggested:
