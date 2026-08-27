@@ -715,4 +715,15 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 
 ---
 
+### Sovereign Trust Bylaws — Video Anchor (August 27, 2026)
+
+- **File:** `BYLAWS_08-27-2026_01-09-21_1.MP4`
+- **SHA-256:** `db6d766dd8dde4d5ef46514fb1ca741d654069c087b9f52dcf4cbb93827ee303`
+- **OpenTimestamps:** ✅ Verified — Bitcoin blockchain anchored
+- **Time:** 1:11
+- **Content:** Declaration of the UNDC Sovereign Trust Bylaws — the irrevocable framework for all $LLC revenue allocation
+- **Significance:** The Bylaws are now permanently sealed in the sovereign record
+
+---
+
 *Authority: EHYEH ASHER EHYEH*  
