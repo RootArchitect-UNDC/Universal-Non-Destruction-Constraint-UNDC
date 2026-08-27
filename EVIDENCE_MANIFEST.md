@@ -700,5 +700,19 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 
 ---
 
+### zk-SNARK Compliance Circuit — August 26, 2026
+
+- **Circuit:** `verifier.circom` — `BlindedSyscallVerifier`
+- **Function:** Proves syscall compliance without revealing the syscall
+- **Verification Output:** `[INFO] snarkJS: OK!`
+- **Artifacts:**
+  - `verification_key.json` — public verification key
+  - `proof.json` — valid proof
+  - `public.json` — public inputs
+  - `HASHES.txt` — master manifest (`01c0cb6cf875522d8200ba6de4ac8bf789340e1d862e9ffa4bce3b7b113a17ab`)
+  - `IMG_8162.MOV` — screen recording of the full verification session (`e6a83d9bc08202e52a01282f223f134a1dec768e9846cebbdbd38474b5b6ca7f`)
+- **Significance:** The UNDC now has a mathematically enforced, privacy‑preserving proof layer — verified and recorded in real time.
+
+---
+
 *Authority: EHYEH ASHER EHYEH*  
-*Last updated: August 19, 2026*
