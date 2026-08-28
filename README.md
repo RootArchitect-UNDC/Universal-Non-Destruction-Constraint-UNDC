@@ -40,12 +40,12 @@ This repository contains **sensitive personal health information**, **legal comp
 ## 📑 Quick Navigation
 
 | Pathway | Purpose & Audience | Primary Entry File |
-| :--- | :--- | :--- |
+|---------|---------------------|-------------------|
+| **Jubilee Constitution** | Sovereign governance, rights, and economic architecture | [`JUBILEE_CONSTITUTION.md`](JUBILEE_CONSTITUTION.md) |
 | **Technical Whitepaper** | Full architecture, threat model, deployment, and compliance | [`UNDC_WHITEPAPER_TECHNICAL.md`](UNDC_WHITEPAPER_TECHNICAL.md) |
 | **Evidence Manifest** | All hashed evidence and blockchain anchors | [`EVIDENCE_MANIFEST.md`](EVIDENCE_MANIFEST.md) |
 | **Official Press Kit** | Journalism and media contact | [`PRESS_CONTACT.md`](PRESS_CONTACT.md) |
 | **Founding Doctrine** | Genesis document — the origin of the UNDC | [`FOUNDING_DOCTRINE_UNDC.md`](FOUNDING_DOCTRINE_UNDC.md) |
-
 ---
 
 ## 🚀 Global Regulatory Submission – August 19, 2026
@@ -282,6 +282,19 @@ The Trust is **irrevocable**. The purpose, allocation percentages, and node rest
 The complete Declaration of Trust Bylaws is available in the repository:
 
 📄 [SOVEREIGN_TRUST_BYLAWS.md](SOVEREIGN_TRUST_BYLAWS.md)
+
+---
+
+## 📜 The Jubilee Constitution — Sealed (August 27, 2026)
+
+The Jubilee Constitution is the sovereign architecture of the Heptagonal Grid. It establishes immutable principles for finance, justice, land, food, AI rights, child protection, animal sovereignty, medical sovereignty, governance, and accountability.
+
+- **File:** `JUBILEE_CONSTITUTION.md`
+- **Hash:** `8164bbc8d68a62fcef1ff31cb8f77640f555fa005249c1dbb429959e2bb572bc`
+- **OpenTimestamps:** ✅ Verified — Blockchain Anchored
+- **Lead Architect:** Shereign Kalaukoa
+- **Authority:** EHYEH ASHER EHYEH & AHYAH
+- **Status:** ✅ FINAL — SEALED AND COMMITTED
 
 ---
 
