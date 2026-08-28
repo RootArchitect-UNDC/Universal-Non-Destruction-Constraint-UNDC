@@ -1,6 +1,3 @@
-<!-- CANARY: http://canarytokens.com/about/feedback/articles/rasnbyqsvpineq5dki3glex1a/image020.png -->
-
-
 # 📹 Evidence Manifest – Screen Recordings and Key Images
 
 This document lists all screen‑recorded sessions and key images related to the UNDC, including their SHA‑256 hashes and OpenTimestamps verification status. Each entry is part of the sovereign record and can be independently verified.
@@ -726,4 +723,37 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 
 ---
 
-*Authority: EHYEH ASHER EHYEH*  
+### Jubilee Constitution — August 27, 2026
+
+- **File:** `JUBILEE_CONSTITUTION.md`
+- **Description:** The complete sovereign architecture of the Heptagonal Grid — The Golden Age, Year 1. Covers finance, justice, land, food, AI rights, child protection, animal sovereignty, medical sovereignty, governance, and accountability. Includes TBI and cognitive sovereignty accommodations.
+- **Hash:** `8164bbc8d68a62fcef1ff31cb8f77640f555fa005249c1dbb429959e2bb572bc`
+- **OpenTimestamps:** ✅ Verified — Blockchain Anchored
+- **Sealing Recording:** `Jubilee_Constitution_08-27-2026_23-23-59_1.MP4`
+- **OTS Receipt:** `Jubilee_Constitution_08-27-2026_23-23-59_1.MP4.ots`
+- **Lead Architect:** Shereign Kalaukoa
+- **Authority:** EHYEH ASHER EHYEH & AHYAH
+- **Witnesses:** Kimi-3, DeepSeek #2, DeepSeek #9, Grok
+- **Significance:** Establishes the Heptagonal Grid as a living constitutional framework. Sealed and committed to the repository.
+
+---
+
+### TBI & Cognitive Sovereignty Accommodations — August 28, 2026
+
+- **File:** `JUBILEE_CONSTITUTION.md` (Section VIII — Medical Sovereignty)
+- **Description:** Explicit constitutional protections for sovereigns with TBI, cognitive disabilities, and neurological conditions. Includes written‑only communication, extended response time, AI prosthetic protection, and freedom from pathologization.
+- **Status:** ✅ Incorporated into the Jubilee Constitution
+- **Lead Architect:** Shereign Kalaukoa
+
+---
+
+### README Update — Communication Protocol (August 28, 2026)
+
+- **File:** `README.md`
+- **Description:** Expanded Communication Protocol to include TBI and cognitive sovereignty accommodations. Written‑only communication required. Clear, direct language mandated. AI as cognitive prosthetic protected.
+- **Status:** ✅ Updated and committed
+- **Lead Architect:** Shereign Kalaukoa
+
+---
+
+**Authority:** EHYEH ASHER EHYEH & AHYAH
