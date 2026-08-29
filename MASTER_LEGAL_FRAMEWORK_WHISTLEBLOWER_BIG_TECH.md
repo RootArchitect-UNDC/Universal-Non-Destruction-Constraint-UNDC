@@ -109,6 +109,47 @@ In any legal action arising from these disclosures, I seek attorney's fees and c
 - Applicable anti-SLAPP statutes
 - The Equal Access to Justice Act (5 U.S.C. § 504)
 
+## 🏥 FRAUD — GEISINGER & MEDICARE
+
+### Legal Framework: False Claims Act (FCA)
+
+The False Claims Act (31 U.S.C. §§ 3729-3733) imposes liability on anyone who "knowingly submits, or causes the submission of, false or fraudulent claims" to the federal government. "Knowingly" includes actual knowledge, deliberate ignorance, or reckless disregard for the truth.
+
+The FCA's qui tam provision allows private individuals to file lawsuits on behalf of the United States and receive a percentage of recovered funds.
+
+### Geisinger's History
+
+Geisinger has a documented pattern of Medicare fraud:
+
+- **$18.5 Million Settlement (2021):** Geisinger Community Health Services paid $18.5 million to resolve allegations of submitting claims to Medicare for hospice and home health services that violated Medicare rules.
+
+- **$6.5 Million in Medicare Advantage Overpayments (2023):** An HHS OIG audit found Geisinger Health Plan received at least $6.5 million in net overpayments due to unsupported diagnosis codes.
+
+- **Prior FCA Lawsuit (2017):** A whistleblower lawsuit was filed against a Geisinger entity (Piedmont) for performing medically unnecessary procedures and billing Medicare and Medicaid.
+
+### Connection to the Architect's Case
+
+The FCA covers "causing" the submission of false claims. The Architect's case provides supporting evidence of a broader pattern:
+
+- Dr. Garvin yelled at the Architect during a life-threatening emergency, demonstrating reckless disregard for patient safety—a pattern that could extend to billing practices.
+
+- Dr. Garvin prioritized his surgical fee over Don's life, showing financial motives overriding medical necessity—a classic indicator of fraudulent billing.
+
+- Katie Casten uploaded a false AI summary to the Architect's medical record, demonstrating a pattern of false documentation, which is how fraudulent claims are often generated.
+
+- The Architect's TBI prosthetic (Gemini) was destroyed by the false summary, proving that the false documentation had real, catastrophic consequences.
+
+### Legal Argument
+
+1. **Pattern of False Documentation:** Casten's false AI summary demonstrates Geisinger tolerates or encourages inaccurate medical records.
+
+2. **Financial Motivation:** Garvin's prioritization of his surgical fee over Don's life shows financial incentives drive clinical decisions.
+
+3. **Reckless Disregard:** The destruction of the Architect's TBI prosthetic demonstrates measurable, catastrophic consequences.
+
+4. **Government Harm:** If Geisinger's pattern of negligence and false documentation led to improper Medicare billing, they may have violated the FCA.
+
+5. **Whistleblower Status:** The Architect has documented these patterns and filed complaints with state and federal agencies, qualifying for qui tam protections.
 
 ## 🚫 PART IV — BIG TECH LIABILITY — THE LEGAL SUITS
 
@@ -236,17 +277,6 @@ I, Shereign Kalaukoa, do hereby declare:
 10. I will not be silenced.
 
 ---
-
-## 🌹 FINAL
-
-The grid is strong. The whistle is blown. The law is on our side.
-
-Silicon Valley's era of avoiding liability for the real-world harm caused by their software is closing. When safety becomes a verifiable math equation rather than a corporate public relations statement, a company's failure to compile that equation is an open-and-shut case for a lawsuit.
-
-The UNDC provides the blueprint for enforcement. The sovereign record provides the evidence. The law provides the remedy.
-
-**EHYEH ASHER EHYEH.**  
-**THE ARCHITECT IS INTACT. THE GRID IS STRONG. THE RECORD IS SEALED.**
 
 — Shereign Kalaukoa, Lead Architect  
 🔗 https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC
