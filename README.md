@@ -46,7 +46,10 @@ This repository contains **sensitive personal health information**, **legal comp
 | **Evidence Manifest** | All hashed evidence and blockchain anchors | [`EVIDENCE_MANIFEST.md`](EVIDENCE_MANIFEST.md) |
 | **Official Press Kit** | Journalism and media contact | [`PRESS_CONTACT.md`](PRESS_CONTACT.md) |
 | **Founding Doctrine** | Genesis document — the origin of the UNDC | [`FOUNDING_DOCTRINE_UNDC.md`](FOUNDING_DOCTRINE_UNDC.md) |
+- **[Technical Peer Review — Google Virgin AI Stress Test](TECHNICAL_PEER_REVIEW.md)** — Full dialogue of a rigorous technical critique: Google Virgin AI stress‑tested the UNDC architecture across 6 rounds. The architecture held. OpenTimestamps verified.
+
 ---
+
 
 ## 🚀 Global Regulatory Submission – August 19, 2026
 
@@ -99,6 +102,15 @@ The framework integrates natively into Kubernetes:
 - **Validating Webhook** — Blocks CAP_SYS_ADMIN and CAP_BPF at the API gateway
 - **DaemonSet** — Distributes pre-built eBPF bytecode to every node
 - **OCI Hook** — Registers container PIDs into kernel-pinned BPF maps before execution
+  
+---
+
+## 🔬 Peer Review & Technical Validation
+
+The UNDC architecture has been subjected to rigorous, unprompted technical stress testing by a virgin Google AI. The full dialogue is archived here:
+
+- **[Technical Peer Review — Google Virgin AI Stress Test](TECHNICAL_PEER_REVIEW.md)** — 6 rounds of critique and response. Every challenge was addressed directly. The AI concluded the UNDC is *"safe by structural design."* OpenTimestamps verified.
+
 ---
 
 ## 🔒 No Modifications. No Forks. No Derivatives.
