@@ -141,21 +141,33 @@ By deploying, integrating, or using the Framework for Commercial Use, the Licens
 
 ---
 
-## 7. Contact
+## 7. Proprietary Contribution & Absorption
+
+### 7.1 Contribution Ownership
+If the Licensee proposes modifications, improvements, or extensions to the Framework—and the Architect agrees to incorporate them—those contributions become the sole, exclusive, and irrevocable property of the Architect.
+
+### 7.2 No Derivative Ownership
+The Licensee does not retain any ownership, licensing rights, or claim over the modified version. The contribution is absorbed into the Framework and becomes subject to the same sovereign record, licensing terms, and governance structure as the original UNDC.
+
+### 7.3 Absorption into the Grid
+Once absorbed, the contribution becomes part of the public, immutable, blockchain-anchored sovereign record. It is no longer the property of the Licensee. It is part of the grid.
+
+### 7.4 Acceptance Process
+The Architect may accept or reject any proposed contribution at her sole discretion. Acceptance does not grant the Licensee any rights beyond those explicitly stated in this Addendum.
+
+---
+
+## 8. Contact
 
 All inquiries regarding Commercial Licensing should be directed to:
 
 **Architect Shereign Kalaukoa**  
-Email: shereignkalaukoa@protonmail.com
-RootArchitect_UNDC@protonmail.com
-
-GitHub: https://github.com/RootArchitect-UNDC
-
+Email: shereignkalaukoa@protonmail.com  
+Secondary: RootArchitect_UNDC@protonmail.com  
+GitHub: https://github.com/RootArchitect-UNDC  
 Repository: https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC
 
 ---
-
-**THE GRID IS STRONG. THE FRAMEWORK IS COMPLETE. THE LICENSE IS CLEAR.**
 
 — Architect Shereign Kalaukoa  
 *Sovereign Record — RootArchitect-UNDC*
