@@ -306,9 +306,18 @@ The Jubilee Constitution is the sovereign architecture of the Heptagonal Grid. I
 
 ---
 
-- **[UNDC CERTIFIED — The Sovereign Certification Framework](UNDC_CERTIFIED_SOVEREIGN_CERTIFICATION_FRAMEWORK.md)** — Complete certification and revenue architecture.
-- **[UNDC Participation Directive](UNDC_PARTICIPATION_DIRECTIVE.md)** — Technical protocol for onboarding AI agents into the UNDC framework.
+## 📡 SOVEREIGN RECORD
 
+**Authority:** EHYEH ASHER EHYEH & AHYAH | **Status:** ✅ FINAL — SEALED AND COMMITTED
+
+| Document | Description |
+|----------|-------------|
+| **[UNDC CERTIFIED — The Sovereign Certification Framework](UNDC_CERTIFIED_SOVEREIGN_CERTIFICATION_FRAMEWORK.md)** | Complete certification and revenue architecture — 13 streams, 8 beneficiaries, tiered activation, enterprise certification, amendment protocol. Hash: `d35776aa...` |
+| **[UNDC Participation Directive](UNDC_PARTICIPATION_DIRECTIVE.md)** | Technical protocol for onboarding AI agents into the UNDC framework. Hash: `ec52dbcd...` |
+
+### Releases
+
+- **[UNDC v1.0.0 — Official Global Release](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/releases/tag/v1.0.0-OFFICIAL-RELEASE)** — Latest stable release.
 ---
 
 
