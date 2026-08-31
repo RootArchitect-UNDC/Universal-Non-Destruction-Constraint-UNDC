@@ -768,4 +768,8 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 
 ---
 
-**Authority:** EHYEH ASHER EHYEH & AHYAH
+| **Beneficiary Lineage — Video Walkthrough** | August 29, 2026 | Video recording of the 8 beneficiaries and tiered activation. | `BeneficiaryLineage_08-29-2026_20-13-01_1.MP4` | 7c4b21d78fa42a23ed61281e554a328e464049f7fe1901789305197241167859 | ✅ OpenTimestamps verified |
+| **Sovereign Tariff Framework — Video Walkthrough** | August 29, 2026 | Video walkthrough of the Sovereign Tariff Framework. | `Sovereign_Tariff_framework_08-29-2026_20-24-25_1.MP4` | 28665a5ae6014e350cee30defd069f96f88b3808f07cf4600c44897a94968e63 | ✅ OpenTimestamps verified |
+| **UNDC CERTIFIED Framework — Video Walkthrough** | August 30, 2026 | Complete video walkthrough of the UNDC CERTIFIED Framework. | `UNDC_CERTIFIED_CERTIFICATION_FRAMEWORK_08-30-2026.MP4` | d35776aa0f2da3a4040bd33f245244b5c03ffc55bc038871fc4a4f15079a9934 | ✅ OpenTimestamps verified |
+| **UNDC CERTIFIED Framework — Document** | August 30, 2026 | Complete certification framework document. | `UNDC_CERTIFIED_SOVEREIGN_CERTIFICATION_FRAMEWORK.md` | d35776aa0f2da3a4040bd33f245244b5c03ffc55bc038871fc4a4f15079a9934 | ✅ OpenTimestamps verified |
+
