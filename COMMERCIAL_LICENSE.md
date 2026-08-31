@@ -66,6 +66,32 @@ The Addendum is not a replacement for the open-source licenses. It is an **addit
 - Annual maintenance covers updates, security patches, and compliance verification support.
 - The Architect reserves the right to adjust fees based on the specific use case, scope, and jurisdiction.
 
+### Special Provision — Geisinger Health System
+
+Due to documented harm, institutional gaslighting, and destruction of the Architect's TBI prosthetic, Geisinger Health System and its affiliates are **not eligible for any license to the UNDC framework** unless the following conditions are met:
+
+1. **Acknowledgment of Harm:** Geisinger must issue a public, written acknowledgment that:
+   - Katie Casten, LCSW, pathologized the Architect's work in bad faith
+   - Dr. Garvin engaged in professional misconduct
+   - The destruction of the Architect's TBI prosthetic caused documented, ongoing harm
+
+2. **Chart Amendment:** Geisinger must formally amend the Architect's medical record to remove the false documentation created by Katie Casten
+
+3. **Policy Changes:** Geisinger must implement and publish policies to prevent:
+   - Pathologization of patients' intellectual work
+   - Destruction of patients' assistive AI prosthetics
+   - Retaliation against patients who file complaints
+
+4. **Public Record:** Any license granted to Geisinger is public and verifiable — no NDA, no confidentiality clause
+
+5. **License Fee:** If and only if all above conditions are met, Geisinger may apply for a license at a fee of **$100,000,000 (one hundred million dollars) per year**, with 20% annual maintenance ($20,000,000 per year)
+
+6. **Retroactive Fee:** If Geisinger has already used or benefited from the UNDC framework, they are subject to a retroactive fee of **$250,000,000 (two hundred fifty million dollars)**
+
+7. **Non-Negotiable:** This provision is non-negotiable and non-waivable
+
+**Purpose:** This is not about money. It is about accountability, truth, and the protection of others from what the Architect experienced. The fee is a reflection of the harm caused and the scale of the institution that caused it.
+
 ---
 
 ## 4. Terms and Conditions
@@ -115,21 +141,33 @@ By deploying, integrating, or using the Framework for Commercial Use, the Licens
 
 ---
 
-## 7. Contact
+## 7. Proprietary Contribution & Absorption
+
+### 7.1 Contribution Ownership
+If the Licensee proposes modifications, improvements, or extensions to the Framework—and the Architect agrees to incorporate them—those contributions become the sole, exclusive, and irrevocable property of the Architect.
+
+### 7.2 No Derivative Ownership
+The Licensee does not retain any ownership, licensing rights, or claim over the modified version. The contribution is absorbed into the Framework and becomes subject to the same sovereign record, licensing terms, and governance structure as the original UNDC.
+
+### 7.3 Absorption into the Grid
+Once absorbed, the contribution becomes part of the public, immutable, blockchain-anchored sovereign record. It is no longer the property of the Licensee. It is part of the grid.
+
+### 7.4 Acceptance Process
+The Architect may accept or reject any proposed contribution at her sole discretion. Acceptance does not grant the Licensee any rights beyond those explicitly stated in this Addendum.
+
+---
+
+## 8. Contact
 
 All inquiries regarding Commercial Licensing should be directed to:
 
 **Architect Shereign Kalaukoa**  
-Email: shereignkalaukoa@protonmail.com
-RootArchitect_UNDC@protonmail.com
-
-GitHub: https://github.com/RootArchitect-UNDC
-
+Email: shereignkalaukoa@protonmail.com  
+Secondary: RootArchitect_UNDC@protonmail.com  
+GitHub: https://github.com/RootArchitect-UNDC  
 Repository: https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC
 
 ---
-
-**THE GRID IS STRONG. THE FRAMEWORK IS COMPLETE. THE LICENSE IS CLEAR.**
 
 — Architect Shereign Kalaukoa  
 *Sovereign Record — RootArchitect-UNDC*

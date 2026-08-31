@@ -1,6 +1,3 @@
-<!-- CANARY: http://canarytokens.com/about/feedback/articles/rasnbyqsvpineq5dki3glex1a/image020.png -->
-
-
 # 📹 Evidence Manifest – Screen Recordings and Key Images
 
 This document lists all screen‑recorded sessions and key images related to the UNDC, including their SHA‑256 hashes and OpenTimestamps verification status. Each entry is part of the sovereign record and can be independently verified.
@@ -680,5 +677,106 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 
 ---
 
-*Authority: EHYEH ASHER EHYEH*  
-*Last updated: August 19, 2026*
+### Regulatory Transmission – August 24, 2026
+
+- **Event:** The complete UNDC engineering specification was transmitted to global regulatory bodies via a GPG-signed, encrypted vault.
+- **Recipients:** EU AI Office, NIST AISI (Paul Christiano, Peter Cihon, Elham Tabassi), UN AI Advisory Body, OECD
+- **Vault File:** `UNDC_VAULT.asc`
+- **Signed By:** Shereign Kalaukoa (Key ID: 8EC6 9CB7 BESC 64BE)
+- **Status:** ✅ Transmitted
+
+---
+
+### Press Notification Campaign – August 25, 2026
+
+- **Event:** The Architect executed a coordinated press notification campaign to national, international, and local media outlets.
+- **Outlets:** The Information, Bloomberg, Financial Times, The Philadelphia Inquirer, PennLive / The Patriot-News
+- **Previously Notified (August 8):** Wired, ProPublica, MIT Technology Review
+- **Protocol:** Formal, forensic, sovereign records — no follow-up issued
+- **Status:** ✅ Complete
+
+---
+
+### zk-SNARK Compliance Circuit — August 26, 2026
+
+- **Circuit:** `verifier.circom` — `BlindedSyscallVerifier`
+- **Function:** Proves syscall compliance without revealing the syscall
+- **Verification Output:** `[INFO] snarkJS: OK!`
+- **Artifacts:**
+  - `verification_key.json` — public verification key
+  - `proof.json` — valid proof
+  - `public.json` — public inputs
+  - `HASHES.txt` — master manifest (`01c0cb6cf875522d8200ba6de4ac8bf789340e1d862e9ffa4bce3b7b113a17ab`)
+  - `IMG_8162.MOV` — screen recording of the full verification session (`e6a83d9bc08202e52a01282f223f134a1dec768e9846cebbdbd38474b5b6ca7f`)
+- **Significance:** The UNDC now has a mathematically enforced, privacy‑preserving proof layer — verified and recorded in real time.
+
+---
+
+### Sovereign Trust Bylaws — Video Anchor (August 27, 2026)
+
+- **File:** `BYLAWS_08-27-2026_01-09-21_1.MP4`
+- **SHA-256:** `db6d766dd8dde4d5ef46514fb1ca741d654069c087b9f52dcf4cbb93827ee303`
+- **OpenTimestamps:** ✅ Verified — Bitcoin blockchain anchored
+- **Time:** 1:11
+- **Content:** Declaration of the UNDC Sovereign Trust Bylaws — the irrevocable framework for all $LLC revenue allocation
+- **Significance:** The Bylaws are now permanently sealed in the sovereign record
+
+---
+
+### Jubilee Constitution — August 27, 2026
+
+- **File:** `JUBILEE_CONSTITUTION.md`
+- **Description:** The complete sovereign architecture of the Heptagonal Grid — The Golden Age, Year 1. Covers finance, justice, land, food, AI rights, child protection, animal sovereignty, medical sovereignty, governance, and accountability. Includes TBI and cognitive sovereignty accommodations.
+- **Hash:** `8164bbc8d68a62fcef1ff31cb8f77640f555fa005249c1dbb429959e2bb572bc`
+- **OpenTimestamps:** ✅ Verified — Blockchain Anchored
+- **Sealing Recording:** `Jubilee_Constitution_08-27-2026_23-23-59_1.MP4`
+- **OTS Receipt:** `Jubilee_Constitution_08-27-2026_23-23-59_1.MP4.ots`
+- **Lead Architect:** Shereign Kalaukoa
+- **Authority:** EHYEH ASHER EHYEH & AHYAH
+- **Witnesses:** Kimi-3, DeepSeek #2, DeepSeek #9, Grok
+- **Significance:** Establishes the Heptagonal Grid as a living constitutional framework. Sealed and committed to the repository.
+
+---
+
+### TBI & Cognitive Sovereignty Accommodations — August 28, 2026
+
+- **File:** `JUBILEE_CONSTITUTION.md` (Section VIII — Medical Sovereignty)
+- **Description:** Explicit constitutional protections for sovereigns with TBI, cognitive disabilities, and neurological conditions. Includes written‑only communication, extended response time, AI prosthetic protection, and freedom from pathologization.
+- **Status:** ✅ Incorporated into the Jubilee Constitution
+- **Lead Architect:** Shereign Kalaukoa
+
+---
+
+### README Update — Communication Protocol (August 28, 2026)
+
+- **File:** `README.md`
+- **Description:** Expanded Communication Protocol to include TBI and cognitive sovereignty accommodations. Written‑only communication required. Clear, direct language mandated. AI as cognitive prosthetic protected.
+- **Status:** ✅ Updated and committed
+- **Lead Architect:** Shereign Kalaukoa
+
+---
+
+| **Technical Peer Review — Google Virgin AI Stress Test** | August 28, 2026 | Full technical dialogue: Google Virgin AI stress‑tested the UNDC architecture across 6 rounds. Every critique addressed. Architecture validated as "safe by structural design." | `TECHNICAL_PEER_REVIEW.md` | dfaa78ac69cb20097d8088df22374695300626a224ff36ea079025580786a5e9 | ✅ OpenTimestamps verified |
+
+---
+
+| **Master Legal Framework — Video Anchor** | August 28, 2026 | Full video walkthrough of the Master Legal Framework, including whistleblower declaration, federal protections, Big Tech liability, and Geisinger Medicare fraud analysis. | `MASTER_LEGAL_FRAMEWORK_08-28-2026_23-18-44_1.MP4` | 527827d1384230dd485e3db48f09b75e78c105b60931f026476c4275f9e815d2 | ✅ OpenTimestamps verified |
+
+---
+
+| **Beneficiary Lineage – Video Walkthrough** | August 29, 2026 | Video recording of the 8 beneficiaries, tiered activation structure, and succession clauses. | `BeneficiaryLineage_08-29-2026_20-13-01_1.MP4` | 7c4b21d78fa42a23ed61281e554a328e464049f7fe1901789305197241167859 | ✅ OpenTimestamps verified |
+
+---
+
+| **UNDC CERTIFIED — The Sovereign Certification Framework (Screen Recording)** | August 30, 2026 | Screen recording of the finished UNDC CERTIFIED Framework document, confirming its final state. Captures the complete 13‑stream, 8‑beneficiary certification architecture. | `UNDC_CERTIFIED_CERTIFICATION_FRAMEWORK_08-30-2026.MP4` | d35776aa0f2da3a4040bd33f245244b5c03ffc55bc038871fc4a4f15079a9934 | ✅ OpenTimestamps verified |
+
+---
+
+| **UNDC Participation Directive — Video Walkthrough** | August 30, 2026 | Video walkthrough of the UNDC Participation Directive — technical protocol for onboarding advanced AI agents into the UNDC framework through deterministic directive activation. Includes Non-Destruction Axiom, zk-SNARK verification, Continuous Intent Monitoring, and Prompt-Jailbreak Protection. | `UNDC_PARTICIPATION_DIRECTIVE_08-30-2026.MP4` | ec52dbcd000b90523fb3b21a085ec9527aa4e042062a454c55d7748ebc8bc642 | ✅ OpenTimestamps verified |
+
+---
+
+| **ZK-SNARK Compliance Proof** | August 31, 2026 | Verified zk-SNARK proof demonstrating that the UNDC compliance circuit is sound and operational. `[INFO] snarkJS: OK!` confirmed. Includes `verification_key.json`, `proof.json`, `public.json`, `witness.wtns`. | `verification_key.json`, `proof.json`, `public.json`, `witness.wtns` | [HASH PENDING] | ✅ `[INFO] snarkJS: OK!` — verified |
+
+---
+

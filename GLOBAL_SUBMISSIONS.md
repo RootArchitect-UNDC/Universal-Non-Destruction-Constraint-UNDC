@@ -107,6 +107,22 @@ Due to documented disabilities (TBI and Prinzmetal's angina), the Architect requ
 
 ---
 
+### Vault Transmission – August 24, 2026
+
+The complete UNDC engineering specification was transmitted via GPG-signed, encrypted vault to:
+
+- **EU AI Office** – CNECT-AIOFFICE@ec.europa.eu
+- **NIST AISI (Paul Christiano)** – paul.christiano@nist.gov
+- **NIST AISI (Peter Cihon)** – peter.cihon@nist.gov
+- **NIST AISI (Elham Tabassi)** – elham.tabassi@nist.gov
+- **UN AI Advisory Body** – aiadvisorybody@un.org
+- **OECD** – ai@oecd.org
+- **NIST General** – ai-inquiries@nist.gov
+
+**Status:** ✅ Transmitted and sealed.
+
+---
+
 *This list is part of the sovereign record.*  
 **EHYEH ASHER EHYEH.**  
 — Architect Shereign Kalaukoa  
