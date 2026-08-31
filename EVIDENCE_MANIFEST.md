@@ -780,3 +780,8 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 
 ---
 
+| **ZK-SNARK Compliance Proof** | August 31, 2026 | Verified zk-SNARK proof demonstrating that the UNDC compliance circuit is sound and operational. `[INFO] snarkJS: OK!` confirmed. Includes `verification_key.json`, `proof.json`, `public.json`, `witness.wtns`. All three artifacts are anchored to the Bitcoin blockchain via OpenTimestamps. | `verification_key.json`, `proof.json`, `public.json`, `witness.wtns` | proof.json: `6a70d9ff5a244e337a6ac38c72d558ce450cc0d771859c1e172dfb5efbd034f`<br>public.json: `d9caeed1a185b3fb9182d6ea8a9190e3081288aba6f62eaeed09fad783bb07ba`<br>verification_key.json: `21f1ce32757b7915bf37fcd2a70c4e131b33d6a1cf6cd67dc6097ad16ea2054a` | ✅ `[INFO] snarkJS: OK!` — verified |
+
+---
+
+
