@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "undc-middleware"
+version = "0.1.0"
+description = "Universal Non‑Destruction Constraint (UNDC) middleware for AI safety enforcement"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "NO MODIFICATIONS. NO FORKS. SOVEREIGN LICENSE – SEE REPO."}
+authors = [
+    {name = "Shereign Kalaukoa", email = "shereignkalaukoa@protonmail.com"}
+]
+keywords = ["AI safety", "alignment", "constraint", "non-destruction", "security"]
+classifiers = [
+    "Development Status :: 3 – Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Security",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC"
+"Repository" = "https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC.git"
+"Issues" = "https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/issues"

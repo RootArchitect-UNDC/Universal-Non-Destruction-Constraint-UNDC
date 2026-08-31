@@ -1,0 +1,26 @@
+name: UNDC Schema Compliance Validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install check-jsonschema
+        run: pip install check-jsonschema
+
+      - name: Validate UNDC log sample
+        run: check-jsonschema --schemafile undc-schema.json undc-log-sample-v2.json

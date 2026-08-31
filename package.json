@@ -1,0 +1,27 @@
+{
+  "name": "universal-non-destruction-constraint-undc",
+  "version": "1.0.0",
+  "description": "<!-- CANARY: http://canarytokens.com/images/about/terms/hhqm63y3fs1msb021wr4b256d/brand-logo.png -->",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/issues"
+  },
+  "homepage": "https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC#readme",
+  "dependencies": {
+    "circomlib": "^2.0.5"
+  }
+}

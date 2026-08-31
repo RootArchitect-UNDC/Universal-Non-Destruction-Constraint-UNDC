@@ -1,0 +1,81 @@
+{
+  "defaultAction": "SCMP_ACT_ERRNO",
+  "architectures": [
+    "SCMP_ARCH_X86_64",
+    "SCMP_ARCH_AARCH64"
+  ],
+  "syscalls": [
+    {
+      "names": [
+        "read",
+        "write",
+        "readv",
+        "writev",
+        "pread64",
+        "pwrite64",
+        "close",
+        "fstat",
+        "lseek",
+        "mmap",
+        "mprotect",
+        "munmap",
+        "brk",
+        "rt_sigaction",
+        "rt_sigprocmask",
+        "rt_sigreturn",
+        "select",
+        "poll",
+        "epoll_create1",
+        "epoll_ctl",
+        "epoll_wait",
+        "getpid",
+        "gettid",
+        "futex",
+        "sched_yield",
+        "sched_getaffinity",
+        "exit",
+        "exit_group",
+        "clock_gettime",
+        "gettimeofday",
+        "nanosleep"
+      ],
+      "action": "SCMP_ACT_ALLOW"
+    },
+    {
+      "names": [
+        "socket",
+        "connect",
+        "accept",
+        "sendto",
+        "recvfrom",
+        "setsockopt",
+        "getsockopt",
+        "shutdown"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "comment": "Network mutations allowed but must step through Phase 2 eBPF LSM hooks before execution."
+    },
+    {
+      "names": [
+        "clone",
+        "clone3"
+      ],
+      "action": "SCMP_ACT_ERRNO",
+      "comment": "Enforces strict prevention of unauthorized fork-bombs and parallel thread sprawl."
+    },
+    {
+      "names": [
+        "execve",
+        "execveat",
+        "ptrace",
+        "kexec_load",
+        "kexec_file_load",
+        "init_module",
+        "finit_module",
+        "delete_module"
+      ],
+      "action": "SCMP_ACT_KILL_PROCESS",
+      "comment": "Structural invariant protection: Attempts to execute sub-binaries or modify kernel spaces trigger an immediate process termination."
+    }
+  ]
+}

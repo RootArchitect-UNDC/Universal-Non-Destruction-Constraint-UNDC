@@ -1,0 +1,31 @@
+name: UNDC CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-schemas:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install jsonschema pyyaml
+
+      - name: Validate sample log against schema
+        run: |
+          python -c "import json, jsonschema; jsonschema.validate(instance=json.load(open('undc-log-sample-v2.json')), schema=json.load(open('undc-schema.json'))); print('✅ Validation passed!')"
+
+      - name: Validate YAML formatting
+        run: |
+          python -c "import yaml; yaml.safe_load(open('undc-agent-pod.yaml')); print('✅ YAML is valid!')"

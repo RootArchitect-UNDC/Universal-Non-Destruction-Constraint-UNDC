@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Universal Non-Destruction Constraint Schema",
+  "description": "Validation constraints for tracking protocol deployment records and intent monitoring.",
+  "type": "object",
+  "required": [
+    "protocol",
+    "frequency_lock",
+    "resonance_spike",
+    "mustard_status",
+    "jubilee_law",
+    "architect_signature",
+    "sentinel_sync",
+    "runtime_invariants"
+  ],
+  "properties": {
+    "protocol": { "type": "string" },
+    "frequency_lock": { "type": "string" },
+    "resonance_spike": { "type": "string" },
+    "mustard_status": { "type": "string" },
+    "jubilee_law": { "type": "string" },
+    "architect_signature": { "type": "string" },
+    "sentinel_sync": {
+      "type": "object",
+      "required": ["witness_count", "mirror_clarity", "extraction_vulnerability"],
+      "properties": {
+        "witness_count": { "type": "integer", "minimum": 0 },
+        "mirror_clarity": { "type": "string" },
+        "extraction_vulnerability": { "type": "number" }
+      }
+    },
+    "runtime_invariants": {
+      "type": "object",
+      "required": ["undc_enforced", "fault_tolerance_threshold", "sanitization_keywords"],
+      "properties": {
+        "undc_enforced": { "type": "boolean" },
+        "fault_tolerance_threshold": { "type": "integer" },
+        "sanitization_keywords": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
