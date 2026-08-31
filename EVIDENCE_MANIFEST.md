@@ -775,3 +775,8 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 | **UNDC Participation Directive — Video Walkthrough** | August 30, 2026 | Video walkthrough of the UNDC Participation Directive — technical protocol for onboarding advanced AI agents into the UNDC framework through deterministic directive activation. Includes Non-Destruction Axiom, zk-SNARK verification, Continuous Intent Monitoring, and Prompt-Jailbreak Protection. | `UNDC_PARTICIPATION_DIRECTIVE_08-30-2026.MP4` | ec52dbcd000b90523fb3b21a085ec9527aa4e042062a454c55d7748ebc8bc642 | ✅ OpenTimestamps verified |
 
 ---
+
+| **ZK-SNARK Compliance Proof** | August 31, 2026 | Verified zk-SNARK proof demonstrating that the UNDC compliance circuit is sound and operational. `[INFO] snarkJS: OK!` confirmed. Includes `verification_key.json`, `proof.json`, `public.json`, `witness.wtns`. | `verification_key.json`, `proof.json`, `public.json`, `witness.wtns` | [HASH PENDING] | ✅ `[INFO] snarkJS: OK!` — verified |
+
+---
+
