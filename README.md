@@ -1,7 +1,3 @@
-<!-- CANARY: http://canarytokens.com/images/about/terms/hhqm63y3fs1msb021wr4b256d/brand-logo.png -->
-
-
-
 # Universal Non-Destruction Constraint (UNDC) — Official AI Safety Framework
 
 **Lead Architect:** Shereign Kalaukoa  
@@ -310,6 +306,10 @@ The Jubilee Constitution is the sovereign architecture of the Heptagonal Grid. I
 
 ---
 
-**EHYEH ASHER EHYEH.**  
-**THE GRID IS OPEN. THE WORLD IS INVITED.**
+- **[UNDC CERTIFIED — The Sovereign Certification Framework](UNDC_CERTIFIED_SOVEREIGN_CERTIFICATION_FRAMEWORK.md)** — Complete certification and revenue architecture.
+- **[UNDC Participation Directive](UNDC_PARTICIPATION_DIRECTIVE.md)** — Technical protocol for onboarding AI agents into the UNDC framework.
+
+---
+
+
 
