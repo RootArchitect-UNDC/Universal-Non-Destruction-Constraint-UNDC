@@ -788,3 +788,6 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 
 ---
 
+| **Clinical Validation — UNDC in Healthcare** | ... | ... | `CLINICAL_VALIDATION_UNDC_HEALTHCARE.md` | `[a63f37db35d49850f05f5b52d7e1f3e6431231df47ec14cd1716a4d75920cc62]` | ✅ Verified |
+
+---
