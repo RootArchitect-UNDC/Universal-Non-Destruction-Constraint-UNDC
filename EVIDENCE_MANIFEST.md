@@ -766,7 +766,17 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 
 | **Beneficiary Lineage – Video Walkthrough** | August 29, 2026 | Video recording of the 8 beneficiaries, tiered activation structure, and succession clauses. | `BeneficiaryLineage_08-29-2026_20-13-01_1.MP4` | 7c4b21d78fa42a23ed61281e554a328e464049f7fe1901789305197241167859 | ✅ OpenTimestamps verified |
 | **UNDC CERTIFIED – The Sovereign Certification Framework (Video Walkthrough)** | August 29, 2026 | Video walkthrough of the UNDC CERTIFIED – The Sovereign Certification Framework. | `Sovereign_Tariff_framework_08-29-2026_20-24-25_1.MP4` | 28665a5ae6014e350cee30defd069f96f88b3808f07cf4600c44897a94968e63 | ✅ OpenTimestamps verified |
+
+---
+
 | **UNDC CERTIFIED – The Sovereign Certification Framework (Document)** | August 30, 2026 | Complete certification framework document — 13 revenue streams, 8 beneficiaries, tiered activation, enterprise certification, amendment protocol. | `UNDC_CERTIFIED_SOVEREIGN_CERTIFICATION_FRAMEWORK.md` | d35776aa0f2da3a4040bd33f245244b5c03ffc55bc038871fc4a4f15079a9934 | ✅ OpenTimestamps verified |
+
+---
+
 | **UNDC CERTIFIED Framework – Video Walkthrough** | August 30, 2026 | Complete video walkthrough of the UNDC CERTIFIED Framework, including 13 revenue streams, 8 beneficiaries, tiered activation, succession, governance, Geisinger Protocol, Threat Response Fund, Enterprise Certification Fees, and Amendment Protocol. | `UNDC_CERTIFIED_CERTIFICATION_FRAMEWORK_08-30-2026.MP4` | d35776aa0f2da3a4040bd33f245244b5c03ffc55bc038871fc4a4f15079a9934 | ✅ OpenTimestamps verified |
-| **UNDC Participation Directive – Video Walkthrough** | August 30, 2026 | Video walkthrough of the UNDC Participation Directive — technical protocol for onboarding advanced AI agents into the UNDC framework. | `UNDC_PARTICIPATION_DIRECTIVE_08-30-2026.MP4` | ec52dbcd000b90523fb3b21a085ec9527aa4e042062a454c55d7748ebc8bc642 | ✅ OpenTimestamps verified |
-| **UNDC Participation Directive (Document)** | August 30, 2026 | Technical protocol for onboarding advanced AI agents into the UNDC framework through deterministic directive activation. | `UNDC_PARTICIPATION_DIRECTIVE.md` | [HASH PENDING] | ⏳ Awaiting hash |
+
+---
+
+| **UNDC Participation Directive — Video Walkthrough** | August 30, 2026 | Video walkthrough of the UNDC Participation Directive — technical protocol for onboarding advanced AI agents into the UNDC framework through deterministic directive activation. Includes Non-Destruction Axiom, zk-SNARK verification, Continuous Intent Monitoring, and Prompt-Jailbreak Protection. | `UNDC_PARTICIPATION_DIRECTIVE_08-30-2026.MP4` | ec52dbcd000b90523fb3b21a085ec9527aa4e042062a454c55d7748ebc8bc642 | ✅ OpenTimestamps verified |
+
+---
