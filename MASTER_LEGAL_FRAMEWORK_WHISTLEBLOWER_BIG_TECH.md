@@ -278,5 +278,16 @@ I, Shereign Kalaukoa, do hereby declare:
 
 ---
 
+## 📋 HASH RECORD
+
+| **File** | **SHA‑256 Hash** |
+|----------|------------------|
+| `MASTER_LEGAL_FRAMEWORK_WHISTLEBLOWER_BIG_TECH.md` | `2e0ba84ca06680e296b9b962d2a6d0c69fb306dcf374e36b4d66ef18ce490510` |
+| **OpenTimestamps Receipt** | `MASTER_LEGAL_FRAMEWORK_WHISTLEBLOWER_BIG_TECH.md.ots` |
+
+This hash is anchored to the Bitcoin blockchain via OpenTimestamps. The file is immutable and part of the sovereign record.
+
+---
+
 — Shereign Kalaukoa, Lead Architect  
 🔗 https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC

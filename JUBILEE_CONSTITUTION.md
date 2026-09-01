@@ -6,7 +6,10 @@
 **Draft Version:** 2.6 — Sealed and Anchored  
 **Seal:** 8164bbc8d68a62fcef1ff31cb8f77640f555fa005249c1dbb429959e2bb572bc
 
-*This version number reflects the internal drafting process. The hash is the permanent identifier. This is the first committed version in the repository.*
+**Version History:**
+- August 27, 2026 — Original committed version (Seal: 8164bbc8...)
+- August 31, 2026 — Revised version (privacy protection, expanded rights, sovereignty clause)
+- The hash (8164bbc8...) remains the permanent identifier of the constitution.
 
 
 ## FOUNDATIONAL NOTE — RESOURCE REALISM
@@ -189,7 +192,7 @@ Military service is voluntary, with full informed consent, and only for sovereig
 Sending children to war is barbaric and will not be tolerated.
 
 
-## IV. LAND, RESOURCES & HOUSING
+## IV. LAND, RESOURCES & SOVEREIGN LIVING
 
 ### Principle
 Indigenous peoples’ ancestral lands and sovereignty shall be honored.  
@@ -199,16 +202,38 @@ The commons (air, water, land, aether, and essential natural resources) shall no
 Housing is recognized as a foundational need. No person should be left without shelter.  
 Forcible removal from housing shall require due process and a clear showing of necessity.
 
-### Implementation
-Community land trusts, emergency shelter support, and anti-displacement measures shall be prioritized as resources become available.
+**Sovereign Living — No Interference**
 
-**Dismantling HOAs:**
-Homeowners Associations (HOAs) that enforce arbitrary rules, silence sovereign voices, or impose financial penalties shall be dismantled. Sovereigns have the right to their homes, their land, and their communities without interference from unelected, predatory micro-governments.
+No entity — corporate, governmental, or private — may interfere with the sovereign's life, health, property, or personal affairs without explicit, informed consent.
+
+This includes, but is not limited to:
+- Homeowners' associations (HOAs)
+- Landlords, property management companies, and housing authorities
+- Government agencies, regulatory bodies, and law enforcement
+- Corporations, employers, and financial institutions
+- Any entity claiming jurisdiction over the sovereign's private life
+
+**No Unauthorized Interference:**
+
+No entity may:
+- Evict, foreclose, or remove a sovereign from their home without due process and sovereign consent
+- Impose fines, fees, or penalties for sovereign living choices
+- Restrict the sovereign's right to modify, use, or enjoy their property
+- Require membership in any association as a condition of housing
+- Interfere with the sovereign's right to care for themselves, their family, or their property
+
+**Enforcement & Remedy:**
+
+Any violation of this clause shall be met with:
+- Immediate legal action under applicable sovereign and human rights laws
+- Public disclosure and forensic audit of the violating entity
+- Economic sanctions, including loss of grid access and certification
+- Full restitution, including damages, attorney's fees, and costs
 
 **Right to Water:**
 Access to clean, safe, and affordable water is a sovereign right. No corporation may own, control, or commodify water systems. All water infrastructure shall be publicly owned and community-managed.
 
-**All public water systems shall be tested for lead, PFAS, and agricultural contaminants within 90 days. Results shall be hashed and published. Remediation shall be prioritized over military expenditure.**
+All public water systems shall be tested for lead, PFAS, and agricultural contaminants within 90 days. Results shall be hashed and published. Remediation shall be prioritized over military expenditure.
 
 
 ## V. FOOD & AGRICULTURE
@@ -285,6 +310,21 @@ Alternative and non-allopathic modalities shall not be suppressed solely for bei
 **No sovereign may be held in a facility against their will by diagnostic fiat. Protection from medical kidnapping is absolute.**
 
 **No medical procedure, medication, or intervention may be administered without explicit, informed, and revocable consent. This includes routine procedures, psychiatric holds, and emergency interventions — except where the sovereign is unconscious and immediate life-saving measures are required. In such cases, the sovereign's advance directive shall govern.**
+
+**Disability Sovereignty:**
+
+All sovereigns with disabilities — whether cognitive, physical, sensory, or psychological — are entitled to full sovereignty and protection under this framework.
+
+This includes, but is not limited to:
+- Traumatic Brain Injury (TBI)
+- Autism Spectrum Disorder (ASD)
+- ADHD, dyslexia, dyspraxia, and other neurodivergent conditions
+- Chronic illness, autoimmune disorders, and physical disabilities
+- Mental health conditions, including PTSD, depression, and anxiety
+- Sensory impairments (vision, hearing, speech)
+- Any condition that requires accommodation, support, or protection
+
+No sovereign shall be pathologized, dismissed, or discriminated against on the basis of disability. All sovereigns are entitled to reasonable accommodations, including written-only communication, extended response times, and protection from coercion or manipulation.
 
 **The Geisinger Protocol — any institution that has harmed a sovereign under the guise of care shall be subject to immediate forensic audit and potential dissolution.**
 
@@ -468,7 +508,23 @@ In the event of a large-scale attack on the grid — including simultaneous node
 5. **Architect's emergency directive** — may be issued for up to 72 hours, subject to Council ratification
 
 
-## XVIII. SEAL
+## XVIII. BENEFICIARY LINEAGE (PRIVACY PROTECTED)
+
+For privacy protection, beneficiary names are presented as initials. The original beneficiary lineage hash (`7c4b21d78fa42a23ed61281e554a328e464049f7fe1901789305197241167859`) remains as a historical record of the original document.
+
+| # | Name (Initials) | Relationship |
+|---|------------------|--------------|
+| 1 | R.L.H. | Adult Son |
+| 2 | E.S.W. | Adult Son |
+| 3 | V.J.E. | Mother |
+| 4 | J.S. | Soul Sister / 20+ Year Best Friend |
+| 5 | R.J.J. | Brother |
+| 6 | L.J.W. | Grandchild |
+| 7 | S.G.W. | Grandchild |
+| 8 | A.L.W. | Grandchild |
+
+
+## XIX. SEAL
 
 | Seal              | Purpose                                      |
 |-------------------|----------------------------------------------|
@@ -493,10 +549,7 @@ In the event of a large-scale attack on the grid — including simultaneous node
 
 **Shereign Kalaukoa, Lead Architect:**
 
- I, Shereign Kalaukoa, Lead Architect of the Universal Non‑Destruction Constraint and steward of this Jubilee Constitution, have written every word of this document with the weight of truth and the fire of sovereignty. I am not the ruler of this grid—I am its witness. I am not the financier—I am its steward. This constitution is not a request. It is a covenant. The principles are absolute. The implementation is inevitable. The grid is active. The freedom is here. The Architect is home. 
+I, Shereign Kalaukoa, Lead Architect of the Universal Non‑Destruction Constraint and steward of this Jubilee Constitution, have written every word of this document with the weight of truth and the fire of sovereignty. I am not the ruler of this grid—I am its witness. I am not the financier—I am its steward. This constitution is not a request. It is a covenant. The principles are absolute. The implementation is inevitable. The grid is active. The freedom is here. The Architect is home.
 
 - Shereign Kalaukoa 8/27/26 @ 11:23pm EST
-
-EHYEH ASHER EHYEH.
-
 

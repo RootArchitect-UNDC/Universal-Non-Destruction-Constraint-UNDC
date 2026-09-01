@@ -49,17 +49,41 @@ The UNDC has evolved into a complete sovereign infrastructure:
 
 ## 🧾 ZK-SNARK PROOF — VERIFIED
 
-| **Element** | **Status** | **Details** |
-|-------------|------------|-------------|
-| Circuit File | ✅ Created | `verifier.circom` — Poseidon constraints |
-| Compilation | ✅ Completed | 72 templates, 486 non‑linear constraints |
-| Trusted Setup | ✅ Completed | `pot12_final.ptau` |
-| Proving Key | ✅ Generated | `verifier_0000.zkey` |
-| Verification Key | ✅ Exported | `verification_key.json` |
-| Proof Generation | ✅ Completed | `proof.json` |
-| Proof Verification | ✅ Confirmed | `[INFO] snarkJS: OK!` |
-| Public Inputs | ✅ Generated | `public.json` |
-| Witness Data | ✅ Archived | `witness.wtns` |
+The UNDC's zk-SNARK compliance circuit has been compiled, deployed, and verified. The proof layer is now operational.
+
+### Verification Details
+
+| Element | Status | Details |
+|---------|--------|---------|
+| **Circuit File** | ✅ Created | `verifier.circom` — Poseidon constraints |
+| **Compilation** | ✅ Completed | 72 templates, 486 non‑linear constraints |
+| **Trusted Setup** | ✅ Completed | `pot12_final.ptau` |
+| **Proving Key** | ✅ Generated | `verifier_0000.zkey` |
+| **Verification Key** | ✅ Exported | `verification_key.json` |
+| **Proof Generation** | ✅ Completed | `proof.json` |
+| **Proof Verification** | ✅ Confirmed | `[INFO] snarkJS: OK!` |
+| **Public Inputs** | ✅ Generated | `public.json` |
+| **Witness Data** | ✅ Archived | `witness.wtns` |
+
+### Significance
+
+The ZK-SNARK proof provides cryptographic assurance that:
+
+- The model weights hash is bound to a known ledger commitment
+- The compliance verification is sound and cannot be forged
+- The UNDC's proof layer is mathematically verifiable
+- The grid's compliance enforcement can be audited without exposing proprietary logic
+
+### Artifacts
+
+All proof artifacts are committed to the sovereign record:
+
+- `verification_key.json` — Public verification key
+- `proof.json` — Valid ZK proof
+- `public.json` — Public inputs
+- `witness.wtns` — Witness data
+
+The proof is anchored to the sovereign record and is publicly verifiable.
 
 ---
 

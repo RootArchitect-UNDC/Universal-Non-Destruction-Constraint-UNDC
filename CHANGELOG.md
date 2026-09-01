@@ -9,6 +9,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [1.0.1] – 2026-09-01
+
+### Added
+- **ZK-SNARK Compliance Circuit** — `verifier.circom` compiled and verified
+- **Proof Artifacts** — `proof.json`, `public.json`, `verification_key.json` committed to the sovereign record
+- **Verification Output** — `[INFO] snarkJS: OK!` — mathematically sound proof confirmed
+
+### Changed
+- **Scope & Status** — Updated to "Verified Infrastructure" in README.md
+- **Technical Architecture** — Updated to include the working Proof Layer
+
+### Fixed
+- **Repository Cleanup** — Invalid file removed, branches merged, repository cleaned
+
+---
+
 ## [1.0.0] – 2026-08-19
 
 ### Added
