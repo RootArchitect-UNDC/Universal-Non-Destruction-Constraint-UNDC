@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC#readme",
   "dependencies": {
-    "circomlib": "^2.0.5"
+    "circomlib": "^2.0.5",
+    "snarkjs": "^0.7.6"
   }
 }
