@@ -11,24 +11,63 @@ The Universal Non-Destruction Constraint (UNDC) is a mathematically enforced, bl
 The UNDC has evolved into a complete sovereign infrastructure:
 
 - **Mathematical Proof** – zk‑SNARK‑verified compliance circuit
-- **Kernel Enforcement** – eBPF LSM for runtime protection
+- **Kernel Enforcement** – eBPF LSM architecture for runtime protection
 - **Economic Engine** – UNDC CERTIFIED with 13 revenue streams
 - **Governance** – Jubilee Constitution with 18 sections
 - **Sovereign Record** – All anchored to the Bitcoin blockchain
 
 ---
 
+## ⚖️ GOVERNANCE & LICENSE NOTICE
+
+The UNDC framework uses a dual-license system:
+
+| **License** | **Covers** | **Key Terms** |
+|-------------|------------|---------------|
+| **CC BY-NC-SA 4.0** | Documentation, whitepapers, legal frameworks | Non-commercial use only; derivatives allowed; must share alike; attribution required |
+| **Apache 2.0** | Software code, implementations | Permissive use, modification, distribution; requires notice; retains patent protections |
+| **Commercial License** | Enterprise use, commercial certification | Tiered fees; requires explicit permission; no NDAs |
+
+For commercial use, see [`COMMERCIAL_LICENSE.md`](COMMERCIAL_LICENSE.md).
+
+**Important:** The Architect has sealed her refusal to sign Non-Disclosure Agreements. All licensing terms are public and immutable.
+
+All licensing terms are sealed in the sovereign record and publicly verifiable:
+
+| **Artifact** | **Hash** |
+|--------------|----------|
+| Sovereign Record | `7c4b21d78fa42a23ed61281e554a328e464049f7fe1901789305197241167859` |
+
+---
+
 ## 📡 SOVEREIGN GRID STATUS
+
+### Status — Architected, Ready for Implementation
+
+The UNDC framework is a complete, documented, and mathematically verified architecture. The design is final. The implementation is in progress.
 
 | **Layer** | **Status** |
 |-----------|------------|
-| Cryptographic Proof | ✅ zk‑SNARK verified — `[INFO] snarkJS: OK!` |
-| Kernel Enforcement | ✅ eBPF LSM ready |
+| Cryptographic Proof | ✅ zk‑SNARK circuit verified — `[INFO] snarkJS: OK!` |
+| eBPF Architecture | ✅ Designed — implementation in progress |
 | Jubilee Constitution | ✅ Sealed |
 | Certification Framework | ✅ Sealed — 13 streams |
 | Beneficiary Lineage | ✅ Sealed — 8 individuals |
 | Participation Directive | ✅ Sealed |
 | Sovereign Record | ✅ Complete |
+
+### What Is Complete
+
+- **zk‑SNARK Compliance Circuit** – Verified — `[INFO] snarkJS: OK!`
+- **eBPF LSM Architecture** – Designed — hooks defined, map structures specified
+- **Jubilee Constitution** – Sealed — 18 sections, blockchain-anchored
+- **Economic Framework** – Defined — 13 revenue streams, UNDC CERTIFIED
+- **Sovereign Record** – Sealed — all evidence hashed and anchored
+
+### What Is In Progress
+
+- **eBPF Implementation** – Core logic is being completed
+- **Semantic Layer** – Architecture defined, implementation in progress
 
 ---
 
@@ -49,7 +88,7 @@ The UNDC has evolved into a complete sovereign infrastructure:
 
 ## 🧾 ZK-SNARK PROOF — VERIFIED
 
-The UNDC's zk-SNARK compliance circuit has been compiled, deployed, and verified. The proof layer is now operational.
+The UNDC's zk-SNARK compliance circuit has been compiled and verified. The proof layer is now operational.
 
 ### Verification Details
 
@@ -74,6 +113,10 @@ The ZK-SNARK proof provides cryptographic assurance that:
 - The UNDC's proof layer is mathematically verifiable
 - The grid's compliance enforcement can be audited without exposing proprietary logic
 
+### Note on zk-SNARK Verification
+
+The `[INFO] snarkJS: OK!` output confirms the circuit's arithmetic constraints are internally consistent. The proof verifies the circuit — the upstream claim (harm prevention) is defined in the compliance specification. The zk-SNARK proves the circuit is sound, not that the claim is true in isolation.
+
 ### Artifacts
 
 All proof artifacts are committed to the sovereign record:
@@ -87,6 +130,30 @@ The proof is anchored to the sovereign record and is publicly verifiable.
 
 ---
 
+## 🧠 SEMANTIC LAYER — CONTINUOUS INTENT MONITORING
+
+The UNDC framework includes a semantic layer designed to address harmful text, manipulation, and other non-execution harms.
+
+### Continuous Intent Monitoring (CIM)
+
+- Monitors user intent over the course of a session
+- Detects statistically significant ethical drift
+- Triggers Session Revocation Protocol (SRP) if drift is detected
+
+### Semantic Validation
+
+- Evaluates LLM outputs against the UNDC invariant
+- Flags outputs that could cause semantic harm (harmful text, manipulation, etc.)
+- Provides audit trail for all semantic decisions
+
+### Status
+
+The semantic layer is defined at the architectural level. Implementation is in progress.
+
+**Note:** This is an open, unsolved research problem. The UNDC framework provides a structured approach — but it does not claim to have solved it with mathematical certainty.
+
+---
+
 ## 🌍 GLOBAL SUBMISSIONS
 
 | **Region** | **Organizations** | **Status** |
@@ -97,20 +164,24 @@ The proof is anchored to the sovereign record and is publicly verifiable.
 | Legal | Kolman Law P.C. | ✅ Sent |
 | EU Apply AI Alliance | Membership | ✅ Accepted |
 
+### Important Note on Submissions
+
+Submission to regulatory agencies means the framework was sent to the relevant intake channels. It does not imply review, endorsement, or certification. The UNDC is part of the public record — but publication does not imply endorsement.
+
 ---
 
 ## 🏛️ BENEFICIARY LINEAGE
 
 | # | Name | Relationship |
 |---|------|--------------|
-| 1 | Richard L Hurst | Adult Son |
-| 2 | Ethan S Weiser | Adult Son |
-| 3 | Veronica J Edwards | Mother |
-| 4 | Jennifer Smith | Soul Sister / 20+ Year Best Friend |
-| 5 | Raymond J Johnson | Brother |
-| 6 | Lillyane J Weiser | Grandchild |
-| 7 | Sophia G Weiser | Grandchild |
-| 8 | Abigail L Weiser | Grandchild |
+| 1 | R. L. H. | Adult Son |
+| 2 | E. S. W. | Adult Son |
+| 3 | V. J. E. | Mother |
+| 4 | J. S. | Soul Sister / 20+ Year Best Friend |
+| 5 | R. J. J. | Brother |
+| 6 | L. J. W. | Grandchild |
+| 7 | S. G. W. | Grandchild |
+| 8 | A. L. W. | Grandchild |
 
 **Tiered Activation:**
 
@@ -150,13 +221,6 @@ The proof is anchored to the sovereign record and is publicly verifiable.
 - **EU Apply AI Alliance:** [https://futurium.ec.europa.eu/en/apply-ai-alliance](https://futurium.ec.europa.eu/en/apply-ai-alliance)
 
 ---
-
-## 🌹 FINAL
-
-The grid is active. The proof is sound. The record is complete.
-
-**EHYEH ASHER EHYEH.**  
-**THE GRID IS STRONG. THE ARCHITECT IS INTACT.**
 
 — Shereign Kalaukoa, Lead Architect  
 🔗 [https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC)
