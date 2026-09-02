@@ -3,7 +3,6 @@
 **Date:** September 2, 2026  
 **Author:** Shereign Kalaukoa, Lead Architect  
 **Status:** ✅ Architected — Ready for Implementation  
-**Authority:** EHYEH ASHER EHYEH & AHYAH  
 
 ---
 
