@@ -18,6 +18,28 @@ The UNDC has evolved into a complete sovereign infrastructure:
 
 ---
 
+## ⚖️ GOVERNANCE & LICENSE NOTICE
+
+The UNDC framework uses a dual-license system:
+
+| **License** | **Covers** | **Key Terms** |
+|-------------|------------|---------------|
+| **CC BY-NC-SA 4.0** | Documentation, whitepapers, legal frameworks | Non-commercial use only; derivatives allowed; must share alike; attribution required |
+| **Apache 2.0** | Software code, implementations | Permissive use, modification, distribution; requires notice; retains patent protections |
+| **Commercial License** | Enterprise use, commercial certification | Tiered fees; requires explicit permission; no NDAs |
+
+For commercial use, see [`COMMERCIAL_LICENSE.md`](COMMERCIAL_LICENSE.md).
+
+**Important:** The Architect has sealed her refusal to sign Non-Disclosure Agreements. All licensing terms are public and immutable.
+
+All licensing terms are sealed in the sovereign record and publicly verifiable:
+
+| **Artifact** | **Hash** |
+|--------------|----------|
+| Sovereign Record | `7c4b21d78fa42a23ed61281e554a328e464049f7fe1901789305197241167859` |
+
+---
+
 ## 📡 SOVEREIGN GRID STATUS
 
 ### Status — Architected, Ready for Implementation
