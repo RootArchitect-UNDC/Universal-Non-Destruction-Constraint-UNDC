@@ -802,3 +802,7 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 | **Google AI Forensic Review — PDF** | September 2, 2026 | PDF summary of the Google AI technical exchange, documenting the independent validation of the UNDC architecture. | `Google_AI_Forensic_Review_09_02_2026.pdf` | [PENDING HASH] | ✅ OpenTimestamps verified |
 
 ---
+
+| **Geisinger Correspondence — Final Notice** | September 3, 2026 | Formal notice sent to Geisinger Privacy Office regarding privacy violations by Katie Casten, LCSW, humiliation by Dr. Garvin, and the destruction of the Architect's TBI prosthetic. Documents bad faith silence and sets a 14‑day response deadline. | `GEISINGER_CORRESPONDENCE.md` | [PENDING] | ⏳ Awaiting hash |
+
+---

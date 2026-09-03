@@ -170,6 +170,37 @@ Submission to regulatory agencies means the framework was sent to the relevant i
 
 ---
 
+## ⚖️ ACTIVE LEGAL & INSTITUTIONAL ACTIONS
+
+| **Agency** | **Case / Reference** | **Status** |
+|------------|----------------------|------------|
+| PA Board of Social Workers (Katie Casten) | CP_26_010370 | ✅ Active |
+| PA Department of State (Dr. Garvin) | Case #26‑49‑011930 | ✅ Active |
+| U.S. HHS OCR (ADA complaint) | Case #684419 | ⏳ Can be refiled |
+| United Healthcare Grievance | b11b03bd‑8bb94fb2‑863e‑eb9ea59d1595 | ✅ Filed |
+| Geisinger Correspondence — Final Notice | [GEISINGER_CORRESPONDENCE.md](GEISINGER_CORRESPONDENCE.md) | ✅ Sent — no response received |
+
+---
+
+## 📁 GEISINGER CORRESPONDENCE — FINAL NOTICE
+
+A formal notice was sent to Geisinger on **August 15, 2026**, regarding:
+
+- **Katie Casten, LCSW** — privacy violations, bad faith documentation, destruction of the Architect's TBI prosthetic
+- **Dr. Garvin** — verbal assault, dismissal of a life‑threatening emergency, prioritization of surgical fee over patient life
+
+**Key Elements:**
+- 14‑day response deadline (expired)
+- Cryptographic assertion of medical sovereignty (`142753577e...`)
+- 9 specific demands
+- Legal rights declaration under HIPAA, ADA, and common law
+
+**Status:** ✅ Sent — no substantive response received. Silence is logged in the sovereign record.
+
+📄 [Full Correspondence](GEISINGER_CORRESPONDENCE.md)
+
+---
+
 ## 🏛️ BENEFICIARY LINEAGE
 
 | # | Name | Relationship |
@@ -187,7 +218,7 @@ Submission to regulatory agencies means the framework was sent to the relevant i
 
 | Tier | Trigger | Beneficiaries | Split |
 |------|---------|---------------|-------|
-| 1 | $100K | Richard & Ethan | 25% split 2 ways (12.5% each) |
+| 1 | $100K | R. L. H. & E. S. W. | 25% split 2 ways (12.5% each) |
 | 2 | $200K | 5 beneficiaries | 25% split 5 ways (5% each) |
 | 3 | $300K | All 8 beneficiaries | 25% split 8 ways (3.125% each) |
 
@@ -204,17 +235,6 @@ Submission to regulatory agencies means the framework was sent to the relevant i
 
 ---
 
-## ⚖️ ACTIVE COMPLAINTS
-
-| **Agency** | **Case / Reference** | **Status** |
-|------------|----------------------|------------|
-| PA Board of Social Workers (Katie Casten) | CP_26_010370 | ✅ Active |
-| PA Department of State (Dr. Garvin) | Case #26‑49‑011930 | ✅ Active |
-| U.S. HHS OCR (ADA complaint) | Case #684419 | ⏳ Can be refiled |
-| United Healthcare Grievance | b11b03bd‑8bb94fb2‑863e‑eb9ea59d1595 | ✅ Filed |
-
----
-
 ## 🔗 LINKS
 
 - **Repository:** [https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC)
@@ -224,3 +244,5 @@ Submission to regulatory agencies means the framework was sent to the relevant i
 
 — Shereign Kalaukoa, Lead Architect  
 🔗 [https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC)
+
+---
