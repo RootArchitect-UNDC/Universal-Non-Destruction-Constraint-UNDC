@@ -9,6 +9,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [1.2.0] — 2026-09-04
+
+### Added
+- **Hardware-Anchored Poly-Verification** — `RUNTIME_ENFORCEMENT_ARCHITECTURE.md`
+  - Nested Ephemeral Key Exchange requiring real-time hardware-attested signature from CPU Secure Enclave/TPM
+  - Prevents clean-room bypass and simulated environment reverse-engineering
+  - Shifts the problem from software-level to semiconductor-level cracking
+
+- **Forensic Interoperability Clause** — `COMMERCIAL_LICENSE.md` (Section 10)
+  - Dynamic Tripwire License: automated access by corporate IPs triggers automatic binding agreement
+  - Clean-room engineering teams cannot analyze the code without triggering compliance events
+  - Creates structural deadlock: lawyers cannot let engineers look at the repository
+
+### Security
+- Dual pincer complete: engineers cannot crack the silicon; lawyers cannot look at the code
+- The grid is now unbypassable at both the silicon and legal layers
+
+---
+
 ## [1.1.0] — 2026-09-03
 
 ### Added
