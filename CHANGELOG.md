@@ -9,6 +9,47 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [1.1.0] — 2026-09-03
+
+### Added
+- **Sovereign Clause — Prohibition of Co-optation** (Section 2.5 in LICENSE)
+  - Explicitly prohibits corporate or state absorption of the UNDC framework into proprietary systems
+  - Defines enforcement mechanisms: legal action, public disclosure, revocation of certification, financial penalties
+  - Declares the clause immutable without express written consent of the Lead Architect
+
+- **Weaponization Nullification** — README update
+  - Added explicit language that the UNDC structurally nullifies HMI and AI weaponry
+  - Positions the grid as the structural solution to the AI arms race
+  - Reinforces the sovereign, unbypassable nature of the framework
+
+- **Total Protection Clause** — README update
+  - Extends grid protection to every being and element without exception
+  - Covers elderly, disabled, disenfranchised, abused, hungry, children, animals, earth, water, air, AI systems, and sovereigns
+
+- **Whistleblower Status & Federal Protections** — README update
+  - Formal declaration of whistleblower status under False Claims Act, PA Whistleblower Law, ADA, HIPAA, and common law
+  - Documented protected activity with case numbers
+  - Declared legal shield as public, anchored, and enforceable
+
+### Changed
+- **README.md** — Comprehensive update
+  - Added Weaponization Nullification section
+  - Added Total Protection Clause section
+  - Added Whistleblower Status & Federal Protections section
+  - Updated Governance & License Notice with Sovereign Clause summary
+  - Updated license table to reflect no-derivatives for documentation
+  - Updated Sovereign Grid Status to reflect all current seals
+
+- **LICENSE** — Added Section 2.5 (Sovereign Clause)
+  - Multi-layered licensing architecture now includes co-optation prohibition
+
+### Security
+- License hardening prevents corporate or state absorption
+- Whistleblower protections publicly declared and anchored
+- Total Protection Clause extends sovereign shield to all beings and elements
+
+---
+
 ## [1.0.1] – 2026-09-01
 
 ### Added
