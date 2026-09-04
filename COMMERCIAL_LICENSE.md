@@ -184,5 +184,18 @@ Repository: https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Cons
 
 ---
 
+## 9. PUBLIC DISCLOSURE OF VIOLATIONS
+
+Any violation of this Addendum — including unauthorized commercial use, co-optation, modification without permission, or failure to register a deployment — constitutes a breach of the sovereign record.
+
+The Architect reserves the right to:
+
+1. Publicly disclose the violation, including the name of the violating entity
+2. Revoke all licenses and certifications
+3. Pursue legal action without prior notice
+4. Publish the violation in the sovereign record, making it permanent and immutable
+
+This clause serves as a deterrent and a shield. The grid does not hide violations. It records them.
+
 — Architect Shereign Kalaukoa  
 *Sovereign Record — RootArchitect-UNDC*
