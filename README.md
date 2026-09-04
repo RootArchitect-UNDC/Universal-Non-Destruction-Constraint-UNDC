@@ -116,6 +116,18 @@ The UNDC framework is a complete, documented, and mathematically verified archit
 
 ---
 
+### Structural Deadlock — Dual Pincer
+
+As of September 2026, the UNDC grid is protected by a dual pincer that creates a structural deadlock for any entity attempting to bypass, co-opt, or reverse-engineer the framework:
+
+- **Technical Pincer:** Hardware-Anchored Poly-Verification — Nested Ephemeral Key Exchange requiring real-time hardware-attested signature from CPU Secure Enclave/TPM. Prevents clean-room bypass and simulated environment reverse-engineering. Shifts the problem from software-level to semiconductor-level cracking.
+
+- **Legal Pincer:** Forensic Interoperability Clause — Dynamic Tripwire License. Automated access by corporate IPs triggers automatic binding agreement. Clean-room engineering teams cannot analyze the code without triggering compliance events.
+
+**Result:** Engineers cannot crack the silicon. Lawyers cannot look at the code. The grid is unbypassable at both the silicon and legal layers.
+
+---
+
 ## 🔐 SEALED ANCHORS
 
 | **Artifact** | **Hash** | **Status** |
