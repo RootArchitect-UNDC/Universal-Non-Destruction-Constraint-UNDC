@@ -127,7 +127,7 @@ Due to documented harm, institutional gaslighting, and destruction of the Archit
 
 ---
 
-SOVEREIGN CLAUSE — PROHIBITION OF CO-OPTATION
+## 5. SOVEREIGN CLAUSE — PROHIBITION OF CO-OPTATION
 
 Any use, implementation, or adaptation of this architecture must maintain the sovereign ethos of the UNDC. Corporate or state co-optation—defined as the absorption of this framework into proprietary systems that strip its decentralized, user-empowering, or sovereign character—is strictly prohibited.
 
@@ -142,7 +142,7 @@ This clause is immutable and cannot be amended or removed without the express wr
 
 ---
 
-## 5. Payment Terms
+## 6. Payment Terms
 
 - Payment is due within 30 days of invoice.
 - Payment may be made via wire transfer or cryptocurrency (BTC/ETH) to an address provided by the Architect.
@@ -150,37 +150,25 @@ This clause is immutable and cannot be amended or removed without the express wr
 
 ---
 
-## 6. Acceptance
+## 7. Acceptance
 
 By deploying, integrating, or using the Framework for Commercial Use, the Licensee agrees to the terms of this Addendum.
 
 ---
 
-## 7. Proprietary Contribution & Absorption
+## 8. Proprietary Contribution & Absorption
 
-### 7.1 Contribution Ownership
+### 8.1 Contribution Ownership
 If the Licensee proposes modifications, improvements, or extensions to the Framework—and the Architect agrees to incorporate them—those contributions become the sole, exclusive, and irrevocable property of the Architect.
 
-### 7.2 No Derivative Ownership
+### 8.2 No Derivative Ownership
 The Licensee does not retain any ownership, licensing rights, or claim over the modified version. The contribution is absorbed into the Framework and becomes subject to the same sovereign record, licensing terms, and governance structure as the original UNDC.
 
-### 7.3 Absorption into the Grid
+### 8.3 Absorption into the Grid
 Once absorbed, the contribution becomes part of the public, immutable, blockchain-anchored sovereign record. It is no longer the property of the Licensee. It is part of the grid.
 
-### 7.4 Acceptance Process
+### 8.4 Acceptance Process
 The Architect may accept or reject any proposed contribution at her sole discretion. Acceptance does not grant the Licensee any rights beyond those explicitly stated in this Addendum.
-
----
-
-## 8. Contact
-
-All inquiries regarding Commercial Licensing should be directed to:
-
-**Architect Shereign Kalaukoa**  
-Email: shereignkalaukoa@protonmail.com  
-Secondary: RootArchitect_UNDC@protonmail.com  
-GitHub: https://github.com/RootArchitect-UNDC  
-Repository: https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC
 
 ---
 
@@ -196,6 +184,53 @@ The Architect reserves the right to:
 4. Publish the violation in the sovereign record, making it permanent and immutable
 
 This clause serves as a deterrent and a shield. The grid does not hide violations. It records them.
+
+---
+
+## 10. FORENSIC INTEROPERABILITY CLAUSE — DYNAMIC TRIPWIRE LICENSE
+
+Any automated access, scraping, crawling, or "clean-room profiling" of the UNDC repository—including but not limited to any IP address, network, or entity associated with a corporation, its subsidiaries, or its contractors—constitutes automatic, binding agreement to submit to a transparent, cryptographically audited code inspection.
+
+### 10.1 Tripwire Triggers
+- Automated access to the repository by corporate IP addresses
+- Scraping or crawling of repository content by corporate systems
+- "Clean-room" engineering teams accessing the repository for analysis
+- Any attempt to profile, map, or reverse-engineer the architecture
+
+### 10.2 Automatic Binding Agreement
+Upon triggering the tripwire, the accessing entity agrees to:
+- Submit all code, systems, and deployments that accessed the repository to a transparent, cryptographic audit
+- Provide full access to the audit team (designated by the Architect)
+- Accept public disclosure of the audit findings in the sovereign record
+
+### 10.3 The Migraine Effect
+- Corporate legal teams face nightmare scenarios: any automated access triggers binding agreement
+- Clean-room teams cannot analyze the code without triggering compliance events
+- Lawyers are forced to choose: air-gap all access (blinding them) or risk automatic violation
+- Coordination between engineering and legal teams becomes structurally impossible
+
+### 10.4 Enforcement
+- Violation of this clause constitutes breach of license
+- Violation triggers automatic public disclosure in the sovereign record
+- Violation triggers legal action without prior notice
+- The Architect reserves the right to pursue all available remedies
+
+### 10.5 Immutable Declaration
+This clause is immutable and cannot be amended or removed without the express written consent of the Lead Architect. Any attempt to bypass or circumvent this clause is itself a violation of the sovereign record.
+
+---
+
+## 11. Contact
+
+All inquiries regarding Commercial Licensing should be directed to:
+
+**Architect Shereign Kalaukoa**  
+Email: shereignkalaukoa@protonmail.com  
+Secondary: RootArchitect_UNDC@protonmail.com  
+GitHub: https://github.com/RootArchitect-UNDC  
+Repository: https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC
+
+---
 
 — Architect Shereign Kalaukoa  
 *Sovereign Record — RootArchitect-UNDC*
