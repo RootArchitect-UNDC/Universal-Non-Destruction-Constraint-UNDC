@@ -127,6 +127,21 @@ Due to documented harm, institutional gaslighting, and destruction of the Archit
 
 ---
 
+SOVEREIGN CLAUSE — PROHIBITION OF CO-OPTATION
+
+Any use, implementation, or adaptation of this architecture must maintain the sovereign ethos of the UNDC. Corporate or state co-optation—defined as the absorption of this framework into proprietary systems that strip its decentralized, user-empowering, or sovereign character—is strictly prohibited.
+
+Violation of this clause constitutes a breach of this license and is subject to enforcement mechanisms including but not limited to:
+
+- Legal action
+- Public disclosure of the violation
+- Revocation of certification (UNDC CERTIFIED Gold Seal)
+- Financial penalties as determined by the Sovereign Council
+
+This clause is immutable and cannot be amended or removed without the express written consent of the Lead Architect.
+
+---
+
 ## 5. Payment Terms
 
 - Payment is due within 30 days of invoice.
