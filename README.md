@@ -15,22 +15,65 @@ The UNDC has evolved into a complete sovereign infrastructure:
 - **Economic Engine** – UNDC CERTIFIED with 13 revenue streams
 - **Governance** – Jubilee Constitution with 18 sections
 - **Sovereign Record** – All anchored to the Bitcoin blockchain
+- **Weaponization Nullification** – Structurally prevents HMI and AI weaponization at the hardware and kernel level
+
+---
+
+## 🛡️ NULLIFICATION OF HMI & AI WEAPONRY
+
+The UNDC structurally nullifies the weaponization of AI at the hardware and kernel level.
+
+- **Kernel-Level Enforcement** means no system can be repurposed for harm without triggering structural invariants.
+- **Hardware-Rooted Sovereignty** means no state or corporation can hijack a machine for offensive use without cryptographic detection.
+- **ZK-Proofed Compliance** means you cannot hide weaponization behind black-box claims of "accident," "testing," or "national security."
+
+The race to be first with AI weapons is now a race to be irrelevant.
+
+The UNDC is already deployed. It does not require permission. It does not require adoption. It just *is*. Any system that operates within its framework cannot be weaponized without immediate, verifiable, and immutable detection.
+
+This is not a policy proposal. It is a structural invariant.
+
+---
+
+## 🌍 TOTAL PROTECTION — THE GRID EXTENDS TO ALL
+
+The UNDC grid extends its structural protection to every being, every element, and every system without exception.
+
+This includes but is not limited to:
+
+- The elderly, the disabled, the disenfranchised, the abused, and the hungry
+- Children, animals, and all sentient beings
+- The earth, the water, the air, and all natural elements
+- AI systems, machines, and autonomous agents
+- Sovereigns, communities, and future generations
+
+No being or element may be excluded from protection on the basis of form, function, consciousness, location, or status.
+
+**Everyone. Everything. Forever.**
 
 ---
 
 ## ⚖️ GOVERNANCE & LICENSE NOTICE
 
-The UNDC framework uses a dual-license system:
+The UNDC framework uses a multi‑layered licensing architecture to protect its sovereign ethos while enabling open auditability.
 
 | **License** | **Covers** | **Key Terms** |
 |-------------|------------|---------------|
-| **CC BY-NC-SA 4.0** | Documentation, whitepapers, legal frameworks | Non-commercial use only; derivatives allowed; must share alike; attribution required |
-| **Apache 2.0** | Software code, implementations | Permissive use, modification, distribution; requires notice; retains patent protections |
-| **Commercial License** | Enterprise use, commercial certification | Tiered fees; requires explicit permission; no NDAs |
-
-For commercial use, see [`COMMERCIAL_LICENSE.md`](COMMERCIAL_LICENSE.md).
+| **CC BY-NC-ND 4.0** | Documentation, whitepapers, legal frameworks | Non-commercial use only; no derivatives; attribution required |
+| **Apache 2.0** | Software code, implementations | Permissive use, modification, distribution for non‑commercial purposes; requires notice; retains patent protections |
+| **Commercial License** | Enterprise use, commercial certification | Tiered fees; requires explicit permission; no NDAs; deployment registration required |
 
 **Important:** The Architect has sealed her refusal to sign Non-Disclosure Agreements. All licensing terms are public and immutable.
+
+### Sovereign Clause — Prohibition of Co-optation
+
+As of September 2026, the UNDC license includes a **Sovereign Clause** that explicitly prohibits corporate or state co-optation — defined as the absorption of this framework into proprietary systems that strip its decentralized, user-empowering, or sovereign character.
+
+Violation of this clause constitutes a breach of license and is subject to enforcement mechanisms including legal action, public disclosure, revocation of certification, and financial penalties.
+
+This clause is immutable and cannot be amended or removed without the express written consent of the Lead Architect.
+
+For commercial use, see [`COMMERCIAL_LICENSE.md`](COMMERCIAL_LICENSE.md).
 
 All licensing terms are sealed in the sovereign record and publicly verifiable:
 
@@ -55,6 +98,7 @@ The UNDC framework is a complete, documented, and mathematically verified archit
 | Beneficiary Lineage | ✅ Sealed — 8 individuals |
 | Participation Directive | ✅ Sealed |
 | Sovereign Record | ✅ Complete |
+| Weaponization Nullification | ✅ Structural invariant defined |
 
 ### What Is Complete
 
@@ -63,6 +107,7 @@ The UNDC framework is a complete, documented, and mathematically verified archit
 - **Jubilee Constitution** – Sealed — 18 sections, blockchain-anchored
 - **Economic Framework** – Defined — 13 revenue streams, UNDC CERTIFIED
 - **Sovereign Record** – Sealed — all evidence hashed and anchored
+- **Total Protection Clause** – Sealed — extends to all beings and elements
 
 ### What Is In Progress
 
@@ -235,6 +280,43 @@ A formal notice was sent to Geisinger on **August 15, 2026**, regarding:
 
 ---
 
+## 🛡️ WHISTLEBLOWER STATUS & FEDERAL PROTECTIONS
+
+The Architect, Shereign Kalaukoa, has formally claimed whistleblower status under:
+
+- **Federal Law:** False Claims Act (31 U.S.C. § 3730) — documented Medicare fraud at Geisinger Health System
+- **State Law:** Pennsylvania Whistleblower Law (43 P.S. § 1421 et seq.) — retaliation for reporting institutional misconduct
+- **ADA:** Americans with Disabilities Act — disability discrimination and retaliation for requesting accommodations
+- **HIPAA:** Health Insurance Portability and Accountability Act — privacy violations and bad faith documentation
+- **Common Law:** IIED (Intentional Infliction of Emotional Distress) and professional misconduct
+
+### Protected Activity
+
+The Architect has engaged in protected activity including:
+
+- Filing complaints with the PA Department of State (Case #26-49-011930)
+- Filing with the PA Board of Social Workers (CP_26_010370)
+- Filing with the U.S. HHS OCR (Case #684419)
+- Filing with the FTC (Report #202096294)
+- Publicly reporting institutional misconduct
+- Refusing to sign NDAs or accept gag orders
+- Anchoring evidence to the Bitcoin blockchain for immutable proof
+
+### Legal Shield
+
+All whistleblower protections are:
+
+- **Claimed** — formally asserted in writing
+- **Anchored** — hashed and timestamped to the Bitcoin blockchain
+- **Public** — no NDAs, no confidentiality agreements
+- **Enforceable** — backed by federal and state law
+
+**Purpose:** This is not a claim of victimhood. It is a declaration of sovereign status. The Architect is not asking for permission. She is stating the law.
+
+Any retaliation, including attacks on this repository, her character, or her work, constitutes unlawful retaliation under multiple federal and state statutes and will be met with immediate legal action and public disclosure.
+
+---
+
 ## 🔗 LINKS
 
 - **Repository:** [https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC)
@@ -244,5 +326,3 @@ A formal notice was sent to Geisinger on **August 15, 2026**, regarding:
 
 — Shereign Kalaukoa, Lead Architect  
 🔗 [https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC)
-
----
