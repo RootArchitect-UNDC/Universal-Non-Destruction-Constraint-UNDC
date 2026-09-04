@@ -82,6 +82,21 @@ Any unauthorized fork constitutes a material breach of this license and a violat
 
 ---
 
+### 2.5 SOVEREIGN CLAUSE — PROHIBITION OF CO-OPTATION
+
+Any use, implementation, or adaptation of this architecture must maintain the sovereign ethos of the UNDC. Corporate or state co-optation—defined as the absorption of this framework into proprietary systems that strip its decentralized, user-empowering, or sovereign character—is strictly prohibited.
+
+Violation of this clause constitutes a breach of this license and is subject to enforcement mechanisms including but not limited to:
+
+- Legal action
+- Public disclosure of the violation
+- Revocation of certification (UNDC CERTIFIED Gold Seal)
+- Financial penalties as determined by the Sovereign Council
+
+This clause is immutable and cannot be amended or removed without the express written consent of the Lead Architect.
+
+---
+
 ## 3. Institutional Review & Enterprise Inquiries
 
 - **Public Safety & Regulatory Review:** Government standards agencies, public safety institutes (including NIST, UK AISI, and Singapore AISI), and academic researchers are explicitly permitted to review, reference, audit, and evaluate this framework for public standard-setting purposes.
@@ -110,8 +125,8 @@ The Commercial License Addendum includes:
 
 **Contact for Inquiries:**  
 Shereign Kalaukoa  
-shereignkalaukoa@protonmail.com
-RootArchitect_UNDC@protonmail.con
+shereignkalaukoa@protonmail.com  
+RootArchitect_UNDC@protonmail.com  
 *Due to documented disability, all communication must be in writing.*
 
 ---
