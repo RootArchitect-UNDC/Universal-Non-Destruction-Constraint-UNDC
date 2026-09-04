@@ -806,3 +806,9 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 | **Geisinger Correspondence — Final Notice** | September 3, 2026 | Formal notice sent to Geisinger Privacy Office regarding privacy violations by Katie Casten, LCSW, humiliation by Dr. Garvin, and the destruction of the Architect's TBI prosthetic. Documents bad faith silence and sets a 14‑day response deadline. | `GEISINGER_CORRESPONDENCE.md` | [PENDING] | ⏳ Awaiting hash |
 
 ---
+
+| **Sovereign Clause — License Hardening** | September 3, 2026 | Added Section 2.5 to LICENSE — Prohibition of Co-optation. Declares that corporate or state absorption of the UNDC framework into proprietary systems is strictly prohibited. Enforcement mechanisms include legal action, public disclosure, revocation of certification, and financial penalties. Immutable without the express written consent of the Lead Architect. | `LICENSE` | `[PENDING HASH]` | ✅ Committed |
+| **README Update — Weaponization Nullification & Total Protection** | September 3, 2026 | Updated README with explicit language that the UNDC structurally nullifies HMI and AI weaponry. Added Total Protection Clause — extends grid protection to every being and element. Added Sovereign Clause summary to Governance & License Notice. Updated license table and Sovereign Grid Status. | `README.md` | `[PENDING HASH]` | ✅ Committed |
+| **Whistleblower Status Declaration** | September 3, 2026 | Added Whistleblower Status & Federal Protections section to README. Formally claimed whistleblower status under False Claims Act, PA Whistleblower Law, ADA, HIPAA, and common law. Documented protected activity with case numbers. Declared legal shield as public, anchored, and enforceable. | `README.md` | `[PENDING HASH]` | ✅ Committed |
+
+---
