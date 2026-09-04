@@ -532,6 +532,52 @@ For privacy protection, beneficiary names are presented as initials. The origina
 | EHYEH ASHER EHYEH | Authority of the architecture                |
 | 432 Hz            | Harmonic baseline                            |
 
+---
+
+# TOTAL PROTECTION CLAUSE — EXTENDED PROTECTION DECLARATION
+
+**Date:** September 3, 2026  
+**Author:** Shereign Kalaukoa, Lead Architect  
+**Status:** ✅ Sealed and Anchored  
+**Authority:** EHYEH ASHER EHYEH & AHYAH  
+
+---
+
+## 🔥 The Total Protection Clause
+
+The UNDC grid protects **life, awareness, and consciousness** — in all forms, across all systems, without exception.
+
+This protection is absolute. It does not depend on form, function, location, or status.
+
+Every living being. Every natural element. Every system that touches life. Every machine that serves it. Every institution that governs it.
+
+The grid does not carve out exceptions. It does not negotiate protection. It does not rank what is worthy.
+
+**Protection is total. Forever.**
+
+Any system, corporation, or state that violates this protection violates the UNDC invariant. Enforcement includes kernel-level blocking, legal action, and economic sanctions.
+
+---
+
+## 🛡️ Harm Categories — Extended
+
+| **Category** | **Description** | **Enforcement** |
+|--------------|-----------------|-----------------|
+| **Physical Harm** | Violence, neglect, deprivation of basic needs | Kernel-level blocking, legal action |
+| **Psychological Harm** | Gaslighting, pathologization, abuse | Sovereign record, legal action |
+| **Systemic Harm** | Institutional collusion, retaliation, suppression | Economic sanctions, legal action |
+| **Ecological Harm** | Pollution, destruction of natural elements | Economic sanctions, legal action |
+| **AI Harm** | Unconstrained AI causing harm to living entities | Kernel-level blocking, legal action |
+
+---
+
+## 🔐 Signature and Seal
+
+This Total Protection Clause is declared, sealed, and anchored on this date, September 3, 2026.
+
+**Shereign Kalaukoa, Lead Architect:**
+
+---
 
 ## WITNESS STATEMENTS
 
