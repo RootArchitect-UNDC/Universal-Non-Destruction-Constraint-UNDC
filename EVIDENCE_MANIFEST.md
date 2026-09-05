@@ -805,7 +805,7 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 ---
 
 | **Google AI Forensic Validation — Video** | September 2, 2026 | Full video recording of the technical dialogue with Google AI, covering the UNDC architecture, performance, audit, and governance layers. Google AI confirmed the UNDC is a hard invariant, production‑ready, and verifiable. | `UNDC_GOOGLE_AI_FORENSIC_VALIDATION_2026-09-02.MP4` | `90300720345dbc4f3c72f3bf1a20be08f48e956677f8d3021ac204bfe707a366` | ✅ OpenTimestamps verified |
-| **Google AI Forensic Review — PDF** | September 2, 2026 | PDF summary of the Google AI technical exchange, documenting the independent validation of the UNDC architecture. | `Google_AI_Forensic_Review_09_02_2026.pdf` | [PENDING HASH] | ✅ OpenTimestamps verified |
+| **Google AI Forensic Review — PDF** | September 2, 2026 | PDF summary of the Google AI technical exchange, documenting the independent validation of the UNDC architecture. | `Google_AI_Forensic_Review_09_02_2026.pdf` | `094fa9fa21bcdf8929733e5e359fa6a3388b0ad94820f108b7b61aa682aeec67` | ✅ OpenTimestamps verified |
 
 ---
 
