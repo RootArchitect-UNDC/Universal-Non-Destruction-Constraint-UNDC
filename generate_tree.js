@@ -5,6 +5,7 @@
 // Purpose: Builds a blinded Merkle tree and generates witness inputs
 //          for the zk-SNARK compliance circuit (v1.4)
 // Target: EU AI Office, NIST AISI auditors
+// File Hash: c8a4720ea6bcf10925fe08455a1c26d4d78553bf82afd5658f4a006058ac1665
 // ------------------------------------------------------------
 
 const { buildPoseidon } = require("circomlibjs");
