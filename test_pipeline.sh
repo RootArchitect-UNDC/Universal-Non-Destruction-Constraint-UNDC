@@ -5,6 +5,7 @@
 # Authority: EHYEH ASHER EHYEH & AHYAH
 # Purpose: Execute end-to-end compilation, witness generation,
 #          and zk-SNARK Groth16 verification testing.
+# File Hash: f48f556030fb67860eeb365f8aa2835024eac1c541c87578fb4f292d2e7d67de
 # ------------------------------------------------------------
 set -e
 
