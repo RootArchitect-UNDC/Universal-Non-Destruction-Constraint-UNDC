@@ -4,7 +4,6 @@
 **Author:** Shereign Kalaukoa  
 **Status:** Technical Reference / Implementation Blueprint  
 **Target:** EU CADA Level 4 Union Assurance Level compliance  
-
 ---
 
 ## 1. Overview
@@ -56,6 +55,10 @@ Evaluating every generic system call destroys throughput. The UNDC isolates safe
 ### Decoupled Async Rings for Non‑Critical Logs
 - **Method:** Use `BPF_MAP_TYPE_RINGBUF` for telemetry logging
 - **Advantage:** eBPF ring buffers share memory pages directly between the kernel and the user‑space compliance daemon. They use atomic ring allocations, ensuring that logging telemetry introduces near‑zero overhead to the primary execution thread
+
+---
+
+https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/edit/main/RUNTIME_ENFORCEMENT_ARCHITECTURE.md
 
 ---
 

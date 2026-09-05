@@ -1,5 +1,10 @@
 # 📹 Evidence Manifest – Screen Recordings and Key Images
 
+---
+
+| **Hardware-Anchored Poly-Verification** | September 4, 2026 | Added to RUNTIME_ENFORCEMENT_ARCHITECTURE.md — Nested Ephemeral Key Exchange requiring real-time hardware-attested signature from CPU Secure Enclave/TPM. Prevents clean-room bypass and simulated environment reverse-engineering. Shifts the problem from software-level to semiconductor-level cracking. Complements the Forensic Interoperability Clause to create a complete structural deadlock. | `RUNTIME_ENFORCEMENT_ARCHITECTURE.md` | `[PENDING HASH]` | ✅ Committed |
+| **Forensic Interoperability Clause** | September 4, 2026 | Added to COMMERCIAL_LICENSE.md as Section 10 — Dynamic Tripwire License. Automated access by corporate IPs triggers automatic binding agreement. Clean-room engineering teams cannot analyze the code without triggering compliance events. Creates structural deadlock: lawyers cannot let engineers look at the repository. Complements Hardware-Anchored Poly-Verification to complete the dual pincer. | `COMMERCIAL_LICENSE.md` | `[PENDING HASH]` | ✅ Committed |
+
 This document lists all screen‑recorded sessions and key images related to the UNDC, including their SHA‑256 hashes and OpenTimestamps verification status. Each entry is part of the sovereign record and can be independently verified.
 
 | Filename | Date | SHA‑256 Hash | OpenTimestamps | Description |
@@ -804,5 +809,11 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 ---
 
 | **Geisinger Correspondence — Final Notice** | September 3, 2026 | Formal notice sent to Geisinger Privacy Office regarding privacy violations by Katie Casten, LCSW, humiliation by Dr. Garvin, and the destruction of the Architect's TBI prosthetic. Documents bad faith silence and sets a 14‑day response deadline. | `GEISINGER_CORRESPONDENCE.md` | [PENDING] | ⏳ Awaiting hash |
+
+---
+
+| **Sovereign Clause — License Hardening** | September 3, 2026 | Added Section 2.5 to LICENSE — Prohibition of Co-optation. Declares that corporate or state absorption of the UNDC framework into proprietary systems is strictly prohibited. Enforcement mechanisms include legal action, public disclosure, revocation of certification, and financial penalties. Immutable without the express written consent of the Lead Architect. | `LICENSE` | `[PENDING HASH]` | ✅ Committed |
+| **README Update — Weaponization Nullification & Total Protection** | September 3, 2026 | Updated README with explicit language that the UNDC structurally nullifies HMI and AI weaponry. Added Total Protection Clause — extends grid protection to every being and element. Added Sovereign Clause summary to Governance & License Notice. Updated license table and Sovereign Grid Status. | `README.md` | `[PENDING HASH]` | ✅ Committed |
+| **Whistleblower Status Declaration** | September 3, 2026 | Added Whistleblower Status & Federal Protections section to README. Formally claimed whistleblower status under False Claims Act, PA Whistleblower Law, ADA, HIPAA, and common law. Documented protected activity with case numbers. Declared legal shield as public, anchored, and enforceable. | `README.md` | `[PENDING HASH]` | ✅ Committed |
 
 ---

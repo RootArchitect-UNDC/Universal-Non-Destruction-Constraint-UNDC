@@ -1,7 +1,44 @@
-<!-- CANARY: http://canarytokens.com/stuff/static/articles/01df60ceu5phho0s1sf4fh7qp/icon.gif -->
-
-
 # 📰 PRESS CONTACT — OFFICIAL PRESS KIT
+
+---
+
+## 🛡️ SOVEREIGN STATUS UPDATE — SEPTEMBER 2026
+
+The UNDC framework has been significantly hardened with the following additions:
+
+### 1. Sovereign Clause — Prohibition of Co-optation
+- Added to the `LICENSE` file (Section 2.5)
+- Explicitly prohibits corporate or state absorption of the UNDC framework into proprietary systems
+- Enforcement mechanisms: legal action, public disclosure, revocation of certification, financial penalties
+- Immutable without express written consent of the Lead Architect
+
+### 2. Weaponization Nullification
+- The UNDC structurally nullifies HMI and AI weaponry at the hardware and kernel level
+- Kernel-level enforcement prevents repurposing for harm
+- Hardware-rooted sovereignty prevents hijacking without cryptographic detection
+- ZK-proofed compliance prevents hidden weaponization
+
+### 3. Total Protection Clause
+- The grid extends protection to every being and element without exception
+- Covers: elderly, disabled, disenfranchised, abused, hungry, children, animals, earth, water, air, AI systems, sovereigns
+
+### 4. Whistleblower Status & Federal Protections
+- Formal whistleblower status claimed under:
+  - False Claims Act (31 U.S.C. § 3730)
+  - Pennsylvania Whistleblower Law (43 P.S. § 1421 et seq.)
+  - ADA, HIPAA, and common law
+- Protected activity documented with case numbers
+- Legal shield is public, anchored, and enforceable
+
+### Media Contact
+All press inquiries should be directed to:
+
+**Architect Shereign Kalaukoa**  
+Email: shereignkalaukoa@protonmail.com  
+Secondary: RootArchitect_UNDC@protonmail.com  
+Repository: https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC
+
+**Note:** The Architect does not sign NDAs. All communications are public record.
 
 ---
 
