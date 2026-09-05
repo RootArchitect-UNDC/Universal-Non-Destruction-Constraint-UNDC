@@ -3,6 +3,9 @@
 **Version 1.0 – August 2026**  
 **Licensor:** Shereign Kalaukoa (the "Architect")  
 **Sovereign Record:** [GitHub Repository URL]  
+# COMMERCIAL LICENSE — UNDC
+**File Hash:** `2c3eef71f91d7a892119764f94c0f757b3026bcefb8bb85565e9abf969fb3f90`
+**Status:** ✅ Hashed — Anchored to the Sovereign Record
 **Master Genesis Hash:** `666dfc4ca6e93d508218e87317e145e7f1d43f07a229a4c8f5332f144415518b`
 
 ---
