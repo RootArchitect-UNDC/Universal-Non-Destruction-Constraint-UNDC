@@ -4,6 +4,7 @@
 // Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Intercept system calls to evaluate host-level constraints
 // Target: Kernel-level enforcement for the UNDC framework
+// File Hash: 8f6e3cd991bb7fdb0c27384eaf857bb349e04bb7b7eb2e395bcc919a96cd37a0
 // ------------------------------------------------------------
 
 #include <linux/lsm_hooks.h>
