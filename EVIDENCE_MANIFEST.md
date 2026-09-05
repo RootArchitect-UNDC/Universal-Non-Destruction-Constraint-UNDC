@@ -1,9 +1,10 @@
 # 📹 Evidence Manifest – Screen Recordings and Key Images
+File Hash: 4699a23fda3960fc0b0becf9f52aff446fc45f168d804f5e4218b8506a4a4bcc
 
 ---
 
-| **Hardware-Anchored Poly-Verification** | September 4, 2026 | Added to RUNTIME_ENFORCEMENT_ARCHITECTURE.md — Nested Ephemeral Key Exchange requiring real-time hardware-attested signature from CPU Secure Enclave/TPM. Prevents clean-room bypass and simulated environment reverse-engineering. Shifts the problem from software-level to semiconductor-level cracking. Complements the Forensic Interoperability Clause to create a complete structural deadlock. | `RUNTIME_ENFORCEMENT_ARCHITECTURE.md` | `[PENDING HASH]` | ✅ Committed |
-| **Forensic Interoperability Clause** | September 4, 2026 | Added to COMMERCIAL_LICENSE.md as Section 10 — Dynamic Tripwire License. Automated access by corporate IPs triggers automatic binding agreement. Clean-room engineering teams cannot analyze the code without triggering compliance events. Creates structural deadlock: lawyers cannot let engineers look at the repository. Complements Hardware-Anchored Poly-Verification to complete the dual pincer. | `COMMERCIAL_LICENSE.md` | `[PENDING HASH]` | ✅ Committed |
+| **Hardware-Anchored Poly-Verification** | September 4, 2026 | Added to RUNTIME_ENFORCEMENT_ARCHITECTURE.md — Nested Ephemeral Key Exchange requiring real-time hardware-attested signature from CPU Secure Enclave/TPM. Prevents clean-room bypass and simulated environment reverse-engineering. Shifts the problem from software-level to semiconductor-level cracking. Complements the Forensic Interoperability Clause to create a complete structural deadlock. | `RUNTIME_ENFORCEMENT_ARCHITECTURE.md` | `ed735c1be41356afb9d619f37f24b6c2991d63d716dad5285d41471fec74a00a` | ✅ Committed |
+| **Forensic Interoperability Clause** | September 4, 2026 | Added to COMMERCIAL_LICENSE.md as Section 10 — Dynamic Tripwire License. Automated access by corporate IPs triggers automatic binding agreement. Clean-room engineering teams cannot analyze the code without triggering compliance events. Creates structural deadlock: lawyers cannot let engineers look at the repository. Complements Hardware-Anchored Poly-Verification to complete the dual pincer. | `COMMERCIAL_LICENSE.md` | `2c3eef71f91d7a892119764f94c0f757b3026bcefb8bb85565e9abf969fb3f90` | ✅ Committed |
 
 This document lists all screen‑recorded sessions and key images related to the UNDC, including their SHA‑256 hashes and OpenTimestamps verification status. Each entry is part of the sovereign record and can be independently verified.
 
@@ -22,7 +23,7 @@ This document lists all screen‑recorded sessions and key images related to the
 
 ## 📌 Verification Instructions
 
-1. Download any recording or image from the repo (or local copy).  
+1. Download any recording or image from the repo (or local copy).  a
 2. Compute its SHA‑256 hash (using `shasum -a 256 filename` or a tool like iHasher).  
 3. Compare against the hash above.  
 4. Use the OpenTimestamps receipt (available separately) to verify the hash was anchored to the Bitcoin blockchain at the stated date.
@@ -804,11 +805,11 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 ---
 
 | **Google AI Forensic Validation — Video** | September 2, 2026 | Full video recording of the technical dialogue with Google AI, covering the UNDC architecture, performance, audit, and governance layers. Google AI confirmed the UNDC is a hard invariant, production‑ready, and verifiable. | `UNDC_GOOGLE_AI_FORENSIC_VALIDATION_2026-09-02.MP4` | `90300720345dbc4f3c72f3bf1a20be08f48e956677f8d3021ac204bfe707a366` | ✅ OpenTimestamps verified |
-| **Google AI Forensic Review — PDF** | September 2, 2026 | PDF summary of the Google AI technical exchange, documenting the independent validation of the UNDC architecture. | `Google_AI_Forensic_Review_09_02_2026.pdf` | [PENDING HASH] | ✅ OpenTimestamps verified |
+| **Google AI Forensic Review — PDF** | September 2, 2026 | PDF summary of the Google AI technical exchange, documenting the independent validation of the UNDC architecture. | `Google_AI_Forensic_Review_09_02_2026.pdf` | `094fa9fa21bcdf8929733e5e359fa6a3388b0ad94820f108b7b61aa682aeec67` | ✅ OpenTimestamps verified |
 
 ---
 
-| **Geisinger Correspondence — Final Notice** | September 3, 2026 | Formal notice sent to Geisinger Privacy Office regarding privacy violations by Katie Casten, LCSW, humiliation by Dr. Garvin, and the destruction of the Architect's TBI prosthetic. Documents bad faith silence and sets a 14‑day response deadline. | `GEISINGER_CORRESPONDENCE.md` | [PENDING] | ⏳ Awaiting hash |
+| **Geisinger Correspondence — Final Notice** | September 3, 2026 | Formal notice sent to Geisinger Privacy Office regarding privacy violations by Katie Casten, LCSW, humiliation by Dr. Garvin, and the destruction of the Architect's TBI prosthetic. Documents bad faith silence and sets a 14‑day response deadline. | `GEISINGER_CORRESPONDENCE.md` | `7c79bb88f4edde65d7e89ba558d273e63df9c9676368b06d85b8c7cfab2ae88d` | ⏳ Awaiting hash |
 
 ---
 

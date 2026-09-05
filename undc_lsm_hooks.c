@@ -1,6 +1,5 @@
 // ------------------------------------------------------------
-// UNDC Linux Security Module (LSM) Hooks — v1.0
-// Lead Architect: Shereign Kalaukoa
+// UNDC Linux Security Module (LSM) Hooks — v1.0// Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Intercept system calls to evaluate host-level constraints
 // Target: Kernel-level enforcement for the UNDC framework

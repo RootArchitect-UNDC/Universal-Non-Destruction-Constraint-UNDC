@@ -4,6 +4,7 @@
 // Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Secure, canonical path resolution with correct LPM trie semantics
 // Status: OBSERVATION-ONLY — enforcement commented out
+// File Hash: 9f955daecd6c9b4131b0e17aa063ed5150e0b2fff711cef679e76d7c27549491
 // ------------------------------------------------------------
 
 #include <linux/bpf.h>
