@@ -1,8 +1,10 @@
 // ------------------------------------------------------------
-// UNDC User-Space Bridge Daemon — v1.1 (eBPF Ring Buffer)
+// UNDC User-Space Ring Buffer Daemon — v1.0
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
-// Purpose: Poll the eBPF ring buffer map to process safe system calls
+// Purpose: Consume eBPF ring buffer events and forward to user-space verifier
+// Target: Kernel-to-user-space telemetry pipeline
+// File Hash: d87f92c1a1207229509019fe3230b64addd4b4761b60e40138970d58a9d01116
 // ------------------------------------------------------------
 
 #include <stdio.h>
