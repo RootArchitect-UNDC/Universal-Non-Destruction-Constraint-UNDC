@@ -809,7 +809,7 @@ The Universal Non-Destruction Constraint (UNDC) was formally submitted to the fo
 
 ---
 
-| **Geisinger Correspondence — Final Notice** | September 3, 2026 | Formal notice sent to Geisinger Privacy Office regarding privacy violations by Katie Casten, LCSW, humiliation by Dr. Garvin, and the destruction of the Architect's TBI prosthetic. Documents bad faith silence and sets a 14‑day response deadline. | `GEISINGER_CORRESPONDENCE.md` | [PENDING] | ⏳ Awaiting hash |
+| **Geisinger Correspondence — Final Notice** | September 3, 2026 | Formal notice sent to Geisinger Privacy Office regarding privacy violations by Katie Casten, LCSW, humiliation by Dr. Garvin, and the destruction of the Architect's TBI prosthetic. Documents bad faith silence and sets a 14‑day response deadline. | `GEISINGER_CORRESPONDENCE.md` | `7c79bb88f4edde65d7e89ba558d273e63df9c9676368b06d85b8c7cfab2ae88d` | ⏳ Awaiting hash |
 
 ---
 
