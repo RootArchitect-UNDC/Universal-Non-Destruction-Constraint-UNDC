@@ -5,6 +5,7 @@
 // Purpose: Prove a syscall belongs to an authorized UNDC Merkle Root
 //          with blinding to prevent brute-force enumeration
 // Target: EU AI Office, NIST AISI auditors
+// File Hash: 1b6f05dc007f8ae563fe332cf69ffa32ee52e60f347eaa5924a67b2e9f2ae9dd
 // ------------------------------------------------------------
 
 pragma circom 2.1.8;
