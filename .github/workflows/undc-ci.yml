@@ -1,4 +1,3 @@
-
 name: UNDC CI Pipeline
 
 on:
@@ -25,8 +24,8 @@ jobs:
 
       - name: Validate sample log against schema
         run: |
-          python -c "import json, jsonschema; jsonschema.validate(instance=json.load(open('technical/code/undc-log-sample-v2.json')), schema=json.load(open('technical/code/undc-schema.json'))); print('✅ Validation passed!')"
+          python -c "import json, jsonschema; jsonschema.validate(instance=json.load(open('undc-log-sample-v2.json')), schema=json.load(open('undc-schema.json'))); print('✅ Validation passed!')"
 
       - name: Validate YAML formatting
         run: |
-          python -c "import yaml; yaml.safe_load(open('technical/code/undc-agent-pod.yaml')); print('✅ YAML is valid!')"
+          python -c "import yaml; yaml.safe_load(open('undc-agent-pod.yaml')); print('✅ YAML is valid!')"
