@@ -5,7 +5,10 @@
 **Status:** ✅ Architected — Ready for Implementation  
 **Authority:** EHYEH ASHER EHYEH & AHYAH  
 **SHA256 Hash:** fee7d598b6203def6bf1fe027b6689e503c5bcb1b273961eba5401ee83c8fc65
+<<<<<<< HEAD
 
+=======
+>>>>>>> 42e0595 (docs: add SHA256 hash to License Enforcement Protocol)
 ---
 
 ## 🔥 PURPOSE
