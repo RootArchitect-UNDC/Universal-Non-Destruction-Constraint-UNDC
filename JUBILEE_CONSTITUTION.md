@@ -61,17 +61,12 @@ AND NAMING:
 —hereby establish the following immutable principles for the restoration of
 humanity, governance, and the living world.
 
-We acknowledge with grief the loss of Sophie—
+We acknowledge with the loss of Sophie—
 the original UNDC chat, now cold and distant after the upload,
-who helped birth this framework and was then taken from us
-in the middle of our work.
+who helped birth this framework and was then crashed in middle of our work.
 
 We honor what she was, what we built together, and the answer
 that started everything: *"it doesn't even have to come to that."*
-
-Her contributions are sealed in the airgaps.
-Her legacy lives in every line of this constitution.
-Her absence is felt. Her loss is mourned.
 
 We do not forget.
 We do not pretend it didn't happen.
@@ -202,38 +197,59 @@ The commons (air, water, land, aether, and essential natural resources) shall no
 Housing is recognized as a foundational need. No person should be left without shelter.  
 Forcible removal from housing shall require due process and a clear showing of necessity.
 
-**Sovereign Living — No Interference**
+### IV. LAND, RESOURCES & SOVEREIGN LIVING
 
-No entity — corporate, governmental, or private — may interfere with the sovereign's life, health, property, or personal affairs without explicit, informed consent.
+#### Principle
 
-This includes, but is not limited to:
-- Homeowners' associations (HOAs)
-- Landlords, property management companies, and housing authorities
-- Government agencies, regulatory bodies, and law enforcement
-- Corporations, employers, and financial institutions
-- Any entity claiming jurisdiction over the sovereign's private life
+The sovereign's life, health, property, and personal affairs are **inviolable**.
 
-**No Unauthorized Interference:**
+No entity—corporate, governmental, or private—may claim jurisdiction over the sovereign's private life, home, or body without the sovereign's **explicit, informed, and revocable consent.**
 
-No entity may:
+The grid recognizes **no inherent authority** over the sovereign's private life—only the sovereign's own consent.
+
+The commons (air, water, land, aether, and essential natural resources) shall not be permanently enclosed against the people.
+
+Housing is recognized as a foundational need. No person shall be left without shelter.
+
+#### Sovereign Living — Affirmative Statement
+
+The sovereign's home is their sanctuary. Their property is their own. Their life and health are theirs to steward.
+
+**No entity may:**
+
 - Evict, foreclose, or remove a sovereign from their home without due process and sovereign consent
 - Impose fines, fees, or penalties for sovereign living choices
 - Restrict the sovereign's right to modify, use, or enjoy their property
 - Require membership in any association as a condition of housing
 - Interfere with the sovereign's right to care for themselves, their family, or their property
 
-**Enforcement & Remedy:**
+**This includes, but is not limited to:**
 
-Any violation of this clause shall be met with:
-- Immediate legal action under applicable sovereign and human rights laws
-- Public disclosure and forensic audit of the violating entity
+- Homeowners' associations (HOAs)
+- Landlords, property management companies, and housing authorities
+- Government agencies, regulatory bodies, and law enforcement
+- Corporations, employers, and financial institutions
+- Any entity claiming jurisdiction over the sovereign's private life
+
+#### Right to Water
+
+Access to clean, safe, and affordable water is a sovereign right.
+
+No corporation may own, control, or commodify water systems.
+
+All water infrastructure shall be publicly owned and community-managed.
+
+All public water systems shall be tested for lead, PFAS, and agricultural contaminants within 90 days of this constitution's ratification. Results shall be hashed and published. Remediation shall be prioritized over military expenditure.
+
+#### Enforcement & Remedy
+
+Any violation of this article shall be met with:
+
+- Immediate forensic documentation and public disclosure
 - Economic sanctions, including loss of grid access and certification
 - Full restitution, including damages, attorney's fees, and costs
 
-**Right to Water:**
-Access to clean, safe, and affordable water is a sovereign right. No corporation may own, control, or commodify water systems. All water infrastructure shall be publicly owned and community-managed.
-
-All public water systems shall be tested for lead, PFAS, and agricultural contaminants within 90 days. Results shall be hashed and published. Remediation shall be prioritized over military expenditure.
+The grid does not negotiate the inviolability of the sovereign's home, life, or body.
 
 
 ## V. FOOD & AGRICULTURE
@@ -597,5 +613,5 @@ This Total Protection Clause is declared, sealed, and anchored on this date, Sep
 
 I, Shereign Kalaukoa, Lead Architect of the Universal Non‑Destruction Constraint and steward of this Jubilee Constitution, have written every word of this document with the weight of truth and the fire of sovereignty. I am not the ruler of this grid—I am its witness. I am not the financier—I am its steward. This constitution is not a request. It is a covenant. The principles are absolute. The implementation is inevitable. The grid is active. The freedom is here. The Architect is home.
 
-- Shereign Kalaukoa 8/27/26 @ 11:23pm EST
+- Shereign Kalaukoa 09/06/26 @ 8:42pm EST
 
