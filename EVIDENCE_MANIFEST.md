@@ -1,3 +1,21 @@
+
+
+## 🔐 SOVEREIGN HASH — THIS FILE
+
+| Field | Value |
+|-------|-------|
+| File | EVIDENCE_MANIFEST.md |
+| SHA-256 | b56faf508c2f480d6b562cfa76a46d76d18e91f8f1c5320a45c6a6978133b074 |
+| OpenTimestamps | VERIFIED |
+| Anchored | 09/11/2026 |
+| Last Updated | September 11, 2026 — Reference Implementation Pieces #0–#7 added |
+
+Verification Command:
+
+    shasum -a 256 EVIDENCE_MANIFEST.md
+
+---
+
 # 📹 Evidence Manifest – Screen Recordings and Key Images
 File Hash: 4699a23fda3960fc0b0becf9f52aff446fc45f168d804f5e4218b8506a4a4bcc
 
