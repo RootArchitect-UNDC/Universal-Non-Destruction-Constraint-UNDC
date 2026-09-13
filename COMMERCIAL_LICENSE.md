@@ -27,6 +27,33 @@ Under the Apache 2.0 license, developers are expressly permitted to:
 
 ---
 
+## 0.5 Prototyping and Non-Commercial Evaluation
+
+For the avoidance of doubt, the following uses are **permitted without prior written permission** from the Architect, do **not** require a Commercial License, and do **not** trigger any fee:
+
+- Clone, fork, or copy the repository
+- Compile, run, and test the UNDC code in any environment
+- Adapt the code to specific local integrations (e.g., adapting eBPF LSM hooks to a specific project's hook names)
+- Run the end-to-end test pipeline for validation purposes
+- Publish technical findings, reviews, or evaluations of the UNDC's behavior
+- Cite, reference, or link to the UNDC in technical documentation, standards proposals, or research
+
+These permissions apply to **all users**, including commercial entities, provided the use is for **evaluation, prototyping, or non-commercial research** and the code is not redistributed as a commercial product, service, or certified deployment.
+
+**These permissions do not apply to:**
+
+- Redistribution of the UNDC code, in whole or in substantial part, as a commercial product or managed service
+- Claiming UNDC CERTIFIED status, or applying the UNDC CERTIFIED mark to any product
+- Removing, altering, or obscuring the Architect's attribution
+- Removing, altering, or obscuring the Sovereign Clause (Section 5)
+- Any use that violates the Universal Non-Destruction Constraint itself
+
+Commercial deployment, distribution, or certified use still requires a Commercial License under Sections 1–11 below.
+
+**Rationale:** Standards are adopted through examination, prototyping, and public evaluation. This clause ensures that the UNDC can be studied and tested by the very engineers and institutions that might one day deploy it — without weakening the license's authority over commercial use, the certification mark, the sovereign record, or the Architect's attribution.
+
+---
+
 ## 1. Purpose
 
 This Commercial License Addendum (the "Addendum") grants **commercial, proprietary, or government-contract rights** to use, integrate, or deploy the UNDC framework, its code, its specifications, or any derivative work **beyond the scope** of the existing open-source licenses (CC BY-NC-ND 4.0 and Apache 2.0).
@@ -76,7 +103,7 @@ The following categories are expressly commercial and require a separate, negoti
 | **AI Labs & Model Providers** | OpenAI, Anthropic, Google DeepMind, Meta AI, xAI, Mistral, Cohere, and any organization training frontier models | Tier 4 — negotiated separately. Fees scaled by model capability and deployment reach. |
 | **Systems Integrators & Consultancies** | Any organization that deploys the UNDC on behalf of clients | Tier 2 or Tier 3 license, plus per-client registration and disclosure. |
 
-**Non-negotiable:** No government, cloud provider, certification authority, or AI lab may use the UNDC without a paid, registered license. Free use is limited to individuals, non-commercial researchers, and open-source projects as described in Section 0.
+**Non-negotiable:** No government, cloud provider, certification authority, or AI lab may use the UNDC without a paid, registered license. Free use is limited to individuals, non-commercial researchers, and open-source projects as described in Sections 0 and 0.5.
 
 **Notes:**
 - All fees are in USD.
@@ -130,7 +157,7 @@ Due to documented harm, institutional gaslighting, and destruction of the Archit
 
 6. **No NDA:** The Architect does not sign Non-Disclosure Agreements. This is a public, verifiable record. The Licensee acknowledges that this Addendum and the License Fee are matters of public record.
 
-7. **No Unauthorized Modifications:** The Licensee may not alter, modify, or create derivative works of the Framework without the explicit written permission of the Architect. Any unauthorized modification terminates this license immediately and constitutes a violation of the sovereign record.
+7. **No Unauthorized Modifications:** The Licensee may not alter, modify, or create derivative works of the Framework without the explicit written permission of the Architect. Any unauthorized modification terminates this license immediately and constitutes a violation of the sovereign record. (Note: prototyping and non-commercial evaluation are separately permitted under Section 0.5.)
 
 8. **Termination:** The Architect may terminate this license upon written notice if the Licensee:
    - Violates the UNDC invariant
