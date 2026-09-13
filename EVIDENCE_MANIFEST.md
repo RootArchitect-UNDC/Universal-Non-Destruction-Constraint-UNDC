@@ -1029,5 +1029,7 @@ via OpenTimestamps. Each piece chains to the one before it via Predecessor hash.
 The UNDC is no longer a specification. It is a running system.
 
 ---
+| **Commercial License Update — Special Categories** | September 13, 2026 | Added explicit paid-license categories for Government & Public Sector, Cloud & Infrastructure Providers, Certification Authorities, AI Labs & Model Providers, and Systems Integrators & Consultancies. Free use remains limited to individuals, non-commercial researchers, and open-source projects. | `COMMERCIAL_LICENSE.md` | `1d970e5f44cee5fb6be51a73747ccbef3b5b34e7916d4abd4549f9285489bb32` | ⏳ OpenTimestamps pending |
+
 
 — Shereign Kalaukoa
