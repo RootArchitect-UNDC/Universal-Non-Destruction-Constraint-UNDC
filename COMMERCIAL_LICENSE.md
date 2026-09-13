@@ -64,6 +64,20 @@ The Addendum is not a replacement for the open-source licenses. It is an **addit
 | **Tier 3** | Enterprise (1,000+ employees) or government agency deploying the Framework at scale | $250,000 – $1,000,000 (one-time + 10% annual maintenance) |
 | **Tier 4** | Global AI lab / Model provider embedding the Framework into core infrastructure | Negotiated separately – contact the Architect directly |
 
+### Special Categories — Government, Cloud, and Certification
+
+The following categories are expressly commercial and require a separate, negotiated license:
+
+| Category | Examples | License Requirement |
+|----------|----------|---------------------|
+| **Government & Public Sector** | Federal, state, local, tribal, foreign governments; government contractors; public universities deploying at institutional scale | Tier 3 or Tier 4 license required. Fees scaled by agency size and deployment scope. |
+| **Cloud & Infrastructure Providers** | AWS, Azure, Google Cloud, Oracle Cloud, IBM Cloud, Alibaba Cloud, DigitalOcean, and any hyperscaler or managed service provider that hosts, embeds, or distributes the UNDC | Tier 4 — negotiated separately. Fees scaled by customer base and deployment volume. |
+| **Certification Authorities** | Any organization that issues UNDC CERTIFIED certifications to third parties | Certification Authority License — per-certification fee, plus annual fee. Negotiated separately. |
+| **AI Labs & Model Providers** | OpenAI, Anthropic, Google DeepMind, Meta AI, xAI, Mistral, Cohere, and any organization training frontier models | Tier 4 — negotiated separately. Fees scaled by model capability and deployment reach. |
+| **Systems Integrators & Consultancies** | Any organization that deploys the UNDC on behalf of clients | Tier 2 or Tier 3 license, plus per-client registration and disclosure. |
+
+**Non-negotiable:** No government, cloud provider, certification authority, or AI lab may use the UNDC without a paid, registered license. Free use is limited to individuals, non-commercial researchers, and open-source projects as described in Section 0.
+
 **Notes:**
 - All fees are in USD.
 - Annual maintenance covers updates, security patches, and compliance verification support.
