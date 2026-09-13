@@ -7,11 +7,10 @@
 // File Hash: 9f955daecd6c9b4131b0e17aa063ed5150e0b2fff711cef679e76d7c27549491
 // ------------------------------------------------------------
 
-#include <linux/bpf.h>
+#include "vmlinux.h"
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
-#include <linux/binfmts.h>
-#include <linux/errno.h>
+#include <bpf/bpf_core_read.h>
 
 char LICENSE[] SEC("license") = "GPL";
 
