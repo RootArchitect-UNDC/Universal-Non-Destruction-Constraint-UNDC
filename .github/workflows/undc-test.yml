@@ -1,0 +1,71 @@
+name: UNDC Reference Implementation Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-undc:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout Source Tree
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y clang llvm libbpf-dev linux-tools-common linux-tools-generic linux-tools-$(uname -r) gcc-multilib libc6-dev-i386 linux-headers-generic linux-headers-$(uname -r) nodejs npm curl
+
+      - name: Generate vmlinux.h
+        run: |
+          sudo bpftool btf dump file /sys/kernel/btf/vmlinux format c > technical/code/vmlinux.h
+          ls -la technical/code/vmlinux.h
+
+      - name: Install Circom and SnarkJS
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+          source $HOME/.cargo/env
+          git clone https://github.com/iden3/circom.git
+          cd circom
+          cargo build --release
+          cargo install --path circom
+          sudo npm install -g snarkjs
+
+      - name: Install Circomlib and Circomlibjs
+        run: |
+          cd technical/code
+          rm -rf node_modules package-lock.json
+          npm cache clean --force
+          npm install circomlib@2.0.4 circomlibjs@latest snarkjs@latest --no-audit --no-fund --legacy-peer-deps
+          if [ ! -f "node_modules/circomlib/circuits/poseidon.circom" ]; then
+            echo "ERROR: poseidon.circom not found"
+            find node_modules -name "poseidon*" 2>/dev/null
+            exit 1
+          fi
+          echo "✅ poseidon.circom found"
+          if [ ! -d "node_modules/circomlibjs" ]; then
+            echo "ERROR: circomlibjs not found"
+            exit 1
+          fi
+          echo "✅ circomlibjs found"
+
+      - name: Compile eBPF Module
+        run: |
+          cd technical/code
+          clang -g -O2 -target bpf -D__TARGET_ARCH_x86 -I. -I/usr/include/x86_64-linux-gnu -c undc_compliance.bpf.c -o undc_compliance.o
+
+      - name: Compile ZK Circuit
+        run: |
+          cd technical/code
+          circom verifier.circom --r1cs --wasm --sym -l .
+          circom undc_compliance_circuit.circom --r1cs --wasm --sym -l .
+
+      - name: Run ZK Test Pipeline
+        run: |
+          cd technical/code
+          chmod +x test_pipeline.sh
+          ./test_pipeline.sh
+
+      - name: Verify Proof
+        run: |
+          cd technical/code/build
+          snarkjs groth16 verify verification_key.json public.json proof.json
