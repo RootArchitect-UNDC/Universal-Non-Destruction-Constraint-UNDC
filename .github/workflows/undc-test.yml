@@ -15,7 +15,7 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo apt update
-          sudo apt install -y clang llvm libbpf-dev linux-tools-common linux-tools-generic linux-tools-$(uname -r) nodejs npm curl
+          sudo apt install -y clang llvm libbpf-dev linux-tools-common linux-tools-generic linux-tools-$(uname -r) gcc-multilib libc6-dev-i386 nodejs npm curl
 
       - name: Install Circom and SnarkJS
         run: |
