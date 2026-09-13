@@ -35,8 +35,14 @@ jobs:
           cd technical/code
           rm -rf node_modules package-lock.json
           npm cache clean --force
-          npm install circomlib --no-audit --no-fund --legacy-peer-deps || npm install circomlib --no-audit --no-fund --legacy-peer-deps --force
-          ls -la node_modules/circomlib/circuits/ | head -n 20
+          npm install circomlib@latest --no-audit --no-fund --legacy-peer-deps
+          if [ ! -f "node_modules/circomlib/circuits/poseidon.circom" ]; then
+            echo "ERROR: poseidon.circom not found"
+            find node_modules -name "poseidon*" 2>/dev/null
+            exit 1
+          fi
+          echo "✅ poseidon.circom found"
+          ls -la node_modules/circomlib/circuits/poseidon.circom
 
       - name: Compile eBPF Module
         run: |
@@ -46,9 +52,7 @@ jobs:
       - name: Compile ZK Circuit
         run: |
           cd technical/code
-          circom verifier.circom --r1cs --wasm --sym \
-            -l node_modules/circomlib/circuits \
-            -l node_modules
+          circom verifier.circom --r1cs --wasm --sym -l node_modules/circomlib/circuits
 
       - name: Run ZK Test Pipeline
         run: |
