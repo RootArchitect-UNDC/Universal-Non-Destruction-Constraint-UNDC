@@ -10,8 +10,8 @@
 
 pragma circom 2.1.8;
 
-include "circomlib/poseidon.circom";
-include "circomlib/switcher.circom"; // Fixed path from switches.circom
+include "poseidon.circom";
+include "switcher.circom";
 
 // ------------------------------------------------------------
 // 1. BLINDED MERKLE PROOF VERIFICATION TEMPLATE
