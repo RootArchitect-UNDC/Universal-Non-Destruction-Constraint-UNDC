@@ -30,19 +30,23 @@ jobs:
           cargo install --path circom
           sudo npm install -g snarkjs
 
-      - name: Install Circomlib (pinned to 2.0.4)
+      - name: Install Circomlib and Circomlibjs
         run: |
           cd technical/code
           rm -rf node_modules package-lock.json
           npm cache clean --force
-          npm install circomlib@2.0.4 snarkjs@latest --no-audit --no-fund --legacy-peer-deps
+          npm install circomlib@2.0.4 circomlibjs@latest snarkjs@latest --no-audit --no-fund --legacy-peer-deps
           if [ ! -f "node_modules/circomlib/circuits/poseidon.circom" ]; then
             echo "ERROR: poseidon.circom not found"
             find node_modules -name "poseidon*" 2>/dev/null
             exit 1
           fi
           echo "✅ poseidon.circom found"
-          ls -la node_modules/circomlib/circuits/poseidon.circom
+          if [ ! -d "node_modules/circomlibjs" ]; then
+            echo "ERROR: circomlibjs not found"
+            exit 1
+          fi
+          echo "✅ circomlibjs found"
 
       - name: Compile eBPF Module
         run: |
@@ -52,7 +56,8 @@ jobs:
       - name: Compile ZK Circuit
         run: |
           cd technical/code
-          circom verifier.circom --r1cs --wasm --sym -l . -l node_modules -l node_modules/circomlib/circuits
+          circom verifier.circom --r1cs --wasm --sym -l .
+          circom undc_compliance_circuit.circom --r1cs --wasm --sym -l .
 
       - name: Run ZK Test Pipeline
         run: |
