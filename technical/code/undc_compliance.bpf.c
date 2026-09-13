@@ -17,10 +17,18 @@ char LICENSE[] SEC("license") = "GPL";
 #define MAX_PATH_LEN 256
 
 // ------------------------------------------------------------
+// 0. LPM TRIE KEY STRUCT (manually defined — not in vmlinux.h)
+// ------------------------------------------------------------
+struct bpf_lpm_trie_key {
+    __u32 prefixlen;
+    __u8 data[0];
+};
+
+// ------------------------------------------------------------
 // 1. LPM TRIE KEY STRUCTURE
 // ------------------------------------------------------------
 struct lpm_key {
-    struct bpf_lpm_trie_key trie_key; // prefixlen must be first
+    struct bpf_lpm_trie_key trie_key;
     char path[MAX_PATH_LEN];
 };
 
