@@ -46,7 +46,9 @@ jobs:
       - name: Compile ZK Circuit
         run: |
           cd technical/code
-          circom verifier.circom --r1cs --wasm --sym -l node_modules/
+          circom verifier.circom --r1cs --wasm --sym \
+            -l node_modules/circomlib/circuits \
+            -l node_modules
 
       - name: Run ZK Test Pipeline
         run: |
