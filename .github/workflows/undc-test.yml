@@ -34,7 +34,7 @@ jobs:
       - name: Compile eBPF Module
         run: |
           cd technical/code
-          clang -g -O2 -target bpf -I. -c undc_compliance.bpf.c -o undc_compliance.o
+          clang -g -O2 -target bpf -D__TARGET_ARCH_x86 -I. -I/usr/include/x86_64-linux-gnu -c undc_compliance.bpf.c -o undc_compliance.o
 
       - name: Compile ZK Circuit
         run: |
