@@ -1031,5 +1031,15 @@ The UNDC is no longer a specification. It is a running system.
 ---
 | **Commercial License Update — Special Categories** | September 13, 2026 | Added explicit paid-license categories for Government & Public Sector, Cloud & Infrastructure Providers, Certification Authorities, AI Labs & Model Providers, and Systems Integrators & Consultancies. Free use remains limited to individuals, non-commercial researchers, and open-source projects. | `COMMERCIAL_LICENSE.md` | `1d970e5f44cee5fb6be51a73747ccbef3b5b34e7916d4abd4549f9285489bb32` | ⏳ OpenTimestamps pending |
 
+---
+
+| **Cilium Feature Proposal — Issue #48701** | September 13, 2026 | Opened public Feature Proposal in cilium/cilium proposing UNDC integration with Cilium's existing eBPF LSM hook infrastructure. Includes reference implementation link, CI Run #24 verification, and integration approach. Labels: kind/cfp, kind/feature, Enhancement. Bot welcomed issue. | https://github.com/cilium/cilium/issues/48701 | — | ✅ Open |
+| **Tetragon Feature Proposal — Issue #5628** | September 13, 2026 | Opened public proposal in cilium/tetragon proposing UNDC integration aligned with Tetragon's LSM observability model. Includes reference implementation link, CI Run #24 verification, and integration approach. | https://github.com/cilium/tetragon/issues/5628 | — | ✅ Open |
+| **Falco Feature Proposal — Issue #3991** | September 13, 2026 | Opened public proposal in falcosecurity/falco proposing UNDC integration complementing Falco's runtime threat detection model. Includes reference implementation link, CI Run #24 verification, and integration approach. Maintainer `poiana` engaged and applied `kind/feature` label. | https://github.com/falcosecurity/falco/issues/3991 | — | ✅ Open — Triaged |
+
+---
+
+
+
 
 — Shereign Kalaukoa
