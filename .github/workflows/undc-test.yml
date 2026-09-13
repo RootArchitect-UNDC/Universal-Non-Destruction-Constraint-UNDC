@@ -1,8 +1,6 @@
 name: UNDC Reference Implementation Test
 
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -17,6 +15,12 @@ jobs:
           sudo apt update
           sudo apt install -y clang llvm libbpf-dev linux-tools-common linux-tools-generic linux-tools-$(uname -r) gcc-multilib libc6-dev-i386 linux-headers-generic linux-headers-$(uname -r) nodejs npm curl
 
+      - name: Generate vmlinux.h
+        run: |
+          sudo bpftool btf dump file /sys/kernel/btf/vmlinux format c > technical/code/vmlinux.h
+          ls -la technical/code/vmlinux.h
+          head -n 5 technical/code/vmlinux.h
+
       - name: Install Circom and SnarkJS
         run: |
           curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
@@ -30,7 +34,7 @@ jobs:
       - name: Compile eBPF Module
         run: |
           cd technical/code
-          clang -g -O2 -target bpf -c undc_compliance.bpf.c -o undc_compliance.o
+          clang -g -O2 -target bpf -I. -c undc_compliance.bpf.c -o undc_compliance.o
 
       - name: Compile ZK Circuit
         run: |
