@@ -34,8 +34,9 @@ jobs:
       - name: Install Circomlib
         run: |
           cd technical/code
+          rm -rf node_modules package-lock.json
           npm cache clean --force
-          npm install circomlib --no-audit --no-fund
+          npm install circomlib --no-audit --no-fund --legacy-peer-deps || npm install circomlib --no-audit --no-fund --legacy-peer-deps --force
           ls -la node_modules/circomlib/circuits/ | head -n 20
 
       - name: Compile eBPF Module
