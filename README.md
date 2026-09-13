@@ -4,6 +4,35 @@
 
 ---
 
+## 🛠️ Reference Implementation — Runtime Assembly
+
+The UNDC reference implementation is now live. It runs end-to-end on GitHub Actions and is fully reproducible.
+
+**Verification Status:** ✅ CI Passing — Run #24 (September 13, 2026)
+
+### What It Proves
+
+Every run triggers a full pipeline:
+1. Checkout — clean clone from GitHub
+2. Install dependencies — clang, llvm, node, circom, snarkjs
+3. Generate `vmlinux.h` — BTF from running kernel
+4. Compile eBPF module — kernel enforcement binary
+5. Compile ZK circuit — both circuits compile successfully
+6. Run ZK test pipeline — Merkle tree + proof generation
+7. Verify proof — `snarkjs groth16 verify` returns valid
+
+**All steps pass on a clean Ubuntu 22.04 runner.** The proof is reproducible.
+
+### Where to Find It
+
+| **Location** | **Purpose** |
+|--------------|-------------|
+| `/technical/runtime/` | Full runtime specification set (Pieces #1–#7) |
+| `/technical/code/` | All source code (circom, eBPF, Go, JS, Bash) |
+| `.github/workflows/undc-test.yml` | The CI workflow that runs the reference implementation |
+
+---
+
 ## 🔥 EXECUTIVE SUMMARY
 
 The Universal Non-Destruction Constraint (UNDC) is a mathematically enforced, blockchain‑anchored ethical framework for AI systems. It ensures that no AI can initiate or assist in actions that cause unmitigated harm to any living entity.
