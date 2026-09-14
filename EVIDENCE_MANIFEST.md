@@ -1043,7 +1043,8 @@ The UNDC is no longer a specification. It is a running system.
 
 ---
 
+| **Tetragon Proposal — Closed as Not Planned** | September 14, 2026 | The UNDC proposal to Tetragon (Issue #5628) was reviewed and closed by maintainer Mahe as "not planned." The Architect replied with gratitude, leaving the door open for future engagement. The issue remains public and searchable. Cilium (#48701) and Falco (#3991) remain open. | GitHub Issue #5628 | ⏳ Screenshot pending | ✅ Closed — Door Open |
 
-
+---
 
 — Shereign Kalaukoa
