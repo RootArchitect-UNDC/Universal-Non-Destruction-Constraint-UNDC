@@ -1039,6 +1039,10 @@ The UNDC is no longer a specification. It is a running system.
 
 ---
 
+| **Commercial License — Prototyping Clause (Section 0.5)** | September 13, 2026 | Added Section 0.5 permitting non-commercial prototyping, testing, and evaluation of the UNDC without prior written permission. Removes the friction that could stop cloud-native projects or standards bodies from examining the framework. No existing protection weakened — commercial deployment, certification, attribution, the Sovereign Clause, the Geisinger provision, and tiered pricing remain fully intact. | `COMMERCIAL_LICENSE.md` | ⏳ Hash pending | ✅ Committed |
+
+---
+
 
 
 
