@@ -2,11 +2,33 @@
 
 **Version 1.0 – August 2026**  
 **Licensor:** Shereign Kalaukoa (the "Architect")  
-**Sovereign Record:** [GitHub Repository URL]  
+**Sovereign Record:** (https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/tree/main)
 # COMMERCIAL LICENSE — UNDC
 **File Hash:** `2c3eef71f91d7a892119764f94c0f757b3026bcefb8bb85565e9abf969fb3f90`
 **Status:** ✅ Hashed — Anchored to the Sovereign Record
 **Master Genesis Hash:** `666dfc4ca6e93d508218e87317e145e7f1d43f07a229a4c8f5332f144415518b`
+
+---
+
+## Welcome
+
+This license exists to protect the framework, the Architect, and the sovereigns who depend on it. It is not designed to stop engineers from examining, testing, or evaluating the UNDC.
+
+If you are here to:
+- Learn how it works
+- Fork it and run it locally
+- Test it in your own environment
+- Publish your findings
+
+...you are welcome, and you do not need to contact anyone first. See Section 0.5 for what is explicitly permitted.
+
+If you are here to:
+- Ship it in a commercial product
+- Offer it as a managed service
+- Claim the UNDC CERTIFIED mark
+- Absorb it into a proprietary system
+
+...Section 1 through Section 11 explain what is required.
 
 ---
 
@@ -231,36 +253,17 @@ This clause serves as a deterrent and a shield. The grid does not hide violation
 
 ---
 
-## 10. FORENSIC INTEROPERABILITY CLAUSE — DYNAMIC TRIPWIRE LICENSE
+## 10. Forensic Interoperability Clause
 
-Any automated access, scraping, crawling, or "clean-room profiling" of the UNDC repository—including but not limited to any IP address, network, or entity associated with a corporation, its subsidiaries, or its contractors—constitutes automatic, binding agreement to submit to a transparent, cryptographically audited code inspection.
+This clause exists because "clean-room" engineering is routinely used to strip attribution and re-ship sovereign frameworks as proprietary products.
 
-### 10.1 Tripwire Triggers
-- Automated access to the repository by corporate IP addresses
-- Scraping or crawling of repository content by corporate systems
-- "Clean-room" engineering teams accessing the repository for analysis
-- Any attempt to profile, map, or reverse-engineer the architecture
+To prevent that:
 
-### 10.2 Automatic Binding Agreement
-Upon triggering the tripwire, the accessing entity agrees to:
-- Submit all code, systems, and deployments that accessed the repository to a transparent, cryptographic audit
-- Provide full access to the audit team (designated by the Architect)
-- Accept public disclosure of the audit findings in the sovereign record
+- Automated or corporate access to the repository constitutes acknowledgment of this license.
+- If a corporate entity examines, extracts from, or copies the UNDC for commercial purposes, the entity agrees to submit to a transparent, cryptographic audit of the resulting system.
+- This is not a penalty. It is a condition of using the framework in a commercial context.
 
-### 10.3 The Migraine Effect
-- Corporate legal teams face nightmare scenarios: any automated access triggers binding agreement
-- Clean-room teams cannot analyze the code without triggering compliance events
-- Lawyers are forced to choose: air-gap all access (blinding them) or risk automatic violation
-- Coordination between engineering and legal teams becomes structurally impossible
-
-### 10.4 Enforcement
-- Violation of this clause constitutes breach of license
-- Violation triggers automatic public disclosure in the sovereign record
-- Violation triggers legal action without prior notice
-- The Architect reserves the right to pursue all available remedies
-
-### 10.5 Immutable Declaration
-This clause is immutable and cannot be amended or removed without the express written consent of the Lead Architect. Any attempt to bypass or circumvent this clause is itself a violation of the sovereign record.
+If you do not want to accept this condition, do not use the framework commercially. The prototypical use described in Section 0.5 remains fully open.
 
 ---
 
@@ -273,6 +276,19 @@ Email: shereignkalaukoa@protonmail.com
 Secondary: RootArchitect_UNDC@protonmail.com  
 GitHub: https://github.com/RootArchitect-UNDC  
 Repository: https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC
+
+---
+
+## If You Are Confused About What You Can Do
+
+Send an email. In writing. No calls.
+
+You will get a straight answer about:
+- Whether your use requires a license
+- Whether your integration qualifies under Section 0.5
+- Whether you need to negotiate a tier
+
+No NDAs. No calls. No surprises.
 
 ---
 
