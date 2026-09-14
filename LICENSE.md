@@ -78,7 +78,9 @@ This restriction applies to:
 
 **This restriction does NOT apply to cloning the repository for local testing, research, or contribution purposes, provided that no public fork is created.**
 
-Any unauthorized fork constitutes a material breach of this license and a violation of the sovereign record.
+Any unauthorized fork constitutes a material breach of this license and a violation of the sovereign record. 
+
+Prototyping Exception: Non-commercial evaluation, testing, and prototyping — including temporary local forks for the purpose of running the UNDC in a specific environment or adapting its hooks for local testing — are expressly permitted without prior written permission, under the Prototyping Clause of the Commercial License Addendum (see COMMERCIAL_LICENSE.md, Section 0.5). This exception does not permit redistribution of a fork as a public project, product, or service.
 
 ---
 
