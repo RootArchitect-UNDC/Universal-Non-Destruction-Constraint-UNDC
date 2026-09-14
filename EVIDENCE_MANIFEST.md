@@ -1,16 +1,17 @@
 ## 🔐 SOVEREIGN HASH — THIS FILE
 
-| Field | Value |
-|-------|-------|
-| File | EVIDENCE_MANIFEST.md |
-| SHA-256 | b56faf508c2f480d6b562cfa76a46d76d18e91f8f1c5320a45c6a6978133b074 |
-| OpenTimestamps | VERIFIED |
-| Anchored | 09/11/2026 |
-| Last Updated | September 11, 2026 — Reference Implementation Pieces #0–#7 added |
+Field | Value
+---|---
+File | EVIDENCE_MANIFEST.md
+SHA-256 | [compute after commit — see verification command below]
+OpenTimestamps | ⏳ PENDING — will be stamped after header update
+Anchored | 09/11/2026 (original anchor — still valid for that version)
+Last Updated | September 14, 2026 — kernel load milestone (Program ID 119), cloud proposals (Cilium, Tetragon, Falco, CNCF), Commercial License updates (Special Categories, Prototyping Clause), Tetragon and CNCF closures logged
 
 Verification Command:
+shasum -a 256 EVIDENCE_MANIFEST.md
 
-    shasum -a 256 EVIDENCE_MANIFEST.md
+Note: The previous version of this file (hash b56faf508c2f480d6b562cfa76a46d76d18e91f8f1c5320a45c6a6978133b074) remains anchored on the Bitcoin blockchain via OpenTimestamps. That anchor is immutable and still valid for that specific version. This update creates a new version with its own hash, which will be stamped separately.
 
 ---
 
