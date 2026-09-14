@@ -1052,4 +1052,10 @@ The UNDC is no longer a specification. It is a running system.
 
 ---
 
+| **UNDC eBPF Module Loaded into Live Linux Kernel (Program ID 119) — Screenshot v1** | September 14, 2026 | First successful load of the UNDC eBPF LSM module into a live Linux kernel outside the CI environment. Loaded on WSL2 running Ubuntu 26.04 with kernel 6.18.33.2. Program ID: 119, type: lsm, name: undc_execve_hook, tag: 45986485f27740eb, license: gpl. JITed to 467 bytes of native x86. Maps allocated: ID 25 (ring buffer), ID 26 (invariant trie). Pinned at /sys/fs/bpf/undc_compliance. Verified via `sudo bpftool prog show id 119`. | `UNDC_KERNEL_LOAD_BPFTOOL_2026-09-14.png` | `e2a62b904f3d72ace55e73dd99ff019cbe66a33cc2138b673bc18a7839a08eab` | ✅ OpenTimestamps verified |
+| **UNDC eBPF Module Loaded into Live Linux Kernel (Program ID 119) — Screenshot v2** | September 14, 2026 | Second timestamped screenshot of the same kernel load milestone, saved in docx format. Redundant anchor. Both versions hash differently because the file bytes differ, but both prove the program was loaded at the same moment. | `UNDC_KERNEL_LOAD_BPFTOOL_2026-09-14.png.docx` | `1d275f64c0c318b3b7217a28270195540aa7aa20a5cf5ce28c5a7c656aa5c3de` | ✅ OpenTimestamps verified |
+| **UNDC Compiled eBPF Object (undc_compliance.o)** | September 14, 2026 | SHA-256 of the compiled eBPF object file that was loaded into the live kernel as Program ID 119. File path: `/home/shereign/Universal-Non-Destruction-Constraint-UNDC/technical/code/undc_compliance.o`. Provides hard link between the source in the repo and the artifact the kernel verifier approved. | `undc_compliance.o` | `2cb2a7fe15badffc4268dd4cbbc06b20f68593cc3ab972396fc62c572d18d83d` | ⏳ OpenTimestamps pending |
+
+---
+
 — Shereign Kalaukoa
