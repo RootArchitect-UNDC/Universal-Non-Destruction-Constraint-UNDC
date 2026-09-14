@@ -1047,4 +1047,9 @@ The UNDC is no longer a specification. It is a running system.
 
 ---
 
+| **CNCF Sandbox Proposal — Closed as Out of Scope** | September 14, 2026 | The UNDC proposal to the CNCF TOC (Issue #2298) was reviewed by CNCF contributor `angelk` and closed as "completed" with the note: "This project is outside the scope of CNCF's mission and therefore not eligible." The Architect replied with gratitude, leaving the door open for future engagement. The issue remains public and searchable. | GitHub Issue #2298 | — | ✅ Closed — Door Open |
+| **Falco Feature Proposal — Triaged by Maintainer** | September 13, 2026 | Opened public proposal in falcosecurity/falco (Issue #3991) proposing UNDC integration complementing Falco's runtime threat detection model. Maintainer `poiana` engaged and applied the `kind/feature` label. Issue remains open. | GitHub Issue #3991 | — | ✅ Open — Triaged |
+
+---
+
 — Shereign Kalaukoa
