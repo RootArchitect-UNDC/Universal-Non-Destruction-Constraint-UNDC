@@ -1,0 +1,12 @@
+119: lsm  name undc_execve_hook  tag 45986485f27740eb  gpl
+	loaded_at 2026-09-14T11:23:24-0400  uid 0
+	xlated 720B  jited 467B  memlock 4096B  map_ids 25,26
+	btf_id 83
+18: hash_of_maps  name cgroup_hash  flags 0x0
+	key 8B  value 4B  max_entries 2048  memlock 164832B
+25: ringbuf  name undc_events  flags 0x0
+	key 0B  value 0B  max_entries 262144  memlock 275776B
+26: lpm_trie  name undc_invariant_  flags 0x1
+	key 260B  value 4B  max_entries 4096  memlock 0B
+Linux LAPTOP-FN7Q669O 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 GNU/Linux
+capability,landlock,yama,safesetid,selinux,bpf,imaMon Sep 14 11:39:05 EDT 2026

@@ -14,9 +14,7 @@ The reference implementation has crossed from "compiles" to "runs."
 
 ---
 
-## ENVIRONMENT
-
-| Field | Value |
+## ENVIRONMENT | Field | Value |
 |-------|-------|
 | **Host** | HP Pavilion 14-bk0xx, Intel i7-7500U, Windows 10 |
 | **Runtime** | WSL2 (Ubuntu 26.04.1 LTS) |
@@ -57,6 +55,7 @@ btf_id 83
 25: ringbuf name undc_events max_entries 262144 memlock 275776B
 26: lpm_trie name undc_invariant_ key 260B value 4B max_entries 4096
 
+---
 
 **Interpretation:**
 - **Map 25 — `undc_events`** — the ring buffer where kernel events are emitted, 262,144 bytes
@@ -106,22 +105,5 @@ Before this milestone, the UNDC's runtime enforcement had only been proven to **
 
 ---
 
+
 — Shereign Kalaukoa, Lead Architect | UNDC
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
