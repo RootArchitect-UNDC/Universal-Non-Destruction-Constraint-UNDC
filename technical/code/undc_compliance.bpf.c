@@ -1,9 +1,9 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v1.7 (Hash Map Fix)
+// UNDC eBPF Kernel Program — v1.8 (Path Diagnostic)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
-// Purpose: Secure, canonical path resolution with exact-match policy
-// Status: ENFORCING — returns -EPERM on hash map hit with deny action
+// Purpose: Secure path resolution with exact-match policy + path logging
+// Status: ENFORCING — returns -EPERM on map hit with deny action
 // File Hash: (recompute after commit)
 // ------------------------------------------------------------
 
@@ -21,8 +21,8 @@ char LICENSE[] SEC("license") = "GPL";
 
 // ------------------------------------------------------------
 // 0. KEY STRUCTURE
-// prefixlen field retained for future LPM trie migration but
-// unused in hash-map mode. Always zero on both sides.
+// prefixlen field retained for struct compatibility but unused
+// in hash-map mode. Always zero on both sides.
 // ------------------------------------------------------------
 struct lpm_key {
     __u32 prefixlen;
@@ -51,6 +51,7 @@ struct syscall_event {
     unsigned long syscall_type;
     int pid;
     int action_taken;
+    char path[MAX_PATH_LEN];
 };
 
 // ------------------------------------------------------------
@@ -77,6 +78,7 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
             event->syscall_type = 1;
             event->pid = bpf_get_current_pid_tgid() >> 32;
             event->action_taken = -1;
+            __builtin_memcpy(event->path, lookup_key.path, MAX_PATH_LEN);
             bpf_ringbuf_submit(event, 0);
         }
         return 0;
@@ -92,6 +94,7 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         event->syscall_type = 1;
         event->pid = bpf_get_current_pid_tgid() >> 32;
         event->action_taken = decision;
+        __builtin_memcpy(event->path, lookup_key.path, MAX_PATH_LEN);
         bpf_ringbuf_submit(event, 0);
     }
 
