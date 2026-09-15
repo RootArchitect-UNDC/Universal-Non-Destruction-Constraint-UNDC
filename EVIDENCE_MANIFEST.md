@@ -1058,5 +1058,10 @@ The UNDC is no longer a specification. It is a running system.
 | **UNDC Compiled eBPF Object (undc_compliance.o)** | September 14, 2026 | SHA-256 of the compiled eBPF object file that was loaded into the live kernel as Program ID 119. File path: `/home/shereign/Universal-Non-Destruction-Constraint-UNDC/technical/code/undc_compliance.o`. Provides hard link between the source in the repo and the artifact the kernel verifier approved. | `undc_compliance.o` | `2cb2a7fe15badffc4268dd4cbbc06b20f68593cc3ab972396fc62c572d18d83d` | ⏳ OpenTimestamps pending |
 
 ---
+| **Why They Closed the Gate** | September 15, 2026 | Sovereign record entry documenting the closure of CNCF, Cilium, and Tetragon proposals on September 14, 2026, and the strategic pivot toward the regulatory and standards path. Neutral, factual, no complaint. Names the funding conflict behind the declines. | `WHY_THEY_CLOSED_THE_GATE.md` | ⏳ Hash pending | ✅ Committed |
+
+---
 
 — Shereign Kalaukoa
+
+
