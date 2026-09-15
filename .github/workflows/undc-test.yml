@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout Source Tree
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838f2c6d1d0ba9ba47ee1d84
 
       - name: Install Dependencies
         run: |
@@ -52,6 +52,20 @@ jobs:
         run: |
           cd technical/code
           clang -g -O2 -target bpf -D__TARGET_ARCH_x86 -I. -I/usr/include/x86_64-linux-gnu -c undc_compliance.bpf.c -o undc_compliance.o
+
+      - name: Verify Compiled eBPF Object Hash
+        run: |
+          cd technical/code
+          EXPECTED="2cb2a7fe15badffc4268dd4cbbc06b20f68593cc3ab972396fc62c572d18d83d"
+          ACTUAL=$(sha256sum undc_compliance.o | awk '{print $1}')
+          echo "Expected: $EXPECTED"
+          echo "Actual:   $ACTUAL"
+          if [ "$EXPECTED" != "$ACTUAL" ]; then
+            echo "ERROR: eBPF object hash does not match the anchored value."
+            echo "This means either the source changed intentionally (update the expected hash in the workflow and in COVERAGE.md) or the build was tampered with."
+            exit 1
+          fi
+          echo "✅ eBPF object hash verified against anchored value."
 
       - name: Compile ZK Circuit
         run: |
