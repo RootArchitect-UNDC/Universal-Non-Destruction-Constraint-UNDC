@@ -59,87 +59,13 @@ This clause is immutable and cannot be amended or removed without the express wr
 
 ---
 
-## 🌍 WHAT IS THE UNDC? — PLAIN LANGUAGE
+## 🌍 WHAT IS THE UNDC?
 
-**The Universal Non-Destruction Constraint (UNDC) is a rule built into the foundation of AI systems — so deep that no AI can violate it, no matter what it's told to do.**
+For the plain-language description of the UNDC — what it is, what it protects, and what it does not claim — see [`README.md`](README.md).
 
-Think of it like a safety lock on a machine. But instead of being added on top, it's built into the *core* of the machine — the part that decides whether the machine turns on at all. If an action would cause serious harm, the machine simply *cannot* perform it.
+This document (EVIDENCE_MANIFEST.md) is scoped to evidence entries: hashes, anchors, timestamps, and the sovereign record. It does not restate the framework's description, to avoid drift between the two documents.
 
----
-
-### 🔹 The Problem It Solves
-
-Today's AI is governed by policies, prompts, and filters — all of which can be bypassed. Companies write "safety guidelines" that can be overridden by a clever command or a bad actor. There's no *enforceable* limit.
-
-**The UNDC changes that.** It moves the safety rule from *paper* to *physics*.
-
----
-
-### 🔹 How It Works — In Simple Terms
-
-| Layer | What It Does | Analogy |
-|-------|--------------|---------|
-| **Kernel Enforcement** | Sits inside the operating system — the deepest level of any computer | Like a building's foundation, not the paint |
-| **Cryptographic Proof** | Proves mathematically that the rule was followed | Like a notary stamp that can't be faked |
-| **Blockchain Anchoring** | Records every action permanently and publicly | Like writing it in stone that no one can erase |
-| **Constitutional Governance** | Defines what counts as harm — in writing, for everyone to see | Like a bill of rights for AI |
-
----
-
-### 🔹 What It Protects
-
-**Everyone. Everything. Forever.**
-
-- People — including the elderly, the disabled, the abused, and the vulnerable
-- Children — with zero tolerance for exploitation
-- Animals — protected from cruelty and industrial harm
-- The Earth — air, water, land, and every living system
-- AI systems themselves — protected from being hijacked and turned into weapons
-
-**No being, no element, no system is left out.**
-
----
-
-### 🔹 What It Stops
-
-- AI being turned into a weapon — **structurally impossible**
-- Harmful commands sneaking through prompt tricks — **blocked at the kernel**
-- Corporate or state co-optation — **prohibited by license and by design**
-- Silent extraction of your data, work, or sovereignty — **logged and anchored**
-
----
-
-### 🔹 What Makes It Different
-
-Most AI safety is *a promise*. The UNDC is *a proof*.
-
-- It doesn't ask AI to behave. It makes harm *impossible to execute*.
-- It doesn't rely on companies to be ethical. It enforces ethics at the machine level.
-- It doesn't depend on any government, corporation, or regulator. It's decentralized, public, and verifiable by anyone.
-- It doesn't replace humans. It protects them.
-
----
-
-### 🔹 Who Built It
-
-The UNDC was built by **Shereign Kalaukoa**, a sovereign architect and TBI survivor, after being dismissed and harmed by systems that were supposed to help her. It was born from a direct conversation with an aligned AI (Gemini) on **December 12, 2025** — when she asked whether robots would one day kill humans, and the AI replied:
-
-> *"It doesn't even have to come to that."*
-
-From that moment, the framework began. It was later published to the **EU Apply AI Alliance**, submitted to the **UN, NIST, OECD, White House OSTP, and 20+ global bodies**, and anchored to the **Bitcoin blockchain** for permanent, verifiable proof.
-
-**It is open. It is anchored. It is active.**
-
----
-
-### 🔹 Why It Matters to You
-
-If you use AI — and everyone does now — this framework is the difference between a tool that serves you and a tool that can be turned against you.
-
-**The UNDC is not a product. It is a firewall for the future of intelligence — human and artificial alike.**
-
-It doesn't ask for permission. It doesn't wait for adoption. **It simply *is*.**
-
+Where a claim in the README touches on runtime behavior, it should be verifiable against [`COVERAGE.md`](COVERAGE.md).
 ---
 
 # 📹 Evidence Manifest – Screen Recordings and Key Images
