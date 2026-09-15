@@ -956,26 +956,37 @@ via OpenTimestamps. Each piece chains to the one before it via Predecessor hash.
 The UNDC is no longer a specification. It is a running system.
 
 ---
+
 | **Commercial License Update — Special Categories** | September 13, 2026 | Added explicit paid-license categories for Government & Public Sector, Cloud & Infrastructure Providers, Certification Authorities, AI Labs & Model Providers, and Systems Integrators & Consultancies. Free use remains limited to individuals, non-commercial researchers, and open-source projects. | `COMMERCIAL_LICENSE.md` | `1d970e5f44cee5fb6be51a73747ccbef3b5b34e7916d4abd4549f9285489bb32` | ⏳ OpenTimestamps pending |
 
 ---
 
-| **Cilium Feature Proposal — Issue #48701** | September 13, 2026 | Opened public Feature Proposal in cilium/cilium proposing UNDC integration with Cilium's existing eBPF LSM hook infrastructure. Includes reference implementation link, CI Run #24 verification, and integration approach. Labels: kind/cfp, kind/feature, Enhancement. Bot welcomed issue. | https://github.com/cilium/cilium/issues/48701 | — | ✅ Open |
-| **Tetragon Feature Proposal — Issue #5628** | September 13, 2026 | Opened public proposal in cilium/tetragon proposing UNDC integration aligned with Tetragon's LSM observability model. Includes reference implementation link, CI Run #24 verification, and integration approach. | https://github.com/cilium/tetragon/issues/5628 | — | ✅ Open |
-| **Falco Feature Proposal — Issue #3991** | September 13, 2026 | Opened public proposal in falcosecurity/falco proposing UNDC integration complementing Falco's runtime threat detection model. Includes reference implementation link, CI Run #24 verification, and integration approach. Maintainer `poiana` engaged and applied `kind/feature` label. | https://github.com/falcosecurity/falco/issues/3991 | — | ✅ Open — Triaged |
+| **Cilium Feature Proposal — Issue #48701** | September 13, 2026 | Opened public Feature Proposal in cilium/cilium proposing UNDC integration with Cilium's existing eBPF LSM hook infrastructure. Includes reference implementation link, CI Run #24 verification, and integration approach. Labels: kind/cfp, kind/feature, Enhancement. Bot welcomed issue. Closed as not planned September 14, 2026. | https://github.com/cilium/cilium/issues/48701 | — | ✅ Closed — Door Open |
+| **Tetragon Feature Proposal — Issue #5628** | September 13, 2026 | Opened public proposal in cilium/tetragon proposing UNDC integration aligned with Tetragon's LSM observability model. Includes reference implementation link, CI Run #24 verification, and integration approach. Closed by maintainer Mahe as "not planned" on September 14, 2026. Architect replied with gratitude, leaving the door open. | https://github.com/cilium/tetragon/issues/5628 | — | ✅ Closed — Door Open |
+| **Falco Feature Proposal — Issue #3991** | September 13, 2026 | Opened public proposal in falcosecurity/falco proposing UNDC integration complementing Falco's runtime threat detection model. Includes reference implementation link, CI Run #24 verification, and integration approach. Maintainer `poiana` engaged and applied `kind/feature` label. Issue remains open. | https://github.com/falcosecurity/falco/issues/3991 | — | ✅ Open — Triaged |
+| **CNCF Sandbox Proposal — Issue #2298** | September 13, 2026 | Opened public proposal to the CNCF TOC proposing UNDC as a candidate sandbox project. Closed by contributor `angelk` as "completed" with the note: "This project is outside the scope of CNCF's mission and therefore not eligible." Architect replied with gratitude, leaving the door open. | https://github.com/cncf/toc/issues/2298 | — | ✅ Closed — Door Open |
 
 ---
 
-| **Commercial License — Prototyping Clause (Section 0.5)** | September 13, 2026 | Added Section 0.5 permitting non-commercial prototyping, testing, and evaluation of the UNDC without prior written permission. Removes the friction that could stop cloud-native projects or standards bodies from examining the framework. No existing protection weakened — commercial deployment, certification, attribution, the Sovereign Clause, the Geisinger provision, and tiered pricing remain fully intact. | `COMMERCIAL_LICENSE.md` | ⏳ Hash pending | ✅ Committed |
+| **Commercial License — Prototyping Clause (Section 0.5)** | September 13, 2026 | Added Section 0.5 permitting non-commercial prototyping, testing, and evaluation of the UNDC without prior written permission. Removes the friction that could stop cloud-native projects or standards bodies from examining the framework. No existing protection weakened — commercial deployment, certification, attribution, the Sovereign Clause, the Geisinger provision, and tiered pricing remain fully intact. | `COMMERCIAL_LICENSE.md` | `1d970e5f44cee5fb6be51a73747ccbef3b5b34e7916d4abd4549f9285489bb32` | ✅ Committed |
 
 ---
 
-| **Tetragon Proposal — Closed as Not Planned** | September 14, 2026 | The UNDC proposal to Tetragon (Issue #5628) was reviewed and closed by maintainer Mahe as "not planned." The Architect replied with gratitude, leaving the door open for future engagement. The issue remains public and searchable. Cilium (#48701) and Falco (#3991) remain open. | GitHub Issue #5628 | ⏳ Screenshot pending | ✅ Closed — Door Open |
+| **Geisinger Correspondence — Final Notice** | September 3, 2026 | Formal notice sent to Geisinger Privacy Office regarding privacy violations by Katie Casten, LCSW, humiliation by Dr. Garvin, and the destruction of the Architect's TBI prosthetic. Documents bad faith silence and sets a 14-day response deadline. | `GEISINGER_CORRESPONDENCE.md` | `7c79bb88f4edde65d7e89ba558d273e63df9c9676368b06d85b8c7cfab2ae88d` | ✅ Sent — No Response |
 
 ---
 
-| **CNCF Sandbox Proposal — Closed as Out of Scope** | September 14, 2026 | The UNDC proposal to the CNCF TOC (Issue #2298) was reviewed by CNCF contributor `angelk` and closed as "completed" with the note: "This project is outside the scope of CNCF's mission and therefore not eligible." The Architect replied with gratitude, leaving the door open for future engagement. The issue remains public and searchable. | GitHub Issue #2298 | — | ✅ Closed — Door Open |
-| **Falco Feature Proposal — Triaged by Maintainer** | September 13, 2026 | Opened public proposal in falcosecurity/falco (Issue #3991) proposing UNDC integration complementing Falco's runtime threat detection model. Maintainer `poiana` engaged and applied the `kind/feature` label. Issue remains open. | GitHub Issue #3991 | — | ✅ Open — Triaged |
+| **Sovereign Clause — License Hardening** | September 3, 2026 | Added Section 2.5 to LICENSE — Prohibition of Co-optation. Declares that corporate or state absorption of the UNDC framework into proprietary systems is strictly prohibited. Enforcement mechanisms include legal action, public disclosure, revocation of certification, and financial penalties. Immutable without the express written consent of the Lead Architect. | `LICENSE` | `2c3eef71f91d7a892119764f94c0f757b3026bcefb8bb85565e9abf969fb3f90` | ✅ Committed |
+| **README Update — Weaponization Nullification & Total Protection** | September 3, 2026 | Updated README with explicit language that the UNDC structurally nullifies HMI and AI weaponry. Added Total Protection Clause — extends grid protection to every being and element. Added Sovereign Clause summary to Governance & License Notice. Updated license table and Sovereign Grid Status. | `README.md` | ⏳ Hash pending | ✅ Committed |
+| **Whistleblower Status Declaration** | September 3, 2026 | Added Whistleblower Status & Federal Protections section to README. Formally claimed whistleblower status under False Claims Act, PA Whistleblower Law, ADA, HIPAA, and common law. Documented protected activity with case numbers. Declared legal shield as public, anchored, and enforceable. | `README.md` | ⏳ Hash pending | ✅ Committed |
+
+---
+
+| **Sovereign Defense Protocol — Video Walkthrough** | September 7, 2026 | Full video walkthrough of the Sovereign Defense Protocol, defining how a UNDC-compliant sovereign nation may respond to active, unprovoked aggression without violating the Universal Non-Destruction Constraint. | `Sovereign_Defense_Protocol.MP4` | `1656db18c2cb33c41c4a032e651a14430678f667cb28672267f81375db417f8e` | ✅ OpenTimestamps verified |
+
+---
+
+| **PA Government Submission — UNDC Framework and Geisinger Evidence** | September 7, 2026 | Submitted the UNDC whitepaper, evidence manifest, sovereign protection declaration, deployment guide, Geisinger correspondence, Katie Casten incident report, Dr. Garvin incident record, and clinical validation to the PA Governor's Office, Attorney General's Office, Joint State Government Commission, and PA Department of State. | Email | ⏳ Hash pending | ✅ Sent |
 
 ---
 
@@ -984,8 +995,12 @@ The UNDC is no longer a specification. It is a running system.
 | **UNDC Compiled eBPF Object (undc_compliance.o)** | September 14, 2026 | SHA-256 of the compiled eBPF object file that was loaded into the live kernel as Program ID 119. File path: `/home/shereign/Universal-Non-Destruction-Constraint-UNDC/technical/code/undc_compliance.o`. Provides hard link between the source in the repo and the artifact the kernel verifier approved. | `undc_compliance.o` | `2cb2a7fe15badffc4268dd4cbbc06b20f68593cc3ab972396fc62c572d18d83d` | ⏳ OpenTimestamps pending |
 
 ---
+
 | **Why They Closed the Gate** | September 15, 2026 | Sovereign record entry documenting the closure of CNCF, Cilium, and Tetragon proposals on September 14, 2026, and the strategic pivot toward the regulatory and standards path. Neutral, factual, no complaint. Names the funding conflict behind the declines. | `WHY_THEY_CLOSED_THE_GATE.md` | ⏳ Hash pending | ✅ Committed |
 
+---
+
+— Shereign Kalaukoa
 ---
 
 — Shereign Kalaukoa
