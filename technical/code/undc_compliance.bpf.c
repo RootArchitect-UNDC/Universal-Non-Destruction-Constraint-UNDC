@@ -1,10 +1,10 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v1.4 (Hardened LPM Path Resolution)
+// UNDC eBPF Kernel Program — v1.5 (Enforcement Branch Added)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Secure, canonical path resolution with correct LPM trie semantics
-// Status: OBSERVATION-ONLY — enforcement commented out
-// File Hash: 9f955daecd6c9b4131b0e17aa063ed5150e0b2fff711cef679e76d7c27549491
+// Status: ENFORCING — returns -EPERM on trie hit with deny action
+// File Hash: (recompute after commit)
 // ------------------------------------------------------------
 
 #include "vmlinux.h"
@@ -15,6 +15,9 @@
 char LICENSE[] SEC("license") = "GPL";
 
 #define MAX_PATH_LEN 256
+#define ACTION_ALLOW 0
+#define ACTION_DENY  1
+#define ACTION_AUDIT 2
 
 // ------------------------------------------------------------
 // 0. LPM TRIE KEY STRUCT (manually defined — not in vmlinux.h)
@@ -67,6 +70,7 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
     struct lpm_key lookup_key = {};
     __u32 *action;
     long path_len;
+    int decision = ACTION_ALLOW;
 
     if (!bprm || !bprm->file) {
         return 0;
@@ -88,13 +92,21 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
     lookup_key.trie_key.prefixlen = MAX_PATH_LEN * 8;
 
     action = bpf_map_lookup_elem(&undc_invariant_map, &lookup_key);
+    if (action) {
+        decision = *action;
+    }
 
     event = bpf_ringbuf_reserve(&undc_events, sizeof(struct syscall_event), 0);
     if (event) {
         event->syscall_type = 1;
         event->pid = bpf_get_current_pid_tgid() >> 32;
-        event->action_taken = action ? *action : 0;
+        event->action_taken = decision;
         bpf_ringbuf_submit(event, 0);
+    }
+
+    // ── ENFORCEMENT BRANCH ──
+    if (decision == ACTION_DENY) {
+        return -1; // -EPERM
     }
 
     return 0;
