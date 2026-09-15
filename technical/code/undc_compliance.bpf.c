@@ -1,8 +1,8 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v1.8 (Path Diagnostic)
+// UNDC eBPF Kernel Program — v1.9 (Byte-Exact Key Fix)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
-// Purpose: Secure path resolution with exact-match policy + path logging
+// Purpose: Secure path resolution with byte-exact hash map keys
 // Status: ENFORCING — returns -EPERM on map hit with deny action
 // File Hash: (recompute after commit)
 // ------------------------------------------------------------
@@ -22,7 +22,7 @@ char LICENSE[] SEC("license") = "GPL";
 // ------------------------------------------------------------
 // 0. KEY STRUCTURE
 // prefixlen field retained for struct compatibility but unused
-// in hash-map mode. Always zero on both sides.
+// in hash-map mode. Zeroed on both sides so keys match exactly.
 // ------------------------------------------------------------
 struct lpm_key {
     __u32 prefixlen;
@@ -61,7 +61,7 @@ SEC("lsm/bprm_check_security")
 int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
 {
     struct syscall_event *event;
-    struct lpm_key lookup_key = {};
+    struct lpm_key lookup_key;
     __u32 *action;
     long path_len;
     int decision = ACTION_ALLOW;
@@ -69,6 +69,13 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
     if (!bprm || !bprm->file) {
         return 0;
     }
+
+    // Explicitly zero the entire key struct. Do NOT rely on `= {}`
+    // initialization for large stack structs — the compiler may
+    // elide it, leaving bytes past the NUL terminator with stack
+    // garbage that breaks hash-map equality against the daemon's
+    // zero-initialized seed key.
+    __builtin_memset(&lookup_key, 0, sizeof(lookup_key));
 
     path_len = bpf_d_path(&bprm->file->f_path, lookup_key.path, MAX_PATH_LEN);
 
@@ -82,6 +89,13 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
             bpf_ringbuf_submit(event, 0);
         }
         return 0;
+    }
+
+    // bpf_d_path() writes the resolved path plus a NUL into the
+    // buffer but does not clear the remaining bytes. Force zeros
+    // so the key matches the daemon's zero-padded seed key exactly.
+    if (path_len < MAX_PATH_LEN) {
+        __builtin_memset(&lookup_key.path[path_len], 0, MAX_PATH_LEN - path_len);
     }
 
     action = bpf_map_lookup_elem(&undc_invariant_map, &lookup_key);
