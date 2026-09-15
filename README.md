@@ -38,12 +38,12 @@ What this establishes: the code compiles, the ZK circuit's constraints are inter
 
 ## 🔥 EXECUTIVE SUMMARY
 
-The Universal Non-Destruction Constraint (UNDC) is a framework for AI systems that combines kernel-level syscall interception, ZK-verified compliance proofs, and blockchain-anchored evidence trails. It is designed to block specific destructive actions at the operating system level, and to provide cryptographically verifiable records of those blocks.
+The Universal Non-Destruction Constraint (UNDC) is a framework for AI systems that combines kernel-level syscall interception, ZK-verified compliance proofs, and blockchain-anchored evidence trails. It is designed to block specific destructive actions at the operating system level, and to provide cryptographically verifiable records of those actions.
 
 The UNDC includes:
 
 - **ZK Circuit** — a Groth16 circuit that proves a blinded Merkle-membership statement about a syscall
-- **eBPF LSM Module** — an LSM hook written and loaded on a test kernel; coverage documented in `COVERAGE.md`
+- **eBPF LSM Module** — an LSM hook written and loaded on a test kernel; coverage documented in COVERAGE.md; attach to bprm_check_security is the next milestone
 - **Economic Framework** — licensing structure with 13 defined revenue streams (documents)
 - **Governance Documents** — Jubilee Constitution, Sovereign Defense Protocol, Commercial License
 - **Sovereign Record** — hashed artifacts anchored to Bitcoin via OpenTimestamps
