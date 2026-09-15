@@ -127,7 +127,7 @@ The UNDC remains public, hashed, and anchored. The reference implementation rema
 
 The framework will be adopted by whoever needs it most. It is now clear that the cloud-native ecosystem does not.
 
-The record is complete.
+The entry is complete.
 
 ---
 
