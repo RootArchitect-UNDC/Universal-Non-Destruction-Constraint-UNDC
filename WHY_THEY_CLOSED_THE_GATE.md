@@ -1,9 +1,9 @@
 # WHY THEY CLOSED THE GATE
 
-**Date:** September 14–15, 2026  
-**Author:** Shereign Kalaukoa, Lead Architect  
-**Authority:** EHYEH ASHER EHYEH & AHYAH  
-**Status:** ✅ Sovereign record entry  
+**Date:** September 14–15, 2026
+**Author:** Shereign Kalaukoa, Lead Architect
+**Authority:** EHYEH ASHER EHYEH & AHYAH
+**Status:** ✅ Sovereign record entry
 **Related Artifact:** https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC
 
 ---
@@ -47,18 +47,18 @@ Within approximately 24 hours, all three cloud-native projects responded:
 
 ## TRANSLATION
 
-The two rejection phrases used carry distinct meanings in foundation governance:
+The two rejection phrases carry distinct meanings in foundation governance:
 
-- **"Out of scope"** — the framework was not evaluated. The decision was to not enter the conversation.
-- **"Not planned"** — the framework was evaluated and declined. The decision was made after review.
+- **"Out of scope"** — the proposal fell outside the project's charter. This is a scope decision, not a technical judgment.
+- **"Not planned"** — the proposal was considered and declined for the project's current roadmap. Also not a technical judgment.
 
-Both phrases are standard. Neither reflects a technical judgment on the UNDC's correctness. Both reflect governance and funding realities within the cloud-native ecosystem.
+Neither phrase is a judgment about the correctness of the framework. Both reflect governance and scope realities within the cloud-native ecosystem.
 
 ---
 
 ## THE SUBSTANCE OF THE DECLINE
 
-The cloud-native ecosystem is funded primarily by the same commercial entities whose revenue depends on AI safety remaining voluntary rather than structural.
+The cloud-native ecosystem is funded primarily by commercial entities with significant stakes in how AI safety obligations are defined. A kernel-level constraint shifts those obligations from voluntary to structural, which changes the economic landscape those entities operate in.
 
 A kernel-level constraint changes deployment economics:
 
@@ -131,7 +131,6 @@ The record is complete.
 
 ---
 
-
-— Shereign Kalaukoa, Lead Architect | UNDC  
+— Shereign Kalaukoa, Lead Architect | UNDC
 
 🔗 https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC
