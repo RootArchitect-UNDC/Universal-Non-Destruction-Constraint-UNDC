@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout Source Tree
-        uses: actions/checkout@11d5960a326750d5838f2c6d1d0ba9ba47ee1d84
+        uses: actions/checkout@v4
 
       - name: Install Dependencies
         run: |
