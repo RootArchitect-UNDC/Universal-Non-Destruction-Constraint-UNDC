@@ -4,7 +4,7 @@
 **Licensor:** Shereign Kalaukoa (the "Architect")  
 **Sovereign Record:** (https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/tree/main)
 # COMMERCIAL LICENSE — UNDC
-**File Hash:** `2c3eef71f91d7a892119764f94c0f757b3026bcefb8bb85565e9abf969fb3f90`
+**File Hash:** `6b3229b2bdc5d484c323a15fb4c5f6030b3a9e5bb14a84be35442368612c2fb1`
 **Status:** ✅ Hashed — Anchored to the Sovereign Record
 **Master Genesis Hash:** `666dfc4ca6e93d508218e87317e145e7f1d43f07a229a4c8f5332f144415518b`
 
@@ -230,8 +230,8 @@ If the Licensee proposes modifications, improvements, or extensions to the Frame
 ### 8.2 No Derivative Ownership
 The Licensee does not retain any ownership, licensing rights, or claim over the modified version. The contribution is absorbed into the Framework and becomes subject to the same sovereign record, licensing terms, and governance structure as the original UNDC.
 
-### 8.3 Absorption into the Grid
-Once absorbed, the contribution becomes part of the public, immutable, blockchain-anchored sovereign record. It is no longer the property of the Licensee. It is part of the grid.
+### 8.3 Absorption into the Sovereign Record
+Once absorbed, the contribution becomes part of the public, immutable, blockchain-anchored sovereign record. It is no longer the property of the Licensee. It is part of the framework.
 
 ### 8.4 Acceptance Process
 The Architect may accept or reject any proposed contribution at her sole discretion. Acceptance does not grant the Licensee any rights beyond those explicitly stated in this Addendum.
