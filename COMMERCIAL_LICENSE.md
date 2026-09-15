@@ -253,17 +253,23 @@ This clause serves as a deterrent and a shield. The grid does not hide violation
 
 ---
 
-## 10. Forensic Interoperability Clause
+## 10. AUTOMATED ACCESS NOTICE
 
-This clause exists because "clean-room" engineering is routinely used to strip attribution and re-ship sovereign frameworks as proprietary products.
+Automated access, scraping, crawling, or systematic download of this repository by corporate systems — including systems operated by a corporation's subsidiaries or contractors — is logged and may be retained as evidence.
 
-To prevent that:
+Access logs collected under this section may be cited in any enforcement action related to Sections 2, 8, or 9 of this license.
 
-- Automated or corporate access to the repository constitutes acknowledgment of this license.
-- If a corporate entity examines, extracts from, or copies the UNDC for commercial purposes, the entity agrees to submit to a transparent, cryptographic audit of the resulting system.
-- This is not a penalty. It is a condition of using the framework in a commercial context.
+**What this section does not do:**
 
-If you do not want to accept this condition, do not use the framework commercially. The prototypical use described in Section 0.5 remains fully open.
+- It does not create any obligation beyond those already imposed by law.
+- It does not assert that access alone constitutes agreement to any additional terms.
+- It does not create an automatic audit right.
+
+**What this section is:**
+
+- A record-keeping policy. Access events are logged so that if a violation of Sections 2, 8, or 9 occurs, the pattern of access can be cited as supporting evidence.
+
+For the license's actual restrictions on commercial use, derivative works, and co-optation, see Sections 1–9 and 11 below.
 
 ---
 
