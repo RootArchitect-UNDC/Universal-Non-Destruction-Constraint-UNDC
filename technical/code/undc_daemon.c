@@ -1,8 +1,8 @@
 // ------------------------------------------------------------
-// UNDC User-Space Ring Buffer Daemon — v1.2 (LPM Tri Fix)
+// UNDC User-Space Ring Buffer Daemon — v1.4 (Path Diagnostic)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
-// Purpose: Consume eBPF ring buffer events; seed LPM trie policy
+// Purpose: Consume eBPF events with full path; seed hash map policy
 // Target: Kernel-to-user-space telemetry pipeline with demo policy
 // File Hash: (recompute after commit)
 // ------------------------------------------------------------
@@ -20,6 +20,7 @@ struct syscall_event {
     unsigned long syscall_type;
     int pid;
     int action_taken;
+    char path[MAX_PATH_LEN];
 };
 
 #define MAX_PATH_LEN 256
@@ -30,8 +31,6 @@ struct lpm_key {
     char path[MAX_PATH_LEN];
 };
 
-// Seed the LPM trie with a single test path marked DENY.
-// Returns 0 on success, negative on failure.
 static int seed_policy(struct undc_compliance_bpf *skel, const char *deny_path)
 {
     int map_fd = bpf_map__fd(skel->maps.undc_invariant_map);
@@ -45,7 +44,7 @@ static int seed_policy(struct undc_compliance_bpf *skel, const char *deny_path)
     }
 
     memcpy(key.path, deny_path, plen);
-    key.prefixlen = sizeof(struct lpm_key) * 8;
+    // prefixlen left at 0 — unused in hash-map mode
 
     int err = bpf_map_update_elem(map_fd, &key, &action, BPF_ANY);
     if (err) {
@@ -71,8 +70,8 @@ static int handle_event(void *ctx, void *data, size_t data_sz)
         event->action_taken == 1 ? "DENY"  :
         event->action_taken == 2 ? "AUDIT" : "UNKNOWN";
 
-    printf("📡 [eBPF Intercept] syscall=%lu pid=%d action=%s\n",
-           event->syscall_type, event->pid, action_str);
+    printf("📡 [eBPF Intercept] syscall=%lu pid=%d action=%s path=\"%s\"\n",
+           event->syscall_type, event->pid, action_str, event->path);
 
     return 0;
 }
@@ -99,7 +98,6 @@ int main(int argc, char **argv)
         goto cleanup;
     }
 
-    // Seed trie BEFORE polling so the hook has policy from the first event.
     err = seed_policy(skel, deny_path);
     if (err) {
         goto cleanup;
