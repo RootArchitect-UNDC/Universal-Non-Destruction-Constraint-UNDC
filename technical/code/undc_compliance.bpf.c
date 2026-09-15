@@ -1,9 +1,9 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v1.6 (LPM Tri Fix)
+// UNDC eBPF Kernel Program — v1.7 (Hash Map Fix)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
-// Purpose: Secure, canonical path resolution with correct LPM trie semantics
-// Status: ENFORCING — returns -EPERM on trie hit with deny action
+// Purpose: Secure, canonical path resolution with exact-match policy
+// Status: ENFORCING — returns -EPERM on hash map hit with deny action
 // File Hash: (recompute after commit)
 // ------------------------------------------------------------
 
@@ -20,7 +20,9 @@ char LICENSE[] SEC("license") = "GPL";
 #define ACTION_AUDIT 2
 
 // ------------------------------------------------------------
-// 0. LPM TRIE KEY STRUCTURE
+// 0. KEY STRUCTURE
+// prefixlen field retained for future LPM trie migration but
+// unused in hash-map mode. Always zero on both sides.
 // ------------------------------------------------------------
 struct lpm_key {
     __u32 prefixlen;
@@ -36,11 +38,10 @@ struct {
 } undc_events SEC(".maps");
 
 struct {
-    __uint(type, BPF_MAP_TYPE_LPM_TRIE);
+    __uint(type, BPF_MAP_TYPE_HASH);
     __uint(key_size, sizeof(struct lpm_key));
     __uint(value_size, sizeof(__u32));
     __uint(max_entries, 4096);
-    __uint(map_flags, BPF_F_NO_PREALLOC);
 } undc_invariant_map SEC(".maps");
 
 // ------------------------------------------------------------
@@ -80,8 +81,6 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         }
         return 0;
     }
-
-    lookup_key.prefixlen = sizeof(struct lpm_key) * 8;
 
     action = bpf_map_lookup_elem(&undc_invariant_map, &lookup_key);
     if (action) {
