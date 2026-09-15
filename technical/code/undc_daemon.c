@@ -16,6 +16,9 @@
 #include <bpf/bpf.h>
 #include "undc_compliance.skel.h"
 
+#define MAX_PATH_LEN 256
+#define ACTION_DENY  1
+
 struct syscall_event {
     unsigned long syscall_type;
     int pid;
@@ -23,14 +26,13 @@ struct syscall_event {
     char path[MAX_PATH_LEN];
 };
 
-#define MAX_PATH_LEN 256
-#define ACTION_DENY  1
-
 struct lpm_key {
     __u32 prefixlen;
     char path[MAX_PATH_LEN];
 };
 
+// Seed the hash map with a single test path marked DENY.
+// Returns 0 on success, negative on failure.
 static int seed_policy(struct undc_compliance_bpf *skel, const char *deny_path)
 {
     int map_fd = bpf_map__fd(skel->maps.undc_invariant_map);
