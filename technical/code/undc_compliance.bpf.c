@@ -1,5 +1,5 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v1.5 (Enforcement Branch Added)
+// UNDC eBPF Kernel Program — v1.6 (LPM Tri Fix)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Secure, canonical path resolution with correct LPM trie semantics
@@ -20,23 +20,15 @@ char LICENSE[] SEC("license") = "GPL";
 #define ACTION_AUDIT 2
 
 // ------------------------------------------------------------
-// 0. LPM TRIE KEY STRUCT (manually defined — not in vmlinux.h)
-// ------------------------------------------------------------
-struct bpf_lpm_trie_key {
-    __u32 prefixlen;
-    __u8 data[0];
-};
-
-// ------------------------------------------------------------
-// 1. LPM TRIE KEY STRUCTURE
+// 0. LPM TRIE KEY STRUCTURE
 // ------------------------------------------------------------
 struct lpm_key {
-    struct bpf_lpm_trie_key trie_key;
+    __u32 prefixlen;
     char path[MAX_PATH_LEN];
 };
 
 // ------------------------------------------------------------
-// 2. MAP DEFINITIONS
+// 1. MAP DEFINITIONS
 // ------------------------------------------------------------
 struct {
     __uint(type, BPF_MAP_TYPE_RINGBUF);
@@ -52,7 +44,7 @@ struct {
 } undc_invariant_map SEC(".maps");
 
 // ------------------------------------------------------------
-// 3. EVENT STRUCTURE
+// 2. EVENT STRUCTURE
 // ------------------------------------------------------------
 struct syscall_event {
     unsigned long syscall_type;
@@ -61,7 +53,7 @@ struct syscall_event {
 };
 
 // ------------------------------------------------------------
-// 4. LSM HOOK — bprm_check_security (execve interception)
+// 3. LSM HOOK — bprm_check_security (execve interception)
 // ------------------------------------------------------------
 SEC("lsm/bprm_check_security")
 int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
@@ -89,7 +81,7 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         return 0;
     }
 
-    lookup_key.trie_key.prefixlen = MAX_PATH_LEN * 8;
+    lookup_key.prefixlen = sizeof(struct lpm_key) * 8;
 
     action = bpf_map_lookup_elem(&undc_invariant_map, &lookup_key);
     if (action) {
