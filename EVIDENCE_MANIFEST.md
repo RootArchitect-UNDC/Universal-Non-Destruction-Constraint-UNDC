@@ -3,8 +3,8 @@
 Field | Value
 ---|---
 File | EVIDENCE_MANIFEST.md
-SHA-256 | [compute after commit — see verification command below]
-OpenTimestamps | ⏳ PENDING — will be stamped after header update
+SHA-256 | 3ac5364400e40c2d9c882542922023ee3122003cf9af98acb0dffa4999fa3d45 
+OpenTimestamps |  ✅ Success!
 Anchored | 09/11/2026 (original anchor — still valid for that version)
 Last Updated | September 14, 2026 — kernel load milestone (Program ID 119), cloud proposals (Cilium, Tetragon, Falco, CNCF), Commercial License updates (Special Categories, Prototyping Clause), Tetragon and CNCF closures logged
 
