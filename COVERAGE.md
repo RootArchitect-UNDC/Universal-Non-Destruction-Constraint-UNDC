@@ -1,85 +1,144 @@
-# COVERAGE.md
+# COVERAGE.md — UNDC Kernel-Level Interception
 
-**Universal Non-Destruction Constraint (UNDC)**
 **Last Updated:** September 15, 2026
-**Authority:** EHYEH ASHER EHYEH & AHYAH
+**Source Files:**
+- `technical/code/undc_compliance.bpf.c` — eBPF LSM (loaded and attached)
+- `technical/code/undc_lsm_hooks.c` — traditional kernel LSM (stub, not loaded)
+- `technical/code/undc_daemon.c` — userspace daemon (seeds trie, consumes events)
+
+This document describes exactly which kernel paths the UNDC module intercepts, what the policy does on each path, and what is explicitly **not** covered.
 
 ---
 
-## Purpose
+## Current Interception Surface
 
-This document defines the exact syscall paths, policies, and mechanisms the UNDC reference implementation currently enforces, and what it does not yet cover. Every claim in the README that touches on runtime behavior should be verifiable against this file.
+| Syscall Path | Hook | File | Status | Behavior |
+|---|---|---|---|---|
+| `execve` / `execveat` | `lsm/bprm_check_security` | `undc_compliance.bpf.c` | Built — **attached, demonstrated firing** | Resolves binary path via `bpf_d_path()`, looks up path in LPM trie, emits ring-buffer event. Returns `-EPERM` on trie hit with DENY action; returns 0 otherwise. Demonstrated via `run_test.sh`. |
+| `execve` / `execveat` | `bprm_check_security` | `undc_lsm_hooks.c` | Stub — **not loaded** | Calls `undc_evaluate_harm()`, which returns `harm_score = 0` unconditionally → allow. Requires kernel rebuild to load. |
+| `mmap` | `mmap_file` | `undc_lsm_hooks.c` | Stub — **not loaded** | Same stub behavior. Requires kernel rebuild to load. |
 
-If a claim is not supported by a row in this table, it is not yet a runtime behavior. It is either a design intent, a declared scope, or an aspirational goal.
-
----
-
-## Current Coverage
-
-| Syscall Path | LSM Hook | Policy | Runtime State | Evidence |
-|--------------|----------|--------|---------------|----------|
-| `execve` | `bprm_check_security` | Path-based LPM trie lookup against `undc_invariant_map`. Deny if path resolves to a protected entry. | ⏳ Hook loaded, not attached; map initialized but no policy entries loaded | Program ID 119, tag `45986485f27740eb`, pinned at `/sys/fs/bpf/undc_compliance` |
-
-**Legend:**
-- ✅ **Verified** — Hook attached, demonstrated firing on a live kernel, evidence anchored.
-- ⏳ **Loaded** — Hook compiled and resident in kernel, not yet attached to the call path.
-- 📄 **Specified** — Design exists, implementation not started.
-- ⛔ **Not covered** — Explicitly out of scope for the current build.
+**Total hook entry points written: 3**
+**Total hooks loaded on a live kernel: 1** (`bprm_check_security` via eBPF)
+**Total enforcing hooks: 1** (`execve` deny on trie hit)
 
 ---
 
-## Explicitly Not Covered
+## Three Implementation Approaches
 
-The following are outside the current implementation. They are not blocked, monitored, or intercepted by the UNDC at this time.
+### A. eBPF LSM (`undc_compliance.bpf.c`)
 
-| Domain | Status | Notes |
-|--------|--------|-------|
-| Network egress | ⛔ Not covered | `socket_connect`, `socket_sendmsg`, and related paths are not hooked. |
-| File writes | ⛔ Not covered | `write`, `pwrite`, `mmap` with `PROT_WRITE` are not intercepted. |
-| Process spawning (non-execve) | ⛔ Not covered | `fork`, `clone`, `vfork` are not hooked. |
-| Memory protection changes | ⛔ Not covered | `mprotect`, `mmap` protection flags are not intercepted. |
-| Userspace behavior | ⛔ Not covered | Any activity above the kernel boundary is outside LSM scope. |
-| Semantic harms | 📄 Specified | Continuous Intent Monitoring is architectural, not implemented. |
-| Cross-node coordination | 📄 Specified | The four-layer stack design includes Layer 4 anchoring; contract not deployed. |
+- Loadable at runtime via `bpf()` syscall. No kernel rebuild required.
+- Currently loaded and attached on a test kernel (Program ID 119, `type lsm`, pinned at `/sys/fs/bpf/undc_compliance`).
+- Intercepts `bprm_check_security`.
+- Stores path→action mappings in an LPM trie (`undc_invariant_map`).
+- Emits events to a ring buffer (`undc_events`).
+- Returns `-EPERM` on trie hit with `ACTION_DENY`. Returns 0 otherwise.
 
----
+### B. Traditional Kernel LSM (`undc_lsm_hooks.c`)
 
-## What the UNDC Does Not Claim
+- Requires kernel rebuild or `CONFIG_LSM` inclusion. Not loadable as-is.
+- Registers with the LSM framework under the name `"undc"`.
+- Declares hooks for `bprm_check_security` and `mmap_file`.
+- Both hooks call `undc_evaluate_harm()`, which is currently a stub returning 0.
+- Not loaded on any tested kernel.
 
-- It does not claim that harm is impossible. It claims that specific paths under a defined policy are denied once the hook is attached.
-- It does not claim alignment. The ZK circuit proves a Merkle-membership statement; it does not prove that a deployed AI is aligned.
-- It does not claim coverage of all syscalls. Coverage expands path by path.
-- It does not claim regulatory acceptance. Submissions are filed, not accepted.
+### C. Userspace Daemon (`undc_daemon.c`)
 
----
-
-## How Coverage Expands
-
-Each new syscall path is added by:
-
-1. Writing the LSM hook function in `undc_compliance.bpf.c`.
-2. Registering the hook name in the `SEC()` macro.
-3. Compiling and loading the module.
-4. Attaching the hook to its kernel call path.
-5. Producing a `-EPERM` demonstration on a live kernel.
-6. Anchoring the demonstration to the Evidence Manifest.
-
-Until step 5, the path is not a runtime behavior. It is a loaded program waiting to attach.
+- Loads and attaches the eBPF program via `undc_compliance_bpf__open_and_load()` and `undc_compliance_bpf__attach()`.
+- Seeds the LPM trie at startup with one deny path (default `/usr/bin/undc-test-deny`, overridable via CLI argument).
+- Consumes events from the `undc_events` ring buffer with a 100ms poll timeout.
+- Logs each event with `syscall_type`, `pid`, and `action_taken`.
 
 ---
 
-## Verification
+## Pipeline State
 
-Any reader can verify the current coverage by:
-
-1. Cloning the repository.
-2. Running `sudo bpftool prog show id 119` on a kernel where the module is loaded.
-3. Confirming the pinned path with `ls -la /sys/fs/bpf/undc_compliance`.
-4. Checking the Evidence Manifest for the corresponding anchor.
-
-Once the attach milestone is complete, this file will include a demonstration log for each attached hook.
+| Stage | State |
+|---|---|
+| eBPF program loaded | ✅ |
+| eBPF program attached to `bprm_check_security` | ✅ |
+| Ring buffer events emitted on `execve` | ✅ |
+| Events consumed by daemon | ✅ |
+| Events parsed with full fidelity (`action_taken`) | ✅ |
+| LPM trie populated by daemon | ✅ (one demo path) |
+| Kernel denies on trie hit | ✅ (demonstrated via `run_test.sh`) |
+| ZK proof triggered per event | ❌ planned |
+| Proof anchored to chain per event | ❌ planned |
 
 ---
 
-— Shereign Kalaukoa, Lead Architect | UNDC
-🔗 https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC
+## Maps
+
+| Map | Type | Key | Value | Purpose |
+|---|---|---|---|---|
+| `undc_events` | `BPF_MAP_TYPE_RINGBUF` | — | `struct syscall_event` | Emits per-invocation events to the userspace daemon |
+| `undc_invariant_map` | `BPF_MAP_TYPE_LPM_TRIE` | `struct lpm_key` (2048-bit prefix + 256-byte path) | `__u32` action code | Stores paths with an associated action |
+
+---
+
+## Action Codes
+
+| Code | Meaning | Enforced |
+|---|---|---|
+| `0` | Allow (default) | ✅ |
+| `1` | Deny | ✅ (returns `-EPERM`) |
+| `2` | Audit only | ✅ (event emitted, execution allowed) |
+| Other | Reserved | ❌ |
+
+---
+
+## What Is Explicitly **Not** Covered
+
+- **Network egress** — no `socket_*` or `sk_*` hooks.
+- **File writes / opens** — no `file_open`, `file_permission`, or `inode_*` hooks.
+- **Process memory writes** — no `mmap_file` enforcement (declared as a stub only), no `mprotect`, no `ptrace_access_check`.
+- **Kernel module loading** — no `kernel_module_request` or `kernel_load_data` hooks.
+- **Mount / unmount** — no `sb_mount`, `sb_umount` hooks.
+- **Userspace behavior** — anything not routed through a hooked kernel path is outside the surface.
+- **Cross-process IPC** — no `task_kill`, `ptrace_*`, or signal hooks.
+- **Existing processes** — hooks fire on new calls only; already-running processes are not evaluated retroactively.
+- **Container boundaries** — no cgroup or namespace hooks.
+
+---
+
+## Known Issues / Pending Work
+
+1. ~~**No enforcement path.**~~ **Resolved (2026-09-15).** `undc_execve_hook` now returns `-EPERM` when the LPM trie lookup yields `ACTION_DENY` (1).
+
+2. **LPM prefix length semantics.** `lookup_key.trie_key.prefixlen` is currently hard-coded to 2048 bits in both the BPF hook and the daemon's `seed_policy()`. This matches only trie entries stored at 2048 bits. For prefix-based matching (blocking whole directory trees), prefix length must be computed from the actual resolved path length.
+
+3. **Path resolution failures default to allow.** `bpf_d_path()` failures emit an event with `action_taken = -1` but do not block. This is intentional for now — the alternative (default-deny on resolution failure) would be hostile to legitimate executables.
+
+4. **Traditional LSM is a stub.** `undc_lsm_hooks.c` needs `undc_evaluate_harm()` implemented with real policy logic before it does anything.
+
+5. **Traditional LSM requires kernel rebuild.** Not loadable on WSL2's stock kernel without changes.
+
+6. ~~**Daemon not yet attached.**~~ **Resolved (2026-09-15).** `undc_daemon.c` seeds the LPM trie at startup and consumes ring-buffer events.
+
+7. **No TOCTOU mitigation.** Path resolution at `bprm_check_security` time can be raced between check and exec.
+
+8. **Only one demo path in trie.** `run_test.sh` seeds one deny path. Production use requires a trie population mechanism (rule file loader, daemon API, or external control plane).
+
+9. **No ZK integration in the event loop.** Events are consumed by the daemon but do not yet trigger proof generation. The ZK pipeline runs in `test_pipeline.sh` only.
+
+---
+
+## How to Expand Coverage
+
+Every new path added to the interception surface should:
+
+1. Be implemented as a new `SEC("lsm/<hook_name>")` BPF program in `undc_compliance.bpf.c`, or as an additional `LSM_HOOK_INIT` entry in `undc_lsm_hooks.c`.
+2. Emit events with a distinct `syscall_type` value.
+3. Be added to this document with hook name, function name, status, and a one-line behavior description.
+4. Be added to daemon routing logic in `undc_daemon.c`.
+5. Be tested via `run_test.sh` or `test_pipeline.sh` with a case that exercises the new path.
+
+---
+
+## Changelog
+
+| Date | Change |
+|---|---|
+| 2026-09-14 | Initial coverage document. |
+| 2026-09-15 | Enforcement branch added; daemon seeds trie; `run_test.sh` demonstrates deny. Items 1 and 6 marked resolved. |
