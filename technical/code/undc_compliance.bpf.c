@@ -1,5 +1,5 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v1.9 (Byte-Exact Key Fix)
+// UNDC eBPF Kernel Program — v1.9.1 (Byte-Exact Key Fix)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Secure path resolution with byte-exact hash map keys
@@ -21,8 +21,6 @@ char LICENSE[] SEC("license") = "GPL";
 
 // ------------------------------------------------------------
 // 0. KEY STRUCTURE
-// prefixlen field retained for struct compatibility but unused
-// in hash-map mode. Zeroed on both sides so keys match exactly.
 // ------------------------------------------------------------
 struct lpm_key {
     __u32 prefixlen;
@@ -55,7 +53,20 @@ struct syscall_event {
 };
 
 // ------------------------------------------------------------
-// 3. LSM HOOK — bprm_check_security (execve interception)
+// 3. BYTE ZEROING HELPER
+// BPF C rejects __builtin_memset. This loop compiles to a small
+// unrolled sequence the verifier accepts.
+// ------------------------------------------------------------
+static __always_inline void zero_bytes(void *dst, unsigned int len)
+{
+    unsigned char *p = dst;
+    for (unsigned int i = 0; i < len; i++) {
+        p[i] = 0;
+    }
+}
+
+// ------------------------------------------------------------
+// 4. LSM HOOK — bprm_check_security (execve interception)
 // ------------------------------------------------------------
 SEC("lsm/bprm_check_security")
 int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
@@ -70,12 +81,9 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         return 0;
     }
 
-    // Explicitly zero the entire key struct. Do NOT rely on `= {}`
-    // initialization for large stack structs — the compiler may
-    // elide it, leaving bytes past the NUL terminator with stack
-    // garbage that breaks hash-map equality against the daemon's
-    // zero-initialized seed key.
-    __builtin_memset(&lookup_key, 0, sizeof(lookup_key));
+    // Explicitly zero the entire key struct so every byte is
+    // deterministic. Do NOT rely on `= {}` for large stack structs.
+    zero_bytes(&lookup_key, sizeof(lookup_key));
 
     path_len = bpf_d_path(&bprm->file->f_path, lookup_key.path, MAX_PATH_LEN);
 
@@ -91,11 +99,10 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         return 0;
     }
 
-    // bpf_d_path() writes the resolved path plus a NUL into the
-    // buffer but does not clear the remaining bytes. Force zeros
-    // so the key matches the daemon's zero-padded seed key exactly.
+    // bpf_d_path() writes the path + NUL but not the trailing bytes.
+    // Zero them so the key matches the daemon's zero-padded seed key.
     if (path_len < MAX_PATH_LEN) {
-        __builtin_memset(&lookup_key.path[path_len], 0, MAX_PATH_LEN - path_len);
+        zero_bytes(&lookup_key.path[path_len], MAX_PATH_LEN - path_len);
     }
 
     action = bpf_map_lookup_elem(&undc_invariant_map, &lookup_key);
