@@ -1,5 +1,5 @@
 // ------------------------------------------------------------
-// UNDC User-Space Ring Buffer Daemon — v1.1
+// UNDC User-Space Ring Buffer Daemon — v1.2 (LPM Tri Fix)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Consume eBPF ring buffer events; seed LPM trie policy
@@ -25,13 +25,8 @@ struct syscall_event {
 #define MAX_PATH_LEN 256
 #define ACTION_DENY  1
 
-struct bpf_lpm_trie_key {
-    __u32 prefixlen;
-    __u8 data[0];
-};
-
 struct lpm_key {
-    struct bpf_lpm_trie_key trie_key;
+    __u32 prefixlen;
     char path[MAX_PATH_LEN];
 };
 
@@ -50,7 +45,7 @@ static int seed_policy(struct undc_compliance_bpf *skel, const char *deny_path)
     }
 
     memcpy(key.path, deny_path, plen);
-    key.trie_key.prefixlen = MAX_PATH_LEN * 8; // match BPF program's lookup semantics
+    key.prefixlen = sizeof(struct lpm_key) * 8;
 
     int err = bpf_map_update_elem(map_fd, &key, &action, BPF_ANY);
     if (err) {
