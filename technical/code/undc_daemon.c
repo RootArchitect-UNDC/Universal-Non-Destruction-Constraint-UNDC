@@ -20,8 +20,8 @@
 #define ACTION_DENY  1
 
 struct lpm_key {
-    __u32 prefixlen;
     char path[MAX_PATH_LEN];
+    __u32 prefixlen;
 };
 
 struct syscall_event {
