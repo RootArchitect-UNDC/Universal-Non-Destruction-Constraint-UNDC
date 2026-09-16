@@ -1,5 +1,5 @@
 // ------------------------------------------------------------
-// UNDC User-Space Ring Buffer Daemon — v1.5 (Key Dump Diagnostic)
+// UNDC User-Space Ring Buffer Daemon — v1.6 (Packed Event Struct)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Consume eBPF events with key hexdump; seed hash map policy
@@ -30,7 +30,7 @@ struct syscall_event {
     int action_taken;
     char path[MAX_PATH_LEN];
     unsigned char key_dump[sizeof(struct lpm_key)];
-};
+} __attribute__((packed));
 
 static void hexdump(const char *label, const unsigned char *data, size_t len)
 {
@@ -86,8 +86,6 @@ static int handle_event(void *ctx, void *data, size_t data_sz)
     printf("📡 [eBPF Intercept] syscall=%lu pid=%d action=%s path=\"%s\"\n",
            event->syscall_type, event->pid, action_str, event->path);
 
-    /* Dump the hook's key for every event where the path looks
-     * like a deny candidate. Full dump on deny-looking events. */
     if (strstr(event->path, "undc-deny-test")) {
         hexdump("HOOK key", event->key_dump, sizeof(event->key_dump));
     }
@@ -105,6 +103,7 @@ int main(int argc, char **argv)
 
     printf("🛡️  Initializing UNDC User-Space eBPF Daemon Gateway...\n");
     printf("🛡️  sizeof(struct lpm_key) = %zu\n", sizeof(struct lpm_key));
+    printf("🛡️  sizeof(struct syscall_event) = %zu\n", sizeof(struct syscall_event));
 
     skel = undc_compliance_bpf__open_and_load();
     if (!skel) {
