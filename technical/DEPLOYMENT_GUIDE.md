@@ -1,170 +1,177 @@
-# UNDC Production Deployment Guide
+UNDC Production Deployment Guide
 
-This guide details the installation of the Universal Non-Destruction Constraint (UNDC) engine across modern containerized nodes. It defines a dual-stage deployment architecture matching Phase 1 (Compile-Time AST Gates) and Phase 2 (Kernel-Level eBPF Interceptors) specifications.
+Version: 1.1.0 (Current Implementation Status)
+Date: September 16, 2026
+Repository: https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC
 
----
+This guide describes the deployment model for the Universal Non-Destruction Constraint (UNDC). It separates components that are implemented and deployed from components that are designed and specified but not yet operational.
 
-## 1. Phase 1: Compile-Time Pipeline Integration (CI/CD Gates)
+Implemented means the code exists in the public repository, compiles, and (where applicable) runs.
+Designed means the architecture is specified but the code is not deployed.
 
-To enforce the invariant C before execution, validation blocks must be embedded directly into automated build runtimes. This prevents non-compliant dependency graphs from generating deployable container artifacts.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-### 1.1 GitHub Actions Workflow Implementation
+1. WHAT RUNS TODAY
 
-Create or update `.github/workflows/validate-undc-logs.yml` to run strict pre-build checks over workspace manifests:
+1.1 Schema Validation (Implemented)
 
-```yaml
-name: "UNDC Schema Compliance Validation"
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-jobs:
-  validate:
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Checkout Source Tree
-        uses: actions/checkout@v4
+A CI workflow validates the UNDC log format against undc-schema.json on every push. This runs in GitHub Actions and passes.
 
-      - name: Initialize Python Environment
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
+Workflow file: .github/workflows/validate-undc-logs.yml
 
-      - name: Install Invariant Validation CLI
-        run: pip install check-jsonschema
+What it does:
+- Checks out the source tree
+- Installs check-jsonschema
+- Validates undc-log-sample-v2.json against undc-schema.json
+- Fails the build if the schema does not match
 
-      - name: Validate Structural Log Format
-        run: |
-          check-jsonschema --schemafile undc-schema.json undc-log-sample.json
-```
+1.2 ZK Proof Pipeline (Implemented)
 
-### 1.2 Docker Multi-Stage Build Invariant Protection
+A separate CI workflow compiles the Circom circuits and verifies the Groth16 proof end-to-end.
 
-Inject validation scripts directly into the base compilation layers of project Dockerfiles to prevent bypasses during manual local image builds:
+Workflow file: .github/workflows/undc-test.yml
 
-```dockerfile
-# syntax=docker/dockerfile:1
-FROM python:3.10-slim AS undc-validator
-WORKDIR /anchor
-RUN pip install --no-cache-dir check-jsonschema
+What it does:
+- Compiles verifier.circom and undc_compliance_circuit.circom
+- Generates witness
+- Runs trusted setup
+- Generates proof
+- Verifies proof -> [INFO] snarkJS: OK!
 
-# Copy invariant blueprints and target manifests
-COPY undc-schema.json ./schema.json
-COPY undc-log-sample.json ./target-manifest.json
+1.3 eBPF LSM Hook on bprm_check_security (Implemented — Partial)
 
-# Perform validation. If exit code != 0, build fails deterministically here
-RUN check-jsonschema --schemafile schema.json target-manifest.json
+A Linux Security Module (LSM) hook written in eBPF. It attaches to bprm_check_security and fires on every execve.
 
-# Secondary operational build phase only reached if structural safety passes
-FROM golang:1.21-alpine AS builder
-WORKDIR /app
-COPY --from=undc-validator /anchor /safety_receipt
-COPY . .
-RUN go build -o secure-binary main.go
-```
+What runs:
+- Compiles to undc_compliance.bpf.o
+- Loads into a live Linux kernel
+- Attaches to bprm_check_security
+- Fires on every execve
+- Emits events to a userspace ring buffer
 
----
+What is not yet demonstrated:
+- The policy-map lookup currently returns NULL on seeded entries. The -EPERM enforcement branch is implemented in the code but not reached. Tracked as issue #23.
 
-## 2. Phase 2: Kernel-Level Node Deployment (eBPF LSM Hooking)
+Files:
+- technical/code/undc_compliance.bpf.c
+- technical/code/undc_daemon.c
+- technical/code/Makefile
 
-This phase installs your engine directly into the server kernel. It stops unauthorized actions across all running containers instantly.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-### 2.1 Kubernetes DaemonSet Setup
+2. LOCAL BUILD AND RUN
 
-Create a file named `undc-daemonset.yaml`. Paste this text inside it to run the engine automatically on your server nodes:
+2.1 Prerequisites
 
-```yaml
-apiVersion: apps/v1
-kind: DaemonSet
-metadata:
-  name: undc-kernel-enforcer
-  namespace: kube-system
-spec:
-  selector:
-    matchLabels:
-      name: undc-enforcer
-  template:
-    metadata:
-      labels:
-        name: undc-enforcer
-    spec:
-      hostNetwork: true
-      hostPID: true
-      containers:
-      - name: ebpf-lsm-engine
-        image: rootarchitect/undc-lsm-engine:v1.0.0
-        securityContext:
-          privileged: true
-          capabilities:
-            add: ["SYS_ADMIN", "SYS_BPF"]
-        volumeMounts:
-        - name: sys-kernel-security
-          mountPath: /sys/kernel/security
-        - name: bpf-fs
-          mountPath: /sys/fs/bpf
-      volumes:
-      - name: sys-kernel-security
-        hostPath:
-          path: /sys/kernel/security
-      - name: bpf-fs
-        hostPath:
-          path: /sys/fs/bpf
-```
+- Linux kernel with BPF LSM enabled (cat /sys/kernel/security/lsm must include bpf)
+- clang, bpftool, libbpf-dev, gcc, make
+- circom, snarkjs, node (for ZK pipeline)
 
-### 2.2 Server Verification Checks
+2.2 Build
 
-Run these commands on your host server terminal. They confirm your system supports the eBPF LSM safety engine:
+    cd technical/code
+    make
 
-```bash
-# 1. Check if the kernel configuration has LSM enabled
-zcat /proc/config.gz | grep CONFIG_BPF_LSM
+This produces:
+- undc_compliance.bpf.o — the eBPF object
+- undc_compliance.skel.h — the libbpf skeleton
+- undc-daemon — the userspace consumer
 
-# 2. Confirm 'bpf' is active in the safety engine stack
-cat /sys/kernel/security/lsm
-```
+2.3 Run
 
-### 2.3 Compiling and Activating the Engine
+    sudo ./undc-daemon /tmp/undc-deny-test
 
-Run these final commands to compile your C file and attach it directly to your operating system:
+This:
+- Loads and attaches the eBPF program
+- Seeds the policy map with /tmp/undc-deny-test → DENY
+- Consumes ring buffer events and logs them
 
-```bash
-# 1. Compile the C code into a safe kernel object
-clang -g -O2 -target bpf -c undc_lsm_net.c -o undc_lsm_net.o
+Expected output:
 
-# 2. Attach the code directly to the network hook point
-bpftool prog load undc_lsm_net.o /sys/fs/bpf/undc_socket_hook type lsm hook socket_connect
-```
+    Initializing UNDC User-Space eBPF Daemon Gateway...
+    Policy seeded: /tmp/undc-deny-test → DENY
+    Loop Active: tracking execve, denying /tmp/undc-deny-test
+    [eBPF Intercept] syscall=1 pid=... action=ALLOW path="/usr/bin/ls"
 
----
+Expected output when /tmp/undc-deny-test is executed:
 
-## 3. Post-Deployment Verification
+The hook fires, resolves the path, looks it up in the map. Because the lookup currently returns NULL (issue #23), the action is reported as ALLOW. This is the honest current state.
 
-Use these simple steps to test that your safety engine is working.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-### 3.1 Run a Test Block
+3. WHAT IS DESIGNED BUT NOT YET DEPLOYED
 
-Open a terminal inside any running container on your server. Try to connect to an unapproved network address using this command:
+The following components are specified in documentation and, where noted, have reference code in the repository. None are deployed or tested.
 
-```bash
-curl --connect-timeout 2 https://198.51.100.1
-```
+3.1 Phase 1 Extension: Docker Multi-Stage Build Gates (Designed)
 
-### 3.2 Confirm the Output Block
+A design for injecting check-jsonschema into Docker build stages, so that non-compliant manifests fail before image construction. The design is described in this document's version history; the Dockerfile integration is not implemented.
 
-If Phase 2 is working correctly, the server kernel will stop the command instantly. You will see this exact message:
+3.2 Phase 2: Kubernetes DaemonSet for Node-Wide Deployment (Designed)
 
-```bash
-curl: (7) Operation not permitted
-```
+A design for a DaemonSet that would deploy the eBPF ELF binary across Kubernetes cluster nodes. A reference manifest exists at undc-agent-pod.yaml. It has not been applied to any cluster.
 
-### 3.3 Check the Safety System Logs
+3.3 Network Hook on socket_connect (Designed)
 
-Run this command on your main host server to view the internal safety logs and verify the intervention:
+A design for an additional LSM hook on socket_connect, to block network egress to unauthorized addresses. The file technical/code/undc_lsm_net.c exists as a reference, but the hook is not attached, and no test has been run. Reports of a blocked curl command would not be reproducible against the current code.
 
-```bash
-cat /sys/kernel/debug/tracing/trace_pipe
-```
+3.4 Container Runtime Integration (Designed)
 
-You should see a log entry confirming the exact threat block:  
-`UNDC Violation: Blocked unauthorized socket mutation`
+A design for an OCI lifecycle hook that registers each new container's PID into a pinned BPF map. Reference code exists at technical/code/undc_oci_hook/main.go. It has not been wired into any container runtime.
+
+3.5 Admission Webhook (Designed)
+
+A design for a Kubernetes validating admission webhook that rejects pods requesting CAP_SYS_ADMIN or CAP_BPF. Reference code exists at technical/code/undc_validator/main.go. It has not been deployed.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4. POST-DEPLOYMENT VERIFICATION (WHAT ACTUALLY WORKS TODAY)
+
+To verify the LSM hook fires:
+
+1. Start the daemon as described in section 2.3.
+2. In another terminal, run any command that calls execve:
+
+       /bin/ls
+
+3. In the daemon terminal, you will see an event:
+
+       [eBPF Intercept] syscall=1 pid=... action=ALLOW path="/usr/bin/ls"
+
+The hook fires and the event flows. The lookup returns NULL and the decision is ALLOW. Tracked as issue #23.
+
+To verify the schema validation runs:
+
+    cd technical/code
+    check-jsonschema --schemafile undc-schema.json undc-log-sample-v2.json
+
+Exit code 0 on success.
+
+To verify the ZK circuit:
+
+    cd technical/code
+    bash test_pipeline.sh
+
+Expected: [INFO] snarkJS: OK! at the end.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. COVERAGE
+
+The current kernel interception surface is documented in COVERAGE.md. It is one hook, on one syscall path (bprm_check_security), attached to one kernel LSM hook. Network hooks, file hooks, mmap hooks, and container-runtime integration are all designed but not implemented.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+6. VERSION HISTORY
+
+Version 1.0.0 | August 19, 2026
+Initial guide. Described Phase 1 and Phase 2 as operational. Presented sample output from tests that had not been run.
+
+Version 1.1.0 | September 16, 2026
+Rewritten to separate implemented components (schema validation, ZK pipeline, LSM hook on bprm_check_security) from designed components (Docker build gates, DaemonSet, socket_connect hook, OCI hook, admission webhook). Removed fabricated test output.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+— Shereign Kalaukoa
+Lead Architect, Universal Non-Destruction Constraint
+RootArchitect-UNDC
