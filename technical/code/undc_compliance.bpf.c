@@ -25,8 +25,8 @@ char LICENSE[] SEC("license") = "GPL";
 // on layout for { __u32; char[256]; } = 260 bytes.
 // ------------------------------------------------------------
 struct lpm_key {
-    __u32 prefixlen;
     char path[MAX_PATH_LEN];
+    __u32 prefixlen;
 };
 
 // ------------------------------------------------------------
