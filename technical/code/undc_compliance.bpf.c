@@ -63,7 +63,7 @@ struct syscall_event {
     int action_taken;
     char path[MAX_PATH_LEN];
     unsigned char key_dump[sizeof(struct lpm_key)];
-};
+} __attribute__((packed));
 
 // ------------------------------------------------------------
 // 3. LSM HOOK — bprm_check_security (execve interception)
