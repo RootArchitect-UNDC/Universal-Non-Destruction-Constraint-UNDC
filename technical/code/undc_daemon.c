@@ -1,8 +1,8 @@
 // ------------------------------------------------------------
-// UNDC User-Space Ring Buffer Daemon — v1.6 (Packed Event Struct)
+// UNDC User-Space Ring Buffer Daemon — v1.7 (Per-CPU Scratch Key)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
-// Purpose: Consume eBPF events with key hexdump; seed hash map policy
+// Purpose: Consume eBPF events; seed hash map policy
 // Target: Kernel-to-user-space telemetry pipeline with demo policy
 // File Hash: (recompute after commit)
 // ------------------------------------------------------------
@@ -22,27 +22,14 @@
 struct lpm_key {
     __u32 prefixlen;
     char path[MAX_PATH_LEN];
-} __attribute__((packed));
+};
 
 struct syscall_event {
     unsigned long syscall_type;
     int pid;
     int action_taken;
     char path[MAX_PATH_LEN];
-    unsigned char key_dump[sizeof(struct lpm_key)];
-} __attribute__((packed));
-
-static void hexdump(const char *label, const unsigned char *data, size_t len)
-{
-    printf("   %s (%zu bytes):\n   ", label, len);
-    for (size_t i = 0; i < len; i++) {
-        printf("%02x ", data[i]);
-        if ((i + 1) % 16 == 0) {
-            printf("\n   ");
-        }
-    }
-    printf("\n");
-}
+};
 
 static int seed_policy(struct undc_compliance_bpf *skel, const char *deny_path)
 {
@@ -66,7 +53,6 @@ static int seed_policy(struct undc_compliance_bpf *skel, const char *deny_path)
     }
 
     printf("🛡️  Policy seeded: %s → DENY\n", deny_path);
-    hexdump("SEED key", (const unsigned char *)&key, sizeof(key));
     return 0;
 }
 
@@ -86,10 +72,6 @@ static int handle_event(void *ctx, void *data, size_t data_sz)
     printf("📡 [eBPF Intercept] syscall=%lu pid=%d action=%s path=\"%s\"\n",
            event->syscall_type, event->pid, action_str, event->path);
 
-    if (strstr(event->path, "undc-deny-test")) {
-        hexdump("HOOK key", event->key_dump, sizeof(event->key_dump));
-    }
-
     return 0;
 }
 
@@ -103,7 +85,6 @@ int main(int argc, char **argv)
 
     printf("🛡️  Initializing UNDC User-Space eBPF Daemon Gateway...\n");
     printf("🛡️  sizeof(struct lpm_key) = %zu\n", sizeof(struct lpm_key));
-    printf("🛡️  sizeof(struct syscall_event) = %zu\n", sizeof(struct syscall_event));
 
     skel = undc_compliance_bpf__open_and_load();
     if (!skel) {
