@@ -1,5 +1,5 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v1.9.2 (Simple Init)
+// UNDC eBPF Kernel Program — v1.9.3 (Const Zero Template)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Secure path resolution with byte-exact hash map keys
@@ -19,11 +19,27 @@ char LICENSE[] SEC("license") = "GPL";
 #define ACTION_DENY  1
 #define ACTION_AUDIT 2
 
+// ------------------------------------------------------------
+// 0. KEY STRUCTURE
+// ------------------------------------------------------------
 struct lpm_key {
     __u32 prefixlen;
     char path[MAX_PATH_LEN];
 };
 
+// ------------------------------------------------------------
+// 0b. ZERO TEMPLATE
+// A global const zero-filled key. Clang places this in .rodata
+// and cannot optimize away reads from it. Copying from here into
+// a stack key guarantees every byte starts at zero, unlike `= {0}`
+// initializers, which the BPF backend has been observed to elide
+// for large structs.
+// ------------------------------------------------------------
+static const struct lpm_key undc_zero_key;
+
+// ------------------------------------------------------------
+// 1. MAP DEFINITIONS
+// ------------------------------------------------------------
 struct {
     __uint(type, BPF_MAP_TYPE_RINGBUF);
     __uint(max_entries, 256 * 1024);
@@ -36,6 +52,9 @@ struct {
     __uint(max_entries, 4096);
 } undc_invariant_map SEC(".maps");
 
+// ------------------------------------------------------------
+// 2. EVENT STRUCTURE
+// ------------------------------------------------------------
 struct syscall_event {
     unsigned long syscall_type;
     int pid;
@@ -43,11 +62,14 @@ struct syscall_event {
     char path[MAX_PATH_LEN];
 };
 
+// ------------------------------------------------------------
+// 3. LSM HOOK — bprm_check_security (execve interception)
+// ------------------------------------------------------------
 SEC("lsm/bprm_check_security")
 int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
 {
     struct syscall_event *event;
-    struct lpm_key lookup_key = {0};
+    struct lpm_key lookup_key;
     __u32 *action;
     long path_len;
     int decision = ACTION_ALLOW;
@@ -55,6 +77,10 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
     if (!bprm || !bprm->file) {
         return 0;
     }
+
+    // Guarantee every byte of the key starts at zero by copying from
+    // a .rodata zero template. Cannot be optimized away.
+    __builtin_memcpy(&lookup_key, &undc_zero_key, sizeof(lookup_key));
 
     path_len = bpf_d_path(&bprm->file->f_path, lookup_key.path, MAX_PATH_LEN);
 
@@ -84,8 +110,9 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         bpf_ringbuf_submit(event, 0);
     }
 
+    // ── ENFORCEMENT BRANCH ──
     if (decision == ACTION_DENY) {
-        return -1;
+        return -1; // -EPERM
     }
 
     return 0;
