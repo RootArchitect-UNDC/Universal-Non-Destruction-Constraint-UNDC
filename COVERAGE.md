@@ -1,10 +1,10 @@
 # COVERAGE.md — UNDC Kernel-Level Interception
 
-**Last Updated:** September 15, 2026
+**Last Updated:** September 16, 2026
 **Source Files:**
 - `technical/code/undc_compliance.bpf.c` — eBPF LSM (loaded and attached)
 - `technical/code/undc_lsm_hooks.c` — traditional kernel LSM (stub, not loaded)
-- `technical/code/undc_daemon.c` — userspace daemon (seeds trie, consumes events)
+- `technical/code/undc_daemon.c` — userspace daemon (seeds hash map, consumes events)
 
 This document describes exactly which kernel paths the UNDC module intercepts, what the policy does on each path, and what is explicitly **not** covered.
 
@@ -14,13 +14,13 @@ This document describes exactly which kernel paths the UNDC module intercepts, w
 
 | Syscall Path | Hook | File | Status | Behavior |
 |---|---|---|---|---|
-| `execve` / `execveat` | `lsm/bprm_check_security` | `undc_compliance.bpf.c` | Built — **attached, demonstrated firing** | Resolves binary path via `bpf_d_path()`, looks up path in LPM trie, emits ring-buffer event. Returns `-EPERM` on trie hit with DENY action; returns 0 otherwise. Demonstrated via `run_test.sh`. |
+| `execve` / `execveat` | `lsm/bprm_check_security` | `undc_compliance.bpf.c` | Built — **attached, firing; enforcement lookup unresolved** | Resolves binary path via `bpf_d_path()`, looks up path in a `BPF_MAP_TYPE_HASH` via per-CPU scratch key, emits ring-buffer event. The map lookup currently returns NULL on seeded entries; the `-EPERM` enforcement branch is implemented but not yet demonstrated. Tracked as issue [#23](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/issues/23). |
 | `execve` / `execveat` | `bprm_check_security` | `undc_lsm_hooks.c` | Stub — **not loaded** | Calls `undc_evaluate_harm()`, which returns `harm_score = 0` unconditionally → allow. Requires kernel rebuild to load. |
 | `mmap` | `mmap_file` | `undc_lsm_hooks.c` | Stub — **not loaded** | Same stub behavior. Requires kernel rebuild to load. |
 
 **Total hook entry points written: 3**
 **Total hooks loaded on a live kernel: 1** (`bprm_check_security` via eBPF)
-**Total enforcing hooks: 1** (`execve` deny on trie hit)
+**Total enforcing hooks: 0** (enforcement lookup unresolved)
 
 ---
 
@@ -29,11 +29,12 @@ This document describes exactly which kernel paths the UNDC module intercepts, w
 ### A. eBPF LSM (`undc_compliance.bpf.c`)
 
 - Loadable at runtime via `bpf()` syscall. No kernel rebuild required.
-- Currently loaded and attached on a test kernel (Program ID 119, `type lsm`, pinned at `/sys/fs/bpf/undc_compliance`).
+- Currently loaded and attached on a test kernel (pinned at `/sys/fs/bpf/undc_compliance`).
 - Intercepts `bprm_check_security`.
-- Stores path→action mappings in an LPM trie (`undc_invariant_map`).
+- Uses a `BPF_MAP_TYPE_HASH` (`undc_invariant_map`) for path→action lookups.
+- Uses a `BPF_MAP_TYPE_PERCPU_ARRAY` scratch map (`undc_scratch_key`) to build the 260-byte key off the 512-byte BPF stack.
 - Emits events to a ring buffer (`undc_events`).
-- Returns `-EPERM` on trie hit with `ACTION_DENY`. Returns 0 otherwise.
+- Enforcement branch returns `-EPERM` on a DENY hit; currently not reached because the lookup returns NULL. See issue #23.
 
 ### B. Traditional Kernel LSM (`undc_lsm_hooks.c`)
 
@@ -46,7 +47,7 @@ This document describes exactly which kernel paths the UNDC module intercepts, w
 ### C. Userspace Daemon (`undc_daemon.c`)
 
 - Loads and attaches the eBPF program via `undc_compliance_bpf__open_and_load()` and `undc_compliance_bpf__attach()`.
-- Seeds the LPM trie at startup with one deny path (default `/usr/bin/undc-test-deny`, overridable via CLI argument).
+- Seeds the hash map at startup with one deny path (default `/usr/bin/undc-test-deny`, overridable via CLI argument).
 - Consumes events from the `undc_events` ring buffer with a 100ms poll timeout.
 - Logs each event with `syscall_type`, `pid`, and `action_taken`.
 
@@ -60,9 +61,10 @@ This document describes exactly which kernel paths the UNDC module intercepts, w
 | eBPF program attached to `bprm_check_security` | ✅ |
 | Ring buffer events emitted on `execve` | ✅ |
 | Events consumed by daemon | ✅ |
-| Events parsed with full fidelity (`action_taken`) | ✅ |
-| LPM trie populated by daemon | ✅ (one demo path) |
-| Kernel denies on trie hit | ✅ (demonstrated via `run_test.sh`) |
+| Events parsed with full fidelity | ✅ |
+| Hash map populated by daemon | ✅ (verified via `bpftool map dump`) |
+| Hash map lookup matches seeded key | ❌ (see issue #23) |
+| Kernel denies on hit | ❌ (branch implemented, not reached) |
 | ZK proof triggered per event | ❌ planned |
 | Proof anchored to chain per event | ❌ planned |
 
@@ -73,7 +75,8 @@ This document describes exactly which kernel paths the UNDC module intercepts, w
 | Map | Type | Key | Value | Purpose |
 |---|---|---|---|---|
 | `undc_events` | `BPF_MAP_TYPE_RINGBUF` | — | `struct syscall_event` | Emits per-invocation events to the userspace daemon |
-| `undc_invariant_map` | `BPF_MAP_TYPE_LPM_TRIE` | `struct lpm_key` (2048-bit prefix + 256-byte path) | `__u32` action code | Stores paths with an associated action |
+| `undc_invariant_map` | `BPF_MAP_TYPE_HASH` | `struct lpm_key` (260 bytes) | `__u32` action code | Stores paths with an associated action |
+| `undc_scratch_key` | `BPF_MAP_TYPE_PERCPU_ARRAY` | `__u32` (index 0) | `struct lpm_key` | Per-CPU buffer for building the lookup key off the BPF stack |
 
 ---
 
@@ -81,8 +84,8 @@ This document describes exactly which kernel paths the UNDC module intercepts, w
 
 | Code | Meaning | Enforced |
 |---|---|---|
-| `0` | Allow (default) | ✅ |
-| `1` | Deny | ✅ (returns `-EPERM`) |
+| `0` | Allow (default) | ✅ (default when lookup misses) |
+| `1` | Deny | ❌ (not reached; lookup misses) |
 | `2` | Audit only | ✅ (event emitted, execution allowed) |
 | Other | Reserved | ❌ |
 
@@ -104,23 +107,17 @@ This document describes exactly which kernel paths the UNDC module intercepts, w
 
 ## Known Issues / Pending Work
 
-1. ~~**No enforcement path.**~~ **Resolved (2026-09-15).** `undc_execve_hook` now returns `-EPERM` when the LPM trie lookup yields `ACTION_DENY` (1).
+1. **Enforcement lookup returns NULL on seeded entries.** The hash-map lookup misses for every path, including paths confirmed byte-correct in the map via `bpftool map dump`. Seven hypotheses have been falsified. Full diagnostic: issue [#23](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/issues/23).
 
-2. **LPM prefix length semantics.** `lookup_key.trie_key.prefixlen` is currently hard-coded to 2048 bits in both the BPF hook and the daemon's `seed_policy()`. This matches only trie entries stored at 2048 bits. For prefix-based matching (blocking whole directory trees), prefix length must be computed from the actual resolved path length.
+2. **Traditional LSM is a stub.** `undc_lsm_hooks.c` needs `undc_evaluate_harm()` implemented with real policy logic before it does anything.
 
-3. **Path resolution failures default to allow.** `bpf_d_path()` failures emit an event with `action_taken = -1` but do not block. This is intentional for now — the alternative (default-deny on resolution failure) would be hostile to legitimate executables.
+3. **Traditional LSM requires kernel rebuild.** Not loadable on WSL2's stock kernel without changes.
 
-4. **Traditional LSM is a stub.** `undc_lsm_hooks.c` needs `undc_evaluate_harm()` implemented with real policy logic before it does anything.
+4. **No TOCTOU mitigation.** Path resolution at `bprm_check_security` time can be raced between check and exec.
 
-5. **Traditional LSM requires kernel rebuild.** Not loadable on WSL2's stock kernel without changes.
+5. **Only one demo path in map.** `run_test.sh` seeds one deny path. Production use requires a trie/map population mechanism (rule file loader, daemon API, or external control plane).
 
-6. ~~**Daemon not yet attached.**~~ **Resolved (2026-09-15).** `undc_daemon.c` seeds the LPM trie at startup and consumes ring-buffer events.
-
-7. **No TOCTOU mitigation.** Path resolution at `bprm_check_security` time can be raced between check and exec.
-
-8. **Only one demo path in trie.** `run_test.sh` seeds one deny path. Production use requires a trie population mechanism (rule file loader, daemon API, or external control plane).
-
-9. **No ZK integration in the event loop.** Events are consumed by the daemon but do not yet trigger proof generation. The ZK pipeline runs in `test_pipeline.sh` only.
+6. **No ZK integration in the event loop.** Events are consumed by the daemon but do not yet trigger proof generation. The ZK pipeline runs in `test_pipeline.sh` only.
 
 ---
 
@@ -141,4 +138,5 @@ Every new path added to the interception surface should:
 | Date | Change |
 |---|---|
 | 2026-09-14 | Initial coverage document. |
-| 2026-09-15 | Enforcement branch added; daemon seeds trie; `run_test.sh` demonstrates deny. Items 1 and 6 marked resolved. |
+| 2026-09-15 | Enforcement branch added; daemon seeds map; `run_test.sh` demonstrates deny. |
+| 2026-09-16 | Updated after issue #23 filed. Corrected map type (LPM trie → hash map). Added per-CPU scratch key. Enforcement lookup marked unresolved. "Enforcing hooks" count corrected to 0. |
