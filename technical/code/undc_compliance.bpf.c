@@ -1,8 +1,8 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v1.9.3 (Const Zero Template)
+// UNDC eBPF Kernel Program — v1.9.4 (Packed Struct + Key Dump)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
-// Purpose: Secure path resolution with byte-exact hash map keys
+// Purpose: Byte-exact hash map keys with diagnostic key dump
 // Status: ENFORCING — returns -EPERM on map hit with deny action
 // File Hash: (recompute after commit)
 // ------------------------------------------------------------
@@ -20,20 +20,19 @@ char LICENSE[] SEC("license") = "GPL";
 #define ACTION_AUDIT 2
 
 // ------------------------------------------------------------
-// 0. KEY STRUCTURE
+// 0. KEY STRUCTURE — PACKED
+// __attribute__((packed)) forces identical byte layout under
+// gcc (userspace) and clang -target bpf (kernel). Without it,
+// implicit padding can differ between the two compilers and
+// break the byte-level comparison in the hash map.
 // ------------------------------------------------------------
 struct lpm_key {
     __u32 prefixlen;
     char path[MAX_PATH_LEN];
-};
+} __attribute__((packed));
 
 // ------------------------------------------------------------
 // 0b. ZERO TEMPLATE
-// A global const zero-filled key. Clang places this in .rodata
-// and cannot optimize away reads from it. Copying from here into
-// a stack key guarantees every byte starts at zero, unlike `= {0}`
-// initializers, which the BPF backend has been observed to elide
-// for large structs.
 // ------------------------------------------------------------
 static const struct lpm_key undc_zero_key;
 
@@ -54,12 +53,16 @@ struct {
 
 // ------------------------------------------------------------
 // 2. EVENT STRUCTURE
+// Now carries a full 260-byte hex-dumpable copy of the key
+// used at lookup time. Diagnostic-only; remove once the byte
+// mismatch is fixed.
 // ------------------------------------------------------------
 struct syscall_event {
     unsigned long syscall_type;
     int pid;
     int action_taken;
     char path[MAX_PATH_LEN];
+    unsigned char key_dump[sizeof(struct lpm_key)];
 };
 
 // ------------------------------------------------------------
@@ -78,8 +81,6 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         return 0;
     }
 
-    // Guarantee every byte of the key starts at zero by copying from
-    // a .rodata zero template. Cannot be optimized away.
     __builtin_memcpy(&lookup_key, &undc_zero_key, sizeof(lookup_key));
 
     path_len = bpf_d_path(&bprm->file->f_path, lookup_key.path, MAX_PATH_LEN);
@@ -91,6 +92,7 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
             event->pid = bpf_get_current_pid_tgid() >> 32;
             event->action_taken = -1;
             __builtin_memcpy(event->path, lookup_key.path, MAX_PATH_LEN);
+            __builtin_memcpy(event->key_dump, &lookup_key, sizeof(lookup_key));
             bpf_ringbuf_submit(event, 0);
         }
         return 0;
@@ -107,12 +109,12 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         event->pid = bpf_get_current_pid_tgid() >> 32;
         event->action_taken = decision;
         __builtin_memcpy(event->path, lookup_key.path, MAX_PATH_LEN);
+        __builtin_memcpy(event->key_dump, &lookup_key, sizeof(lookup_key));
         bpf_ringbuf_submit(event, 0);
     }
 
-    // ── ENFORCEMENT BRANCH ──
     if (decision == ACTION_DENY) {
-        return -1; // -EPERM
+        return -1;
     }
 
     return 0;
