@@ -17,7 +17,7 @@ Every run triggers a full pipeline:
 1. Checkout — clean clone from GitHub
 2. Install dependencies — clang, llvm, node, circom, snarkjs
 3. Generate `vmlinux.h` — BTF from running kernel
-4. Compile eBPF module — kernel enforcement binary
+4. Compile eBPF module — kernel interception binary
 5. Compile ZK circuit — both circuits compile successfully
 6. Run ZK test pipeline — Merkle tree + proof generation
 7. Verify proof — `snarkjs groth16 verify` returns valid
@@ -43,7 +43,7 @@ The Universal Non-Destruction Constraint (UNDC) is a framework for AI systems th
 The UNDC includes:
 
 - **ZK Circuit** — a Groth16 circuit that proves a blinded Merkle-membership statement about a syscall
-- **eBPF LSM Module** — an LSM hook written and loaded on a test kernel; coverage documented in COVERAGE.md; attach to bprm_check_security is the next milestone
+- **eBPF LSM Module** — an LSM hook that compiles, loads, attaches to `bprm_check_security`, and fires on every `execve`; enforcement lookup unresolved (see issue #23)
 - **Economic Framework** — licensing structure with 13 defined revenue streams (documents)
 - **Governance Documents** — Jubilee Constitution, Sovereign Defense Protocol, Commercial License
 - **Sovereign Record** — hashed artifacts anchored to Bitcoin via OpenTimestamps
@@ -52,7 +52,7 @@ The UNDC includes:
 
 ## 🔥 REFERENCE IMPLEMENTATION — STATUS
 
-**Status:** Runtime assembly complete; first hook attach pending.
+**Status:** Runtime assembly complete; hook attached and firing; enforcement lookup unresolved (issue #23).
 **Date Completed:** September 11, 2026
 **Chain of Custody:** Intact (Piece #0 → Piece #7)
 
@@ -75,8 +75,8 @@ Eight pieces were written, hashed, and anchored to the Bitcoin blockchain via Op
 
 | Layer | Function | Piece | State |
 |-------|----------|-------|-------|
-| Layer 1 | Kernel interception (eBPF LSM hooks) | Piece #3 | Module loads; hook attach pending |
-| Layer 2 | Event witness (userspace daemon) | Piece #4 | Written; not yet wired to loaded program |
+| Layer 1 | Kernel interception (eBPF LSM hooks) | Piece #3 | Loaded, attached, firing; enforcement lookup unresolved (issue #23) |
+| Layer 2 | Event witness (userspace daemon) | Piece #4 | Wired and consuming events in real time |
 | Layer 3 | Cryptographic verification (ZK bridge + Merkle) | Pieces #2, #5 | Circuit compiles; proof verifies |
 | Layer 4 | Immutable anchoring (Solidity contract) | Piece #6 | Spec sealed; not yet deployed |
 
@@ -94,8 +94,8 @@ Every piece is anchored to the Bitcoin blockchain. Every hash is verifiable. The
 The UNDC's eBPF LSM module intercepts specific syscall paths at the kernel level under a defined policy. Coverage is documented in `COVERAGE.md` and expands as the reference implementation matures.
 
 **Current state:**
-- The eBPF module compiles and loads on a test kernel (Program ID 119, `type lsm`, tag `45986485f27740eb`, JITed to 467 bytes, pinned at `/sys/fs/bpf/undc_compliance`).
-- Attach to `bprm_check_security` is the next milestone. Once attached and demonstrated firing, coverage for that path becomes verified runtime behavior.
+- The eBPF module compiles, loads on a test kernel, and attaches to `bprm_check_security`. The hook fires on every `execve`; ring-buffer events flow to userspace in real time.
+- The map lookup for policy enforcement currently returns NULL on seeded entries. The `-EPERM` enforcement branch is implemented but not yet reached. Full diagnostic tracked as issue [#23](https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC/issues/23).
 
 **What LSM hooks do and do not do:**
 - They intercept the specific kernel call paths they are attached to.
@@ -158,8 +158,8 @@ All licensing terms are sealed in the record and publicly verifiable:
 | **Component** | **Status** |
 |---------------|------------|
 | ZK Circuit | ✅ Compiles and verifies — `[INFO] snarkJS: OK!` |
-| eBPF Module | ✅ Compiles and loads on test kernel; attach pending |
-| Userspace Daemon | ✅ Written; wiring to loaded program pending |
+| eBPF Module | ✅ Compiles, loads, attaches, and fires on every `execve`; enforcement lookup unresolved (issue #23) |
+| Userspace Daemon | ✅ Written, wired, and consuming events in real time |
 | Merkle Tree Generator | ✅ Compiles and runs |
 | Smart Contract | 📄 Spec sealed; not yet deployed |
 | Jubilee Constitution | 📄 Sealed document |
@@ -371,6 +371,8 @@ Statutory citations support the claims; they do not by themselves establish liab
 - **EU Apply AI Alliance:** https://futurium.ec.europa.eu/en/apply-ai-alliance
 
 ---
+
+
 
 — Shereign Kalaukoa, Lead Architect
 🔗 https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC
