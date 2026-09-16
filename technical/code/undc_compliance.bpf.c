@@ -1,8 +1,9 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v2.0 (Per-CPU Scratch Key)
+// UNDC eBPF Kernel Program — v2.1 (Printk Diagnostics)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Byte-exact hash map keys via per-CPU scratch buffer
+//          + bpf_printk diagnostics at lookup time
 // Status: ENFORCING — returns -EPERM on map hit with deny action
 // File Hash: (recompute after commit)
 // ------------------------------------------------------------
@@ -21,8 +22,6 @@ char LICENSE[] SEC("license") = "GPL";
 
 // ------------------------------------------------------------
 // 0. KEY STRUCTURE
-// No packed attribute. Natural alignment. Both compilers agree
-// on layout for { __u32; char[256]; } = 260 bytes.
 // ------------------------------------------------------------
 struct lpm_key {
     char path[MAX_PATH_LEN];
@@ -44,11 +43,6 @@ struct {
     __uint(max_entries, 4096);
 } undc_invariant_map SEC(".maps");
 
-// Per-CPU scratch slot for the lookup key. A single entry,
-// key=0. Each CPU gets its own slot, so no locking needed.
-// This avoids ever putting a 260-byte key on the 512-byte BPF
-// stack, where clang's codegen has been observed to duplicate
-// writes at misaligned offsets.
 struct {
     __uint(type, BPF_MAP_TYPE_PERCPU_ARRAY);
     __uint(key_size, sizeof(__u32));
@@ -83,17 +77,11 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         return 0;
     }
 
-    // Get the per-CPU scratch key slot. It is zeroed once at map
-    // creation; we clear only the path region each invocation to
-    // avoid stale bytes from the previous exec.
     lookup_key = bpf_map_lookup_elem(&undc_scratch_key, &zero);
     if (!lookup_key) {
         return 0;
     }
 
-    // Zero the path buffer. Loop is bounded by MAX_PATH_LEN (256),
-    // which is small enough that clang unrolls it into straight
-    // stores the verifier accepts.
     for (int i = 0; i < MAX_PATH_LEN; i++) {
         lookup_key->path[i] = 0;
     }
@@ -102,18 +90,18 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
     path_len = bpf_d_path(&bprm->file->f_path, lookup_key->path, MAX_PATH_LEN);
 
     if (path_len < 0) {
-        event = bpf_ringbuf_reserve(&undc_events, sizeof(struct syscall_event), 0);
-        if (event) {
-            event->syscall_type = 1;
-            event->pid = bpf_get_current_pid_tgid() >> 32;
-            event->action_taken = -1;
-            __builtin_memcpy(event->path, lookup_key->path, MAX_PATH_LEN);
-            bpf_ringbuf_submit(event, 0);
-        }
         return 0;
     }
 
+    // ── DIAGNOSTIC: print key state right before lookup ──
+    bpf_printk("UNDC: pre-lookup path_len=%ld path=%.32s prefixlen=%u",
+               path_len, lookup_key->path, lookup_key->prefixlen);
+
     action = bpf_map_lookup_elem(&undc_invariant_map, lookup_key);
+
+    // ── DIAGNOSTIC: print lookup result ──
+    bpf_printk("UNDC: post-lookup action_ptr=%px", action);
+
     if (action) {
         decision = *action;
     }
@@ -127,9 +115,8 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         bpf_ringbuf_submit(event, 0);
     }
 
-    // ── ENFORCEMENT BRANCH ──
     if (decision == ACTION_DENY) {
-        return -1; // -EPERM
+        return -1;
     }
 
     return 0;
