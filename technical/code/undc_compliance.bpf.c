@@ -1,8 +1,8 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v4.0 (Robust Suffix Matching)
+// UNDC eBPF Kernel Program — v5.0 (Filename Direct Interception)
 // Lead Architect: Shereign Kalaukoa
-// Purpose: Suffix matching to bypass WSL2 mount namespace prefixes
-// Status: ENFORCING — returns -EPERM on target suffix match
+// Purpose: Intercept direct string from bprm->filename to bypass WSL2 VFS bugs
+// Status: ENFORCING — returns -EPERM on target match
 // ------------------------------------------------------------
 
 #include "vmlinux.h"
@@ -44,63 +44,48 @@ SEC("lsm/bprm_check_security")
 int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
 {
     struct syscall_event *event;
-    char tmp_path[MAX_PATH_LEN];
+    char k_filename[MAX_PATH_LEN];
     int decision = ACTION_ALLOW;
     int i;
 
-    if (!bprm || !bprm->file) {
+    if (!bprm) {
         return 0;
     }
 
-    __builtin_memset(tmp_path, 0, sizeof(tmp_path));
+    __builtin_memset(k_filename, 0, sizeof(k_filename));
 
-    // Resolve the internal kernel path
-    long path_len = bpf_d_path((struct path *)&bprm->file->f_path, tmp_path, MAX_PATH_LEN);
-    if (path_len < 0) {
+    // Read the absolute string directly from the kernel memory reference
+    long ret = bpf_probe_read_kernel_str(k_filename, sizeof(k_filename), bprm->filename);
+    if (ret < 0) {
         return 0;
     }
 
-    // Target Suffix: "undc-deny-test" (14 characters)
-    const char suffix[] = "undc-deny-test";
-    
-    // Find where the null terminator is to track the end of the string
-    int str_len = 0;
-    for (i = 0; i < MAX_PATH_LEN; i++) {
-        if (tmp_path[i] == 0) {
-            str_len = i;
+    // Direct, absolute target verification
+    const char target[] = "/tmp/undc-deny-test";
+    int match = 1;
+    for (i = 0; i < 19; i++) { // Length of "/tmp/undc-deny-test" is 19
+        if (k_filename[i] != target[i]) {
+            match = 0;
             break;
         }
     }
 
-    // If the path is long enough, verify if it ends with our target suffix
-    if (str_len >= 14) {
-        int start_idx = str_len - 14;
-        int match = 1;
-        
-        for (i = 0; i < 14; i++) {
-            if (tmp_path[start_idx + i] != suffix[i]) {
-                match = 0;
-                break;
-            }
-        }
-        
-        if (match == 1) {
-            decision = ACTION_DENY;
-        }
+    if (match == 1) {
+        decision = ACTION_DENY;
     }
 
-    // Send telemetry down to your daemon window
+    // Send telemetry down to user space
     event = bpf_ringbuf_reserve(&undc_events, sizeof(struct syscall_event), 0);
     if (event) {
         event->syscall_type = 1;
         event->pid = bpf_get_current_pid_tgid() >> 32;
         event->action_taken = decision;
-        __builtin_memcpy(event->path, tmp_path, MAX_PATH_LEN);
+        __builtin_memcpy(event->path, k_filename, MAX_PATH_LEN);
         bpf_ringbuf_submit(event, 0);
     }
 
     if (decision == ACTION_DENY) {
-        return -1; // Force-block execution with Permission Denied
+        return -1; // Triggers -EPERM (Permission Denied)
     }
 
     return 0;
