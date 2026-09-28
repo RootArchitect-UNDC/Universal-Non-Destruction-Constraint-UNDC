@@ -24,8 +24,8 @@ char LICENSE[] SEC("license") = "GPL";
 // 0. KEY STRUCTURE
 // ------------------------------------------------------------
 struct lpm_key {
-    char path[MAX_PATH_LEN];
     __u32 prefixlen;
+    char path[MAX_PATH_LEN];
 };
 
 // ------------------------------------------------------------
