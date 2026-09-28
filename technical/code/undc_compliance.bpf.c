@@ -1,9 +1,9 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v2.5 (Stack Allocation Pivot)
+// UNDC eBPF Kernel Program — v2.6 (Clean-Room Key Isolation)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
-// Purpose: Byte-exact hash map keys via direct stack layout
-//          + Eliminates PERCPU map-to-map pointer aliasing bugs
+// Purpose: Byte-exact hash map keys via isolated stack copies
+//          + Eliminates bpf_d_path buffer side-effects completely
 // Status: ENFORCING — returns -EPERM on map hit with deny action
 // File Hash: (recompute after commit)
 // ------------------------------------------------------------
@@ -60,35 +60,42 @@ SEC("lsm/bprm_check_security")
 int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
 {
     struct syscall_event *event;
-    struct lpm_key key = {}; // Clean 260-byte key zeroed directly on the stack
+    struct lpm_key clean_key = {}; // Pristine, 100% zero-initialized target key
+    char tmp_path[MAX_PATH_LEN] = {}; // Isolated scratch buffer for d_path
     __u32 *action;
     long path_len;
     int decision = ACTION_ALLOW;
-    int found_null = 0;
+    int copy_done = 0;
     int i;
 
     if (!bprm || !bprm->file) {
         return 0;
     }
 
-    /* 1. Resolve path directly into left-aligned stack buffer */
-    path_len = bpf_d_path((struct path *)&bprm->file->f_path, key.path, MAX_PATH_LEN);
+    /* 1. Resolve path into the isolated temporary scratch buffer */
+    path_len = bpf_d_path((struct path *)&bprm->file->f_path, tmp_path, MAX_PATH_LEN);
     if (path_len < 0) {
         return 0;
     }
 
-    /* 2. Find the first null terminator and scrub trailing noise on the stack */
-    found_null = 0;
+    /* 2. Isolated Extraction Loop: Copy ONLY valid string characters.
+          Once the first null terminator is reached, remaining bytes stay pure 0x00. */
+    clean_key.prefixlen = 0;
+    copy_done = 0;
     for (i = 0; i < MAX_PATH_LEN; i++) {
-        if (found_null) {
-            key.path[i] = 0;
-        } else if (key.path[i] == 0) {
-            found_null = 1;
+        if (tmp_path[i] == 0) {
+            copy_done = 1;
+        }
+        
+        if (!copy_done) {
+            clean_key.path[i] = tmp_path[i];
+        } else {
+            clean_key.path[i] = 0;
         }
     }
 
-    /* 3. Look up stack key structure against the policy database */
-    action = bpf_map_lookup_elem(&undc_invariant_map, &key);
+    /* 3. Look up clean isolated key structure against policy database */
+    action = bpf_map_lookup_elem(&undc_invariant_map, &clean_key);
     if (action) {
         decision = *action;
     }
@@ -99,7 +106,7 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         event->syscall_type = 1;
         event->pid = bpf_get_current_pid_tgid() >> 32;
         event->action_taken = decision;
-        __builtin_memcpy(event->path, key.path, MAX_PATH_LEN);
+        __builtin_memcpy(event->path, clean_key.path, MAX_PATH_LEN);
         bpf_ringbuf_submit(event, 0);
     }
 
