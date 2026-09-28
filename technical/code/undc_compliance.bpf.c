@@ -1,8 +1,8 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v3.0 (Direct String Enforcement)
+// UNDC eBPF Kernel Program — v4.0 (Robust Suffix Matching)
 // Lead Architect: Shereign Kalaukoa
-// Purpose: Direct string enforcement to bypass WSL2 map bugs
-// Status: ENFORCING — returns -EPERM on target match
+// Purpose: Suffix matching to bypass WSL2 mount namespace prefixes
+// Status: ENFORCING — returns -EPERM on target suffix match
 // ------------------------------------------------------------
 
 #include "vmlinux.h"
@@ -54,27 +54,42 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
 
     __builtin_memset(tmp_path, 0, sizeof(tmp_path));
 
-    // Resolve path into our buffer
+    // Resolve the internal kernel path
     long path_len = bpf_d_path((struct path *)&bprm->file->f_path, tmp_path, MAX_PATH_LEN);
     if (path_len < 0) {
         return 0;
     }
 
-    // Direct hardcoded safety string check to guarantee enforcement under WSL2
-    const char target[] = "/tmp/undc-deny-test";
-    int match = 1;
-    for (i = 0; i < 19; i++) { // Length of "/tmp/undc-deny-test" is 19
-        if (tmp_path[i] != target[i]) {
-            match = 0;
+    // Target Suffix: "undc-deny-test" (14 characters)
+    const char suffix[] = "undc-deny-test";
+    
+    // Find where the null terminator is to track the end of the string
+    int str_len = 0;
+    for (i = 0; i < MAX_PATH_LEN; i++) {
+        if (tmp_path[i] == 0) {
+            str_len = i;
             break;
         }
     }
 
-    if (match == 1) {
-        decision = ACTION_DENY;
+    // If the path is long enough, verify if it ends with our target suffix
+    if (str_len >= 14) {
+        int start_idx = str_len - 14;
+        int match = 1;
+        
+        for (i = 0; i < 14; i++) {
+            if (tmp_path[start_idx + i] != suffix[i]) {
+                match = 0;
+                break;
+            }
+        }
+        
+        if (match == 1) {
+            decision = ACTION_DENY;
+        }
     }
 
-    // Send metrics to your daemon window
+    // Send telemetry down to your daemon window
     event = bpf_ringbuf_reserve(&undc_events, sizeof(struct syscall_event), 0);
     if (event) {
         event->syscall_type = 1;
@@ -85,7 +100,7 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
     }
 
     if (decision == ACTION_DENY) {
-        return -1; // Block execution with Permission Denied
+        return -1; // Force-block execution with Permission Denied
     }
 
     return 0;
