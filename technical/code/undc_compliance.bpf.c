@@ -1,9 +1,9 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v2.1 (Printk Diagnostics)
+// UNDC eBPF Kernel Program — v2.2 (d_path normalization)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Byte-exact hash map keys via per-CPU scratch buffer
-//          + bpf_printk diagnostics at lookup time
+//          + d_path left-alignment normalization
 // Status: ENFORCING — returns -EPERM on map hit with deny action
 // File Hash: (recompute after commit)
 // ------------------------------------------------------------
@@ -72,6 +72,9 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
     __u32 *action;
     long path_len;
     int decision = ACTION_ALLOW;
+    char tmp_path[MAX_PATH_LEN];
+    int start;
+    int i;
 
     if (!bprm || !bprm->file) {
         return 0;
@@ -82,26 +85,39 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         return 0;
     }
 
-    for (int i = 0; i < MAX_PATH_LEN; i++) {
-        lookup_key->path[i] = 0;
+    /* zero the entire scratch struct */
+    for (i = 0; i < (int)sizeof(struct lpm_key); i++) {
+        ((char *)lookup_key)[i] = 0;
     }
-    lookup_key->prefixlen = 0;
 
-    path_len = bpf_d_path(&bprm->file->f_path, lookup_key->path, MAX_PATH_LEN);
+    /* zero the temp buffer */
+    for (i = 0; i < MAX_PATH_LEN; i++) {
+        tmp_path[i] = 0;
+    }
 
+    /* bpf_d_path writes to the tail of the buffer and returns length */
+    path_len = bpf_d_path(&bprm->file->f_path, tmp_path, MAX_PATH_LEN);
     if (path_len < 0) {
         return 0;
     }
 
-    // ── DIAGNOSTIC: print key state right before lookup ──
-    bpf_printk("UNDC: pre-lookup path_len=%ld path=%.32s prefixlen=%u",
-               path_len, lookup_key->path, lookup_key->prefixlen);
+    /* compute where the string starts inside tmp_path */
+    start = MAX_PATH_LEN - (int)path_len;
+    if (start < 0) {
+        start = 0;
+    }
+    if ((int)path_len > MAX_PATH_LEN) {
+        path_len = MAX_PATH_LEN;
+    }
+
+    /* copy the string left-aligned into lookup_key->path */
+    for (i = 0; i < (int)path_len && i < MAX_PATH_LEN; i++) {
+        lookup_key->path[i] = tmp_path[start + i];
+    }
+
+    lookup_key->prefixlen = 0;
 
     action = bpf_map_lookup_elem(&undc_invariant_map, lookup_key);
-
-    // ── DIAGNOSTIC: print lookup result ──
-    bpf_printk("UNDC: post-lookup action_ptr=%px", action);
-
     if (action) {
         decision = *action;
     }
