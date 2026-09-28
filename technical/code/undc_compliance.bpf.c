@@ -1,9 +1,9 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v2.2 (d_path normalization)
+// UNDC eBPF Kernel Program — v2.3 (Verified Left-Aligned Sanitation)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Byte-exact hash map keys via per-CPU scratch buffer
-//          + d_path left-alignment normalization
+//          + Fixed-bound tail scrubbing to eliminate trailing junk bytes
 // Status: ENFORCING — returns -EPERM on map hit with deny action
 // File Hash: (recompute after commit)
 // ------------------------------------------------------------
@@ -72,8 +72,6 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
     __u32 *action;
     long path_len;
     int decision = ACTION_ALLOW;
-    char tmp_path[MAX_PATH_LEN];
-    int start;
     int i;
 
     if (!bprm || !bprm->file) {
@@ -85,43 +83,33 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         return 0;
     }
 
-    /* zero the entire scratch struct */
-    for (i = 0; i < (int)sizeof(struct lpm_key); i++) {
-        ((char *)lookup_key)[i] = 0;
-    }
-
-    /* zero the temp buffer */
+    /* 1. Explicitly zero the structure to guarantee no cross-session leakage */
+    lookup_key->prefixlen = 0;
     for (i = 0; i < MAX_PATH_LEN; i++) {
-        tmp_path[i] = 0;
+        lookup_key->path[i] = 0;
     }
 
-    /* bpf_d_path writes to the tail of the buffer and returns length */
-    path_len = bpf_d_path(&bprm->file->f_path, tmp_path, MAX_PATH_LEN);
+    /* 2. Resolve path directly into left-aligned buffer head */
+    path_len = bpf_d_path(&bprm->file->f_path, lookup_key->path, MAX_PATH_LEN);
     if (path_len < 0) {
         return 0;
     }
 
-    /* compute where the string starts inside tmp_path */
-    start = MAX_PATH_LEN - (int)path_len;
-    if (start < 0) {
-        start = 0;
-    }
-    if ((int)path_len > MAX_PATH_LEN) {
-        path_len = MAX_PATH_LEN;
-    }
-
-    /* copy the string left-aligned into lookup_key->path */
-    for (i = 0; i < (int)path_len && i < MAX_PATH_LEN; i++) {
-        lookup_key->path[i] = tmp_path[start + i];
+    /* 3. Scrub backward-constructed trailing kernel memory junk left past path_len.
+          Using a constant MAX_PATH_LEN loop keeps the verifier tracking happy. */
+    for (i = 0; i < MAX_PATH_LEN; i++) {
+        if (i >= path_len) {
+            lookup_key->path[i] = 0;
+        }
     }
 
-    lookup_key->prefixlen = 0;
-
+    /* 4. Look up sanitized key structure against policy database */
     action = bpf_map_lookup_elem(&undc_invariant_map, lookup_key);
     if (action) {
         decision = *action;
     }
 
+    /* 5. Relay audited metrics down to user-space daemon */
     event = bpf_ringbuf_reserve(&undc_events, sizeof(struct syscall_event), 0);
     if (event) {
         event->syscall_type = 1;
@@ -131,8 +119,9 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         bpf_ringbuf_submit(event, 0);
     }
 
+    /* 6. Enforce system layer block if rule evaluates to DENY */
     if (decision == ACTION_DENY) {
-        return -1;
+        return -1; // Yields -EPERM down to syscall boundary
     }
 
     return 0;
