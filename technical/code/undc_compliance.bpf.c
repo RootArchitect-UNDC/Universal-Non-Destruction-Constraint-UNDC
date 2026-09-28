@@ -1,9 +1,9 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v2.3 (Verified Left-Aligned Sanitation)
+// UNDC eBPF Kernel Program — v2.4 (Null-Terminator Scanning Fix)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Byte-exact hash map keys via per-CPU scratch buffer
-//          + Fixed-bound tail scrubbing to eliminate trailing junk bytes
+//          + Dynamic null-terminator scan to eradicate trailing junk bytes
 // Status: ENFORCING — returns -EPERM on map hit with deny action
 // File Hash: (recompute after commit)
 // ------------------------------------------------------------
@@ -72,6 +72,7 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
     __u32 *action;
     long path_len;
     int decision = ACTION_ALLOW;
+    int found_null = 0;
     int i;
 
     if (!bprm || !bprm->file) {
@@ -83,23 +84,26 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         return 0;
     }
 
-    /* 1. Explicitly zero the structure to guarantee no cross-session leakage */
+    /* 1. Explicitly zero the structure to guarantee a clean baseline */
     lookup_key->prefixlen = 0;
     for (i = 0; i < MAX_PATH_LEN; i++) {
         lookup_key->path[i] = 0;
     }
 
     /* 2. Resolve path directly into left-aligned buffer head */
-    path_len = bpf_d_path(&bprm->file->f_path, lookup_key->path, MAX_PATH_LEN);
+    path_len = bpf_d_path((struct path *)&bprm->file->f_path, lookup_key->path, MAX_PATH_LEN);
     if (path_len < 0) {
         return 0;
     }
 
-    /* 3. Scrub backward-constructed trailing kernel memory junk left past path_len.
-          Using a constant MAX_PATH_LEN loop keeps the verifier tracking happy. */
+    /* 3. Bulletproof Sanitation: Find the first null terminator 
+          and explicitly scrub everything after it to eliminate kernel noise. */
+    found_null = 0;
     for (i = 0; i < MAX_PATH_LEN; i++) {
-        if (i >= path_len) {
+        if (found_null) {
             lookup_key->path[i] = 0;
+        } else if (lookup_key->path[i] == 0) {
+            found_null = 1;
         }
     }
 
