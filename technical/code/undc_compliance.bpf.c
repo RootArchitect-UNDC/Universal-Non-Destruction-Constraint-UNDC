@@ -1,8 +1,10 @@
 // ------------------------------------------------------------
 // UNDC eBPF Kernel Program — v5.0 (Filename Direct Interception)
 // Lead Architect: Shereign Kalaukoa
+// Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Intercept direct string from bprm->filename to bypass WSL2 VFS bugs
 // Status: ENFORCING — returns -EPERM on target match
+// File Hash: (recompute after commit)
 // ------------------------------------------------------------
 
 #include "vmlinux.h"
@@ -54,16 +56,16 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
 
     __builtin_memset(k_filename, 0, sizeof(k_filename));
 
-    // Read the absolute string directly from the kernel memory reference
+    /* Read the absolute string directly from the kernel memory reference */
     long ret = bpf_probe_read_kernel_str(k_filename, sizeof(k_filename), bprm->filename);
     if (ret < 0) {
         return 0;
     }
 
-    // Direct, absolute target verification
+    /* Direct, absolute target verification */
     const char target[] = "/tmp/undc-deny-test";
     int match = 1;
-    for (i = 0; i < 19; i++) { // Length of "/tmp/undc-deny-test" is 19
+    for (i = 0; i < 19; i++) { /* Length of "/tmp/undc-deny-test" is 19 */
         if (k_filename[i] != target[i]) {
             match = 0;
             break;
@@ -74,7 +76,7 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         decision = ACTION_DENY;
     }
 
-    // Send telemetry down to user space
+    /* Send telemetry down to user space */
     event = bpf_ringbuf_reserve(&undc_events, sizeof(struct syscall_event), 0);
     if (event) {
         event->syscall_type = 1;
@@ -85,7 +87,7 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
     }
 
     if (decision == ACTION_DENY) {
-        return -1; // Triggers -EPERM (Permission Denied)
+        return -1; /* Triggers -EPERM (Permission Denied) */
     }
 
     return 0;
