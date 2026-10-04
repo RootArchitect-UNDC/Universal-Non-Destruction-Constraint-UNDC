@@ -1,5 +1,5 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v5.0 (Filename Direct Interception)
+// UNDC eBPF Kernel Program — v5.1 (Filename Direct Interception)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
 // Purpose: Intercept direct string from bprm->filename to bypass WSL2 VFS bugs
@@ -48,7 +48,6 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
     struct syscall_event *event;
     char k_filename[MAX_PATH_LEN];
     int decision = ACTION_ALLOW;
-    int i;
 
     if (!bprm) {
         return 0;
@@ -62,15 +61,29 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
         return 0;
     }
 
-    /* Direct, absolute target verification */
+    /* Direct comparison against the fixed 19-byte target */
     const char target[] = "/tmp/undc-deny-test";
     int match = 1;
-    for (i = 0; i < 19; i++) { /* Length of "/tmp/undc-deny-test" is 19 */
-        if (k_filename[i] != target[i]) {
-            match = 0;
-            break;
-        }
-    }
+
+    if (k_filename[0]  != target[0])  match = 0;
+    if (k_filename[1]  != target[1])  match = 0;
+    if (k_filename[2]  != target[2])  match = 0;
+    if (k_filename[3]  != target[3])  match = 0;
+    if (k_filename[4]  != target[4])  match = 0;
+    if (k_filename[5]  != target[5])  match = 0;
+    if (k_filename[6]  != target[6])  match = 0;
+    if (k_filename[7]  != target[7])  match = 0;
+    if (k_filename[8]  != target[8])  match = 0;
+    if (k_filename[9]  != target[9])  match = 0;
+    if (k_filename[10] != target[10]) match = 0;
+    if (k_filename[11] != target[11]) match = 0;
+    if (k_filename[12] != target[12]) match = 0;
+    if (k_filename[13] != target[13]) match = 0;
+    if (k_filename[14] != target[14]) match = 0;
+    if (k_filename[15] != target[15]) match = 0;
+    if (k_filename[16] != target[16]) match = 0;
+    if (k_filename[17] != target[17]) match = 0;
+    if (k_filename[18] != target[18]) match = 0;
 
     if (match == 1) {
         decision = ACTION_DENY;
