@@ -1,9 +1,9 @@
 // ------------------------------------------------------------
-// UNDC User-Space Ring Buffer Daemon — v1.7 (Per-CPU Scratch Key)
+// UNDC User-Space Ring Buffer Daemon — v2.0
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
-// Purpose: Consume eBPF events; seed hash map policy
-// Target: Kernel-to-user-space telemetry pipeline with demo policy
+// Purpose: Load the hook, attach it, and consume ring buffer events
+// Target: Kernel-to-user-space telemetry for the v5.3 hook
 // File Hash: (recompute after commit)
 // ------------------------------------------------------------
 
@@ -17,12 +17,6 @@
 #include "undc_compliance.skel.h"
 
 #define MAX_PATH_LEN 256
-#define ACTION_DENY  1
-
-struct lpm_key {
-    __u32 prefixlen;
-    char path[MAX_PATH_LEN];
-};
 
 struct syscall_event {
     unsigned long syscall_type;
@@ -30,31 +24,6 @@ struct syscall_event {
     int action_taken;
     char path[MAX_PATH_LEN];
 };
-
-static int seed_policy(struct undc_compliance_bpf *skel, const char *deny_path)
-{
-    int map_fd = bpf_map__fd(skel->maps.undc_invariant_map);
-    struct lpm_key key = {};
-    __u32 action = ACTION_DENY;
-
-    size_t plen = strlen(deny_path);
-    if (plen >= MAX_PATH_LEN) {
-        fprintf(stderr, "❌ Deny path too long (max %d): %s\n", MAX_PATH_LEN - 1, deny_path);
-        return -1;
-    }
-
-    memcpy(key.path, deny_path, plen);
-
-    int err = bpf_map_update_elem(map_fd, &key, &action, BPF_ANY);
-    if (err) {
-        fprintf(stderr, "❌ Failed to insert deny policy for %s: %s\n",
-                deny_path, strerror(errno));
-        return err;
-    }
-
-    printf("🛡️  Policy seeded: %s → DENY\n", deny_path);
-    return 0;
-}
 
 static int handle_event(void *ctx, void *data, size_t data_sz)
 {
@@ -66,8 +35,7 @@ static int handle_event(void *ctx, void *data, size_t data_sz)
     const struct syscall_event *event = data;
     const char *action_str =
         event->action_taken == 0 ? "ALLOW" :
-        event->action_taken == 1 ? "DENY"  :
-        event->action_taken == 2 ? "AUDIT" : "UNKNOWN";
+        event->action_taken == 1 ? "DENY"  : "UNKNOWN";
 
     printf("📡 [eBPF Intercept] syscall=%lu pid=%d action=%s path=\"%s\"\n",
            event->syscall_type, event->pid, action_str, event->path);
@@ -81,10 +49,10 @@ int main(int argc, char **argv)
     struct ring_buffer *rb = NULL;
     int err;
 
-    const char *deny_path = (argc > 1) ? argv[1] : "/usr/bin/undc-test-deny";
+    (void)argc;
+    (void)argv;
 
     printf("🛡️  Initializing UNDC User-Space eBPF Daemon Gateway...\n");
-    printf("🛡️  sizeof(struct lpm_key) = %zu\n", sizeof(struct lpm_key));
 
     skel = undc_compliance_bpf__open_and_load();
     if (!skel) {
@@ -98,18 +66,13 @@ int main(int argc, char **argv)
         goto cleanup;
     }
 
-    err = seed_policy(skel, deny_path);
-    if (err) {
-        goto cleanup;
-    }
-
     rb = ring_buffer__new(bpf_map__fd(skel->maps.undc_events), handle_event, NULL, NULL);
     if (!rb) {
         fprintf(stderr, "❌ Failed to initialize libbpf ring buffer interface.\n");
         goto cleanup;
     }
 
-    printf("🚀 Loop Active: tracking execve, denying %s\n", deny_path);
+    printf("🚀 Loop Active: tracking execve, denying /tmp/undc-deny-test\n");
 
     while (1) {
         err = ring_buffer__poll(rb, 100);
