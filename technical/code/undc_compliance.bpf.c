@@ -1,8 +1,8 @@
 // ------------------------------------------------------------
-// UNDC eBPF Kernel Program — v5.2 (bpf_strncmp)
+// UNDC eBPF Kernel Program — v5.3 (.rodata string evaluation)
 // Lead Architect: Shereign Kalaukoa
 // Authority: EHYEH ASHER EHYEH & AHYAH
-// Purpose: Intercept direct string from bprm->filename to bypass WSL2 VFS bugs
+// Purpose: Intercept direct string from bprm->filename
 // Status: ENFORCING — returns -EPERM on target match
 // File Hash: (recompute after commit)
 // ------------------------------------------------------------
@@ -18,22 +18,15 @@ char LICENSE[] SEC("license") = "GPL";
 #define ACTION_ALLOW 0
 #define ACTION_DENY  1
 
-struct lpm_key {
-    __u32 prefixlen;
-    char path[MAX_PATH_LEN];
-};
+/* The compiler places this in .rodata, which libbpf exposes as
+ * a read-only map. This satisfies bpf_strncmp's arg3 requirement
+ * (ARG_PTR_TO_CONST_STR). */
+const char TARGET_PATH[] = "/tmp/undc-deny-test";
 
 struct {
     __uint(type, BPF_MAP_TYPE_RINGBUF);
     __uint(max_entries, 256 * 1024);
 } undc_events SEC(".maps");
-
-struct {
-    __uint(type, BPF_MAP_TYPE_HASH);
-    __uint(key_size, sizeof(struct lpm_key));
-    __uint(value_size, sizeof(__u32));
-    __uint(max_entries, 4096);
-} undc_invariant_map SEC(".maps");
 
 struct syscall_event {
     unsigned long syscall_type;
@@ -55,23 +48,15 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
 
     __builtin_memset(k_filename, 0, sizeof(k_filename));
 
-    /* Read the absolute string directly from the kernel memory reference */
     long ret = bpf_probe_read_kernel_str(k_filename, sizeof(k_filename), bprm->filename);
     if (ret < 0) {
         return 0;
     }
 
-    /*
-     * Compare against the target using bpf_strncmp. This replaces the
-     * per-byte comparison loop that was unrolled past the verifier's
-     * 1,000,000 instruction limit.
-     */
-    char target[] = "/tmp/undc-deny-test";
-    if (bpf_strncmp(k_filename, sizeof(target), target) == 0) {
+    if (bpf_strncmp(k_filename, sizeof(TARGET_PATH), TARGET_PATH) == 0) {
         decision = ACTION_DENY;
     }
 
-    /* Send telemetry down to user space */
     event = bpf_ringbuf_reserve(&undc_events, sizeof(struct syscall_event), 0);
     if (event) {
         event->syscall_type = 1;
@@ -82,7 +67,7 @@ int BPF_PROG(undc_execve_hook, struct linux_binprm *bprm)
     }
 
     if (decision == ACTION_DENY) {
-        return -1; /* Triggers -EPERM (Permission Denied) */
+        return -1;
     }
 
     return 0;
