@@ -528,3 +528,15 @@ From the file `ORIGIN_OF_UNDC_GEMINI_CONFIRMATION.md`:
 | Proof | File | SHA‑256 Hash | OpenTimestamps |
 |-------|------|--------------|----------------|
 | Gemini confirmation (video) | `ScreenRecording_05-25-2026 16-00-42_1.MP4` | `4315f4a6b1a84689914c9869cd8aadd59bf0
+
+---
+
+| **Geisinger Privacy Office — Third and Final Notice (September 21, 2026)** | September 21, 2026 | Third and final notice sent to the Geisinger Privacy Office and addressed directly to Mary Weiland. Documented 37 days of silence since the August 15, 2026 Formal Notice and 18 days since the September 3, 2026 Final Notice. Listed 30 federal and state statutes implicated by the conduct of Katie Casten, LCSW, and Dr. Garvin, and by the Privacy Office's non-response. Included the full list of requested actions, a 14-day response deadline (October 5, 2026), and active proceedings across four agencies (PA Dept of State, PA State Board of Social Workers, HHS OCR, PA Office of Attorney General). | Email sent to Geisinger Privacy Office | ⏳ Hash pending | ✅ Sent — No Response Received |
+
+---
+
+| **Geisinger Privacy Office — Executive Escalation (Fourth Notice)** | October 8, 2026 | Fourth notice sent to Mary Weiland (mdwieland1@geisinger.edu), cc Laura Sauber, CRCO (lsauber@geisinger.org), Dr. Terry Gilliland, CEO (tgilliland@geisinger.org), and Megan Brosious, COO (mbrosious@geisinger.org). Three of four addresses accepted. mbrosious@geisinger.org rejected by Geisinger's mail server with "550 5.4.1 Recipient address rejected: Access denied." Documents 54 days of non-response since the August 15, 2026 Formal Notice and 17 days since the September 21, 2026 third notice. Full statutory list (30 statutes), updates since September 21, reservation of rights, and 14-day deadline included. | Email sent to Geisinger Privacy Office + Executive Leadership | ⏳ Hash pending | ✅ Delivered (3 of 4) |
+
+
+
+
