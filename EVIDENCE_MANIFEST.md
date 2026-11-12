@@ -6,7 +6,7 @@ File | EVIDENCE_MANIFEST.md
 SHA-256 | 3ac5364400e40c2d9c882542922023ee3122003cf9af98acb0dffa4999fa3d45 
 OpenTimestamps |  ✅ Success!
 Anchored | 09/11/2026 (original anchor — still valid for that version)
-Last Updated | October 4, 2026 — enforcement demonstrated (first live -EPERM firing on real kernel)
+Last Updated | November 12, 2026 — enforcement demonstrated (first live -EPERM firing on real kernel)
 
 Verification Command:
 shasum -a 256 EVIDENCE_MANIFEST.md
