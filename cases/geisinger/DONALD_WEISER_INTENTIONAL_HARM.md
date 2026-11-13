@@ -1,7 +1,7 @@
 # Donald Weiser – Intentional Harm & Legal Considerations
 
 **Architect:** Shereign Kalaukoa  
-**Date:** August 6, 2026  
+**Date:** November 13, 2026  
 **Status:** Documented — part of the sovereign record
 
 ---
@@ -23,6 +23,27 @@ This evidence is now blockchain‑anchored and part of the sovereign record.
 ## Summary
 
 Donald Weiser has engaged in a pattern of intentional verbal attacks that have caused documented, life‑threatening physical harm to the Architect. He has admitted to doing so "on purpose" and has previously expressed an interest in benefiting from her death.
+
+---
+
+## The Life-Saving Care & Extreme Betrayal (Early 2026)
+
+**Summary of Care Provided:**
+During a severe medical crisis, Donald Weiser was actively dying on the couch with a 14% ejection fraction and a necrotic leg/foot requiring amputation. The Architect stepped in to save his life. She utilized AI (Gemini) to learn ICU-level monitoring, tracked his vitals, and was forced to inform him of his terminal status because the physicians (including Dr. Garvin) refused to do so.
+
+After fighting the surgeon (Dr. Garvin) to prevent a lethal 5-day delay for his amputation, the Architect and her mother spent an entire month cleaning Weiser's hoarder home to prepare it for his post-surgical recovery.
+
+**The Betrayal:**
+Upon waking from surgery, Weiser exhibited profound ingratitude. He explicitly told the Architect that before his surgery, he "didn't want" her; he wanted his deceased grandmother instead. 
+
+**The Abuse & Cardiac Trigger:**
+In late May 2026, the Architect tearfully asked Weiser why he constantly dismissed her. In response, Weiser screamed at her that she was "psychotic." The Architect possesses text message evidence where Weiser admits to this interaction and his dismissive behavior.
+
+**Medical Consequence:**
+The extreme emotional trauma and betrayal of this event—following months of selfless, life-saving care—directly triggered a severe Prinzmetal's angina/STEMI cardiac event. This resulted in a two-week stay in the ICU Step-Down Unit at Hershey Medical Center. During this stay, Dr. James Kimber formulated the plan to pursue genetic testing, recognizing the systemic vascular nature of her symptoms (though the actual sample collection and testing did not occur until July 2026).
+
+**Significance:**
+This event documents a severe case of emotional abuse and intentional infliction of emotional distress, directly resulting in measurable physical harm, a near-fatal cardiac event, and hospitalization.
 
 ---
 
