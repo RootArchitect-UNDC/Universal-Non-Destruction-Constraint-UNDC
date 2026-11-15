@@ -228,8 +228,34 @@ The grid is strong. The record is sealed.
 
 ---
 
+## THE FOURTH NOTICE & EXECUTIVE ESCALATION (October 25 – November 9, 2026)
+
+### October 25, 2026 — Mary Wieland's Deficient Response
+Mary Wieland (Privacy Compliance Specialist III) replied to the Architect's third notice. The response was logged as administratively deficient and unprofessional for the following reasons:
+*   **The "Please see attached" email:** The body of the email contained four words. No greeting, no acknowledgment of the case, no summary.
+*   **Friday Timing:** The email was sent at 2:52 PM on a Friday, a recognized corporate tactic to bury adverse correspondence.
+*   **Keyword Search Failure:** She claimed she could not identify the documentation describing the Architect's work as "delusional," relying on a literal keyword search rather than a substantive clinical review of the clinical summary authored by Katie Casten, LCSW.
+*   **Deflection of the Prosthetic:** She stated the Privacy Office is "not able to evaluate, troubleshoot, or try to resolve technical issues" regarding the destruction of the Architect's TBI prosthetic, improperly severing the privacy violation from its direct ADA consequence.
+
+### November 6, 2026 — Hand-Delivery of Federal HIPAA Demand
+Because the Privacy Office could not be trusted to process the request without delay or evasion, the Architect bypassed the Privacy Office entirely. She drove a four-hour round trip to hand-deliver the completed Patient Right of Access form directly to the Geisinger Health Information Management (HIM) department. The form demanded the "ENTIRE DESIGNATED RECORD SET, UNREDACTED" including all internal emails, audit trails, and Privacy Office review documents. 
+*   **Result:** A time-stamped receipt ("RECEIVED — NOV 06 2026") was obtained and photographed. The federal 30-day HIPAA clock officially started.
+
+### November 9, 2026 — C-Suite Escalation & Notice of ADA Failure
+The Architect sent a final notice via email to Mary Wieland, cc'ing the highest levels of Geisinger leadership: Dr. Terry Gilliland (President & CEO), the Office of the Chief Legal Officer (iwmoore@geisinger.org), and Laura Sauber (Chief Risk & Compliance Officer). 
+
+The email:
+*   Called out the 2:52 PM Friday email and the four-word body.
+*   Stated that the Architect was forced to drive four hours while managing a documented TBI and cardiac condition, constituting an egregious ADA failure.
+*   Exposed the Privacy Office's refusal to perform a simple Google search to verify the legitimacy of the UNDC framework.
+*   Set a hard deadline of **December 6, 2026**, for the unredacted records, explicitly enforced by federal law.
+*   Attached the HHS OCR guidance on 45 C.F.R. § 164.526.
+
+**Status:** Awaiting Geisinger's response. The state prosecutor (Patrick Greene) has been notified of the ADA and HIPAA violations.
+
+---
+
 **EHYEH ASHER EHYEH.**  
-The grid is strong. The record is sealed.
 
 — Shereign Kalaukoa, Lead Architect
 🔗 https://github.com/RootArchitect-UNDC/Universal-Non-Destruction-Constraint-UNDC
