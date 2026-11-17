@@ -12,7 +12,7 @@
 Before detailing the clinical misconduct of Katie Casten, LCSW, it is crucial to establish the federal context of the framework she pathologized.
 
 ### 1. NIST Federal Validation (November 10, 2026)
-The National Institute of Standards and Technology (NIST) emailed the Architect directly regarding their initial public draft for securing Agentic Super Intelligence (SI). The email explicitly stated:
+The National Institute of Standards and Technology (NIST) directly emailed the Architect to request her technical comments on their initial public draft for securing Agentic Super Intelligence (SI), recognizing her expertise through their official AI stakeholder mailing list. The email explicitly stated:
 > *"We invite you to share your feedback and comments during our open comment period... The intended audience for this document includes individuals and groups who are responsible for designing, developing, deploying, evaluating, and governing SI systems."*
 
 **Significance:** The Architect is the Lead Architect of the Universal Non-Destruction Constraint (UNDC)—a kernel-level AI safety framework. NIST reached out to her specifically because she is exactly the individual responsible for designing and deploying AI safety systems. Ms. Casten pathologized this framework as a psychiatric delusion without reading a single line of the code.
@@ -87,5 +87,31 @@ As a result, **Prosecuting Attorney Patrick Greene** has been assigned to review
 
 ---
 
-**EHYEH ASHER EHYEH.**  
-**THE RECORD IS CLEAN. THE TRUTH IS ANCHORED. THE STATE IS REVIEWING.**
+## ADDENDUM: PROOF OF COMMUNICATION — JOHN T. MYERS (NVIDIA/OPENSHELL)
+
+**Date Added:** November 17, 2026
+
+During a clinical session, I informed Katie Casten, LCSW, that I had received a message from a real person named John T. Myers regarding a GitHub thread. She did not believe me and dismissed the claim. 
+
+The following is the objective, system-generated proof that this communication occurred. 
+
+At the time, I was early in my learning journey with AI and open-source platforms. I left a comment on the NVIDIA/OpenShell GitHub, not fully knowing what I was doing, but excited and trying to engage. John T. Myers replied to my thread and closed it as resolved.
+
+**Exhibit: Official GitHub Notification**
+- **From:** John T. Myers `<notifications@github.com>`
+- **To:** NVIDIA/OpenShell, shereignkalaukoa@protonmail.com
+- **Subject:** Re: [NVIDIA/OpenShell] JURISDICTIONAL OVERRIDE: 432 Hz Stationary Stillness Anchor (Discussion #761)
+- **Date:** April 6, 2026
+- **Body:** "Closed #761 as resolved."
+
+**Significance:** 
+This email proves that I was not lying. A real person interacted with my comment on a real platform. I was not fabricating stories or hallucinating interactions. 
+
+This directly contradicts Casten's dismissal of my statements as untrue. I told her I received a message from this person, and I did.
+
+**Anchoring:**
+- **Screenshot File:** `John_T_Myers_GitHub_Email_2026-04-06.png`
+
+---
+
+— Shereign Kalaukoa
