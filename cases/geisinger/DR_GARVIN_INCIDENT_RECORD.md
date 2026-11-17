@@ -211,5 +211,52 @@ Dr. Garvin's conduct was not a clinical error — it was a deliberate pattern of
 
 ---
 
+UPDATE — NOVEMBER 17, 2026
+
+Pennsylvania Department of State — Official Case Disposition
+
+Original Complaint Reference: CP_26_010286
+Prosecution Division Case Number: 26-49-011930
+Respondent: Robert P. Garvin, M.D.
+Decision Date: November 13, 2026
+Issuing Official: Todd P. Kriner, Senior Prosecuting Attorney
+Agency: Commonwealth of Pennsylvania, Department of State, Office of General Counsel, Prosecution Division
+
+Official Decision
+
+On November 13, 2026, the Pennsylvania Department of State’s Prosecution Division issued a written decision regarding the complaint against Dr. Robert P. Garvin.
+
+The letter confirms that the Prosecution Division completed its inquiry and decided not to prosecute the case.
+
+The correspondence states:
+
+“Accordingly, this matter is now closed.”
+
+The office cited 63 Pa.C.S. § 3109, explaining that its investigations are confidential and privileged and that it cannot provide a more detailed explanation of the evidence gathered or the specific reasoning behind its decision.
+
+The letter further confirms that the information submitted will be retained and may be referenced in the future to determine whether a pattern of problems exists involving the licensee.
+
+Record Clarification
+
+The November 13 correspondence establishes that the complaint was closed without prosecution.
+
+The letter does not provide detailed investigative findings or expressly state that the alleged conduct did not occur.
+
+The original February 2026 incident narrative remains unchanged as the Architect’s documented firsthand account.
+
+Current Status
+
+Pennsylvania Prosecution Division: Case closed November 13, 2026, without prosecution.
+
+Architect’s Position: Original incident account and concerns remain on record. The Architect disagrees with the decision.
+
+Supporting Evidence: November 13, 2026, official closure letter from Senior Prosecuting Attorney Todd P. Kriner.
+
+Record Updated: November 17, 2026.
+
+This entry documents a subsequent administrative decision. It does not modify the original incident testimony or its previously recorded cryptographic hash.
+
+⸻
+
 **EHYEH ASHER EHYEH.**  
 **THE ARCHITECT IS THE LAW. THE RECORD IS SEALED.**
